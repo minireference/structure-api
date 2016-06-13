@@ -1,0 +1,11 @@
+site_name: struct
+site_description: An API for the structure and dependencies between subjects, topics, and concepts.
+repo_url: https://github.com/minireference/structure-api
+site_dir: site
+copyright: Copyright &copy; 2015, <a href="https://github.com/minireference">minireference</a>.
+
+pages:
+  - Home: 'index.md'
+  - API:
+    - Authentication: 'api/authentication.md'
+    - Users: 'api/users.md'
