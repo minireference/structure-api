@@ -13,3 +13,9 @@ class TestBaseNodePersist(TestCase):
         n.save()
         ok_(n.id is not None)
         eq_(n.path, 'mechanics/kinematics')
+
+    # def test_path_is_required(self):
+    #     pass
+    #     n = BaseNode(path=None)
+    #     raises...
+    #     n.save()

@@ -9,9 +9,12 @@ from django.views.generic.base import RedirectView
 from rest_framework.routers import DefaultRouter
 
 from users.views import UserViewSet
+from djstruct.views import BaseNodeViewSet
 
 router = DefaultRouter()
 router.register(r'users', UserViewSet)
+router.register(r'nodes', BaseNodeViewSet)
+
 
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
