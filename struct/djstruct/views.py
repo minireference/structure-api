@@ -5,7 +5,8 @@ from .models import BaseNode
 from .permissions import IsOwnerOrReadOnly
 from .serializers import CreateBaseNodeSerializer, BaseNodeSerializer
 
-class BaseNodeViewSet(mixins.CreateModelMixin,
+class BaseNodeViewSet(mixins.ListModelMixin,
+                      mixins.CreateModelMixin,
                       mixins.RetrieveModelMixin,
                       mixins.UpdateModelMixin,
                       viewsets.GenericViewSet):
