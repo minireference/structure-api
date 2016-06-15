@@ -1,54 +1,73 @@
 
-from django.http import Http404
+from pprint import pprint
 
-from rest_framework import viewsets, mixins
+from django.http import Http404
+from rest_framework import views, status
 from rest_framework.permissions import AllowAny
+from rest_framework.response import Response
 
 from .models import BaseNode
 from .permissions import IsOwnerOrReadOnly
 from .serializers import CreateBaseNodeSerializer, BaseNodeSerializer
-from .customqueryset import CustomQuerySet
 
 
-class BaseNodeViewSet(mixins.ListModelMixin,
-                      mixins.CreateModelMixin,
-                      mixins.RetrieveModelMixin,
-                      mixins.UpdateModelMixin,
-                      viewsets.GenericViewSet):
+class BaseNodeDetailView(views.APIView):
     """
-    Creates, updates, and retrives BaseNode objects.
+    Retrieve or update individual `BaseNode`s. 
     """
-    queryset = CustomQuerySet(model=BaseNode)
     permission_classes = (IsOwnerOrReadOnly,)
+    
+    
+    def get(self, request, uuid, format=None):
+        """
+        Retrieve BaseNode details.
+        ---
+        serializer: BaseNodeSerializer
+        """
+        node = BaseNode.objects.get(pk=uuid)
+        serializer = BaseNodeSerializer(node)
+        return Response(serializer.data)
 
-    def get_object(self, *args, **kwargs):
+    def put(self, request, uuid, format=None):
         """
-        Custom get_object method to retrieve one item
+        Update BaseNode details.
+        ---
+        serializer: BaseNodeSerializer
         """
-        # print args                  # nope
-        # print kwargs                # nope!
-        # print self.get_queryset()   # nope!!
-        # print lookup_url_kwarg      # nope!!!
-        # print self.kwargs           # YES
-        try:
-            return self.get_queryset().get(pk=self.kwargs['pk'])
-        except BaseNode.DoesNotExist:
-            raise Http404
+        node = BaseNode.objects.get(pk=uuid)
+        self.check_object_permissions(request, node)
+        serializer = BaseNodeSerializer(node, data=request.data)
+        if serializer.is_valid():
+            serializer.save()
+            return Response(serializer.data)
+        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
-    def get_serializer(self, *args, **kwargs):
+
+class BaseNodeListView(views.APIView):
+    """
+    Retrieve list of all `BaseNode` (that match criteria).
+    ---
+    serializer: BaseNodeSerializer    
+    """
+    permission_classes = (IsOwnerOrReadOnly,)
+    
+    def get(self, request, format=None):
+        pre_nodes = BaseNode.objects.all()
+        nodes = list(pre_nodes)
+        serializer = BaseNodeSerializer(nodes, many=True)
+        return Response(serializer.data)
+    
+    def post(self, request, format=None):
         """
-        Selectable serializer for instance.  This can be used when returning
-        generic Nodes---will need custom serializer depending on instance.
+        Create new BaseNode.
+        ---
+        serializer: CreateBaseNodeSerializer
         """
-        # print "In get_serializer"
-        # print args
-        # print kwargs        # contains instance --> when detail view
-        # print self.args
-        # print self.kwargs
-        _serializer_class = BaseNodeSerializer
-        return _serializer_class(*args, **kwargs)
-        
-    def create(self, request, *args, **kwargs):
-        self.serializer_class = CreateBaseNodeSerializer
-        self.permission_classes = (AllowAny,)
-        return super(BaseNodeViewSet, self).create(request, *args, **kwargs)
+        create_serializer = CreateBaseNodeSerializer(data=request.data)
+        if create_serializer.is_valid():
+            node = BaseNode(**create_serializer.data)
+            node.save()
+            serializer = BaseNodeSerializer(node)
+            return Response(serializer.data, status=status.HTTP_201_CREATED)
+        return Response(create_serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+

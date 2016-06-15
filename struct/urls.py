@@ -9,11 +9,11 @@ from django.views.generic.base import RedirectView
 from rest_framework.routers import DefaultRouter
 
 from users.views import UserViewSet
-from djstruct.views import BaseNodeViewSet
+from djstruct.views import BaseNodeDetailView, BaseNodeListView
 
 router = DefaultRouter()
 router.register(r'users', UserViewSet)
-router.register(r'nodes', BaseNodeViewSet)
+# router.register(r'nodes', BaseNodeViewSet)
 
 
 urlpatterns = [
@@ -21,6 +21,12 @@ urlpatterns = [
     url(r'^api/v1/', include('authentication.urls')),
     url(r'^api/v1/', include(router.urls)),
 
+    # BaseNode API
+    url(r'^api/v1/nodes2/(?P<uuid>[a-zA-Z0-9_-]*)/$', 
+        BaseNodeDetailView.as_view(), name='basenode-detail'),
+    url(r'^api/v1/nodes2/$', 
+        BaseNodeListView.as_view(), name='basenode-list'),
+    
     # the 'api-root' from django rest-frameworks default router
     # http://www.django-rest-framework.org/api-guide/routers/#defaultrouter
     url(r'^$', RedirectView.as_view(url=reverse_lazy('api-root'), permanent=False)),

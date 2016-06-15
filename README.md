@@ -1,7 +1,34 @@
-#structure-api
-[![Build Status](https://travis-ci.org/minireference/structure-api.svg?branch=master)](https://travis-ci.org/minireference/structure-api)
+STRUCTURE API
+=============
+An API for the structure and dependencies between subjects, topics, and concepts.
 
-An API for the structure and dependencies between subjects, topics, and concepts.. Check out the project's [documentation](http://minireference.github.io/structure-api/).
+<!-- [![Build Status](https://travis-ci.org/minireference/structure-api.svg?branch=master)](https://travis-ci.org/minireference/structure-api) -->
+<!-- Check out the project's [documentation](http://minireference.github.io/structure-api/). -->
+
+TODOs
+-----
+
+  - Try neomodel
+  - Implement session middleware
+    http://stackoverflow.com/questions/6606725/best-way-to-integrate-sqlalchemy-into-a-django-project
+
+
+
+Jun 15: Abandon CustomQuerySet idea
+-----------------------------------
+since 
+
+  - there are many things tied to QuerySet
+  - serializers just need an object or a list of objects,
+    but a lot of the functionality is tied to the Django Model and QuerySet apis
+    so will be a lot of things to emulate 
+  - If not using QuerySet / Model introspection they do we really need DRF?
+  - `using` and `_db` setup during Testing
+  - automatic table creation (migrations) on test DB
+  - Mostly though, it's not a bad idea but difficult to code and test enough,
+    by one person in one summer... for the purpose of a side project.
+
+
 
 # Prerequisites
 - [virtualenv](https://virtualenv.pypa.io/en/latest/)

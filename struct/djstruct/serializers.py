@@ -24,13 +24,10 @@ class CreateBaseNodeSerializer(serializers.ModelSerializer):
     #     return node
     class Meta:
         model = BaseNode
-        fields = ('id',
-                  'path',
+        fields = ('path',
                   'scope',
                   'version',
-                  'created_at',
-                  'modified_at',
                   'comment',
         )
-        read_only_fields = ('created_at', 'modified_at')
+        read_only_fields = ('id',  'created_at', 'modified_at')
         # write_only_fields = ('',)

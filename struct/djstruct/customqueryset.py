@@ -8,7 +8,16 @@ REPR_OUTPUT_SIZE = 20
 # WIP!!!!!
 # via https://github.com/django/django/blob/master/django/db/models/query.py
 # see also https://github.com/scholrly/neo4django/blob/master/neo4django/db/models/query.py
-class CustomQuerySet(object):
+# 
+# Jun 15 ---> Anandon ship since there are many things tied to QuerySet
+#   - serializers just need an object or a list of objects,
+#     but a lot of the functionality is tied to the Django Model and QuerySet apis
+#     so will be a lot of things to emulate 
+#   - If not using QuerySet / Model introspection they do we really need DRF?
+#   - using and _db setup during Testing
+#   - automatic table creation (migrations) on test DB
+# Mostly though, it's not a bad idea but difficult to code + test well enough by one person in one summer...
+class OFF_CustomQuerySet(object):
     """
     Represents a lazy database lookup for a set of objects.
     
@@ -30,6 +39,13 @@ class CustomQuerySet(object):
         self._known_related_objects = {}  # {rel_field, {pk: rel_obj}}
         self._fields = None
 
+    def using(self, alias):
+        """
+        Selects which database this QuerySet should execute its query against.
+        """
+        self._db = alias
+        return self
+        
     # def as_manager(cls):
     #     # Address the circular dependency between `Queryset` and `Manager`.
     #     from django.db.models.manager import Manager
