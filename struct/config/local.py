@@ -5,6 +5,9 @@ from configurations import values
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 
+os.environ["NEO4J_REST_URL"] = "http://neo4j:neo4j@localhost:7474/db/data/"
+
+
 class Local(Common):
 
     DEBUG = values.BooleanValue(True)
@@ -36,3 +39,4 @@ class Local(Common):
             'DEFAULT_TIMEOUT': 500,
         },
     }
+
