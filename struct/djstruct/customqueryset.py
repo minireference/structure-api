@@ -6,6 +6,8 @@ REPR_OUTPUT_SIZE = 20
 
 
 # WIP!!!!!
+# via https://github.com/django/django/blob/master/django/db/models/query.py
+# see also https://github.com/scholrly/neo4django/blob/master/neo4django/db/models/query.py
 class CustomQuerySet(object):
     """
     Represents a lazy database lookup for a set of objects.

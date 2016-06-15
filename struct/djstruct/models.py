@@ -11,7 +11,7 @@ class BaseNodeManager(models.Manager):
         # print "in BaseNodeManager get_queryset"
         return CustomQuerySet(self.model)
 
-
+# source https://github.com/django/django/blob/master/django/db/models/base.py
 class BaseNode(models.Model):
     id          = models.UUIDField(default=uuid.uuid4, editable=False, primary_key=True)
     path        = models.CharField(blank=False, max_length=1000, verbose_name='path')
