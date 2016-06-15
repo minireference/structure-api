@@ -1,6 +1,6 @@
 from django.utils import six
+from django.db.models import sql
 
-from .models import BaseNode
 
 REPR_OUTPUT_SIZE = 20
 
@@ -19,7 +19,7 @@ class CustomQuerySet(object):
         self.model = model
         self._db = using
         self._hints = hints or {}
-        self.query = query
+        self.query = query or sql.Query(self.model)
         self._result_cache = None
         self._sticky_filter = False
         self._for_write = False
@@ -103,10 +103,13 @@ class CustomQuerySet(object):
         if self._result_cache is None:
             self._fetch_all()
         # UGLY HACK TO FIX LATER>>>>>>>>>>>>>>
-        if not kwargs.has_key('pk'):
+        if kwargs.has_key('pk'):
+            results = [ n for n in self._result_cache if str(n.id) == kwargs['pk'] ]
+        elif kwargs.has_key('id'):
+            results = [ n for n in self._result_cache if str(n.id) == str(kwargs['id']) ]
+        else:
             print "BIG PROBLEM ..."
             raise self.model.DoesNotExist("No PK specified")
-        results = [ n for n in self._result_cache if str(n.id) == kwargs['pk'] ]
         # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<< /UGLY HACK TO FIX LATER
         num = len(results)
         if num == 1:
@@ -164,13 +167,13 @@ class CustomQuerySet(object):
 
     def _fetch_all(self):
         if self._result_cache is None:
-            toutte = list(BaseNode.objects.all())
+            from .models import BaseNode
+            toutte = list(BaseNode._objects_impl.all())
             for item in toutte:
                 item.comment = "Touched by CustomQuerySet yo"
             self._result_cache = toutte
         # if self._prefetch_related_lookups and not self._prefetch_done:
         #     self._prefetch_related_objects()
-
 
     def all(self):
         """
@@ -181,10 +184,26 @@ class CustomQuerySet(object):
             self._fetch_all()
         return self._result_cache
 
-    # def filter(self, *args, **kwargs):
-    #     """
-    #     Returns a new QuerySet instance with the args ANDed to the existing
-    #     set.
-    #     """
-    #     return self._filter_or_exclude(False, *args, **kwargs)
 
+
+
+    ### ADDITIONAL METHODS REQUIRED FOR ADMIN VIEWS ############################
+
+    def filter(self, *args, **kwargs):
+        """
+        Returns a new QuerySet instance with the args ANDed to the existing
+        set.
+        """
+        # HACK!!!
+        print "In filter..."
+        print args
+        print kwargs
+        if self._result_cache is None:
+            self._fetch_all()
+        return self
+
+    def order_by(self, *field_names):
+        return self
+
+    def _clone(self):
+        return self

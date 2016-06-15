@@ -3,6 +3,14 @@ from __future__ import unicode_literals
 import uuid
 from django.db import models
 
+from .customqueryset import CustomQuerySet
+
+
+class BaseNodeManager(models.Manager):
+    def get_queryset(self):
+        # print "in BaseNodeManager get_queryset"
+        return CustomQuerySet(self.model)
+
 
 class BaseNode(models.Model):
     id          = models.UUIDField(default=uuid.uuid4, editable=False, primary_key=True)
@@ -13,8 +21,18 @@ class BaseNode(models.Model):
     modified_at = models.DateTimeField(auto_now=True, verbose_name='last modified')
     comment     = models.TextField(blank=True, default='', verbose_name='comment')
 
+    objects = BaseNodeManager()         ## used from API end
+    _objects_impl = models.Manager()    ## use to access DB
+
     def __unicode__(self):
         return "BaseNode:" + self.scope + '::' + self.path + 'v' + self.version
     
     def __repr__(self):
         return 'BaseNode:' + str(self.id)
+
+    def save(self, *args, **kwargs):
+        """
+        Custom save method.
+        """
+        print "In custom save method >>>>>>>>>>>>>>>>>>>>"
+        super(BaseNode, self).save()
