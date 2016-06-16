@@ -10,7 +10,11 @@ from rest_framework.routers import DefaultRouter
 
 from users.views import UserViewSet
 # from djstruct.views import BaseNodeDetailView, BaseNodeListView
-from neostruct.views import NeoBaseNodeDetailView, NeoBaseNodeListView
+from neomodelstruct.views import NeoBaseNodeDetailView as OldNeoBaseNodeDetailView
+from neomodelstruct.views import NeoBaseNodeListView as OldNeoBaseNodeListView
+
+
+from neolixirstruct.views import NeolixirBaseNodeDetailView, NeolixirBaseNodeListView
 
 router = DefaultRouter()
 router.register(r'users', UserViewSet)
@@ -29,9 +33,16 @@ urlpatterns = [
 
     # NeoBaseNode API
     url(r'^api/v1/nodes3/(?P<uuid>[a-zA-Z0-9_-]*)/$', 
-       NeoBaseNodeDetailView.as_view(), name='neobasenode-detail'),
+       OldNeoBaseNodeDetailView.as_view(), name='neobasenode-detail'),
     url(r'^api/v1/nodes3/$', 
-       NeoBaseNodeListView.as_view(), name='neobasenode-list'),
+       OldNeoBaseNodeListView.as_view(), name='neobasenode-list'),
+    #
+    # Neolixir-backed API
+    url(r'^api/v1/nodes4/(?P<uuid>[a-zA-Z0-9_-]*)/$', 
+       NeolixirBaseNodeDetailView.as_view(), name='neolixirbasenode-detail'),
+    url(r'^api/v1/nodes4/$', 
+       NeolixirBaseNodeListView.as_view(), name='neolixirbasenode-list'),
+      
     
     # the 'api-root' from django rest-frameworks default router
     # http://www.django-rest-framework.org/api-guide/routers/#defaultrouter

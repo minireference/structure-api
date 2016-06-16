@@ -27,8 +27,8 @@ class Common(Configuration):
         'authentication',
         'users',
         # 'djstruct',
-        'neostruct'
-
+        'neomodelstruct',
+        'neolixirstruct'
     )
 
     # https://docs.djangoproject.com/en/1.8/topics/http/middleware/
