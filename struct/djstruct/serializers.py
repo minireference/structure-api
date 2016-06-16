@@ -4,6 +4,7 @@ from .models import DjangoBaseNode
 
 
 class DjangoBaseNodeSerializer(serializers.ModelSerializer):
+    id = serializers.UUIDField(source='uuid', required=True)
 
     class Meta:
         model = DjangoBaseNode

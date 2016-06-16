@@ -24,7 +24,7 @@ class DjangoBaseNodeDetailView(views.APIView):
         ---
         serializer: DjangoBaseNodeSerializer
         """
-        node = DjangoBaseNode.objects.get(pk=uuid)
+        node = DjangoBaseNode.objects.get(uuid=uuid)
         serializer = DjangoBaseNodeSerializer(node)
         return Response(serializer.data)
 
@@ -34,7 +34,7 @@ class DjangoBaseNodeDetailView(views.APIView):
         ---
         serializer: DjangoBaseNodeSerializer
         """
-        node = DjangoBaseNode.objects.get(pk=uuid)
+        node = DjangoBaseNode.objects.get(uuid=uuid)
         self.check_object_permissions(request, node)
         serializer = DjangoBaseNodeSerializer(node, data=request.data)
         if serializer.is_valid():
