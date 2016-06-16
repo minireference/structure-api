@@ -14,7 +14,7 @@ from rest_framework.test import APITestCase, APISimpleTestCase
 from .models import NeolixirBaseNode
 from .serializers import BaseNodeSerializer
 
-
+from neolixir import metadata
 
 class TestCreateUpdateRetrieveNeolixirBaseNode(APISimpleTestCase): #APITestCase):
 
@@ -34,6 +34,7 @@ class TestCreateUpdateRetrieveNeolixirBaseNode(APISimpleTestCase): #APITestCase)
         test_nodes = [n for n in all_nodes if n.path.startswith('test/') ]
         for tn in test_nodes:
             tn.delete()
+        metadata.session.commit()
 
     def _create_test_node(self):
         nonce = str(random.randint(200,300))
