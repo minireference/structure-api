@@ -31,12 +31,27 @@ which is all the information needed to draw a "local" concept map of Kinematics,
 showing prerequisites as clickable links above,
 detail of kinematics topic in center, and applications of kinematics below.
 
+Multiple types of node queries:
+
+  1. Get object (serizlize all references as UUIDs)
+  2. Get object and links (serizlize refeences to full json, references-in-references as UUIDs)
+  3. Same as above but traverse 2-hops in graph
+  4. Full traversal:
+     given node n, find ALL its prerequisites
+
+We can use a `hops=0` as default, `hops=1`, `hops=2`, etc. `hops=DFS` for full
+
 
 
 
 Uncertainty reduction
 ---------------------
-  - Can DRF use `neomodel` models?
-  - Can DRF use `neolixir` models?
+  - How to represent polymorphism in API (spec for json)
+    - attributes all nodes must have
+    - attirbutes 
+  - Relations and poly in `neomodel` models?
+  - Relations and poly in `neolixir` models?
+
+
 
 
