@@ -1,6 +1,9 @@
 # virtualenv
 pydev
 
+# dev
+.ipynb_checkpoints
+
 # Mac stuff
 .DS_Store
 

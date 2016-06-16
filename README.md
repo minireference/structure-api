@@ -5,13 +5,14 @@ An API for the structure and dependencies between subjects, topics, and concepts
 <!-- [![Build Status](https://travis-ci.org/minireference/structure-api.svg?branch=master)](https://travis-ci.org/minireference/structure-api) -->
 <!-- Check out the project's [documentation](http://minireference.github.io/structure-api/). -->
 
+
 TODOs
 -----
-
-  - Try neomodel
-  - Implement session middleware
+  - Implement Relations in three backends 
+  - Implement nested Serizlizers 
+  - Think about Polymorphism for nesting in serilizers and in wire format
+  - Implement session middleware no will not have to call .save manually (except when need auto-id field to be generated)
     http://stackoverflow.com/questions/6606725/best-way-to-integrate-sqlalchemy-into-a-django-project
-
 
 
 Jun 15: Abandon CustomQuerySet idea
