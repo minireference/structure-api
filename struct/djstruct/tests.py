@@ -7,15 +7,15 @@ from rest_framework import status
 from rest_framework.test import APIClient
 from rest_framework.test import APITestCase
 
-from .models import BaseNode
-from .serializers import BaseNodeSerializer
+from .models import DjangoBaseNode
+from .serializers import DjangoBaseNodeSerializer
 
 
 
-class TestBaseNodePersist(TestCase):
+class TestDjangoBaseNodePersist(TestCase):
 
     def test_base_node_create(self):
-        n = BaseNode(path='mechanics/kinematics')
+        n = DjangoBaseNode(path='mechanics/kinematics')
         n.save()
         ok_(n.id is not None)
         eq_(n.path, 'mechanics/kinematics')
@@ -27,7 +27,7 @@ class TestBaseNodePersist(TestCase):
     #     n.save()
 
 
-class TestCreateUpdateRetrieve(APITestCase):
+class TestCreateUpdateRetrieveDjangoBaseNode(APITestCase):
 
     def setUp(self):
         # print 'in setUp ...'
@@ -40,7 +40,7 @@ class TestCreateUpdateRetrieve(APITestCase):
             "version": "0.1",
             "comment": "Le comment",
         }
-        url = reverse('basenode-list')
+        url = reverse('djangobasenode-list')
         response = self.client.post(url, nodedata, format='json')
         # print response.status_code, response.data['id'], response
         self._nodeid = response.data['id']
@@ -52,7 +52,7 @@ class TestCreateUpdateRetrieve(APITestCase):
     def test_update_node(self):
         self._create_test_node()
         # GET
-        url = reverse('basenode-detail', kwargs={'uuid':self._nodeid})
+        url = reverse('djangobasenode-detail', kwargs={'uuid':self._nodeid})
         response = self.client.get(url, format='json')
         # print response.status_code, response
         eq_(response.status_code, status.HTTP_200_OK)
@@ -70,7 +70,7 @@ class TestCreateUpdateRetrieve(APITestCase):
 
     def test_retrieve_node(self):
         self._create_test_node()
-        url = reverse('basenode-detail', kwargs={'uuid':self._nodeid})
+        url = reverse('djangobasenode-detail', kwargs={'uuid':self._nodeid})
         response = self.client.get(url, format='json')
         eq_(response.status_code, status.HTTP_200_OK)
         ok_(response.data['id'])

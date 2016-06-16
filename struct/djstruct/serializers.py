@@ -1,12 +1,12 @@
 from rest_framework import serializers
 
-from .models import BaseNode
+from .models import DjangoBaseNode
 
 
-class BaseNodeSerializer(serializers.ModelSerializer):
+class DjangoBaseNodeSerializer(serializers.ModelSerializer):
 
     class Meta:
-        model = BaseNode
+        model = DjangoBaseNode
         fields = ('id',
                   'path',
                   'scope',
@@ -18,12 +18,12 @@ class BaseNodeSerializer(serializers.ModelSerializer):
         read_only_fields = ('created_at', 'modified_at')
 
 
-class CreateBaseNodeSerializer(serializers.ModelSerializer):
+class CreateDjangoBaseNodeSerializer(serializers.ModelSerializer):
     # def create(self, validated_data):
-    #     node = BaseNode.objects.create_node(**validated_data)
+    #     node = DjangoBaseNode.objects.create_node(**validated_data)
     #     return node
     class Meta:
-        model = BaseNode
+        model = DjangoBaseNode
         fields = ('path',
                   'scope',
                   'version',

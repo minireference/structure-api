@@ -9,7 +9,7 @@ from django.views.generic.base import RedirectView
 from rest_framework.routers import DefaultRouter
 
 from users.views import UserViewSet
-# from djstruct.views import BaseNodeDetailView, BaseNodeListView
+from djstruct.views import DjangoBaseNodeDetailView, DjangoBaseNodeListView
 from neomodelstruct.views import NeoBaseNodeDetailView as OldNeoBaseNodeDetailView
 from neomodelstruct.views import NeoBaseNodeListView as OldNeoBaseNodeListView
 
@@ -25,11 +25,11 @@ urlpatterns = [
     url(r'^api/v1/', include('authentication.urls')),
     url(r'^api/v1/', include(router.urls)),
 
-    # BaseNode API
-    # url(r'^api/v1/nodes2/(?P<uuid>[a-zA-Z0-9_-]*)/$', 
-    #    BaseNodeDetailView.as_view(), name='basenode-detail'),
-    #url(r'^api/v1/nodes2/$', 
-    #    BaseNodeListView.as_view(), name='basenode-list'),
+    # DjangoBaseNode API
+    url(r'^api/v1/nodes2/(?P<uuid>[a-zA-Z0-9_-]*)/$', 
+        DjangoBaseNodeDetailView.as_view(), name='djangobasenode-detail'),
+    url(r'^api/v1/nodes2/$',
+        DjangoBaseNodeListView.as_view(), name='djangobasenode-list'),
 
     # NeoBaseNode API
     url(r'^api/v1/nodes3/(?P<uuid>[a-zA-Z0-9_-]*)/$', 

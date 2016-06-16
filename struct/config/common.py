@@ -26,7 +26,7 @@ class Common(Configuration):
         # Your apps
         'authentication',
         'users',
-        # 'djstruct',
+        'djstruct',
         'neomodelstruct',
         'neolixirstruct'
     )

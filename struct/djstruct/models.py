@@ -6,7 +6,7 @@ from django.db import models
 
 
 # source https://github.com/django/django/blob/master/django/db/models/base.py
-class BaseNode(models.Model):
+class DjangoBaseNode(models.Model):
     id          = models.UUIDField(default=uuid.uuid4, editable=False, primary_key=True)
     path        = models.CharField(blank=False, max_length=1000, verbose_name='path')
     scope       = models.CharField(default='miniref', max_length=1000, verbose_name='scope')
@@ -16,14 +16,14 @@ class BaseNode(models.Model):
     comment     = models.TextField(blank=True, default='', verbose_name='comment')
 
     def __unicode__(self):
-        return "BaseNode " + self.scope + '::' + self.path + ' v' + self.version
+        return "DjangoBaseNode " + self.scope + '::' + self.path + ' v' + self.version
     
     def __repr__(self):
-        return 'BaseNode ' + str(self.id)
+        return 'DjangoBaseNode ' + str(self.id)
 
     def save(self, *args, **kwargs):
         """
         Custom save method.
         """
-        print "In custom save method >>>>>>>>>>>>>>>>>>>>"
-        super(BaseNode, self).save()
+        # print "In custom save method >>>>>>>>>>>>>>>>>>>>"
+        super(DjangoBaseNode, self).save()
