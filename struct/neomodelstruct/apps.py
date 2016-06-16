@@ -4,4 +4,4 @@ from django.apps import AppConfig
 
 
 class NeostrutConfig(AppConfig):
-    name = 'neostruct'
+    name = 'neomodelstruct'

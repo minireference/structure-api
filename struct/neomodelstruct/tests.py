@@ -23,6 +23,7 @@ class TestCreateUpdateRetrieveNeoBaseNode(APISimpleTestCase): #APITestCase):
         self._delete_all_testnodes()
         # print 'in setUp ...'
         client = APIClient()
+        # http://www.django-rest-framework.org/api-guide/testing/#forcing-authentication
         # admin = User.objects.get(id=1)
         # client.force_login(urlresolvers
 
