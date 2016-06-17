@@ -7,7 +7,7 @@ from rest_framework import status
 from rest_framework.test import APIClient
 from rest_framework.test import APITestCase
 
-from .models import DjangoBaseNode
+from .models import DjangoBaseNode, DjangoDependencyRelation
 from .serializers import DjangoBaseNodeSerializer
 
 
@@ -76,3 +76,89 @@ class TestCreateUpdateRetrieveDjangoBaseNode(APITestCase):
         ok_(response.data['id'])
         eq_(response.data['path'], "test/path")
 
+
+
+
+
+class TestRelationshipTransitivity(TestCase):
+
+    def _create_basenodes(self):
+        n1 = DjangoBaseNode(path='math/quadratic_equation')
+        n1.save()
+        self._n1 = n1
+        n2 = DjangoBaseNode(path='mechanics/kinematics')
+        n2.save()
+        self._n2 = n2
+        n3 = DjangoBaseNode(path='mechanics/projectile_motion')
+        n3.save()
+        self._n3 = n3
+        
+    def _create_relations(self):
+        r12 = DjangoDependencyRelation(
+                prerequisite=self._n1,
+                usedfor=self._n2,
+                level='UGRAD',
+                explain_usedfor='Solving quadratics is useful in kinematics.', 
+                explain_prerequisite='You need to know how to solve quadratic equations to solve certain kinematics problems.'
+        )
+        r12.save()
+        r23 = DjangoDependencyRelation(
+                prerequisite=self._n2,
+                usedfor=self._n3,
+                level='UGRAD',
+                explain_usedfor='One-dimensional kinematics is used in two-dimensional projectile motion.', 
+                explain_prerequisite='You should be familiar with one-dimensional kinamtics before attacking two-dimensional kinematics porblems.'
+        )
+        r23.save()
+                
+    def test_transitivy_n1n2n3(self):
+        self._create_basenodes()
+        self._create_relations()
+        
+        # forward        
+        n_start = self._n1
+        n_mid = n_start.usedfors.all()[0]
+        n_finish = n_mid.usedfors.all()[0]
+        eq_(n_finish, self._n3)
+        
+        # backward
+        n_mid = n_finish.prerequsites.all()[0]
+        n_start = n_mid.prerequsites.all()[0]
+        eq_(n_start, self._n1)
+        
+
+
+
+        
+class TestDjangoBaseRelationshipPersist(TestCase):
+
+    def _create_basenodes(self):
+        n1 = DjangoBaseNode(path='math/quadratic_equation')
+        n1.save()
+        self._n1 = n1
+        n2 = DjangoBaseNode(path='mechanics/kinematics')
+        n2.save()
+        self._n2 = n2
+        
+    def test_baserelation_create(self):
+        self._create_basenodes()
+        n1 = self._n1
+        n2 = self._n2        
+        r = DjangoDependencyRelation(
+                prerequisite=n1,
+                usedfor=n2,
+                level='UGRAD',
+                explain_usedfor='Solving quadratics is useful in kinematics.', 
+                explain_prerequisite='You need to know how to solve quadratic equations to solve certain kinematics problems.'
+        )
+        r.save()
+        ok_(r.id is not None)
+        eq_(r.level, 'UGRAD')
+
+        eq_(len(n1.prerequsites.all()), 0)
+        eq_(len(n1.usedfors.all()), 1)
+        eq_(n1.usedfors.all()[0], n2)
+
+        eq_(len(n2.prerequsites.all()), 1)
+        eq_(n2.prerequsites.all()[0], n1)
+        eq_(len(n2.usedfors.all()), 0)

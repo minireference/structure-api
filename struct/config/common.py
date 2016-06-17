@@ -23,6 +23,9 @@ class Common(Configuration):
         'django_rq',                 # asynchronous queuing
         'versatileimagefield',       # image manipulation
 
+        # Dev only
+        'django_extensions',
+
         # Your apps
         'authentication',
         'users',
