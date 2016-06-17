@@ -1,4 +1,5 @@
 from nose.tools import eq_, ok_
+from pprint import pprint
 
 from django.core.urlresolvers import reverse
 from django.test import TestCase
@@ -77,6 +78,108 @@ class TestCreateUpdateRetrieveDjangoBaseNode(APITestCase):
         eq_(response.data['path'], "test/path")
 
 
+
+
+class TestCreateUpdateRetrieveDjangoBaseNode(APITestCase):
+
+    def setUp(self):
+        # print 'in setUp ...'
+        client = APIClient()
+
+    def _create_test_node(self):
+        nodedata = {
+            "path": "test/path",
+            "scope": "minireftest",
+            "version": "0.1",
+            "comment": "Le comment",
+        }
+        url = reverse('djangobasenode-list')
+        response = self.client.post(url, nodedata, format='json')
+        # print response.status_code, response.data['id'], response
+        self._nodeid = response.data['id']
+        eq_(response.status_code, status.HTTP_201_CREATED, "Can't create.")
+
+    def test_create_node(self):
+        self._create_test_node()
+
+    def test_update_node(self):
+        self._create_test_node()
+        # GET
+        url = reverse('djangobasenode-detail', kwargs={'uuid':self._nodeid})
+        response = self.client.get(url, format='json')
+        # print response.status_code, response
+        eq_(response.status_code, status.HTTP_200_OK)
+        ok_(response.data['id'])
+        eq_(response.data['path'], "test/path")
+        # CHANGE
+        putdata = response.data
+        putdata['path'] = "test/updated_path"
+        # PUT
+        response = self.client.put(url, putdata, format='json')
+        # print response.status_code, response
+        eq_(response.status_code, status.HTTP_200_OK)
+        eq_(response.data['id'], self._nodeid)
+        eq_(response.data['path'], "test/updated_path")
+
+    def test_retrieve_node(self):
+        self._create_test_node()
+        url = reverse('djangobasenode-detail', kwargs={'uuid':self._nodeid})
+        response = self.client.get(url, format='json')
+        eq_(response.status_code, status.HTTP_200_OK)
+        ok_(response.data['id'])
+        eq_(response.data['path'], "test/path")
+
+
+class TestRetrieveRelationships(APITestCase):
+
+    def setUp(self):
+        client = APIClient()
+
+    def _create_basenodes(self):
+        n1 = DjangoBaseNode(path='testmath/quadratic_equation')
+        n1.save()
+        self._n1 = n1
+        n2 = DjangoBaseNode(path='testmechanics/kinematics')
+        n2.save()
+        self._n2 = n2
+        n3 = DjangoBaseNode(path='testmechanics/projectile_motion')
+        n3.save()
+        self._n3 = n3
+
+    def _create_relations(self):
+        r12 = DjangoDependencyRelation(
+                prerequisite=self._n1,
+                usedfor=self._n2,
+                level='UGRAD',
+                explain_usedfor='test Solving quadratics is useful in kinematics.', 
+                explain_prerequisite='test You need to know how to solve quadratic equations to solve certain kinematics problems.'
+        )
+        r12.save()
+        r23 = DjangoDependencyRelation(
+                prerequisite=self._n2,
+                usedfor=self._n3,
+                level='GRAD',
+                explain_usedfor='One-dimensional kinematics is used in two-dimensional projectile motion.', 
+                explain_prerequisite='You should be familiar with one-dimensional kinamtics before attacking two-dimensional kinematics porblems.'
+        )
+        r23.save()
+
+    def test_prerequisites_good(self):
+        self._create_basenodes()
+        self._create_relations()
+        url_n2 = reverse('djangobasenode-detail', kwargs={'uuid':self._n2.uuid})
+        response = self.client.get(url_n2, format='json')
+        eq_(response.status_code, status.HTTP_200_OK)
+        eq_(response.data['id'], str(self._n2.uuid))
+        eq_(response.data['path'], 'testmechanics/kinematics')
+        # prerequsites
+        eq_(len(response.data['prerequisites']), 1)
+        eq_(response.data['prerequisites'][0]['prerequisite']['id'], str(self._n1.uuid))
+        eq_(response.data['prerequisites'][0]['level'], 'UGRAD')
+        # usedfors
+        eq_(len(response.data['usedfors']), 1)
+        eq_(response.data['usedfors'][0]['usedfor']['id'], str(self._n3.uuid))
+        eq_(response.data['usedfors'][0]['level'], 'GRAD')
 
 
 

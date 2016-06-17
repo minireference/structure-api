@@ -3,70 +3,77 @@ from rest_framework import serializers
 from .models import DjangoBaseNode, DjangoDependencyRelation
 
 
-class DjangoBaseNodeSlugSerializer(serializers.ModelSerializer):
+class DjangoBaseNodeSlugSerializer(serializers.Serializer):
     """
     Just reports the `uuid` of target node as well as (scope:path).
     """
-    id = serializers.UUIDField(source='uuid', required=True)    
-    class Meta:
-        model = DjangoBaseNode
-        fields = ('id', 'path', 'scope')
-        read_only_fields = ('id')
+    id = serializers.UUIDField(source='uuid', required=True)
+    path = serializers.CharField(max_length=1000)
+    scope = serializers.CharField(max_length=1000)
 
-# Relationship serialization
-class DjangoUsedforsSerializer(serializers.ModelSerializer):
+
+# Different serializer depending on direction being used for relationship
+class DjangoUsedforsRelationSerializer(serializers.Serializer):
     usedfor = DjangoBaseNodeSlugSerializer(required=True)
-    class Meta:
-        model = DjangoDependencyRelation
-        fields = ('usedfor', 'explain_usedfor', 'level')
+    explain_usedfor = serializers.CharField(max_length=1000)
+    level = serializers.CharField(max_length=1000)
 
-class DjangoPrerequisitesSerializer(serializers.ModelSerializer):
+
+class DjangoPrerequisitesRelationSerializer(serializers.Serializer):
     prerequisite = DjangoBaseNodeSlugSerializer(required=True)
-    class Meta:
-        model = DjangoDependencyRelation
-        fields = ('prerequisite', 'explain_prerequisite', 'level')
+    explain_prerequisite  = serializers.CharField(max_length=1000)
+    level = serializers.CharField(max_length=1000)
 
 
-class DjangoBaseNodeSerializer(serializers.ModelSerializer):
+class DjangoBaseNodeSerializer(serializers.Serializer):
     """
     Used to recusiverly serialize Nodes to JSON.
       - hops=0: only data of current node is returned (fk for others)
       - hops=1: return also data of nodes linked to
     """
-    id = serializers.UUIDField(source='uuid', required=True)
-    prerequsites = DjangoPrerequisitesSerializer(source='prerequisites_set', many=True, read_only=True)
-    usedfors = DjangoUsedforsSerializer(source='usedfors_set', many=True, read_only=True)        
+    id          = serializers.UUIDField(source='uuid', required=True)
+    path        = serializers.CharField(max_length=1000)
+    scope       = serializers.CharField(max_length=1000)
+    version     = serializers.CharField(max_length=1000)
+    created_at  = serializers.DateTimeField(read_only=True)
+    modified_at = serializers.DateTimeField(read_only=True)
+    comment     = serializers.CharField(allow_blank=True, allow_null=True)
+
+    # relationships (useing reverse direction of ForeignKey from Relation model)
+    # needed since `prerequisites` resolves to `DjangoBaseNodeSerializer`s
+    prerequisites = DjangoPrerequisitesRelationSerializer(source='usedfors_rels', many=True, read_only=True)
+    usedfors = DjangoUsedforsRelationSerializer(source='prerequisites_rels', many=True, read_only=True)
+
+    class Meta:
+        read_only_fields = ('id', 'created_at', 'modified_at',)
+        
+    def update(self, instance, validated_data):
+        instance.path = validated_data.get('path', instance.path)
+        instance.scope = validated_data.get('scope', instance.scope)
+        instance.version = validated_data.get('version', instance.version)
+        instance.comment = validated_data.get('comment', instance.comment)
+        instance.save()
+        return instance
+
+
+
+class CreateDjangoBaseNodeSerializer(serializers.Serializer):
+    """
+    Used to process POST requests that create new `DjangoBaseNode`s.
+    """
+    path        = serializers.CharField(max_length=1000)
+    scope       = serializers.CharField(max_length=1000)
+    version     = serializers.CharField(max_length=1000)
+    comment     = serializers.CharField(allow_blank=True, allow_null=True)
     
     class Meta:
-        model = DjangoBaseNode
-        fields = ('id',
-                  'path',
-                  'scope',
-                  'version',
-                  'created_at',
-                  'modified_at',
-                  'comment',
-                  'prerequsites',
-                  'usedfors',
-        )
-        read_only_fields = ('created_at', 'modified_at', 'prerequsites')
+        fields = ('path', 'scope', 'version', 'comment',)
+        read_only_fields = ('id')
 
-
-class CreateDjangoBaseNodeSerializer(serializers.ModelSerializer):
-    # def create(self, validated_data):
-    #     node = DjangoBaseNode.objects.create_node(**validated_data)
-    #     return node
-    class Meta:
-        model = DjangoBaseNode
-        fields = ('path',
-                  'scope',
-                  'version',
-                  'comment',
-        )
-        read_only_fields = ('id',  'created_at', 'modified_at')
-        # write_only_fields = ('',)
-
-
+    def create(self, validated_data):
+        node = DjangoBaseNode(**validated_data)
+        node.save()
+        return node
 
 
 

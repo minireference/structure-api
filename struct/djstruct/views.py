@@ -65,8 +65,7 @@ class DjangoBaseNodeListView(views.APIView):
         """
         create_serializer = CreateDjangoBaseNodeSerializer(data=request.data)
         if create_serializer.is_valid():
-            node = DjangoBaseNode(**create_serializer.data)
-            node.save()
+            node = create_serializer.save()
             serializer = DjangoBaseNodeSerializer(node)
             return Response(serializer.data, status=status.HTTP_201_CREATED)
         return Response(create_serializer.errors, status=status.HTTP_400_BAD_REQUEST)
