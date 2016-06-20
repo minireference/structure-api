@@ -1,0 +1,193 @@
+-
+  path: math/calculus/derivatives
+  aliases:
+    - math/differential_calculus
+    - math/calculus/differential
+  description: >
+    The study of changes in a functions of a single variable.
+    Limits, derivatives, and optimization are the central topics in this course.
+    Differential calculus is extremely important to physics and other sciences.
+    This is first half of the first-year calculus course.
+  books: Any calculus book will do. Make sure it has exercises and problems with solutions.
+  prerequisites:
+    -
+      prerequisite: math/functions
+      explain: You need to know about functions before you learn to compute limits and derivatives.
+      level: HS
+    -
+      prerequisite: math/algebra
+      explain: Manipulating limits and derivative expressions requires using algebra skills.
+      level: HS
+  usedfors:
+    -
+      usedfor: physics/mechanics
+      explain: The derivative operation is used to relate several physical quantities in mechanics.
+    -
+      usedfor: math/calculus/multivariate
+      explain: You can use derivatives on multivariable functions like $f(x,y,z)$.
+    -
+      usedfor: math/calculus/vector
+      explain: You can use take derivatives of vector fields.
+  relations:
+    -
+      related: math/calculus/integrals
+      explain: Derivatives and integrals are inverse operations. Learning about one will help you understand the other.
+      level: UGRAD
+-
+  path: math/calculus/integrals
+  aliases:
+    - math/integral_calculus
+    - math/calculus/integral
+  description: >
+    Integration is the act of calculating the total accumulation of some quantity
+    that changes over time.
+    Integral calculus covers the fundamental theorem of calculus, antiderivatives,
+    integrals, integration techniques, sequences, and series.
+    This is the second half of the first calculus course.
+    books: any calculus book should do. Exercises with solutions recommended.
+  prerequisites:
+    - math/functions
+    - math/algebra
+  usedfors:
+    - math/calculus/multivariable
+    - math/calculus/vector
+  relations:
+    - math/calculus/derivatives
+-
+  path: math/linear_algebra
+  level: UGRAD
+  description: >
+    Linear algebra deals with vectors, linear transformations, matrices,
+    linear equations, vector spaces, projections, and many other topics.
+    This is one of the most important subjects for undergraduates to learn well
+    because linear algebra techniques are used all over the place.
+    The computational techniques, geometric intuition, and theoretical analysis
+    all combine to form a mathematical modelling toolbox that students can then
+    use to tackle problems in mathematics, physics, chemistry, engineering,
+    computing, business, economics, and even the social sciences.
+    Linear algebra is also an important stepping stone towards graduate-level
+    mathematics.
+  books: Any linear algebra book. Anton's is decent.
+  prerequisites:
+    - math/numbers
+    - math/functions
+    - math/algebra
+    - math/geometry
+  usedfors:
+    -
+      usedfor: math/linear_algebra|GRAD
+      explain: The first linear algebra course is stepping stone towards learning graduate-level linear algebra.
+    - math/calculus/multivariable
+    - math/calculus/vector
+    - cs/computer_graphics
+    - cs/machine_learning
+    - physics/quantum_mechanics
+    - cs/information_theory
+    - math/optimization
+  relations:
+-
+  path: math/calculus/multivariable
+  description: >
+    The study of calculus for functions with multiple variables. The concepts of
+    limit, derivative, and integral are reexamined in the context of multivariable functions.
+    This course will be very easy if you've mastered the dependencies.
+  books: Any calculus book. Material is standard.
+  prerequisites:
+    - math/calculus/derivatives
+    - math/calculus/integrals
+  usedfors:
+    - math/calculus/vector
+    - math/probability
+  relations:
+-
+  path: math/calculus/vector
+  description: >
+    Application of the ideas of calculus to vectors in two and three dimensions.
+    We'll define two derivatives for vector fields: the divergence and curl operators.
+    This subject covers techniques like path integration, surface integration,
+    volume integration, and above all learning new parametrization techniques.
+    The end goal of vector calculus is to understand Gauss' divergence theorem and Stokes theorem.
+  books: Any book will do.
+  prerequisites:
+    - math/calculus/derivatives
+    - math/calculus/integrals
+    - math/calculus/multivariable
+    - math/linear_algebra
+  usedfors:
+    - physics/electricity
+    - physics/magnetism
+    - physics/thermodynamics
+  relations:
+-
+  path: math/probability
+  description: >
+    Axioms for probability theory, sample spaces, events, random variables, and distributions.
+    The notion of a random variables plays a central role whenever we try to model events with uncertainty.
+    The subject covers discrete distributions, continuous distributions,
+    conditional probabilities, Bayes' theorem, Markov chains, the law of large numbers,
+    the central limit theorem, and other topics.
+  prerequisites:
+    - math/calculus/derivatives
+    - math/calculus/integrals
+    - math/calculus/multivariable
+  usedfors:
+    - math/statistics
+    - math/probability|GRAD
+-
+  path: math/statistics
+  description: >
+     Descriptive statistics like expected values, mean, variance, covariance,
+     and correlation can be used to analyze large datasets.
+     But descriptive statistics is only the first step!
+     By modelling the process by which the data was obtained we can infer facts
+     about the underlying population, and also use the models to extrapolate
+     and predict what data in the future.
+     Some of the discussed include point and interval estimation, clustering,
+     maximum likelihood, goodness of fit, hypothesis testing, linear regression,
+     logistic regression, and others.
+     Statistical methods play an important role in many applications, indeed we
+     need statistics every time we're analyzing data.
+  prerequisites:
+    - math/probability
+  usedfors:
+    - cs/machine_learning
+-
+  path: math/differential_equations
+  description: >
+    Many problems in science and engineering are expressed as differential equations.
+    A differential equation is an equation that involves an unknown function $f(t)$,
+    its derivative $f'(t)$, and possibly higher derivatives like $f''(x)$.
+    Using the techniques of differential equation, you can solve many types of
+    differential equations and obtain the unknown function $f(t)$.
+    For simple problems integration is enough but more complicated equations
+    require using various solution recipes, substitutions, and other tricks.
+    Differential equations are used to model physical systems to understand and
+    analyze their stability and the long-term behaviour of the solutions.
+    You'll also learn how to find series solutions and approximate solutions.
+    Knowing how to solve differential equations is important for physicists and engineers.
+  books: Any book will do. Avoid books with "for engineers" in the title.
+  prerequisites:
+    - math/calculus
+    - math/linear_algebra
+  usedfors:
+    - physics/mechanics
+    - physics/electricity
+    - math/partial_differential_equations
+  relations:
+-
+  path: math/partial_differential_equations
+  description: >
+    A partial differential equation is a mathematical equation for an unknown
+    function of several variables that contains derivatives of the function.
+    Differential equations arise in many areas of science and technology.
+  books: Any book will do. Avoid books with "for engineers" in the title.
+  prerequisites:
+    - math/calculus/derivatives
+    - math/calculus/integrals
+    - math/linear_algebra
+    - math/differential_equations
+  usedfors:
+    - physics/electricity
+    - physics/magnetism
+    - physics/thermodynamics
+  relations:

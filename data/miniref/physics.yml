@@ -1,0 +1,151 @@
+-
+  path: physics/mechanics
+  description: >
+      The core topics are kinematics, projectile motion, dynamics, momentum, and energy.
+      Also covered are circular motion, rotational motion, harmonic motion.
+  prerequisites:
+    - math/calculus/derivatives
+    - math/calculus/integrals
+  usedfors:
+    - physics/mechanics/laboratory
+    - physics/electricity
+    - physics/classical_mechanics
+-
+  path: physics/mechanics/laboratory
+  description: >
+    To really understand physics, you need to learn how to design, conduct, and
+    interpret experiments to give quantitative answers to physics problems.
+  prerequisites:
+    - physics/mechanics
+-
+  path: physics/electricity
+  description: >
+    Introduction to electrostatics and Coulomb's law that exists between charged particles.
+    Also part of the subject is electric potential energy, electric fields,
+    electric potentials, and basic circuits.
+    Normally this subject is covered at the same time as magnetism.
+  prerequisites:
+    - math/calculus/derivatives
+    - math/calculus/integrals
+    - physics/mechanics
+  usedfors:
+    - physics/electromagnetism|GRAD
+  related:
+    - physics/magnetism
+-
+  path: physics/magnetism
+  description: >
+      Introduction to magnetic forces, fields, induction, and other magnetic phenomena.
+      Normally this subject is covered at the same time as electricity.
+  related:
+    - physics/electricity
+-
+  path: physics/waves
+  description: >
+    Simple harmonic motion and wave phenomena like sound, light, and waves on
+    the surface of a liquid.
+-
+  path: physics/optics
+  description: >
+      A detailed study of light and light phenomena and applications.
+      Light rays, diffraction, refraction, mirrors, and lenses will be analyzed
+      using geometrical and algebraic equations.
+  prerequisites:
+      - physics/waves
+      - math/geometry
+      - math/algebra
+-
+  path: physics/classical_mechanics
+  aliases:
+    - physics/lagrangian_mechanics
+    - physics/hamiltonian_mechanics
+  description: >
+    This course covers the same material as the first mechanics course but uses
+    uses Lagrange's equation of motion. Using the techniques variational calculus
+    we can arrive at an alternative derivation of the laws of mechanics.
+    We'll also discuss Hamilton's and Jacobi's approach to classical mechanics.
+  books: Goldstein, Hand
+  prerequisites:
+      - math/functions
+      - math/algebra
+      - math/calculus
+      - math/linear_algebra
+      - physics/mechanics
+      - math/calculus/ofvariations
+  usedfors:
+      - physics/quantum_mechanics
+      - physics/particle_physics
+      - physics/quantum/theory
+      - physics/solid_state_physics
+  relations:
+-
+  path: physics/quantum_mechanics
+  description: >
+    The study of the subatomic world, as described by vectors in Hilbert space.
+    The big fuss about quantum mechanics is that, at very small scale, you simply
+    can't know the exact position and velocity of all particles.
+    The tools for doing physics with electron spins, atoms, and photons are
+    mostly based on linear algebra and probability theory.
+    If you want to analyze some real world systems (like the energy levels
+    of the electron around the Hydrogen atom) then brace yourself for
+    double integrals over spherical harmonics.
+    I recommend you first learn matrix quantum mechanics and then move on to
+    Schrodinger's equation, Hamiltonians and real-world physical systems.
+  books: Sakurai.
+  prerequisites:
+      - math/calculus
+      - physics/hamiltonian_mechanics
+      - physics/modern_physics
+      - math/linear_algebra
+  usedfors:
+      - physics/quantum/advanced
+      - cs/information_theory/quantum
+      - physics/particle_physics
+      - physics/quantum/theory
+      - physics/solid_state_physics
+  relations:
+-
+  path: physics/electricity/circuits
+  description: >
+    Understanding electric circuits is important for physicists.
+  books:
+  prerequisites:
+  usedfors:
+      - eng/electronics
+  relations:
+-
+  path: physics/special_relativity
+  description: >
+    Special relativity studies kinematics, energy, and momentum in the regime
+    when objects move close to the speed of light, which is very, very fast.
+    Interesting new laws of physics emerge at such high velocities.
+#
+#
+#
+#
+################################################################################
+# GRAD LEVEL
+################################################################################
+-
+  path: physics/electromagnetism
+  level: GRAD
+  description: >
+    Electricity and magnetism covered in full details and leading to Maxwell’s equations.
+  prerequisites:
+    - math/calculus/vector
+-
+  path: physics/quantum/advanced
+  description: >
+    Find the state of some system given just its Hamiltonian is a serious task.
+    More advanced topics like perturbation theory, symmetries, two body systems
+    are also covered.
+    Links to classical mechanics as the limit of the Hamilton-Jacobi equation.
+  books: Sakurai, Landau.
+  prerequisites:
+      - physics/quantum_mechanics
+      - physics/classical_mechanics
+      - math/linear_algebra
+      - math/abstract_algebra
+  usedfors:
+      - physics/particle_physics
+  relations:
