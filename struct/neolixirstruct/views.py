@@ -6,7 +6,7 @@ from rest_framework.permissions import AllowAny
 from rest_framework.response import Response
 
 from .models import NeolixirBaseNode
-from .serializers import CreateBaseNodeSerializer, BaseNodeSerializer
+from .serializers import CreateBaseNodeSerializer, NeolixirBaseNodeSerializer
 
 
 class NeolixirBaseNodeDetailView(views.APIView):
@@ -17,20 +17,20 @@ class NeolixirBaseNodeDetailView(views.APIView):
         """
         Retrieve NeolixirBaseNode details.
         ---
-        serializer: BaseNodeSerializer
+        serializer: NeolixirBaseNodeSerializer
         """
         node = NeolixirBaseNode.get_by(uuid=str(uuid))
-        serializer = BaseNodeSerializer(node)
+        serializer = NeolixirBaseNodeSerializer(node)
         return Response(serializer.data)
 
     def put(self, request, uuid, format=None):
         """
         Update NeolixirBaseNode details.
         ---
-        serializer: BaseNodeSerializer
+        serializer: NeolixirBaseNodeSerializer
         """
         node = NeolixirBaseNode.get_by(uuid=str(uuid))
-        serializer = BaseNodeSerializer(node, data=request.data)
+        serializer = NeolixirBaseNodeSerializer(node, data=request.data)
         if serializer.is_valid():
             serializer.save()
             return Response(serializer.data)
@@ -41,11 +41,11 @@ class NeolixirBaseNodeListView(views.APIView):
     """
     Retrieve list of all `NeolixirBaseNode`s (that match criteria).
     ---
-    serializer: BaseNodeSerializer    
+    serializer: NeolixirBaseNodeSerializer    
     """    
     def get(self, request, format=None):
         nodes = NeolixirBaseNode.query.all()
-        serializer = BaseNodeSerializer(nodes, many=True)
+        serializer = NeolixirBaseNodeSerializer(nodes, many=True)
         return Response(serializer.data)
     
     def post(self, request, format=None):
@@ -56,12 +56,10 @@ class NeolixirBaseNodeListView(views.APIView):
         """
         create_serializer = CreateBaseNodeSerializer(data=request.data)
         if create_serializer.is_valid():
-            data = create_serializer.data
-            node = NeolixirBaseNode(**data)
-            node.save()
+            node = create_serializer.save()
             # print "Creating NeolixirBaseNode "
             # print node
-            serializer = BaseNodeSerializer(node)
+            serializer = NeolixirBaseNodeSerializer(node)
             return Response(serializer.data, status=status.HTTP_201_CREATED)
         return Response(create_serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 

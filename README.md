@@ -8,8 +8,7 @@ An API for the structure and dependencies between subjects, topics, and concepts
 
 TODOs
 -----
-  - Implement Relations in three backends 
-  - Implement nested Serizlizers 
+  - Implrmrny Subject, Topic, and Concept Nodes in both backends
   - Preprocess common core node data
   - Import common core edge data (from .csv)
   - Think about Polymorphism for nesting in serilizers and in wire format
