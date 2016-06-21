@@ -11,9 +11,39 @@ from rest_framework import status
 from rest_framework.test import APIClient
 from rest_framework.test import APITestCase, APISimpleTestCase
 
-from .models import NeoBaseNode
+from .models import NeoBaseNode, NeoDependencyRelation
 from .serializers import BaseNodeSerializer
 
+
+from neomodelstruct.models import NeoBaseNode, NeoDependencyRelation
+
+
+# WORKING EXAMPLE   (because classes are defined in local context)
+#
+# from neomodel import (StructuredNode,
+#                       StructuredRel,
+#                       StringProperty,
+#                       IntegerProperty,
+#                       DateTimeProperty,
+#                       RelationshipTo,
+#                       RelationshipFrom)
+# from pprint import pprint
+# class DependencyRel(StructuredRel):
+#     reason = StringProperty()
+#     
+# class Course(StructuredNode):
+#     name = StringProperty()
+#     prerequisites = RelationshipTo('Course', 'prerequisite', model=DependencyRel)
+#     usedfors      = RelationshipFrom('Course', 'prerequisite', model=DependencyRel)
+# 
+# n1 = Course(name='physics')
+# n1.save()
+# n2 = Course(name='math')
+# n2.save()
+# r12 = n1.prerequisites.connect(n2, {'reason':'math is needed for physics'})
+# n1.prerequisites.all()
+#
+# unfortunately doesn't work with models defined in app/models so nevermind.
 
 
 

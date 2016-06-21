@@ -1,13 +1,32 @@
 from __future__ import unicode_literals
 import uuid
 
-
 from neomodel import (StructuredNode,
+                      StructuredRel,
                       StringProperty,
                       IntegerProperty,
                       DateTimeProperty,
                       RelationshipTo,
                       RelationshipFrom)
+
+
+
+class NeoDependencyRelation(StructuredRel):
+    """
+    Represents `(m)<--dependson--(n)` relations and implies `(m)--usedfor-->(n)`.
+    """
+    # id  auto-created
+    explain_prerequisite = StringProperty()
+    explain_usedfor      = StringProperty()
+    level                = StringProperty()
+
+    def __unicode__(self):
+        return '<NeoDependencyRelation ' + self._id + '>'
+        # self.prerequisite.path + '--usedfor-->' + self.usedfor.path + 
+    
+    def __repr__(self):
+        return self.__unicode__()
+
 
 
 class NeoBaseNode(StructuredNode):
@@ -22,31 +41,23 @@ class NeoBaseNode(StructuredNode):
     created_at  = DateTimeProperty()
     modified_at = DateTimeProperty()
     comment     = StringProperty()
+    
+    prerequisites = RelationshipTo('neomodelstruct.NeoBaseNode',   'prerequisite', model=NeoDependencyRelation)
+    usedfors      = RelationshipFrom('neomodelstruct.NeoBaseNode', 'prerequisite', model=NeoDependencyRelation)
+    # ABANDON SHIP  ===  Tue 21 Jun 2016 14:48:55 EDT
+    # The inference of sting to class for relatinships is not working:
+    # https://github.com/robinedwards/neomodel/blob/master/neomodel/relationship_manager.py#L179
+    # I also tried 'NeoBaseNode'  and 'neomodelstruct.models.NeoBaseNode' but no cigar
 
     def __unicode__(self):
-        return "NeoBaseNode " + self.scope + '::' + self.path + ' v' + self.version
+        return "<NeoBaseNode " + self.scope + ':' + self.path + ">"
     
     def __repr__(self):
-        return 'NeoBaseNode ' + str(self._id)
-
+        return self.__unicode__()
 
     def save(self, *args, **kwargs):
         """
-        Custom save method.
+        Custom save methodself.
         """
         super(NeoBaseNode, self).save()
 
-
-
-
-#     # traverse incoming IS_FROM relation, inflate to Person objects
-#     #code = StringProperty(unique_index=True, required=True)
-#     #inhabitant = RelationshipFrom('Person', 'IS_FROM')
-# 
-# 
-# class Person(StructuredNode):
-#     name = StringProperty(unique_index=True)
-#     age = IntegerProperty(index=True, default=0)
-# 
-#     # traverse outgoing IS_FROM relations, inflate to Country objects
-#     country = RelationshipTo(Country, 'IS_FROM')
