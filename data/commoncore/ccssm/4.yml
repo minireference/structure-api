@@ -1,0 +1,963 @@
+-
+  path: 4.G.A
+  __class__: Cluster
+  description: >
+    Draw and identify lines and angles, and classify shapes by properties of their
+    lines and angles.
+  contents:
+    - 4.G.A.1
+    - 4.G.A.2
+    - 4.G.A.3
+  ispartof:
+    - G
+  ccss_guid: 0B670B7BA80B457D82D11DD3D54DCE92
+  ccss_url: http://corestandards.org/Math/Content/4/G/A
+  asn_url: http://purl.org/ASN/resources/S1143499
+-
+  path: 4.G.A.1
+  __class__: Standard
+  aliases:
+    - 4.G.1
+  description: >
+    Draw points, lines, line segments, rays, angles (right, acute, obtuse), and perpendicular
+    and parallel lines. Identify these in two-dimensional figures.
+  ispartof:
+    - 4.G.A
+  prerequisites:
+    - 3.G.A.1
+  usedfors:
+    - 4.G.A.2
+  related:
+    - 4.MD.C.5
+  ccss_guid: EE2F4A7279304A699452983BE09CA2A0
+  ccss_url: http://corestandards.org/Math/Content/4/G/A/1
+  asn_url: http://purl.org/ASN/resources/S11434B3
+-
+  path: 4.G.A.2
+  __class__: Standard
+  aliases:
+    - 4.G.2
+  description: >
+    Classify two-dimensional figures based on the presence or absence of parallel
+    or perpendicular lines, or the presence or absence of angles of a specified size.
+    Recognize right triangles as a category, and identify right triangles.
+  ispartof:
+    - 4.G.A
+  prerequisites:
+    - 4.G.A.1
+  usedfors:
+    - 5.G.B.3
+  related:
+    - 4.MD.C.5
+  ccss_guid: F2457F2D8F574726BB094F391822B030
+  ccss_url: http://corestandards.org/Math/Content/4/G/A/2
+  asn_url: http://purl.org/ASN/resources/S11434B4
+-
+  path: 4.G.A.3
+  __class__: Standard
+  aliases:
+    - 4.G.3
+  description: >
+    Recognize a line of symmetry for a two-dimensional figure as a line across the
+    figure such that the figure can be folded along the line into matching parts.
+    Identify line-symmetric figures and draw lines of symmetry.
+  ispartof:
+    - 4.G.A
+  prerequisites:
+    - 1.G.A.2
+  ccss_guid: B6CC34045B7B45F48CE0080E44852EEA
+  ccss_url: http://corestandards.org/Math/Content/4/G/A/3
+  asn_url: http://purl.org/ASN/resources/S11434B5
+-
+  path: 4.MD.A
+  __class__: Cluster
+  description: >
+    Solve problems involving measurement and conversion of measurements from a larger
+    unit to a smaller unit.
+  contents:
+    - 4.MD.A.1
+    - 4.MD.A.2
+    - 4.MD.A.3
+  ispartof:
+    - MD
+  ccss_guid: 618C4BCCE83C4945B4B5F627C87798FE
+  ccss_url: http://corestandards.org/Math/Content/4/MD/A
+  asn_url: http://purl.org/ASN/resources/S1143497
+-
+  path: 4.MD.A.1
+  __class__: Standard
+  aliases:
+    - 4.MD.1
+  description: >
+    Know relative sizes of measurement units within one system of units including
+    km, m, cm; kg, g; lb, oz.; l, ml; hr, min, sec. Within a single system of measurement,
+    express measurements in a larger unit in terms of a smaller unit. Record measurement
+    equivalents in a two column table.
+  comment: For example, know that 1 ft is 12 times as long as 1 in. Express the length
+    of a 4 ft snake as 48 in. Generate a conversion table for feet and inches listing
+    the number pairs (1, 12), (2, 24), (3, 36), …
+  ispartof:
+    - 4.MD.A
+  prerequisites:
+    - 3.OA.C.7
+    - 3.MD.A.2
+  usedfors:
+    - 4.MD.A.2
+    - 5.MD.A.1
+    - 6.RP.A.1
+  related:
+    - 4.OA.A.2
+  ccss_guid: D6E6BDF894CE43D89B074BF35BEB24A7
+  ccss_url: http://corestandards.org/Math/Content/4/MD/A/1
+  asn_url: http://purl.org/ASN/resources/S11434AC
+-
+  path: 4.MD.A.2
+  __class__: Standard
+  aliases:
+    - 4.MD.2
+  description: >
+    Use the four operations to solve word problems involving distances, intervals
+    of time, liquid volumes, masses of objects, and money, including problems involving
+    simple fractions or decimals, and problems that require expressing measurements
+    given in a larger unit in terms of a smaller unit. Represent measurement quantities
+    using diagrams such as number line diagrams that feature a measurement scale.
+  ispartof:
+    - 4.MD.A
+  prerequisites:
+    - 4.MD.A.1
+    - 4.NF.C.5
+    - 4.NF.B.3a
+    - 4.NF.B.3c
+    - 4.NF.B.3b
+    - 4.NF.B.4c
+    - 4.NF.C.6
+  usedfors:
+    - 5.MD.A.1
+    - 5.NF.B.3
+    - 5.NF.B.5
+    - 5.NF.B.6
+  related:
+    - 4.NF.B.3d
+    - 4.OA.A.3
+  ccss_guid: 5C63D948361B4814BFF237D6F97ED6E1
+  ccss_url: http://corestandards.org/Math/Content/4/MD/A/2
+  asn_url: http://purl.org/ASN/resources/S11434AD
+-
+  path: 4.MD.A.3
+  __class__: Standard
+  aliases:
+    - 4.MD.3
+  description: >
+    Apply the area and perimeter formulas for rectangles in real world and mathematical
+    problems.
+  comment: For example, find the width of a rectangular room given the area of the
+    flooring and the length, by viewing the area formula as a multiplication equation
+    with an unknown factor.
+  ispartof:
+    - 4.MD.A
+  prerequisites:
+    - 3.OA.A.4
+    - 3.MD.C.7b
+    - 3.MD.D.8
+  usedfors:
+    - 5.MD.C.5a
+    - 6.G.A.1
+  ccss_guid: A19298FADD5945B29D8547168CC4783C
+  ccss_url: http://corestandards.org/Math/Content/4/MD/A/3
+  asn_url: http://purl.org/ASN/resources/S11434AE
+-
+  path: 4.MD.B
+  __class__: Cluster
+  description: >
+    Represent and interpret data.
+  contents:
+    - 4.MD.B.4
+  ispartof:
+    - MD
+  ccss_guid: AA7E8B827B5C48EB8BB337F72B78ABEA
+  ccss_url: http://corestandards.org/Math/Content/4/MD/B
+-
+  path: 4.MD.B.4
+  __class__: Standard
+  aliases:
+    - 4.MD.4
+  description: >
+    Make a line plot to display a data set of measurements in fractions of a unit
+    (1/2, 1/4, 1/8). Solve problems involving addition and subtraction of fractions
+    by using information presented in line plots.
+  comment: For example, from a line plot find and interpret the difference in length
+    between the longest and shortest specimens in an insect collection.
+  ispartof:
+    - 4.MD.B
+  prerequisites:
+    - 3.MD.B.4
+  usedfors:
+    - 5.MD.B.2
+  related:
+    - 4.NF.B.3d
+  ccss_guid: 72D01381A3C74566B45EAE3FF10A5F8F
+  ccss_url: http://corestandards.org/Math/Content/4/MD/B/4
+  asn_url: http://purl.org/ASN/resources/S11434AF
+-
+  path: 4.MD.C
+  __class__: Cluster
+  description: >
+    Geometric measurement: understand concepts of angle and measure angles.
+  contents:
+    - 4.MD.C.5
+    - 4.MD.C.6
+    - 4.MD.C.7
+  ispartof:
+    - MD
+  ccss_guid: BBBDB104931D41A0B3436D9DFC5E36C0
+  ccss_url: http://corestandards.org/Math/Content/4/MD/C
+  asn_url: http://purl.org/ASN/resources/S1143498
+-
+  path: 4.MD.C.5
+  __class__: Standard
+  aliases:
+    - 4.MD.5
+  description: >
+    Recognize angles as geometric shapes that are formed wherever two rays share a
+    common endpoint, and understand concepts of angle measurement:
+  contents:
+    - 4.MD.C.5a
+    - 4.MD.C.5b
+  ispartof:
+    - 4.MD.C
+  usedfors:
+    - 4.MD.C.6
+    - 4.MD.C.7
+  related:
+    - 4.G.A.1
+    - 4.G.A.2
+  ccss_guid: 3ECC888B18184139A496F870F884FCC0
+  ccss_url: http://corestandards.org/Math/Content/4/MD/C/5
+  asn_url: http://purl.org/ASN/resources/S11434B0
+-
+  path: 4.MD.C.5a
+  __class__: Component
+  aliases:
+    - 4.MD.5.a
+  description: >
+    An angle is measured with reference to a circle with its center at the common
+    endpoint of the rays, by considering the fraction of the circular arc between
+    the points where the two rays intersect the circle. An angle that turns through
+    1/360 of a circle is called a "one-degree angle," and can be used to measure angles.
+  ispartof:
+    - 4.MD.C.5
+  ccss_guid: 56F1AA30380B4D998B334C2741E398A1
+  ccss_url: http://corestandards.org/Math/Content/4/MD/C/5/a
+-
+  path: 4.MD.C.5b
+  __class__: Component
+  aliases:
+    - 4.MD.5.b
+  description: >
+    An angle that turns through n one-degree angles is said to have an angle measure
+    of n degrees.
+  ispartof:
+    - 4.MD.C.5
+  ccss_guid: A5B4E57485C849E1B96A79E4F3CF9E75
+  ccss_url: http://corestandards.org/Math/Content/4/MD/C/5/b
+-
+  path: 4.MD.C.6
+  __class__: Standard
+  aliases:
+    - 4.MD.6
+  description: >
+    Measure angles in whole-number degrees using a protractor. Sketch angles of specified
+    measure.
+  ispartof:
+    - 4.MD.C
+  prerequisites:
+    - 4.MD.C.5
+  ccss_guid: 8FBBE0F101074A9EBEC26C1461FB9761
+  ccss_url: http://corestandards.org/Math/Content/4/MD/C/6
+  asn_url: http://purl.org/ASN/resources/S11434B1
+-
+  path: 4.MD.C.7
+  __class__: Standard
+  aliases:
+    - 4.MD.7
+  description: >
+    Recognize angle measure as additive. When an angle is decomposed into non-overlapping
+    parts, the angle measure of the whole is the sum of the angle measures of the
+    parts. Solve addition and subtraction problems to find unknown angles on a diagram
+    in real world and mathematical problems, e.g., by using an equation with a symbol
+    for the unknown angle measure.
+  ispartof:
+    - 4.MD.C
+  prerequisites:
+    - 4.MD.C.5
+    - 1.OA.D.8
+  usedfors:
+    - 7.G.B.5
+  ccss_guid: A8940EF40A0F4CDF98E6252FC55CF66B
+  ccss_url: http://corestandards.org/Math/Content/4/MD/C/7
+  asn_url: http://purl.org/ASN/resources/S11434B2
+-
+  path: 4.NBT.A
+  __class__: Cluster
+  description: >
+    Generalize place value understanding for multi-digit whole numbers.
+  contents:
+    - 4.NBT.A.1
+    - 4.NBT.A.2
+    - 4.NBT.A.3
+  ispartof:
+    - NBT
+  ccss_guid: 8FD3F69556544361BDEA345B9D5DAC6B
+  ccss_url: http://corestandards.org/Math/Content/4/NBT/A
+  asn_url: http://purl.org/ASN/resources/S1143493
+-
+  path: 4.NBT.A.1
+  __class__: Standard
+  aliases:
+    - 4.NBT.1
+  description: >
+    Recognize that in a multi-digit whole number, a digit in one place represents
+    ten times what it represents in the place to its right.
+  comment: For example, recognize that 700 ÷ 70 = 10 by applying concepts of place
+    value and division.
+  ispartof:
+    - 4.NBT.A
+  prerequisites:
+    - 2.NBT.A.1
+  usedfors:
+    - 4.NBT.A.2
+    - 4.NBT.A.3
+    - 4.NBT.B.4
+    - 4.NBT.B.5
+    - 4.NBT.B.6
+    - 5.NBT.A.1
+  ccss_guid: 548A31123CE54B52A78A720510E36503
+  ccss_url: http://corestandards.org/Math/Content/4/NBT/A/1
+  asn_url: http://purl.org/ASN/resources/S114349F
+-
+  path: 4.NBT.A.2
+  __class__: Standard
+  aliases:
+    - 4.NBT.2
+  description: >
+    Read and write multi-digit whole numbers using base-ten numerals, number names,
+    and expanded form. Compare two multi-digit numbers based on meanings of the digits
+    in each place, using >, =, and < symbols to record the results of comparisons.
+  ispartof:
+    - 4.NBT.A
+  prerequisites:
+    - 4.NBT.A.1
+  usedfors:
+    - 4.NBT.A.3
+    - 5.NBT.A.3
+  ccss_guid: 34E29B8E008749DFAA84D8A54F2230B3
+  ccss_url: http://corestandards.org/Math/Content/4/NBT/A/2
+  asn_url: http://purl.org/ASN/resources/S11434A0
+-
+  path: 4.NBT.A.3
+  __class__: Standard
+  aliases:
+    - 4.NBT.3
+  description: >
+    Use place value understanding to round multi-digit whole numbers to any place.
+  ispartof:
+    - 4.NBT.A
+  prerequisites:
+    - 4.NBT.A.2
+    - 3.NBT.A.1
+    - 4.NBT.A.1
+  usedfors:
+    - 4.OA.A.3
+    - 5.NBT.A.4
+  ccss_guid: 7377370C14934AB2AA5F89D77F9E9F59
+  ccss_url: http://corestandards.org/Math/Content/4/NBT/A/3
+  asn_url: http://purl.org/ASN/resources/S11434A1
+-
+  path: 4.NBT.B
+  __class__: Cluster
+  description: >
+    Use place value understanding and properties of operations to perform multi-digit
+    arithmetic.
+  contents:
+    - 4.NBT.B.4
+    - 4.NBT.B.5
+    - 4.NBT.B.6
+  ispartof:
+    - NBT
+  ccss_guid: 239876423FE74AE7AF262256E547698D
+  ccss_url: http://corestandards.org/Math/Content/4/NBT/B
+-
+  path: 4.NBT.B.4
+  __class__: Standard
+  aliases:
+    - 4.NBT.4
+  description: >
+    Fluently add and subtract multi-digit whole numbers using the standard algorithm.
+  ispartof:
+    - 4.NBT.B
+  prerequisites:
+    - 4.NBT.A.1
+    - 3.NBT.A.2
+  usedfors:
+    - 5.NBT.B.5
+    - 5.NBT.B.6
+    - 5.NBT.B.7
+  ccss_guid: F75BD9F6A3494AD78FE611D9ECD1DE0D
+  ccss_url: http://corestandards.org/Math/Content/4/NBT/B/4
+  asn_url: http://purl.org/ASN/resources/S11434A2
+-
+  path: 4.NBT.B.5
+  __class__: Standard
+  aliases:
+    - 4.NBT.5
+  description: >
+    Multiply a whole number of up to four digits by a one-digit whole number, and
+    multiply two two-digit numbers, using strategies based on place value and the
+    properties of operations. Illustrate and explain the calculation by using equations,
+    rectangular arrays, and/or area models.
+  ispartof:
+    - 4.NBT.B
+  prerequisites:
+    - 3.NBT.A.3
+    - 3.OA.C.7
+    - 4.NBT.A.1
+    - 3.OA.B.5
+    - 3.NBT.A.2
+  usedfors:
+    - 4.NBT.B.6
+    - 5.NBT.B.5
+  ccss_guid: 05AD26DF79494AD69FDF02215B2A9415
+  ccss_url: http://corestandards.org/Math/Content/4/NBT/B/5
+  asn_url: http://purl.org/ASN/resources/S11434A3
+-
+  path: 4.NBT.B.6
+  __class__: Standard
+  aliases:
+    - 4.NBT.6
+  description: >
+    Find whole-number quotients and remainders with up to four-digit dividends and
+    one-digit divisors, using strategies based on place value, the properties of operations,
+    and/or the relationship between multiplication and division. Illustrate and explain
+    the calculation by using equations, rectangular arrays, and/or area models.
+  ispartof:
+    - 4.NBT.B
+  prerequisites:
+    - 4.NBT.A.1
+    - 3.OA.C.7
+    - 3.NBT.A.2
+    - 3.OA.B.5
+    - 4.NBT.B.5
+  usedfors:
+    - 4.OA.A.3
+    - 5.NBT.B.6
+  ccss_guid: 75FD17B7CDCA4A19A38EE381B3B7E010
+  ccss_url: http://corestandards.org/Math/Content/4/NBT/B/6
+  asn_url: http://purl.org/ASN/resources/S11434A4
+-
+  path: 4.NF.A
+  __class__: Cluster
+  description: >
+    Extend understanding of fraction equivalence and ordering.
+  contents:
+    - 4.NF.A.1
+    - 4.NF.A.2
+  ispartof:
+    - NF
+  ccss_guid: 5E9ED66B8DBE490EB71B397896148D60
+  ccss_url: http://corestandards.org/Math/Content/4/NF/A
+  asn_url: http://purl.org/ASN/resources/S1143494
+-
+  path: 4.NF.A.1
+  __class__: Standard
+  aliases:
+    - 4.NF.1
+  description: >
+    Explain why a fraction a/b is equivalent to a fraction (n × a)/(n × b) by using
+    visual fraction models, with attention to how the number and size of the parts
+    differ even though the two fractions themselves are the same size. Use this principle
+    to recognize and generate equivalent fractions.
+  ispartof:
+    - 4.NF.A
+  prerequisites:
+    - 3.NF.A.3
+    - 4.OA.A.2
+  usedfors:
+    - 4.NF.A.2
+    - 4.NF.B.3c
+    - 4.NF.C.5
+    - 5.NF.A.1
+    - 5.NF.B.5
+  ccss_guid: 138DC8D66B4545BB92DA44D6C78205DD
+  ccss_url: http://corestandards.org/Math/Content/4/NF/A/1
+  asn_url: http://purl.org/ASN/resources/S11434A5
+-
+  path: 4.NF.A.2
+  __class__: Standard
+  aliases:
+    - 4.NF.2
+  description: >
+    Compare two fractions with different numerators and different denominators, e.g.,
+    by creating common denominators or numerators, or by comparing to a benchmark
+    fraction such as 1/2. Recognize that comparisons are valid only when the two fractions
+    refer to the same whole. Record the results of comparisons with symbols >, =,
+    or <, and justify the conclusions, e.g., by using a visual fraction model.
+  ispartof:
+    - 4.NF.A
+  prerequisites:
+    - 4.NF.A.1
+  usedfors:
+    - 4.NF.C.7
+    - 5.NF.A.2
+  ccss_guid: 72F5C564F8744643B0876628789CFBC4
+  ccss_url: http://corestandards.org/Math/Content/4/NF/A/2
+  asn_url: http://purl.org/ASN/resources/S11434A6
+-
+  path: 4.NF.B
+  __class__: Cluster
+  description: >
+    Build fractions from unit fractions by applying and extending previous understandings
+    of operations on whole numbers.
+  contents:
+    - 4.NF.B.3
+    - 4.NF.B.4
+  ispartof:
+    - NF
+  ccss_guid: CAF90B8CE96A4458829E7C7C376A7126
+  ccss_url: http://corestandards.org/Math/Content/4/NF/B
+  asn_url: http://purl.org/ASN/resources/S1143495
+-
+  path: 4.NF.B.3
+  __class__: Standard
+  aliases:
+    - 4.NF.3
+  description: >
+    Understand a fraction a/b with a > 1 as a sum of fractions 1/b.
+  contents:
+    - 4.NF.B.3a
+    - 4.NF.B.3b
+    - 4.NF.B.3c
+    - 4.NF.B.3d
+  ispartof:
+    - 4.NF.B
+  ccss_guid: 1195E43626BF4A6B8AA96AF62AFB4283
+  ccss_url: http://corestandards.org/Math/Content/4/NF/B/3
+  asn_url: http://purl.org/ASN/resources/S11434A7
+-
+  path: 4.NF.B.3a
+  __class__: Component
+  aliases:
+    - 4.NF.3.a
+  description: >
+    Understand addition and subtraction of fractions as joining and separating parts
+    referring to the same whole.
+  ispartof:
+    - 4.NF.B.3
+  prerequisites:
+    - 3.NF.A.1
+    - 1.OA.B.3
+    - 3.NF.A.2
+    - 1.OA.B.4
+    - 2.OA.A.1
+  usedfors:
+    - 4.MD.A.2
+    - 4.NF.B.3d
+    - 4.NF.C.5
+    - 5.NF.A.1
+  ccss_guid: F6933013AE4F438BB52517F900140E51
+  ccss_url: http://corestandards.org/Math/Content/4/NF/B/3/a
+  asn_url: http://purl.org/ASN/resources/S114368B
+-
+  path: 4.NF.B.3b
+  __class__: Component
+  aliases:
+    - 4.NF.3.b
+  description: >
+    Decompose a fraction into a sum of fractions with the same denominator in more
+    than one way, recording each decomposition by an equation. Justify decompositions,
+    e.g., by using a visual fraction model.
+  comment: 'Examples: 3/8 = 1/8 + 1/8 + 1/8 ; 3/8 = 1/8 + 2/8 ; 2 1/8 = 1 + 1 + 1/8
+    = 8/8 + 8/8 + 1/8.'
+  ispartof:
+    - 4.NF.B.3
+  prerequisites:
+    - 1.OA.B.4
+    - 3.NF.A.1
+    - 1.OA.B.3
+    - 2.OA.A.1
+    - 3.NF.A.2
+  usedfors:
+    - 4.MD.A.2
+    - 4.NF.B.3d
+    - 4.NF.C.5
+    - 5.NF.A.1
+  ccss_guid: 82832D1795064E29BA1CD2CCE62FC28F
+  ccss_url: http://corestandards.org/Math/Content/4/NF/B/3/b
+  asn_url: http://purl.org/ASN/resources/S114368C
+-
+  path: 4.NF.B.3c
+  __class__: Component
+  aliases:
+    - 4.NF.3.c
+  description: >
+    Add and subtract mixed numbers with like denominators, e.g., by replacing each
+    mixed number with an equivalent fraction, and/or by using properties of operations
+    and the relationship between addition and subtraction.
+  ispartof:
+    - 4.NF.B.3
+  prerequisites:
+    - 3.NF.A.1
+    - 1.OA.B.3
+    - 2.OA.A.1
+    - 1.OA.B.4
+    - 4.NF.A.1
+    - 3.NF.A.2
+  usedfors:
+    - 4.MD.A.2
+    - 4.NF.B.3d
+    - 4.NF.C.5
+    - 5.NF.A.1
+  ccss_guid: 3E844B9ECC954ACAA0E0177CE452D4C1
+  ccss_url: http://corestandards.org/Math/Content/4/NF/B/3/c
+  asn_url: http://purl.org/ASN/resources/S114368D
+-
+  path: 4.NF.B.3d
+  __class__: Component
+  aliases:
+    - 4.NF.3.d
+  description: >
+    Solve word problems involving addition and subtraction of fractions referring
+    to the same whole and having like denominators, e.g., by using visual fraction
+    models and equations to represent the problem.
+  ispartof:
+    - 4.NF.B.3
+  prerequisites:
+    - 1.OA.D.8
+    - 4.NF.B.3b
+    - 4.NF.B.3c
+    - 4.NF.B.3a
+  usedfors:
+    - 5.NF.A.1
+  related:
+    - 4.MD.A.2
+    - 4.MD.B.4
+  ccss_guid: 863D0723B4434959A7B9449A41488937
+  ccss_url: http://corestandards.org/Math/Content/4/NF/B/3/d
+  asn_url: http://purl.org/ASN/resources/S114368E
+-
+  path: 4.NF.B.4
+  __class__: Standard
+  aliases:
+    - 4.NF.4
+  description: >
+    Apply and extend previous understandings of multiplication to multiply a fraction
+    by a whole number.
+  contents:
+    - 4.NF.B.4a
+    - 4.NF.B.4b
+    - 4.NF.B.4c
+  ispartof:
+    - 4.NF.B
+  usedfors:
+    - 5.NF.B.4a
+    - 5.NF.B.7
+  ccss_guid: D7B0A4C892974E05B3789666B34F8C50
+  ccss_url: http://corestandards.org/Math/Content/4/NF/B/4
+  asn_url: http://purl.org/ASN/resources/S11434A8
+-
+  path: 4.NF.B.4a
+  __class__: Component
+  aliases:
+    - 4.NF.4.a
+  description: >
+    Understand a fraction a/b as a multiple of 1/b.
+  comment: For example, use a visual fraction model to represent 5/4 as the product
+    5 × (1/4), recording the conclusion by the equation 5/4 = 5 × (1/4).
+  ispartof:
+    - 4.NF.B.4
+  prerequisites:
+    - 3.NF.A.1
+    - 4.OA.A.2
+    - 3.OA.A.1
+  usedfors:
+    - 4.NF.B.4b
+  related:
+    - 4.NF.B.4c
+  ccss_guid: 5AA07FB2E9934DCAB59F4AE0D1624C8B
+  ccss_url: http://corestandards.org/Math/Content/4/NF/B/4/a
+  asn_url: http://purl.org/ASN/resources/S1143688
+-
+  path: 4.NF.B.4b
+  __class__: Component
+  aliases:
+    - 4.NF.4.b
+  description: >
+    Understand a multiple of a/b as a multiple of 1/b, and use this understanding
+    to multiply a fraction by a whole number.
+  comment: For example, use a visual fraction model to express 3 × (2/5) as 6 × (1/5),
+    recognizing this product as 6/5. (In general, n × (a/b) = (n × a)/b.)
+  ispartof:
+    - 4.NF.B.4
+  prerequisites:
+    - 4.NF.B.4a
+  related:
+    - 4.NF.B.4c
+  ccss_guid: AD8924A66D334EF59D20C304573728DC
+  ccss_url: http://corestandards.org/Math/Content/4/NF/B/4/b
+  asn_url: http://purl.org/ASN/resources/S1143689
+-
+  path: 4.NF.B.4c
+  __class__: Component
+  aliases:
+    - 4.NF.4.c
+  description: >
+    Solve word problems involving multiplication of a fraction by a whole number,
+    e.g., by using visual fraction models and equations to represent the problem.
+  comment: For example, if each person at a party will eat 3/8 of a pound of roast
+    beef, and there will be 5 people at the party, how many pounds of roast beef will
+    be needed? Between what two whole numbers does your answer lie?
+  ispartof:
+    - 4.NF.B.4
+  prerequisites:
+    - 3.OA.A.3
+  usedfors:
+    - 4.MD.A.2
+  related:
+    - 4.NF.B.4a
+    - 4.NF.B.4b
+  ccss_guid: 697F85A12F954712923BD35862DEC2BB
+  ccss_url: http://corestandards.org/Math/Content/4/NF/B/4/c
+  asn_url: http://purl.org/ASN/resources/S114368A
+-
+  path: 4.NF.C
+  __class__: Cluster
+  description: >
+    Understand decimal notation for fractions, and compare decimal fractions.
+  contents:
+    - 4.NF.C.5
+    - 4.NF.C.6
+    - 4.NF.C.7
+  ispartof:
+    - NF
+  ccss_guid: 30C671F2536E4F57B7A32A782A6E00B9
+  ccss_url: http://corestandards.org/Math/Content/4/NF/C
+  asn_url: http://purl.org/ASN/resources/S1143496
+-
+  path: 4.NF.C.5
+  __class__: Standard
+  aliases:
+    - 4.NF.5
+  description: >
+    Express a fraction with denominator 10 as an equivalent fraction with denominator
+    100, and use this technique to add two fractions with respective denominators
+    10 and 100.
+  comment: 'Students who can generate equivalent fractions can develop strategies
+    for adding fractions with unlike denominators in general. But addition and subtraction
+    with unlike denominators in general is not a requirement at this grade.
+
+    For example, express 3/10 as 30/100, and add 3/10 + 4/100 = 34/100.'
+  ispartof:
+    - 4.NF.C
+  prerequisites:
+    - 4.NF.B.3c
+    - 4.NF.B.3a
+    - 4.NF.A.1
+    - 4.NF.B.3b
+  usedfors:
+    - 4.MD.A.2
+    - 5.NBT.A.1
+  ccss_guid: C374A9ECF108450BB9790DDB560BBB25
+  ccss_url: http://corestandards.org/Math/Content/4/NF/C/5
+  asn_url: http://purl.org/ASN/resources/S11434A9
+-
+  path: 4.NF.C.6
+  __class__: Standard
+  aliases:
+    - 4.NF.6
+  description: >
+    Use decimal notation for fractions with denominators 10 or 100.
+  comment: For example, rewrite 0.62 as 62/100; describe a length as 0.62 meters;
+    locate 0.62 on a number line diagram.
+  ispartof:
+    - 4.NF.C
+  usedfors:
+    - 4.MD.A.2
+    - 4.NF.C.7
+    - 5.NBT.A.1
+  ccss_guid: C374A9ECF108450BB9790DDB560BBB26
+  ccss_url: http://corestandards.org/Math/Content/4/NF/C/6
+  asn_url: http://purl.org/ASN/resources/S11434AA
+-
+  path: 4.NF.C.7
+  __class__: Standard
+  aliases:
+    - 4.NF.7
+  description: >
+    Compare two decimals to hundredths by reasoning about their size. Recognize that
+    comparisons are valid only when the two decimals refer to the same whole. Record
+    the results of comparisons with the symbols >, =, or <, and justify the conclusions,
+    e.g., by using a visual model.
+  ispartof:
+    - 4.NF.C
+  prerequisites:
+    - 4.NF.A.2
+    - 4.NF.C.6
+  usedfors:
+    - 5.NBT.A.1
+    - 5.NBT.A.3
+  ccss_guid: C374A9ECF108450BB9790DDB560BBB27
+  ccss_url: http://corestandards.org/Math/Content/4/NF/C/7
+  asn_url: http://purl.org/ASN/resources/S11434AB
+-
+  path: 4.OA.A
+  __class__: Cluster
+  description: >
+    Use the four operations with whole numbers to solve problems.
+  contents:
+    - 4.OA.A.1
+    - 4.OA.A.2
+    - 4.OA.A.3
+  ispartof:
+    - OA
+  ccss_guid: C23D0AFF59694FACA65ECEEBDE3F1698
+  ccss_url: http://corestandards.org/Math/Content/4/OA/A
+  asn_url: http://purl.org/ASN/resources/S1143490
+-
+  path: 4.OA.A.1
+  __class__: Standard
+  aliases:
+    - 4.OA.1
+  description: >
+    Interpret a multiplication equation as a comparison, e.g., interpret 35 = 5 ×
+    7 as a statement that 35 is 5 times as many as 7 and 7 times as many as 5. Represent
+    verbal statements of multiplicative comparisons as multiplication equations.
+  ispartof:
+    - 4.OA.A
+  prerequisites:
+    - 3.OA.A.1
+    - 3.OA.A.3
+  usedfors:
+    - 5.NF.B.3
+    - 5.NF.B.5
+    - 5.NF.B.6
+    - 5.OA.A.2
+  ccss_guid: 7828B4F15ABD40E19EF14DDE0EB399DF
+  ccss_url: http://corestandards.org/Math/Content/4/OA/A/1
+  asn_url: http://purl.org/ASN/resources/S114349A
+-
+  path: 4.OA.A.2
+  __class__: Standard
+  aliases:
+    - 4.OA.2
+  description: >
+    Multiply or divide to solve word problems involving multiplicative comparison,
+    e.g., by using drawings and equations with a symbol for the unknown number to
+    represent the problem, distinguishing multiplicative comparison from additive
+    comparison.
+  ispartof:
+    - 4.OA.A
+  prerequisites:
+    - 3.OA.A.3
+  usedfors:
+    - 4.NF.A.1
+    - 4.NF.B.4a
+    - 5.NF.B.3
+    - 5.NF.B.5
+    - 5.NF.B.6
+    - 5.OA.A.2
+    - 6.RP.A.1
+    - 6.RP.A.2
+    - 8.EE.A.3
+  related:
+    - 4.MD.A.1
+  ccss_guid: 062925BDC19347E8890A6D7390DF3842
+  ccss_url: http://corestandards.org/Math/Content/4/OA/A/2
+  asn_url: http://purl.org/ASN/resources/S114349B
+-
+  path: 4.OA.A.3
+  __class__: Standard
+  aliases:
+    - 4.OA.3
+  description: >
+    Solve multistep word problems posed with whole numbers and having whole-number
+    answers using the four operations, including problems in which remainders must
+    be interpreted. Represent these problems using equations with a letter standing
+    for the unknown quantity. Assess the reasonableness of answers using mental computation
+    and estimation strategies including rounding.
+  ispartof:
+    - 4.OA.A
+  prerequisites:
+    - 3.OA.D.8
+    - 4.NBT.A.3
+    - 4.NBT.B.6
+  usedfors:
+    - 7.NS.A.3
+  related:
+    - 4.MD.A.2
+  ccss_guid: D3852439BE5747BA9E52B55237414DBC
+  ccss_url: http://corestandards.org/Math/Content/4/OA/A/3
+  asn_url: http://purl.org/ASN/resources/S114349C
+-
+  path: 4.OA.B
+  __class__: Cluster
+  description: >
+    Gain familiarity with factors and multiples.
+  contents:
+    - 4.OA.B.4
+  ispartof:
+    - OA
+  ccss_guid: 1FAE8D11BF744C22A5FC37D6A49587C5
+  ccss_url: http://corestandards.org/Math/Content/4/OA/B
+  asn_url: http://purl.org/ASN/resources/S1143491
+-
+  path: 4.OA.B.4
+  __class__: Standard
+  aliases:
+    - 4.OA.4
+  description: >
+    Find all factor pairs for a whole number in the range 1—100. Recognize that a
+    whole number is a multiple of each of its factors. Determine whether a given whole
+    number in the range 1—100 is a multiple of a given one-digit number. Determine
+    whether a given whole number in the range 1—100 is prime or composite.
+  ispartof:
+    - 4.OA.B
+  prerequisites:
+    - 3.OA.C.7
+  usedfors:
+    - 6.EE.A.1
+    - 6.NS.B.4
+  ccss_guid: 426D6BDB2D4A4C6D86DEDD3469B03F52
+  ccss_url: http://corestandards.org/Math/Content/4/OA/B/4
+  asn_url: http://purl.org/ASN/resources/S114349D
+-
+  path: 4.OA.C
+  __class__: Cluster
+  description: >
+    Generate and analyze patterns.
+  contents:
+    - 4.OA.C.5
+  ispartof:
+    - OA
+  ccss_guid: 114C44E82C464238BC714BA5B546A7D9
+  ccss_url: http://corestandards.org/Math/Content/4/OA/C
+  asn_url: http://purl.org/ASN/resources/S1143492
+-
+  path: 4.OA.C.5
+  __class__: Standard
+  aliases:
+    - 4.OA.5
+  description: >
+    Generate a number or shape pattern that follows a given rule. Identify apparent
+    features of the pattern that were not explicit in the rule itself.
+  comment: For example, given the rule "Add 3" and the starting number 1, generate
+    terms in the resulting sequence and observe that the terms appear to alternate
+    between odd and even numbers. Explain informally why the numbers will continue
+    to alternate in this way.
+  ispartof:
+    - 4.OA.C
+  prerequisites:
+    - 3.OA.D.9
+  usedfors:
+    - 5.OA.B.3
+  ccss_guid: 3D07A6567374452E9C8117A464B172E4
+  ccss_url: http://corestandards.org/Math/Content/4/OA/C/5
+  asn_url: http://purl.org/ASN/resources/S114349E

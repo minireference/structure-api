@@ -1,0 +1,1098 @@
+-
+  path: 6.EE.A
+  __class__: Cluster
+  description: >
+    Apply and extend previous understandings of arithmetic to algebraic expressions.
+  contents:
+    - 6.EE.A.1
+    - 6.EE.A.2
+    - 6.EE.A.3
+    - 6.EE.A.4
+  ispartof:
+    - EE
+  ccss_guid: A7D3275BC52147618D6CFEE43FB1A47E
+  ccss_url: http://corestandards.org/Math/Content/6/EE/A
+  asn_url: http://purl.org/ASN/resources/S11434C7
+-
+  path: 6.EE.A.1
+  __class__: Standard
+  aliases:
+    - 6.EE.1
+  description: >
+    Write and evaluate numerical expressions involving whole-number exponents.
+  ispartof:
+    - 6.EE.A
+  prerequisites:
+    - 4.OA.B.4
+    - 5.NBT.A.2
+  usedfors:
+    - 6.EE.A.2
+    - 8.EE.A.1
+  ccss_guid: C3D4E8BB80BF43E3A1EA57DD2B56C334
+  ccss_url: http://corestandards.org/Math/Content/6/EE/A/1
+  asn_url: http://purl.org/ASN/resources/S11434D9
+-
+  path: 6.EE.A.2
+  __class__: Standard
+  aliases:
+    - 6.EE.2
+  description: >
+    Write, read, and evaluate expressions in which letters stand for numbers.
+  contents:
+    - 6.EE.A.2a
+    - 6.EE.A.2b
+    - 6.EE.A.2c
+  ispartof:
+    - 6.EE.A
+  prerequisites:
+    - 5.OA.A.2
+    - 5.OA.B.3
+    - 6.EE.A.1
+  usedfors:
+    - 6.EE.A.3
+    - 6.EE.A.4
+    - 6.EE.B.5
+    - 6.EE.B.6
+  ccss_guid: F78ACD4FA2D74173998D2EA26FBA1E1B
+  ccss_url: http://corestandards.org/Math/Content/6/EE/A/2
+  asn_url: http://purl.org/ASN/resources/S11434DA
+-
+  path: 6.EE.A.2a
+  __class__: Component
+  aliases:
+    - 6.EE.2.a
+  description: >
+    Write expressions that record operations with numbers and with letters standing
+    for numbers.
+  comment: For example, express the calculation "Subtract y from 5" as 5 - y.
+  ispartof:
+    - 6.EE.A.2
+  ccss_guid: C1A47EC07F9F49C481DE52A8235E27B6
+  ccss_url: http://corestandards.org/Math/Content/6/EE/A/2/a
+  asn_url: http://purl.org/ASN/resources/S1143669
+-
+  path: 6.EE.A.2b
+  __class__: Component
+  aliases:
+    - 6.EE.2.b
+  description: >
+    Identify parts of an expression using mathematical terms (sum, term, product,
+    factor, quotient, coefficient); view one or more parts of an expression as a single
+    entity.
+  comment: For example, describe the expression 2 (8 + 7) as a product of two factors;
+    view (8 + 7) as both a single entity and a sum of two terms.
+  ispartof:
+    - 6.EE.A.2
+  ccss_guid: 3639C586FB844ED3AD7D4232451C44F1
+  ccss_url: http://corestandards.org/Math/Content/6/EE/A/2/b
+  asn_url: http://purl.org/ASN/resources/S114366A
+-
+  path: 6.EE.A.2c
+  __class__: Component
+  aliases:
+    - 6.EE.2.c
+  description: >
+    Evaluate expressions at specific values of their variables. Include expressions
+    that arise from formulas used in real-world problems. Perform arithmetic operations,
+    including those involving whole-number exponents, in the conventional order when
+    there are no parentheses to specify a particular order (Order of Operations).
+  comment: For example, use the formulas V = s³ and A = 6 s² to find the volume and
+    surface area of a cube with sides of length s = 1/2.
+  ispartof:
+    - 6.EE.A.2
+  ccss_guid: DC40EAF30F894820988517FBA44D9601
+  ccss_url: http://corestandards.org/Math/Content/6/EE/A/2/c
+  asn_url: http://purl.org/ASN/resources/S114366B
+-
+  path: 6.EE.A.3
+  __class__: Standard
+  aliases:
+    - 6.EE.3
+  description: >
+    Apply the properties of operations to generate equivalent expressions.
+  comment: For example, apply the distributive property to the expression 3 (2 + x)
+    to produce the equivalent expression 6 + 3x; apply the distributive property to
+    the expression 24x + 18y to produce the equivalent expression 6 (4x + 3y); apply
+    properties of operations to y + y + y to produce the equivalent expression 3y.
+  ispartof:
+    - 6.EE.A
+  prerequisites:
+    - 5.OA.A.2
+    - 6.NS.B.4
+    - 1.OA.B.3
+    - 3.OA.B.5
+    - 6.EE.A.2
+  usedfors:
+    - 7.EE.A.1
+  ccss_guid: D9589DCAC5934C61B335D4C9160A6CD2
+  ccss_url: http://corestandards.org/Math/Content/6/EE/A/3
+  asn_url: http://purl.org/ASN/resources/S11434DB
+-
+  path: 6.EE.A.4
+  __class__: Standard
+  aliases:
+    - 6.EE.4
+  description: >
+    Identify when two expressions are equivalent (i.e., when the two expressions name
+    the same number regardless of which value is substituted into them).
+  comment: For example, the expressions y + y + y and 3y are equivalent because they
+    name the same number regardless of which number y stands for.
+  ispartof:
+    - 6.EE.A
+  prerequisites:
+    - 6.NS.B.4
+    - 1.OA.B.3
+    - 6.EE.A.2
+    - 3.OA.B.5
+    - 5.OA.A.2
+  usedfors:
+    - 7.EE.A.1
+  ccss_guid: 588D68D7F3194E65B77F61FAFA99694D
+  ccss_url: http://corestandards.org/Math/Content/6/EE/A/4
+  asn_url: http://purl.org/ASN/resources/S11434DC
+-
+  path: 6.EE.B
+  __class__: Cluster
+  description: >
+    Reason about and solve one-variable equations and inequalities.
+  contents:
+    - 6.EE.B.5
+    - 6.EE.B.6
+    - 6.EE.B.7
+    - 6.EE.B.8
+  ispartof:
+    - EE
+  ccss_guid: E67594E323034EDFAD123E9BC4B258BE
+  ccss_url: http://corestandards.org/Math/Content/6/EE/B
+  asn_url: http://purl.org/ASN/resources/S11434C8
+-
+  path: 6.EE.B.5
+  __class__: Standard
+  aliases:
+    - 6.EE.5
+  description: >
+    Understand solving an equation or inequality as a process of answering a question:
+    which values from a specified set, if any, make the equation or inequality true?
+    Use substitution to determine whether a given number in a specified set makes
+    an equation or inequality true.
+  ispartof:
+    - 6.EE.B
+  prerequisites:
+    - 6.EE.A.2
+  usedfors:
+    - 8.EE.A.2
+    - 8.EE.C.8
+  related:
+    - 6.EE.B.7
+    - 6.EE.B.8
+  ccss_guid: 130F1CC227FF4C219095EC708C237FCD
+  ccss_url: http://corestandards.org/Math/Content/6/EE/B/5
+  asn_url: http://purl.org/ASN/resources/S11434DD
+-
+  path: 6.EE.B.6
+  __class__: Standard
+  aliases:
+    - 6.EE.6
+  description: >
+    Use variables to represent numbers and write expressions when solving a real-world
+    or mathematical problem; understand that a variable can represent an unknown number,
+    or, depending on the purpose at hand, any number in a specified set.
+  ispartof:
+    - 6.EE.B
+  prerequisites:
+    - 6.EE.A.2
+  usedfors:
+    - 7.EE.B.4a
+    - 7.EE.B.4b
+  related:
+    - 6.EE.B.7
+  ccss_guid: 666AA11DF39241C68112FFBE28D811C4
+  ccss_url: http://corestandards.org/Math/Content/6/EE/B/6
+  asn_url: http://purl.org/ASN/resources/S11434DE
+-
+  path: 6.EE.B.7
+  __class__: Standard
+  aliases:
+    - 6.EE.7
+  description: >
+    Solve real-world and mathematical problems by writing and solving equations of
+    the form x + p = q and px = q for cases in which p, q and x are all nonnegative
+    rational numbers.
+  ispartof:
+    - 6.EE.B
+  prerequisites:
+    - 5.NF.A.1
+    - 5.NF.B.4
+    - 6.NS.A.1
+  usedfors:
+    - 7.EE.B.4a
+  related:
+    - 6.EE.B.5
+    - 6.EE.B.6
+    - 6.EE.C.9
+    - 6.EE.C.9
+    - 6.RP.A.3b
+    - 6.RP.A.3b
+    - 6.RP.A.3c
+  ccss_guid: 1AE7958ADE2C41A3AF81ED2463DF4CAE
+  ccss_url: http://corestandards.org/Math/Content/6/EE/B/7
+  asn_url: http://purl.org/ASN/resources/S11434DF
+-
+  path: 6.EE.B.8
+  __class__: Standard
+  aliases:
+    - 6.EE.8
+  description: >
+    Write an inequality of the form x > c or x < c to represent a constraint or condition
+    in a real-world or mathematical problem. Recognize that inequalities of the form
+    x > c or x < c have infinitely many solutions; represent solutions of such inequalities
+    on number line diagrams.
+  ispartof:
+    - 6.EE.B
+  prerequisites:
+    - 6.NS.C.6c
+    - 6.NS.C.7a
+    - 6.NS.C.6a
+    - 6.NS.C.7b
+  usedfors:
+    - 7.EE.B.4b
+  related:
+    - 6.EE.B.5
+  ccss_guid: AC4D37B9DF88460E98D9B2B8B014BD72
+  ccss_url: http://corestandards.org/Math/Content/6/EE/B/8
+  asn_url: http://purl.org/ASN/resources/S11434E0
+-
+  path: 6.EE.C
+  __class__: Cluster
+  description: >
+    Represent and analyze quantitative relationships between dependent and independent
+    variables.
+  contents:
+    - 6.EE.C.9
+  ispartof:
+    - EE
+  ccss_guid: 7FCA1FBCCFE846C3A774502E1F65B093
+  ccss_url: http://corestandards.org/Math/Content/6/EE/C
+  asn_url: http://purl.org/ASN/resources/S11434C9
+-
+  path: 6.EE.C.9
+  __class__: Standard
+  aliases:
+    - 6.EE.9
+  description: >
+    Use variables to represent two quantities in a real-world problem that change
+    in relationship to one another; write an equation to express one quantity, thought
+    of as the dependent variable, in terms of the other quantity, thought of as the
+    independent variable. Analyze the relationship between the dependent and independent
+    variables using graphs and tables, and relate these to the equation.
+  comment: For example, in a problem involving motion at constant speed, list and
+    graph ordered pairs of distances and times, and write the equation d = 65t to
+    represent the relationship between distance and time.
+  ispartof:
+    - 6.EE.C
+  prerequisites:
+    - 5.OA.B.3
+  related:
+    - 6.EE.B.7
+    - 6.EE.B.7
+    - 6.RP.A.3a
+    - 6.RP.A.3b
+  ccss_guid: 3C3333C32A6E4223B2FAC1577642617E
+  ccss_url: http://corestandards.org/Math/Content/6/EE/C/9
+  asn_url: http://purl.org/ASN/resources/S11434E1
+-
+  path: 6.G.A
+  __class__: Cluster
+  description: >
+    Solve real-world and mathematical problems involving area, surface area, and volume.
+  contents:
+    - 6.G.A.1
+    - 6.G.A.2
+    - 6.G.A.3
+    - 6.G.A.4
+  ispartof:
+    - G
+  ccss_guid: 4672773E1A8744EEA5318249CA2D8884
+  ccss_url: http://corestandards.org/Math/Content/6/G/A
+  asn_url: http://purl.org/ASN/resources/S11434CA
+-
+  path: 6.G.A.1
+  __class__: Standard
+  aliases:
+    - 6.G.1
+  description: >
+    Find the area of right triangles, other triangles, special quadrilaterals, and
+    polygons by composing into rectangles or decomposing into triangles and other
+    shapes; apply these techniques in the context of solving real-world and mathematical
+    problems.
+  ispartof:
+    - 6.G.A
+  prerequisites:
+    - 5.NF.B.4
+    - 4.MD.A.3
+  usedfors:
+    - 6.G.A.4
+    - 7.G.A.1
+    - 7.G.B.4
+    - 7.G.B.6
+  ccss_guid: 1F31DD363906484D9D2779A34FB59610
+  ccss_url: http://corestandards.org/Math/Content/6/G/A/1
+  asn_url: http://purl.org/ASN/resources/S11434E2
+-
+  path: 6.G.A.2
+  __class__: Standard
+  aliases:
+    - 6.G.2
+  description: >
+    Find the volume of a right rectangular prism with fractional edge lengths by packing
+    it with unit cubes of the appropriate unit fraction edge lengths, and show that
+    the volume is the same as would be found by multiplying the edge lengths of the
+    prism. Apply the formulas V = l w h and V = b h to find volumes of right rectangular
+    prisms with fractional edge lengths in the context of solving real-world and mathematical
+    problems.
+  ispartof:
+    - 6.G.A
+  prerequisites:
+    - 5.MD.C.5a
+    - 5.MD.C.5b
+  usedfors:
+    - 7.G.B.6
+  ccss_guid: 5436DB65E9124351A1106B298F5BE264
+  ccss_url: http://corestandards.org/Math/Content/6/G/A/2
+  asn_url: http://purl.org/ASN/resources/S11434E3
+-
+  path: 6.G.A.3
+  __class__: Standard
+  aliases:
+    - 6.G.3
+  description: >
+    Draw polygons in the coordinate plane given coordinates for the vertices; use
+    coordinates to find the length of a side joining points with the same first coordinate
+    or the same second coordinate. Apply these techniques in the context of solving
+    real-world and mathematical problems.
+  ispartof:
+    - 6.G.A
+  prerequisites:
+    - 5.G.A.2
+  usedfors:
+    - 8.G.A.3
+    - 8.G.B.8
+  related:
+    - 6.NS.C.8
+  ccss_guid: CC4E43FA78F24722A640CB2709FAC99A
+  ccss_url: http://corestandards.org/Math/Content/6/G/A/3
+  asn_url: http://purl.org/ASN/resources/S11434E4
+-
+  path: 6.G.A.4
+  __class__: Standard
+  aliases:
+    - 6.G.4
+  description: >
+    Represent three-dimensional figures using nets made up of rectangles and triangles,
+    and use the nets to find the surface area of these figures. Apply these techniques
+    in the context of solving real-world and mathematical problems.
+  ispartof:
+    - 6.G.A
+  prerequisites:
+    - 6.G.A.1
+  usedfors:
+    - 7.G.B.6
+  ccss_guid: 4AC04C2649A54B4A8700FEB757803595
+  ccss_url: http://corestandards.org/Math/Content/6/G/A/4
+  asn_url: http://purl.org/ASN/resources/S11434E5
+-
+  path: 6.NS.A
+  __class__: Cluster
+  description: >
+    Apply and extend previous understandings of multiplication and division to divide
+    fractions by fractions.
+  contents:
+    - 6.NS.A.1
+  ispartof:
+    - NS
+  ccss_guid: 91FABAB899814C55851003A0EE98F8FC
+  ccss_url: http://corestandards.org/Math/Content/6/NS/A
+  asn_url: http://purl.org/ASN/resources/S11434C3
+-
+  path: 6.NS.A.1
+  __class__: Standard
+  aliases:
+    - 6.NS.1
+  description: >
+    Interpret and compute quotients of fractions, and solve word problems involving
+    division of fractions by fractions, e.g., by using visual fraction models and
+    equations to represent the problem.
+  comment: For example, create a story context for (2/3) ÷ (3/4) and use a visual
+    fraction model to show the quotient; use the relationship between multiplication
+    and division to explain that (2/3) ÷ (3/4) = 8/9 because 3/4 of 8/9 is 2/3. (In
+    general, (a/b) ÷ (c/d) = ad/bc.) How much chocolate will each person get if 3
+    people share 1/2 lb of chocolate equally? How many 3/4-cup servings are in 2/3
+    of a cup of yogurt? How wide is a rectangular strip of land with length 3/4 mi
+    and area 1/2 square mi?
+  ispartof:
+    - 6.NS.A
+  prerequisites:
+    - 3.OA.B.6
+    - 5.NF.B.7
+  usedfors:
+    - 6.EE.B.7
+    - 7.NS.A.2c
+    - 7.SP.B.3
+  ccss_guid: 345E28505AB943BFA287EC8FADBF95AD
+  ccss_url: http://corestandards.org/Math/Content/6/NS/A/1
+  asn_url: http://purl.org/ASN/resources/S11434D1
+-
+  path: 6.NS.B
+  __class__: Cluster
+  description: >
+    Compute fluently with multi-digit numbers and find common factors and multiples.
+  contents:
+    - 6.NS.B.2
+    - 6.NS.B.3
+    - 6.NS.B.4
+  ispartof:
+    - NS
+  ccss_guid: E0D6F554561F4C4EB524449269E39665
+  ccss_url: http://corestandards.org/Math/Content/6/NS/B
+  asn_url: http://purl.org/ASN/resources/S11434C4
+-
+  path: 6.NS.B.2
+  __class__: Standard
+  aliases:
+    - 6.NS.2
+  description: >
+    Fluently divide multi-digit numbers using the standard algorithm.
+  ispartof:
+    - 6.NS.B
+  prerequisites:
+    - 5.NBT.B.6
+  usedfors:
+    - 6.NS.B.3
+  ccss_guid: 9360467DAEBA41829790B8FF6FBD8880
+  ccss_url: http://corestandards.org/Math/Content/6/NS/B/2
+  asn_url: http://purl.org/ASN/resources/S11434D2
+-
+  path: 6.NS.B.3
+  __class__: Standard
+  aliases:
+    - 6.NS.3
+  description: >
+    Fluently add, subtract, multiply, and divide multi-digit decimals using the standard
+    algorithm for each operation.
+  ispartof:
+    - 6.NS.B
+  prerequisites:
+    - 5.NBT.B.7
+    - 5.NBT.B.6
+    - 5.NBT.B.5
+    - 6.NS.B.2
+  usedfors:
+    - 7.NS.A.3
+  ccss_guid: 1F31DD363906484D9D2779A34FB59611
+  ccss_url: http://corestandards.org/Math/Content/6/NS/B/3
+  asn_url: http://purl.org/ASN/resources/S11434D3
+-
+  path: 6.NS.B.4
+  __class__: Standard
+  aliases:
+    - 6.NS.4
+  description: >
+    Find the greatest common factor of two whole numbers less than or equal to 100
+    and the least common multiple of two whole numbers less than or equal to 12. Use
+    the distributive property to express a sum of two whole numbers 1—100 with a common
+    factor as a multiple of a sum of two whole numbers with no common factor.
+  comment: For example, express 36 + 8 as 4 (9 + 2).
+  ispartof:
+    - 6.NS.B
+  prerequisites:
+    - 5.OA.A.2
+    - 4.OA.B.4
+  usedfors:
+    - 6.EE.A.3
+    - 6.EE.A.4
+  ccss_guid: 1F31DD363906484D9D2779A34FB59612
+  ccss_url: http://corestandards.org/Math/Content/6/NS/B/4
+  asn_url: http://purl.org/ASN/resources/S11434D4
+-
+  path: 6.NS.C
+  __class__: Cluster
+  description: >
+    Apply and extend previous understandings of numbers to the system of rational
+    numbers.
+  contents:
+    - 6.NS.C.5
+    - 6.NS.C.6
+    - 6.NS.C.7
+    - 6.NS.C.8
+  ispartof:
+    - NS
+  ccss_guid: DED7E6EBA72E4243ACAD94A13CCC92E9
+  ccss_url: http://corestandards.org/Math/Content/6/NS/C
+  asn_url: http://purl.org/ASN/resources/S11434C5
+-
+  path: 6.NS.C.5
+  __class__: Standard
+  aliases:
+    - 6.NS.5
+  description: >
+    Understand that positive and negative numbers are used together to describe quantities
+    having opposite directions or values (e.g., temperature above/below zero, elevation
+    above/below sea level, credits/debits, positive/negative electric charge); use
+    positive and negative numbers to represent quantities in real-world contexts,
+    explaining the meaning of 0 in each situation.
+  ispartof:
+    - 6.NS.C
+  usedfors:
+    - 6.NS.C.6a
+    - 7.NS.A.1a
+  ccss_guid: 01E9170774DA4651B0F75F3093EC40A8
+  ccss_url: http://corestandards.org/Math/Content/6/NS/C/5
+  asn_url: http://purl.org/ASN/resources/S11434D5
+-
+  path: 6.NS.C.6
+  __class__: Standard
+  aliases:
+    - 6.NS.6
+  description: >
+    Understand a rational number as a point on the number line. Extend number line
+    diagrams and coordinate axes familiar from previous grades to represent points
+    on the line and in the plane with negative number coordinates.
+  contents:
+    - 6.NS.C.6a
+    - 6.NS.C.6b
+    - 6.NS.C.6c
+  ispartof:
+    - 6.NS.C
+  ccss_guid: A476322A7B9545339733892F2F6BF97F
+  ccss_url: http://corestandards.org/Math/Content/6/NS/C/6
+  asn_url: http://purl.org/ASN/resources/S11434D6
+-
+  path: 6.NS.C.6a
+  __class__: Component
+  aliases:
+    - 6.NS.6.a
+  description: >
+    Recognize opposite signs of numbers as indicating locations on opposite sides
+    of 0 on the number line; recognize that the opposite of the opposite of a number
+    is the number itself, e.g., -(-3) = 3, and that 0 is its own opposite.
+  ispartof:
+    - 6.NS.C.6
+  prerequisites:
+    - 6.NS.C.5
+    - 3.NF.A.2
+  usedfors:
+    - 6.EE.B.8
+    - 6.NS.C.6b
+    - 6.NS.C.6c
+    - 6.NS.C.7c
+    - 7.NS.A.1a
+    - 7.NS.A.1b
+  ccss_guid: 5EE6ABF39BA64476BBD43564FBF2B2F8
+  ccss_url: http://corestandards.org/Math/Content/6/NS/C/6/a
+  asn_url: http://purl.org/ASN/resources/S1143674
+-
+  path: 6.NS.C.6b
+  __class__: Component
+  aliases:
+    - 6.NS.6.b
+  description: >
+    Understand signs of numbers in ordered pairs as indicating locations in quadrants
+    of the coordinate plane; recognize that when two ordered pairs differ only by
+    signs, the locations of the points are related by reflections across one or both
+    axes.
+  ispartof:
+    - 6.NS.C.6
+  prerequisites:
+    - 5.G.A.1
+    - 6.NS.C.6a
+  usedfors:
+    - 6.NS.C.8
+  related:
+    - 6.NS.C.6c
+  ccss_guid: C81686A64B584D928944DF54E754B474
+  ccss_url: http://corestandards.org/Math/Content/6/NS/C/6/b
+  asn_url: http://purl.org/ASN/resources/S1143675
+-
+  path: 6.NS.C.6c
+  __class__: Component
+  aliases:
+    - 6.NS.6.c
+  description: >
+    Find and position integers and other rational numbers on a horizontal or vertical
+    number line diagram; find and position pairs of integers and other rational numbers
+    on a coordinate plane.
+  ispartof:
+    - 6.NS.C.6
+  prerequisites:
+    - 5.G.A.1
+    - 6.NS.C.6a
+  usedfors:
+    - 6.EE.B.8
+    - 6.NS.C.7a
+    - 6.NS.C.7b
+  related:
+    - 6.NS.C.6b
+  ccss_guid: A5AF20605DE94E0CA3EDDE67F4EF3818
+  ccss_url: http://corestandards.org/Math/Content/6/NS/C/6/c
+  asn_url: http://purl.org/ASN/resources/S1143676
+-
+  path: 6.NS.C.7
+  __class__: Standard
+  aliases:
+    - 6.NS.7
+  description: >
+    Understand ordering and absolute value of rational numbers.
+  contents:
+    - 6.NS.C.7a
+    - 6.NS.C.7b
+    - 6.NS.C.7c
+    - 6.NS.C.7d
+  ispartof:
+    - 6.NS.C
+  ccss_guid: 71F96ADF450A4133A258FDACE2D3910D
+  ccss_url: http://corestandards.org/Math/Content/6/NS/C/7
+  asn_url: http://purl.org/ASN/resources/S11434D7
+-
+  path: 6.NS.C.7a
+  __class__: Component
+  aliases:
+    - 6.NS.7.a
+  description: >
+    Interpret statements of inequality as statements about the relative position of
+    two numbers on a number line diagram.
+  comment: For example, interpret -3 > -7 as a statement that -3 is located to the
+    right of -7 on a number line oriented from left to right.
+  ispartof:
+    - 6.NS.C.7
+  prerequisites:
+    - 6.NS.C.6c
+  usedfors:
+    - 6.EE.B.8
+    - 6.NS.C.7d
+  related:
+    - 6.NS.C.7b
+  ccss_guid: 4590DEFD95E44B6B9BF6A9425DE30D1A
+  ccss_url: http://corestandards.org/Math/Content/6/NS/C/7/a
+  asn_url: http://purl.org/ASN/resources/S1143677
+-
+  path: 6.NS.C.7b
+  __class__: Component
+  aliases:
+    - 6.NS.7.b
+  description: >
+    Write, interpret, and explain statements of order for rational numbers in real-world
+    contexts.
+  comment: For example, write -3 °C > -7 °C to express the fact that -3 °C is warmer
+    than -7 °C.
+  ispartof:
+    - 6.NS.C.7
+  prerequisites:
+    - 6.NS.C.6c
+  usedfors:
+    - 6.EE.B.8
+    - 6.NS.C.7d
+  related:
+    - 6.NS.C.7a
+  ccss_guid: 3D676E16444546DAB6327396969B83D4
+  ccss_url: http://corestandards.org/Math/Content/6/NS/C/7/b
+  asn_url: http://purl.org/ASN/resources/S1143678
+-
+  path: 6.NS.C.7c
+  __class__: Component
+  aliases:
+    - 6.NS.7.c
+  description: >
+    Understand the absolute value of a rational number as its distance from 0 on the
+    number line; interpret absolute value as magnitude for a positive or negative
+    quantity in a real-world situation.
+  comment: For example, for an account balance of -30 dollars, write |-30| = 30 to
+    describe the size of the debt in dollars.
+  ispartof:
+    - 6.NS.C.7
+  prerequisites:
+    - 6.NS.C.6a
+  usedfors:
+    - 6.NS.C.7d
+    - 7.NS.A.1b
+    - 7.NS.A.1c
+  ccss_guid: EDA8659B8F2F468C891C301FF54B210C
+  ccss_url: http://corestandards.org/Math/Content/6/NS/C/7/c
+  asn_url: http://purl.org/ASN/resources/S1143679
+-
+  path: 6.NS.C.7d
+  __class__: Component
+  aliases:
+    - 6.NS.7.d
+  description: >
+    Distinguish comparisons of absolute value from statements about order.
+  comment: For example, recognize that an account balance less than -30 dollars represents
+    a debt greater than 30 dollars.
+  ispartof:
+    - 6.NS.C.7
+  prerequisites:
+    - 6.NS.C.7c
+    - 6.NS.C.7a
+    - 6.NS.C.7b
+  ccss_guid: 21FA1EE07B5641ED877C720AD65ECF60
+  ccss_url: http://corestandards.org/Math/Content/6/NS/C/7/d
+  asn_url: http://purl.org/ASN/resources/S114367A
+-
+  path: 6.NS.C.8
+  __class__: Standard
+  aliases:
+    - 6.NS.8
+  description: >
+    Solve real-world and mathematical problems by graphing points in all four quadrants
+    of the coordinate plane. Include use of coordinates and absolute value to find
+    distances between points with the same first coordinate or the same second coordinate.
+  ispartof:
+    - 6.NS.C
+  prerequisites:
+    - 5.G.A.2
+    - 6.NS.C.6b
+  usedfors:
+    - 8.SP.A.1
+  related:
+    - 6.G.A.3
+  ccss_guid: FC0EF5CD46EB40DFA98AE89EA9BD18A5
+  ccss_url: http://corestandards.org/Math/Content/6/NS/C/8
+  asn_url: http://purl.org/ASN/resources/S11434D8
+-
+  path: 6.RP.A
+  __class__: Cluster
+  description: >
+    Understand ratio concepts and use ratio reasoning to solve problems.
+  contents:
+    - 6.RP.A.1
+    - 6.RP.A.2
+    - 6.RP.A.3
+  ispartof:
+    - RP
+  ccss_guid: 91FABAB899814C55851003A0EE98F8FB
+  ccss_url: http://corestandards.org/Math/Content/6/RP/A
+  asn_url: http://purl.org/ASN/resources/S11434C1
+-
+  path: 6.RP.A.1
+  __class__: Standard
+  aliases:
+    - 6.RP.1
+  description: >
+    Understand the concept of a ratio and use ratio language to describe a ratio relationship
+    between two quantities.
+  comment: For example, "The ratio of wings to beaks in the bird house at the zoo
+    was 2:1, because for every 2 wings there was 1 beak." "For every vote candidate
+    A received, candidate C received nearly three votes."
+  ispartof:
+    - 6.RP.A
+  prerequisites:
+    - 5.NF.B.5
+    - 4.OA.A.2
+    - 5.OA.B.3
+    - 4.MD.A.1
+  usedfors:
+    - 6.RP.A.2
+    - 6.RP.A.3a
+  ccss_guid: 0B6BD52C0EA74590992EF4972FC805FA
+  ccss_url: http://corestandards.org/Math/Content/6/RP/A/1
+  asn_url: http://purl.org/ASN/resources/S11434CE
+-
+  path: 6.RP.A.2
+  __class__: Standard
+  aliases:
+    - 6.RP.2
+  description: >
+    Understand the concept of a unit rate a/b associated with a ratio a:b with b ≠
+    0, and use rate language in the context of a ratio relationship.
+  comment: 'Expectations for unit rates in this grade are limited to non-complex fractions.
+
+    For example, "This recipe has a ratio of 3 cups of flour to 4 cups of sugar, so
+    there is 3/4 cup of flour for each cup of sugar." "We paid $75 for 15 hamburgers,
+    which is a rate of $5 per hamburger."'
+  ispartof:
+    - 6.RP.A
+  prerequisites:
+    - 5.NF.B.3
+    - 6.RP.A.1
+    - 4.OA.A.2
+    - 5.NF.B.7
+  usedfors:
+    - 6.RP.A.3b
+    - 6.RP.A.3c
+    - 6.RP.A.3d
+    - 7.RP.A.1
+    - 7.RP.A.2
+  ccss_guid: 1F313537A545454283801E86987520FD
+  ccss_url: http://corestandards.org/Math/Content/6/RP/A/2
+  asn_url: http://purl.org/ASN/resources/S11434CF
+-
+  path: 6.RP.A.3
+  __class__: Standard
+  aliases:
+    - 6.RP.3
+  description: >
+    Use ratio and rate reasoning to solve real-world and mathematical problems, e.g.,
+    by reasoning about tables of equivalent ratios, tape diagrams, double number line
+    diagrams, or equations.
+  contents:
+    - 6.RP.A.3a
+    - 6.RP.A.3b
+    - 6.RP.A.3c
+    - 6.RP.A.3d
+  ispartof:
+    - 6.RP.A
+  usedfors:
+    - 7.RP.A.2
+    - 7.RP.A.3
+  ccss_guid: 76D9105C412B45739450D4FAF3667D6B
+  ccss_url: http://corestandards.org/Math/Content/6/RP/A/3
+  asn_url: http://purl.org/ASN/resources/S11434D0
+-
+  path: 6.RP.A.3a
+  __class__: Component
+  aliases:
+    - 6.RP.3.a
+  description: >
+    Make tables of equivalent ratios relating quantities with whole number measurements,
+    find missing values in the tables, and plot the pairs of values on the coordinate
+    plane. Use tables to compare ratios.
+  ispartof:
+    - 6.RP.A.3
+  prerequisites:
+    - 6.RP.A.1
+    - 5.G.A.2
+  usedfors:
+    - 6.RP.A.3b
+  related:
+    - 6.EE.C.9
+  ccss_guid: 7C6AD49FC1EC4401A3AFA1ACA63BF4A9
+  ccss_url: http://corestandards.org/Math/Content/6/RP/A/3/a
+  asn_url: http://purl.org/ASN/resources/S114367F
+-
+  path: 6.RP.A.3b
+  __class__: Component
+  aliases:
+    - 6.RP.3.b
+  description: >
+    Solve unit rate problems including those involving unit pricing and constant speed.
+  comment: For example, if it took 7 hours to mow 4 lawns, then at that rate, how
+    many lawns could be mowed in 35 hours? At what rate were lawns being mowed?
+  ispartof:
+    - 6.RP.A.3
+  prerequisites:
+    - 6.RP.A.3a
+    - 6.RP.A.2
+  related:
+    - 6.EE.B.7
+    - 6.EE.B.7
+    - 6.EE.C.9
+  ccss_guid: D31433DF25FB4CD78EB603BAF929B294
+  ccss_url: http://corestandards.org/Math/Content/6/RP/A/3/b
+  asn_url: http://purl.org/ASN/resources/S1143680
+-
+  path: 6.RP.A.3c
+  __class__: Component
+  aliases:
+    - 6.RP.3.c
+  description: >
+    Find a percent of a quantity as a rate per 100 (e.g., 30% of a quantity means
+    30/100 times the quantity); solve problems involving finding the whole, given
+    a part and the percent.
+  ispartof:
+    - 6.RP.A.3
+  prerequisites:
+    - 6.RP.A.2
+  related:
+    - 6.EE.B.7
+  ccss_guid: A068CFC353A845239E73BF7580A2F924
+  ccss_url: http://corestandards.org/Math/Content/6/RP/A/3/c
+  asn_url: http://purl.org/ASN/resources/S1143681
+-
+  path: 6.RP.A.3d
+  __class__: Component
+  aliases:
+    - 6.RP.3.d
+  description: >
+    Use ratio reasoning to convert measurement units; manipulate and transform units
+    appropriately when multiplying or dividing quantities.
+  ispartof:
+    - 6.RP.A.3
+  prerequisites:
+    - 6.RP.A.2
+  ccss_guid: FA34B81A7B23457B81D873613F7E7B75
+  ccss_url: http://corestandards.org/Math/Content/6/RP/A/3/d
+  asn_url: http://purl.org/ASN/resources/S1143682
+-
+  path: 6.SP.A
+  __class__: Cluster
+  description: >
+    Develop understanding of statistical variability.
+  contents:
+    - 6.SP.A.1
+    - 6.SP.A.2
+    - 6.SP.A.3
+  ispartof:
+    - SP
+  ccss_guid: A999DF3166834919A4C8EA1415BEF8A7
+  ccss_url: http://corestandards.org/Math/Content/6/SP/A
+  asn_url: http://purl.org/ASN/resources/S11434CC
+-
+  path: 6.SP.A.1
+  __class__: Standard
+  aliases:
+    - 6.SP.1
+  description: >
+    Recognize a statistical question as one that anticipates variability in the data
+    related to the question and accounts for it in the answers.
+  comment: For example, "How old am I?" is not a statistical question, but "How old
+    are the students in my school?" is a statistical question because one anticipates
+    variability in students' ages.
+  ispartof:
+    - 6.SP.A
+  prerequisites:
+    - 5.MD.B.2
+  usedfors:
+    - 6.SP.A.3
+    - 7.SP.A.1
+  ccss_guid: 685310A770E54FEC8BF9E69514B04BCD
+  ccss_url: http://corestandards.org/Math/Content/6/SP/A/1
+  asn_url: http://purl.org/ASN/resources/S11434E6
+-
+  path: 6.SP.A.2
+  __class__: Standard
+  aliases:
+    - 6.SP.2
+  description: >
+    Understand that a set of data collected to answer a statistical question has a
+    distribution which can be described by its center, spread, and overall shape.
+  ispartof:
+    - 6.SP.A
+  prerequisites:
+    - 5.MD.B.2
+  usedfors:
+    - 6.SP.A.3
+    - 6.SP.B.5
+    - 7.SP.A.1
+    - 7.SP.B.3
+  ccss_guid: A436833E5FD54900A1F1F98B24DC3858
+  ccss_url: http://corestandards.org/Math/Content/6/SP/A/2
+  asn_url: http://purl.org/ASN/resources/S11434E7
+-
+  path: 6.SP.A.3
+  __class__: Standard
+  aliases:
+    - 6.SP.3
+  description: >
+    Recognize that a measure of center for a numerical data set summarizes all of
+    its values with a single number, while a measure of variation describes how its
+    values vary with a single number.
+  ispartof:
+    - 6.SP.A
+  prerequisites:
+    - 6.SP.A.2
+    - 6.SP.A.1
+  usedfors:
+    - 6.SP.B.5
+  ccss_guid: A18B570937214723A92FF783835C711A
+  ccss_url: http://corestandards.org/Math/Content/6/SP/A/3
+  asn_url: http://purl.org/ASN/resources/S11434E8
+-
+  path: 6.SP.B
+  __class__: Cluster
+  description: >
+    Summarize and describe distributions.
+  contents:
+    - 6.SP.B.4
+    - 6.SP.B.5
+  ispartof:
+    - SP
+  ccss_guid: D0BBF510F9F543828994AF283582A18F
+  ccss_url: http://corestandards.org/Math/Content/6/SP/B
+  asn_url: http://purl.org/ASN/resources/S11434CD
+-
+  path: 6.SP.B.4
+  __class__: Standard
+  aliases:
+    - 6.SP.4
+  description: >
+    Display numerical data in plots on a number line, including dot plots, histograms,
+    and box plots.
+  ispartof:
+    - 6.SP.B
+  prerequisites:
+    - 5.MD.B.2
+  related:
+    - 6.SP.B.5
+  ccss_guid: 86AF5F06C6CA4B62B09ECD0605CB1E8C
+  ccss_url: http://corestandards.org/Math/Content/6/SP/B/4
+  asn_url: http://purl.org/ASN/resources/S11434E9
+-
+  path: 6.SP.B.5
+  __class__: Standard
+  aliases:
+    - 6.SP.5
+  description: >
+    Summarize numerical data sets in relation to their context, such as by:
+  contents:
+    - 6.SP.B.5a
+    - 6.SP.B.5b
+    - 6.SP.B.5c
+    - 6.SP.B.5d
+  ispartof:
+    - 6.SP.B
+  prerequisites:
+    - 6.SP.A.3
+    - 6.SP.A.2
+  related:
+    - 6.SP.B.4
+  ccss_guid: 25270B3E4531410DA4BECFDE1F058E6A
+  ccss_url: http://corestandards.org/Math/Content/6/SP/B/5
+  asn_url: http://purl.org/ASN/resources/S11434EA
+-
+  path: 6.SP.B.5a
+  __class__: Component
+  aliases:
+    - 6.SP.5.a
+  description: >
+    Reporting the number of observations.
+  ispartof:
+    - 6.SP.B.5
+  ccss_guid: F2D6B6FB63E14C8098655981124EBC79
+  ccss_url: http://corestandards.org/Math/Content/6/SP/B/5/a
+-
+  path: 6.SP.B.5b
+  __class__: Component
+  aliases:
+    - 6.SP.5.b
+  description: >
+    Describing the nature of the attribute under investigation, including how it was
+    measured and its units of measurement.
+  ispartof:
+    - 6.SP.B.5
+  ccss_guid: 61E5ED58B8D14F3DBEBF8C11108ADDD4
+  ccss_url: http://corestandards.org/Math/Content/6/SP/B/5/b
+-
+  path: 6.SP.B.5c
+  __class__: Component
+  aliases:
+    - 6.SP.5.c
+  description: >
+    Giving quantitative measures of center (median and/or mean) and variability (interquartile
+    range and/or mean absolute deviation), as well as describing any overall pattern
+    and any striking deviations from the overall pattern with reference to the context
+    in which the data were gathered.
+  ispartof:
+    - 6.SP.B.5
+  ccss_guid: 00314B63F7C044B48D1E6021D30FA77A
+  ccss_url: http://corestandards.org/Math/Content/6/SP/B/5/c
+-
+  path: 6.SP.B.5d
+  __class__: Component
+  aliases:
+    - 6.SP.5.d
+  description: >
+    Relating the choice of measures of center and variability to the shape of the
+    data distribution and the context in which the data were gathered.
+  ispartof:
+    - 6.SP.B.5
+  ccss_guid: EEB4EB9C540C46E79C61B867FF4B1BF9
+  ccss_url: http://corestandards.org/Math/Content/6/SP/B/5/d

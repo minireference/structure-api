@@ -1,0 +1,574 @@
+-
+  path: K.CC.A
+  __class__: Cluster
+  description: >
+    Know number names and the count sequence.
+  contents:
+    - K.CC.A.1
+    - K.CC.A.2
+    - K.CC.A.3
+  ispartof:
+    - CC
+  ccss_guid: 4F4106218F834258BCDDB7EB39806880
+  ccss_url: http://corestandards.org/Math/Content/K/CC/A
+  asn_url: http://purl.org/ASN/resources/S114340E
+-
+  path: K.CC.A.1
+  __class__: Standard
+  aliases:
+    - K.CC.1
+  description: >
+    Count to 100 by ones and by tens.
+  ispartof:
+    - K.CC.A
+  usedfors:
+    - K.CC.A.2
+    - K.CC.B.4a
+    - 1.NBT.A.1
+  ccss_guid: CA9EE2E34F384E95A5FA26769C5864B8
+  ccss_url: http://corestandards.org/Math/Content/K/CC/A/1
+  asn_url: http://purl.org/ASN/resources/S1143417
+-
+  path: K.CC.A.2
+  __class__: Standard
+  aliases:
+    - K.CC.2
+  description: >
+    Count forward beginning from a given number within the known sequence (instead
+    of having to begin at 1).
+  ispartof:
+    - K.CC.A
+  prerequisites:
+    - K.CC.A.1
+  usedfors:
+    - K.CC.B.4c
+  related:
+    - K.CC.B.4c
+  ccss_guid: 5E6A3E3B939B4577B104FA8658206E9E
+  ccss_url: http://corestandards.org/Math/Content/K/CC/A/2
+  asn_url: http://purl.org/ASN/resources/S1143418
+-
+  path: K.CC.A.3
+  __class__: Standard
+  aliases:
+    - K.CC.3
+  description: >
+    Write numbers from 0 to 20. Represent a number of objects with a written numeral
+    0-20 (with 0 representing a count of no objects).
+  ispartof:
+    - K.CC.A
+  ccss_guid: C11F30815A9C49B9A83B61A285EA11F9
+  ccss_url: http://corestandards.org/Math/Content/K/CC/A/3
+  asn_url: http://purl.org/ASN/resources/S1143419
+-
+  path: K.CC.B
+  __class__: Cluster
+  description: >
+    Count to tell the number of objects.
+  contents:
+    - K.CC.B.4
+    - K.CC.B.5
+  ispartof:
+    - CC
+  ccss_guid: BB49D28AFFFE46FBB8F4ECA58C88B001
+  ccss_url: http://corestandards.org/Math/Content/K/CC/B
+  asn_url: http://purl.org/ASN/resources/S114340F
+-
+  path: K.CC.B.4
+  __class__: Standard
+  aliases:
+    - K.CC.4
+  description: >
+    Understand the relationship between numbers and quantities; connect counting to
+    cardinality.
+  contents:
+    - K.CC.B.4a
+    - K.CC.B.4b
+    - K.CC.B.4c
+  ispartof:
+    - K.CC.B
+  ccss_guid: A0586B74C257473C98F38DD353D39BC5
+  ccss_url: http://corestandards.org/Math/Content/K/CC/B/4
+  asn_url: http://purl.org/ASN/resources/S114341A
+-
+  path: K.CC.B.4a
+  __class__: Component
+  aliases:
+    - K.CC.4.a
+  description: >
+    When counting objects, say the number names in the standard order, pairing each
+    object with one and only one number name and each number name with one and only
+    one object.
+  ispartof:
+    - K.CC.B.4
+  prerequisites:
+    - K.CC.A.1
+  usedfors:
+    - K.CC.B.4b
+  ccss_guid: 7B20214AA4AA445AA720062C6F1B5C58
+  ccss_url: http://corestandards.org/Math/Content/K/CC/B/4/a
+  asn_url: http://purl.org/ASN/resources/S1143695
+-
+  path: K.CC.B.4b
+  __class__: Component
+  aliases:
+    - K.CC.4.b
+  description: >
+    Understand that the last number name said tells the number of objects counted.
+    The number of objects is the same regardless of their arrangement or the order
+    in which they were counted.
+  ispartof:
+    - K.CC.B.4
+  prerequisites:
+    - K.CC.B.4a
+  usedfors:
+    - K.CC.B.5
+  ccss_guid: 3DEE205D86BC461FA4271EF4BD190A0C
+  ccss_url: http://corestandards.org/Math/Content/K/CC/B/4/b
+  asn_url: http://purl.org/ASN/resources/S1143696
+-
+  path: K.CC.B.4c
+  __class__: Component
+  aliases:
+    - K.CC.4.c
+  description: >
+    Understand that each successive number name refers to a quantity that is one larger.
+  ispartof:
+    - K.CC.B.4
+  prerequisites:
+    - K.CC.A.2
+  usedfors:
+    - 1.OA.C.5
+  related:
+    - K.CC.A.2
+    - K.CC.C.6
+  ccss_guid: A863C4E937BE4307A241D126B8FBD342
+  ccss_url: http://corestandards.org/Math/Content/K/CC/B/4/c
+  asn_url: http://purl.org/ASN/resources/S1143697
+-
+  path: K.CC.B.5
+  __class__: Standard
+  aliases:
+    - K.CC.5
+  description: >
+    Count to answer "how many?" questions about as many as 20 things arranged in a
+    line, a rectangular array, or a circle, or as many as 10 things in a scattered
+    configuration; given a number from 1—20, count out that many objects.
+  ispartof:
+    - K.CC.B
+  prerequisites:
+    - K.CC.B.4b
+  related:
+    - K.CC.C.6
+  ccss_guid: 6F4455B55B4240F3B4738DD9DB3EAF40
+  ccss_url: http://corestandards.org/Math/Content/K/CC/B/5
+  asn_url: http://purl.org/ASN/resources/S114341B
+-
+  path: K.CC.C
+  __class__: Cluster
+  description: >
+    Compare numbers.
+  contents:
+    - K.CC.C.6
+    - K.CC.C.7
+  ispartof:
+    - CC
+  ccss_guid: 74695C233ACE4F458E47C26F8D9FFF86
+  ccss_url: http://corestandards.org/Math/Content/K/CC/C
+  asn_url: http://purl.org/ASN/resources/S1143410
+-
+  path: K.CC.C.6
+  __class__: Standard
+  aliases:
+    - K.CC.6
+  description: >
+    Identify whether the number of objects in one group is greater than, less than,
+    or equal to the number of objects in another group, e.g., by using matching and
+    counting strategies.
+  comment: Include groups with up to ten objects.
+  ispartof:
+    - K.CC.C
+  usedfors:
+    - K.CC.C.7
+    - K.MD.B.3
+  related:
+    - K.CC.B.4c
+    - K.CC.B.5
+  ccss_guid: 66626D8AEE4E474B8CFEC8A4B68AA51C
+  ccss_url: http://corestandards.org/Math/Content/K/CC/C/6
+  asn_url: http://purl.org/ASN/resources/S114341C
+-
+  path: K.CC.C.7
+  __class__: Standard
+  aliases:
+    - K.CC.7
+  description: >
+    Compare two numbers between 1 and 10 presented as written numerals.
+  ispartof:
+    - K.CC.C
+  prerequisites:
+    - K.CC.C.6
+  usedfors:
+    - 1.NBT.B.3
+  ccss_guid: C9B9CAD5BDE84CE2A7A0C441A3DF1A2D
+  ccss_url: http://corestandards.org/Math/Content/K/CC/C/7
+  asn_url: http://purl.org/ASN/resources/S114341D
+-
+  path: K.G.A
+  __class__: Cluster
+  description: >
+    Identify and describe shapes (squares, circles, triangles, rectangles, hexagons,
+    cubes, cones, cylinders, and spheres).
+  contents:
+    - K.G.A.1
+    - K.G.A.2
+    - K.G.A.3
+  ispartof:
+    - G
+  ccss_guid: B1AC98EADE4145689E70EEEBD9B8CC18
+  ccss_url: http://corestandards.org/Math/Content/K/G/A
+  asn_url: http://purl.org/ASN/resources/S1143415
+-
+  path: K.G.A.1
+  __class__: Standard
+  aliases:
+    - K.G.1
+  description: >
+    Describe objects in the environment using names of shapes, and describe the relative
+    positions of these objects using terms such as above, below, beside, in front
+    of, behind, and next to.
+  ispartof:
+    - K.G.A
+  usedfors:
+    - K.G.A.3
+    - K.G.B.4
+  ccss_guid: D55BE0EDAFBC47B0BBDB1B88F9DF8781
+  ccss_url: http://corestandards.org/Math/Content/K/G/A/1
+  asn_url: http://purl.org/ASN/resources/S1143427
+-
+  path: K.G.A.2
+  __class__: Standard
+  aliases:
+    - K.G.2
+  description: >
+    Correctly name shapes regardless of their orientations or overall size.
+  ispartof:
+    - K.G.A
+  prerequisites:
+    - K.G.B.4
+    - K.G.A.3
+  usedfors:
+    - K.G.A.3
+    - K.G.B.4
+    - K.G.B.6
+    - 1.G.A.1
+  ccss_guid: 4F0A52E0906841DFA13739BFC87B330B
+  ccss_url: http://corestandards.org/Math/Content/K/G/A/2
+  asn_url: http://purl.org/ASN/resources/S1143428
+-
+  path: K.G.A.3
+  __class__: Standard
+  aliases:
+    - K.G.3
+  description: >
+    Identify shapes as two-dimensional (lying in a plane, "flat") or three-dimensional
+    ("solid").
+  ispartof:
+    - K.G.A
+  prerequisites:
+    - K.G.A.2
+    - K.G.A.1
+  usedfors:
+    - K.G.A.2
+    - 1.G.A.1
+  ccss_guid: 01938BB1EE4E47319738DAC239A2B141
+  ccss_url: http://corestandards.org/Math/Content/K/G/A/3
+  asn_url: http://purl.org/ASN/resources/S1143429
+-
+  path: K.G.B
+  __class__: Cluster
+  description: >
+    Analyze, compare, create, and compose shapes.
+  contents:
+    - K.G.B.4
+    - K.G.B.5
+    - K.G.B.6
+  ispartof:
+    - G
+  ccss_guid: 5F9DA7B7BFD04F33B5A925A4825B1DB1
+  ccss_url: http://corestandards.org/Math/Content/K/G/B
+  asn_url: http://purl.org/ASN/resources/S1143416
+-
+  path: K.G.B.4
+  __class__: Standard
+  aliases:
+    - K.G.4
+  description: >
+    Analyze and compare two- and three-dimensional shapes, in different sizes and
+    orientations, using informal language to describe their similarities, differences,
+    parts (e.g., number of sides and vertices/"corners") and other attributes (e.g.,
+    having sides of equal length).
+  ispartof:
+    - K.G.B
+  prerequisites:
+    - K.G.A.1
+    - K.G.A.2
+  usedfors:
+    - K.G.A.2
+    - 1.G.A.1
+  ccss_guid: C712BAA86FEF4BFAB703AD2EB402B2DE
+  ccss_url: http://corestandards.org/Math/Content/K/G/B/4
+  asn_url: http://purl.org/ASN/resources/S114342A
+-
+  path: K.G.B.5
+  __class__: Standard
+  aliases:
+    - K.G.5
+  description: >
+    Model shapes in the world by building shapes from components (e.g., sticks and
+    clay balls) and drawing shapes.
+  ispartof:
+    - K.G.B
+  ccss_guid: 029C278A66E34C28B42161B49DFA773B
+  ccss_url: http://corestandards.org/Math/Content/K/G/B/5
+  asn_url: http://purl.org/ASN/resources/S114342B
+-
+  path: K.G.B.6
+  __class__: Standard
+  aliases:
+    - K.G.6
+  description: >
+    Compose simple shapes to form larger shapes.
+  comment: For example, "Can you join these two triangles with full sides touching
+    to make a rectangle?"
+  ispartof:
+    - K.G.B
+  prerequisites:
+    - K.G.A.2
+  usedfors:
+    - 1.G.A.2
+  ccss_guid: B0D1D575B5E247988906DE33D93A156A
+  ccss_url: http://corestandards.org/Math/Content/K/G/B/6
+  asn_url: http://purl.org/ASN/resources/S114342C
+-
+  path: K.MD.A
+  __class__: Cluster
+  description: >
+    Describe and compare measurable attributes.
+  contents:
+    - K.MD.A.1
+    - K.MD.A.2
+  ispartof:
+    - MD
+  ccss_guid: 48519EC7CCA74533BF4D4052B47BFB48
+  ccss_url: http://corestandards.org/Math/Content/K/MD/A
+  asn_url: http://purl.org/ASN/resources/S1143413
+-
+  path: K.MD.A.1
+  __class__: Standard
+  aliases:
+    - K.MD.1
+  description: >
+    Describe measurable attributes of objects, such as length or weight. Describe
+    several measurable attributes of a single object.
+  ispartof:
+    - K.MD.A
+  usedfors:
+    - K.MD.A.2
+  ccss_guid: 017AAEA9D22543A59A60C697FEBADD1B
+  ccss_url: http://corestandards.org/Math/Content/K/MD/A/1
+  asn_url: http://purl.org/ASN/resources/S1143424
+-
+  path: K.MD.A.2
+  __class__: Standard
+  aliases:
+    - K.MD.2
+  description: >
+    Directly compare two objects with a measurable attribute in common, to see which
+    object has "more of"/"less of" the attribute, and describe the difference.
+  comment: For example, directly compare the heights of two children and describe
+    one child as taller/shorter.
+  ispartof:
+    - K.MD.A
+  prerequisites:
+    - K.MD.A.1
+  usedfors:
+    - K.MD.B.3
+    - 1.MD.A.1
+  ccss_guid: 4D3953649C704D4CAFC97E99C7A83EE9
+  ccss_url: http://corestandards.org/Math/Content/K/MD/A/2
+  asn_url: http://purl.org/ASN/resources/S1143425
+-
+  path: K.MD.B
+  __class__: Cluster
+  description: >
+    Classify objects and count the number of objects in each category.
+  contents:
+    - K.MD.B.3
+  ispartof:
+    - MD
+  ccss_guid: B1AC98EADE4145689E70EEEBD9B8CC19
+  ccss_url: http://corestandards.org/Math/Content/K/MD/B
+  asn_url: http://purl.org/ASN/resources/S1143414
+-
+  path: K.MD.B.3
+  __class__: Standard
+  aliases:
+    - K.MD.3
+  description: >
+    Classify objects into given categories; count the numbers of objects in each category
+    and sort the categories by count.
+  comment: Limit category counts to be less than or equal to 10.
+  ispartof:
+    - K.MD.B
+  prerequisites:
+    - K.CC.C.6
+    - K.MD.A.2
+  usedfors:
+    - 1.MD.C.4
+  ccss_guid: C655A9B714CB481EB9D88759DD9BD0D1
+  ccss_url: http://corestandards.org/Math/Content/K/MD/B/3
+  asn_url: http://purl.org/ASN/resources/S1143426
+-
+  path: K.NBT.A
+  __class__: Cluster
+  description: >
+    Work with numbers 11—19 to gain foundations for place value.
+  contents:
+    - K.NBT.A.1
+  ispartof:
+    - NBT
+  ccss_guid: F2D60C80EBD94C939E2BA189CCD56860
+  ccss_url: http://corestandards.org/Math/Content/K/NBT/A
+  asn_url: http://purl.org/ASN/resources/S1143412
+-
+  path: K.NBT.A.1
+  __class__: Standard
+  aliases:
+    - K.NBT.1
+  description: >
+    Compose and decompose numbers from 11 to 19 into ten ones and some further ones,
+    e.g., by using objects or drawings, and record each composition or decomposition
+    by a drawing or equation (e.g., 18 = 10 + 8); understand that these numbers are
+    composed of ten ones and one, two, three, four, five, six, seven, eight, or nine
+    ones.
+  ispartof:
+    - K.NBT.A
+  prerequisites:
+    - K.OA.A.3
+  usedfors:
+    - 1.NBT.B.2
+  ccss_guid: ED150B29EFD14FF8B655FA3F2CA4FE6D
+  ccss_url: http://corestandards.org/Math/Content/K/NBT/A/1
+  asn_url: http://purl.org/ASN/resources/S1143423
+-
+  path: K.OA.A
+  __class__: Cluster
+  description: >
+    Understand addition as putting together and adding to, and understand subtraction
+    as taking apart and taking from.
+  contents:
+    - K.OA.A.1
+    - K.OA.A.2
+    - K.OA.A.3
+    - K.OA.A.4
+    - K.OA.A.5
+  ispartof:
+    - OA
+  ccss_guid: E754542E6C144EEC8D7E332063FF4F67
+  ccss_url: http://corestandards.org/Math/Content/K/OA/A
+  asn_url: http://purl.org/ASN/resources/S1143411
+-
+  path: K.OA.A.1
+  __class__: Standard
+  aliases:
+    - K.OA.1
+  description: >
+    Represent addition and subtraction with objects, fingers, mental images, drawings,
+    sounds (e.g., claps), acting out situations, verbal explanations, expressions,
+    or equations.
+  comment: Drawings need not show details, but should show the mathematics in the
+    problem (This applies wherever drawings are mentioned in the Standards.)
+  ispartof:
+    - K.OA.A
+  usedfors:
+    - K.OA.A.2
+  ccss_guid: C815B29CD8F546BBBB4C647B9D163942
+  ccss_url: http://corestandards.org/Math/Content/K/OA/A/1
+  asn_url: http://purl.org/ASN/resources/S114341E
+-
+  path: K.OA.A.2
+  __class__: Standard
+  aliases:
+    - K.OA.2
+  description: >
+    Solve addition and subtraction word problems, and add and subtract within 10,
+    e.g., by using objects or drawings to represent the problem.
+  ispartof:
+    - K.OA.A
+  prerequisites:
+    - K.OA.A.1
+  usedfors:
+    - K.OA.A.3
+    - 1.OA.A.1
+    - 1.OA.B.3
+    - 1.OA.B.4
+    - 1.OA.C.6
+  ccss_guid: 695A7607FE8A4E27AB80652C45C84FA8
+  ccss_url: http://corestandards.org/Math/Content/K/OA/A/2
+  asn_url: http://purl.org/ASN/resources/S114341F
+-
+  path: K.OA.A.3
+  __class__: Standard
+  aliases:
+    - K.OA.3
+  description: >
+    Decompose numbers less than or equal to 10 into pairs in more than one way, e.g.,
+    by using objects or drawings, and record each decomposition by a drawing or equation
+    (e.g., 5 = 2 + 3 and 5 = 4 + 1).
+  ispartof:
+    - K.OA.A
+  prerequisites:
+    - K.OA.A.2
+  usedfors:
+    - K.NBT.A.1
+    - K.OA.A.4
+    - K.OA.A.5
+    - 1.OA.C.6
+  ccss_guid: 9EC218587C01452C9EB49F52EB2DD1DD
+  ccss_url: http://corestandards.org/Math/Content/K/OA/A/3
+  asn_url: http://purl.org/ASN/resources/S1143420
+-
+  path: K.OA.A.4
+  __class__: Standard
+  aliases:
+    - K.OA.4
+  description: >
+    For any number from 1 to 9, find the number that makes 10 when added to the given
+    number, e.g., by using objects or drawings, and record the answer with a drawing
+    or equation.
+  ispartof:
+    - K.OA.A
+  prerequisites:
+    - K.OA.A.3
+  usedfors:
+    - 1.OA.C.6
+  ccss_guid: 0CFFCBC851984A4281C23D34FC400445
+  ccss_url: http://corestandards.org/Math/Content/K/OA/A/4
+  asn_url: http://purl.org/ASN/resources/S1143421
+-
+  path: K.OA.A.5
+  __class__: Standard
+  aliases:
+    - K.OA.5
+  description: >
+    Fluently add and subtract within 5.
+  ispartof:
+    - K.OA.A
+  prerequisites:
+    - K.OA.A.3
+  usedfors:
+    - 1.OA.C.6
+  ccss_guid: 1353E9D5614D460FA32E67853B6BA6D8
+  ccss_url: http://corestandards.org/Math/Content/K/OA/A/5
+  asn_url: http://purl.org/ASN/resources/S1143422

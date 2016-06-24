@@ -1,0 +1,723 @@
+-
+  path: HSA
+  __class__: Domain
+  description: >
+    High School — Algebra
+  contents:
+    - HSA-APR
+    - HSA-CED
+    - HSA-REI
+    - HSA-SSE
+  ispartof:
+    - CCSSM
+  asn_url: http://purl.org/ASN/resources/S114354E
+-
+  path: HSA-APR
+  __class__: Domain
+  description: >
+    Arithmetic with Polynomials and Rational Expressions
+  contents:
+    - HSA-APR.A
+    - HSA-APR.B
+    - HSA-APR.C
+    - HSA-APR.D
+  ispartof:
+    - HSA
+  asn_url: http://purl.org/ASN/resources/S1143558
+-
+  path: HSA-APR.A
+  __class__: Cluster
+  description: >
+    Perform arithmetic operations on polynomials
+  contents:
+    - HSA-APR.A.1
+  ispartof:
+    - HSA-APR
+  ccss_guid: 86029C6936A24246AC435CA696634800
+  ccss_url: http://corestandards.org/Math/Content/HSA/APR/A
+  asn_url: http://purl.org/ASN/resources/S114358D
+-
+  path: HSA-APR.A.1
+  __class__: Standard
+  aliases:
+    - A.APR.1
+  description: >
+    Understand that polynomials form a system analogous to the integers, namely, they
+    are closed under the operations of addition, subtraction, and multiplication;
+    add, subtract, and multiply polynomials.
+  ispartof:
+    - HSA-APR.A
+  ccss_guid: C6A2AB2938E447BEA1860CF04A23E51F
+  ccss_url: http://corestandards.org/Math/Content/HSA/APR/A/1
+  asn_url: http://purl.org/ASN/resources/S114362E
+-
+  path: HSA-APR.B
+  __class__: Cluster
+  description: >
+    Understand the relationship between zeros and factors of polynomials
+  contents:
+    - HSA-APR.B.2
+    - HSA-APR.B.3
+  ispartof:
+    - HSA-APR
+  ccss_guid: F807C53F9EDE43FDB34DF614CA072F87
+  ccss_url: http://corestandards.org/Math/Content/HSA/APR/B
+  asn_url: http://purl.org/ASN/resources/S114358E
+-
+  path: HSA-APR.B.2
+  __class__: Standard
+  aliases:
+    - A.APR.2
+  description: >
+    Know and apply the Remainder Theorem: For a polynomial p(x) and a number a, the
+    remainder on division by x - a is p(a), so p(a) = 0 if and only if (x - a) is
+    a factor of p(x).
+  ispartof:
+    - HSA-APR.B
+  ccss_guid: A9EFAC8BB7B0455B8681498B6704A85F
+  ccss_url: http://corestandards.org/Math/Content/HSA/APR/B/2
+  asn_url: http://purl.org/ASN/resources/S114362F
+-
+  path: HSA-APR.B.3
+  __class__: Standard
+  aliases:
+    - A.APR.3
+  description: >
+    Identify zeros of polynomials when suitable factorizations are available, and
+    use the zeros to construct a rough graph of the function defined by the polynomial.
+  ispartof:
+    - HSA-APR.B
+  ccss_guid: 167C41930CA145BC80099871ECDCD20F
+  ccss_url: http://corestandards.org/Math/Content/HSA/APR/B/3
+  asn_url: http://purl.org/ASN/resources/S1143630
+-
+  path: HSA-APR.C
+  __class__: Cluster
+  description: >
+    Use polynomial identities to solve problems
+  contents:
+    - HSA-APR.C.4
+    - HSA-APR.C.5
+  ispartof:
+    - HSA-APR
+  ccss_guid: A2539A99653A47DBAFA1740D2F0BE124
+  ccss_url: http://corestandards.org/Math/Content/HSA/APR/C
+  asn_url: http://purl.org/ASN/resources/S114358F
+-
+  path: HSA-APR.C.4
+  __class__: Standard
+  aliases:
+    - A.APR.4
+  description: >
+    Prove polynomial identities and use them to describe numerical relationships.
+  comment: For example, the polynomial identity (x² + y²)2 = (x² — y²)² + (2xy)² can
+    be used to generate Pythagorean triples.
+  ispartof:
+    - HSA-APR.C
+  ccss_guid: C7BC027B615547799C1CE8D7F7896DAD
+  ccss_url: http://corestandards.org/Math/Content/HSA/APR/C/4
+  asn_url: http://purl.org/ASN/resources/S1143631
+-
+  path: HSA-APR.C.5
+  __class__: Standard
+  aliases:
+    - A.APR.5
+  description: >
+    (+) Know and apply the Binomial Theorem for the expansion of (x + y)<sup>n</sup>
+    in powers of x and y for a positive integer n, where x and y are any numbers,
+    with coefficients determined for example by Pascal's Triangle.
+  comment: The Binomial Theorem can be proved by mathematical induction or by a combinatorial
+    argument.
+  ispartof:
+    - HSA-APR.C
+  ccss_guid: 217B91B942D647F6B3E78E4B3FC90196
+  ccss_url: http://corestandards.org/Math/Content/HSA/APR/C/5
+  asn_url: http://purl.org/ASN/resources/S1143632
+-
+  path: HSA-APR.D
+  __class__: Cluster
+  description: >
+    Rewrite rational expressions
+  contents:
+    - HSA-APR.D.6
+    - HSA-APR.D.7
+  ispartof:
+    - HSA-APR
+  ccss_guid: 0EC032FAF5F34E04B00A864C2E588A09
+  ccss_url: http://corestandards.org/Math/Content/HSA/APR/D
+  asn_url: http://purl.org/ASN/resources/S1143590
+-
+  path: HSA-APR.D.6
+  __class__: Standard
+  aliases:
+    - A.APR.6
+  description: >
+    Rewrite simple rational expressions in different forms; write <sup>a(x </sup>/<sub>b(x)</sub>
+    in the form q(x) + <sup>r(x)</sup>/<sub>b(x)</sub>, where a(x), b(x), q(x), and
+    r(x) are polynomials with the degree of r(x) less than the degree of b(x), using
+    inspection, long division, or, for the more complicated examples, a computer algebra
+    system.
+  ispartof:
+    - HSA-APR.D
+  ccss_guid: 8A2EA76C20624FB690F10DAE3C354D5B
+  ccss_url: http://corestandards.org/Math/Content/HSA/APR/D/6
+  asn_url: http://purl.org/ASN/resources/S1143633
+-
+  path: HSA-APR.D.7
+  __class__: Standard
+  aliases:
+    - A.APR.7
+  description: >
+    (+) Understand that rational expressions form a system analogous to the rational
+    numbers, closed under addition, subtraction, multiplication, and division by a
+    nonzero rational expression; add, subtract, multiply, and divide rational expressions.
+  ispartof:
+    - HSA-APR.D
+  ccss_guid: 6C6F6417C2EF4908A018E4005ADBB318
+  ccss_url: http://corestandards.org/Math/Content/HSA/APR/D/7
+  asn_url: http://purl.org/ASN/resources/S1143634
+-
+  path: HSA-CED
+  __class__: Domain
+  description: >
+    Creating Equations
+  comment: Modeling is best interpreted not as a collection of isolated topics but
+    in relation to other standards. Making mathematical models is a Standard for Mathematical
+    Practice, and specific modeling standards appear throughout the high school standards
+    indicated by a star symbol (★). The star symbol sometimes appears on the heading
+    for a group of standards; in that case, it should be understood to apply to all
+    standards in that group.
+  contents:
+    - HSA-CED.A
+  ispartof:
+    - HSA
+  asn_url: http://purl.org/ASN/resources/S1143559
+-
+  path: HSA-CED.A
+  __class__: Cluster
+  description: >
+    Create equations that describe numbers or relationships
+  contents:
+    - HSA-CED.A.1
+    - HSA-CED.A.2
+    - HSA-CED.A.3
+    - HSA-CED.A.4
+  ispartof:
+    - HSA-CED
+  ccss_guid: 2B387BDF43CB43B58983E460B46BE605
+  ccss_url: http://corestandards.org/Math/Content/HSA/CED/A
+  asn_url: http://purl.org/ASN/resources/S1143591
+-
+  path: HSA-CED.A.1
+  __class__: Standard
+  aliases:
+    - A.CED.1
+  description: >
+    Create equations and inequalities in one variable and use them to solve problems.
+    Include equations arising from linear and quadratic functions, and simple rational
+    and exponential functions.
+  ispartof:
+    - HSA-CED.A
+  ccss_guid: 3902BC1F876F4ADD997BC890F86E3AF2
+  ccss_url: http://corestandards.org/Math/Content/HSA/CED/A/1
+  asn_url: http://purl.org/ASN/resources/S1143635
+-
+  path: HSA-CED.A.2
+  __class__: Standard
+  aliases:
+    - A.CED.2
+  description: >
+    Create equations in two or more variables to represent relationships between quantities;
+    graph equations on coordinate axes with labels and scales.
+  ispartof:
+    - HSA-CED.A
+  ccss_guid: FB5932C0274F4E11A08D688F357B057D
+  ccss_url: http://corestandards.org/Math/Content/HSA/CED/A/2
+  asn_url: http://purl.org/ASN/resources/S1143636
+-
+  path: HSA-CED.A.3
+  __class__: Standard
+  aliases:
+    - A.CED.3
+  description: >
+    Represent constraints by equations or inequalities, and by systems of equations
+    and/or inequalities, and interpret solutions as viable or nonviable options in
+    a modeling context.
+  comment: For example, represent inequalities describing nutritional and cost constraints
+    on combinations of different foods.
+  ispartof:
+    - HSA-CED.A
+  ccss_guid: 3675146E49EF46338FB77B95B9E24100
+  ccss_url: http://corestandards.org/Math/Content/HSA/CED/A/3
+  asn_url: http://purl.org/ASN/resources/S1143637
+-
+  path: HSA-CED.A.4
+  __class__: Standard
+  aliases:
+    - A.CED.4
+  description: >
+    Rearrange formulas to highlight a quantity of interest, using the same reasoning
+    as in solving equations.
+  comment: For example, rearrange Ohm's law V = IR to highlight resistance R.
+  ispartof:
+    - HSA-CED.A
+  ccss_guid: 9036E098F6A7415B899E533424ABBECB
+  ccss_url: http://corestandards.org/Math/Content/HSA/CED/A/4
+  asn_url: http://purl.org/ASN/resources/S1143638
+-
+  path: HSA-REI
+  __class__: Domain
+  description: >
+    Reasoning with Equations and Inequalities
+  contents:
+    - HSA-REI.A
+    - HSA-REI.B
+    - HSA-REI.C
+    - HSA-REI.D
+  ispartof:
+    - HSA
+  asn_url: http://purl.org/ASN/resources/S114355A
+-
+  path: HSA-REI.A
+  __class__: Cluster
+  description: >
+    Understand solving equations as a process of reasoning and explain the reasoning
+  contents:
+    - HSA-REI.A.1
+    - HSA-REI.A.2
+  ispartof:
+    - HSA-REI
+  ccss_guid: 76A52762F6C540829E34B961AC57ED32
+  ccss_url: http://corestandards.org/Math/Content/HSA/REI/A
+  asn_url: http://purl.org/ASN/resources/S1143592
+-
+  path: HSA-REI.A.1
+  __class__: Standard
+  aliases:
+    - A.REI.1
+  description: >
+    Explain each step in solving a simple equation as following from the equality
+    of numbers asserted at the previous step, starting from the assumption that the
+    original equation has a solution. Construct a viable argument to justify a solution
+    method.
+  ispartof:
+    - HSA-REI.A
+  ccss_guid: 9D6E9F4486CE4E0FA2F08E70CF2B8EC7
+  ccss_url: http://corestandards.org/Math/Content/HSA/REI/A/1
+  asn_url: http://purl.org/ASN/resources/S1143639
+-
+  path: HSA-REI.A.2
+  __class__: Standard
+  aliases:
+    - A.REI.2
+  description: >
+    Solve simple rational and radical equations in one variable, and give examples
+    showing how extraneous solutions may arise.
+  ispartof:
+    - HSA-REI.A
+  ccss_guid: D8E88CC6F9C24EE7A7B89D35F093B2B9
+  ccss_url: http://corestandards.org/Math/Content/HSA/REI/A/2
+  asn_url: http://purl.org/ASN/resources/S114363A
+-
+  path: HSA-REI.B
+  __class__: Cluster
+  description: >
+    Solve equations and inequalities in one variable
+  contents:
+    - HSA-REI.B.3
+    - HSA-REI.B.4
+  ispartof:
+    - HSA-REI
+  ccss_guid: 7F7DAA3BD975420E9A21319845B45A2A
+  ccss_url: http://corestandards.org/Math/Content/HSA/REI/B
+  asn_url: http://purl.org/ASN/resources/S1143593
+-
+  path: HSA-REI.B.3
+  __class__: Standard
+  aliases:
+    - A.REI.3
+  description: >
+    Solve linear equations and inequalities in one variable, including equations with
+    coefficients represented by letters.
+  ispartof:
+    - HSA-REI.B
+  ccss_guid: 52F1125E7D4F4CC8AFD2BDDB15BF256A
+  ccss_url: http://corestandards.org/Math/Content/HSA/REI/B/3
+  asn_url: http://purl.org/ASN/resources/S114363B
+-
+  path: HSA-REI.B.4
+  __class__: Standard
+  aliases:
+    - A.REI.4
+  description: >
+    Solve quadratic equations in one variable.
+  contents:
+    - HSA-REI.B.4a
+    - HSA-REI.B.4b
+  ispartof:
+    - HSA-REI.B
+  ccss_guid: 87B0241DE22D4A18943F3BC6CBF5DA82
+  ccss_url: http://corestandards.org/Math/Content/HSA/REI/B/4
+  asn_url: http://purl.org/ASN/resources/S114363C
+-
+  path: HSA-REI.B.4a
+  __class__: Component
+  aliases:
+    - A.REI.4.a
+  description: >
+    Use the method of completing the square to transform any quadratic equation in
+    x into an equation of the form (x - p)² = q that has the same solutions. Derive
+    the quadratic formula from this form.
+  ispartof:
+    - HSA-REI.B.4
+  ccss_guid: 5BD6F36D021A429E951EE42C678F1CF5
+  ccss_url: http://corestandards.org/Math/Content/HSA/REI/B/4/a
+  asn_url: http://purl.org/ASN/resources/S1143656
+-
+  path: HSA-REI.B.4b
+  __class__: Component
+  aliases:
+    - A.REI.4.b
+  description: >
+    Solve quadratic equations by inspection (e.g., for x² = 49), taking square roots,
+    completing the square, the quadratic formula and factoring, as appropriate to
+    the initial form of the equation. Recognize when the quadratic formula gives complex
+    solutions and write them as a ± bi for real numbers a and b.
+  ispartof:
+    - HSA-REI.B.4
+  ccss_guid: 617091A725F44F42A823052465447328
+  ccss_url: http://corestandards.org/Math/Content/HSA/REI/B/4/b
+  asn_url: http://purl.org/ASN/resources/S1143657
+-
+  path: HSA-REI.C
+  __class__: Cluster
+  description: >
+    Solve systems of equations
+  contents:
+    - HSA-REI.C.5
+    - HSA-REI.C.6
+    - HSA-REI.C.7
+    - HSA-REI.C.8
+    - HSA-REI.C.9
+  ispartof:
+    - HSA-REI
+  ccss_guid: DA79BD4E58434CAABB4C784D994D19E8
+  ccss_url: http://corestandards.org/Math/Content/HSA/REI/C
+  asn_url: http://purl.org/ASN/resources/S1143594
+-
+  path: HSA-REI.C.5
+  __class__: Standard
+  aliases:
+    - A.REI.5
+  description: >
+    Prove that, given a system of two equations in two variables, replacing one equation
+    by the sum of that equation and a multiple of the other produces a system with
+    the same solutions.
+  ispartof:
+    - HSA-REI.C
+  ccss_guid: 090DE6FDA67B45FEA288899B26A1E026
+  ccss_url: http://corestandards.org/Math/Content/HSA/REI/C/5
+  asn_url: http://purl.org/ASN/resources/S114363D
+-
+  path: HSA-REI.C.6
+  __class__: Standard
+  aliases:
+    - A.REI.6
+  description: >
+    Solve systems of linear equations exactly and approximately (e.g., with graphs),
+    focusing on pairs of linear equations in two variables.
+  ispartof:
+    - HSA-REI.C
+  ccss_guid: F66FDF1EBB2A45B583D175D152C46E04
+  ccss_url: http://corestandards.org/Math/Content/HSA/REI/C/6
+  asn_url: http://purl.org/ASN/resources/S114363E
+-
+  path: HSA-REI.C.7
+  __class__: Standard
+  aliases:
+    - A.REI.7
+  description: >
+    Solve a simple system consisting of a linear equation and a quadratic equation
+    in two variables algebraically and graphically.
+  comment: For example, find the points of intersection between the line y = -3x and
+    the circle x² + y² = 3.
+  ispartof:
+    - HSA-REI.C
+  ccss_guid: FDF33C3EC6C74CE393506F5ECC465D74
+  ccss_url: http://corestandards.org/Math/Content/HSA/REI/C/7
+  asn_url: http://purl.org/ASN/resources/S114363F
+-
+  path: HSA-REI.C.8
+  __class__: Standard
+  aliases:
+    - A.REI.8
+  description: >
+    (+) Represent a system of linear equations as a single matrix equation in a vector
+    variable.
+  ispartof:
+    - HSA-REI.C
+  ccss_guid: 33BA402261BE40868559890F7E9613D7
+  ccss_url: http://corestandards.org/Math/Content/HSA/REI/C/8
+  asn_url: http://purl.org/ASN/resources/S1143640
+-
+  path: HSA-REI.C.9
+  __class__: Standard
+  aliases:
+    - A.REI.9
+  description: >
+    (+) Find the inverse of a matrix if it exists and use it to solve systems of linear
+    equations (using technology for matrices of dimension 3 × 3 or greater).
+  ispartof:
+    - HSA-REI.C
+  ccss_guid: 7595C1E536714FA5BA7FC034E1F55556
+  ccss_url: http://corestandards.org/Math/Content/HSA/REI/C/9
+  asn_url: http://purl.org/ASN/resources/S1143641
+-
+  path: HSA-REI.D
+  __class__: Cluster
+  description: >
+    Represent and solve equations and inequalities graphically
+  contents:
+    - HSA-REI.D.10
+    - HSA-REI.D.11
+    - HSA-REI.D.12
+  ispartof:
+    - HSA-REI
+  ccss_guid: A65B3884A9784D21B409AC13B11DFD9B
+  ccss_url: http://corestandards.org/Math/Content/HSA/REI/D
+  asn_url: http://purl.org/ASN/resources/S1143595
+-
+  path: HSA-REI.D.10
+  __class__: Standard
+  aliases:
+    - A.REI.10
+  description: >
+    Understand that the graph of an equation in two variables is the set of all its
+    solutions plotted in the coordinate plane, often forming a curve (which could
+    be a line).
+  ispartof:
+    - HSA-REI.D
+  ccss_guid: 916EED53C7DB4D2D8BD6ACB4E277B714
+  ccss_url: http://corestandards.org/Math/Content/HSA/REI/D/10
+  asn_url: http://purl.org/ASN/resources/S1143642
+-
+  path: HSA-REI.D.11
+  __class__: Standard
+  aliases:
+    - A.REI.11
+  description: >
+    Explain why the x-coordinates of the points where the graphs of the equations
+    y = f(x) and y = g(x) intersect are the solutions of the equation f(x) = g(x);
+    find the solutions approximately, e.g., using technology to graph the functions,
+    make tables of values, or find successive approximations. Include cases where
+    f(x) and/or g(x) are linear, polynomial, rational, absolute value, exponential,
+    and logarithmic functions.
+  comment: Modeling is best interpreted not as a collection of isolated topics but
+    in relation to other standards. Making mathematical models is a Standard for Mathematical
+    Practice, and specific modeling standards appear throughout the high school standards
+    indicated by a star symbol (★). The star symbol sometimes appears on the heading
+    for a group of standards; in that case, it should be understood to apply to all
+    standards in that group.
+  ispartof:
+    - HSA-REI.D
+  ccss_guid: FBFBA64C70074AC99425390F527D0A85
+  ccss_url: http://corestandards.org/Math/Content/HSA/REI/D/11
+  asn_url: http://purl.org/ASN/resources/S1143643
+-
+  path: HSA-REI.D.12
+  __class__: Standard
+  aliases:
+    - A.REI.12
+  description: >
+    Graph the solutions to a linear inequality in two variables as a half-plane (excluding
+    the boundary in the case of a strict inequality), and graph the solution set to
+    a system of linear inequalities in two variables as the intersection of the corresponding
+    half-planes.
+  ispartof:
+    - HSA-REI.D
+  ccss_guid: 37C6331417654D34A416EE557CE4430E
+  ccss_url: http://corestandards.org/Math/Content/HSA/REI/D/12
+  asn_url: http://purl.org/ASN/resources/S1143644
+-
+  path: HSA-SSE
+  __class__: Domain
+  description: >
+    Seeing Structure in Expressions
+  contents:
+    - HSA-SSE.A
+    - HSA-SSE.B
+  ispartof:
+    - HSA
+  asn_url: http://purl.org/ASN/resources/S1143557
+-
+  path: HSA-SSE.A
+  __class__: Cluster
+  description: >
+    Interpret the structure of expressions
+  contents:
+    - HSA-SSE.A.1
+    - HSA-SSE.A.2
+  ispartof:
+    - HSA-SSE
+  ccss_guid: 16247FEF153B4404A115600AF3C81E03
+  ccss_url: http://corestandards.org/Math/Content/HSA/SSE/A
+  asn_url: http://purl.org/ASN/resources/S114358B
+-
+  path: HSA-SSE.A.1
+  __class__: Standard
+  aliases:
+    - A.SSE.1
+  description: >
+    Interpret expressions that represent a quantity in terms of its context
+  comment: Modeling is best interpreted not as a collection of isolated topics but
+    in relation to other standards. Making mathematical models is a Standard for Mathematical
+    Practice, and specific modeling standards appear throughout the high school standards
+    indicated by a star symbol (★). The star symbol sometimes appears on the heading
+    for a group of standards; in that case, it should be understood to apply to all
+    standards in that group.
+  contents:
+    - HSA-SSE.A.1a
+    - HSA-SSE.A.1b
+  ispartof:
+    - HSA-SSE.A
+  ccss_guid: 137C90D24DE949558F17713B84161B4D
+  ccss_url: http://corestandards.org/Math/Content/HSA/SSE/A/1
+  asn_url: http://purl.org/ASN/resources/S114362A
+-
+  path: HSA-SSE.A.1a
+  __class__: Component
+  aliases:
+    - A.SSE.1.a
+  description: >
+    Interpret parts of an expression, such as terms, factors, and coefficients.
+  ispartof:
+    - HSA-SSE.A.1
+  ccss_guid: 529B17211FDB499292FE9DCD0CAAA928
+  ccss_url: http://corestandards.org/Math/Content/HSA/SSE/A/1/a
+  asn_url: http://purl.org/ASN/resources/S1143651
+-
+  path: HSA-SSE.A.1b
+  __class__: Component
+  aliases:
+    - A.SSE.1.b
+  description: >
+    Interpret complicated expressions by viewing one or more of their parts as a single
+    entity.
+  comment: For example, interpret P(1+r)<sup>n</sup> as the product of P and a factor
+    not depending on P.
+  ispartof:
+    - HSA-SSE.A.1
+  ccss_guid: 5155CED2475A42D88AD48B7A676C7943
+  ccss_url: http://corestandards.org/Math/Content/HSA/SSE/A/1/b
+  asn_url: http://purl.org/ASN/resources/S1143652
+-
+  path: HSA-SSE.A.2
+  __class__: Standard
+  aliases:
+    - A.SSE.2
+  description: >
+    Use the structure of an expression to identify ways to rewrite it.
+  comment: For example, see x<sup>4</sup> — y<sup>4</sup> as (x²)² — (y²)², thus recognizing
+    it as a difference of squares that can be factored as (x² — y²)(x² + y²).
+  ispartof:
+    - HSA-SSE.A
+  ccss_guid: DE5D310B24EA4A7398462924C80EC4BA
+  ccss_url: http://corestandards.org/Math/Content/HSA/SSE/A/2
+  asn_url: http://purl.org/ASN/resources/S114362B
+-
+  path: HSA-SSE.B
+  __class__: Cluster
+  description: >
+    Write expressions in equivalent forms to solve problems
+  contents:
+    - HSA-SSE.B.3
+    - HSA-SSE.B.4
+  ispartof:
+    - HSA-SSE
+  ccss_guid: BEA7E3EF2A4C4C8F85F12D9743C25155
+  ccss_url: http://corestandards.org/Math/Content/HSA/SSE/B
+  asn_url: http://purl.org/ASN/resources/S114358C
+-
+  path: HSA-SSE.B.3
+  __class__: Standard
+  aliases:
+    - A.SSE.3
+  description: >
+    Choose and produce an equivalent form of an expression to reveal and explain properties
+    of the quantity represented by the expression.
+  comment: Modeling is best interpreted not as a collection of isolated topics but
+    in relation to other standards. Making mathematical models is a Standard for Mathematical
+    Practice, and specific modeling standards appear throughout the high school standards
+    indicated by a star symbol (★). The star symbol sometimes appears on the heading
+    for a group of standards; in that case, it should be understood to apply to all
+    standards in that group.
+  contents:
+    - HSA-SSE.B.3a
+    - HSA-SSE.B.3b
+    - HSA-SSE.B.3c
+  ispartof:
+    - HSA-SSE.B
+  ccss_guid: C705AD3CCF9641C9A3101BDB10737B11
+  ccss_url: http://corestandards.org/Math/Content/HSA/SSE/B/3
+  asn_url: http://purl.org/ASN/resources/S114362C
+-
+  path: HSA-SSE.B.3a
+  __class__: Component
+  aliases:
+    - A.SSE.3.a
+  description: >
+    Factor a quadratic expression to reveal the zeros of the function it defines.
+  ispartof:
+    - HSA-SSE.B.3
+  ccss_guid: 194A6E971ED74A3695C6CE468E337562
+  ccss_url: http://corestandards.org/Math/Content/HSA/SSE/B/3/a
+  asn_url: http://purl.org/ASN/resources/S1143653
+-
+  path: HSA-SSE.B.3b
+  __class__: Component
+  aliases:
+    - A.SSE.3.b
+  description: >
+    Complete the square in a quadratic expression to reveal the maximum or minimum
+    value of the function it defines.
+  ispartof:
+    - HSA-SSE.B.3
+  ccss_guid: C057EE31BA98447FB241F2F732B896BD
+  ccss_url: http://corestandards.org/Math/Content/HSA/SSE/B/3/b
+  asn_url: http://purl.org/ASN/resources/S1143654
+-
+  path: HSA-SSE.B.3c
+  __class__: Component
+  aliases:
+    - A.SSE.3.c
+  description: >
+    Use the properties of exponents to transform expressions for exponential functions.
+  comment: "For example the expression 1.15<sup>t</sup> can be rewritten as (1.151/12)<sup>12t</sup>\
+    \ \x98 1.012<sup>12t</sup> to reveal the approximate equivalent monhly interest\
+    \ rate if the annual rate is 15%."
+  ispartof:
+    - HSA-SSE.B.3
+  ccss_guid: D07C6A24D9F045EFACB20582472FC7EB
+  ccss_url: http://corestandards.org/Math/Content/HSA/SSE/B/3/c
+  asn_url: http://purl.org/ASN/resources/S1143655
+-
+  path: HSA-SSE.B.4
+  __class__: Standard
+  aliases:
+    - A.SSE.4
+  description: >
+    Derive the formula for the sum of a finite geometric series (when the common ratio
+    is not 1), and use the formula to solve problems.
+  comment: 'For example, calculate mortgage payments.
+
+    Modeling is best interpreted not as a collection of isolated topics but in relation
+    to other standards. Making mathematical models is a Standard for Mathematical
+    Practice, and specific modeling standards appear throughout the high school standards
+    indicated by a star symbol (★). The star symbol sometimes appears on the heading
+    for a group of standards; in that case, it should be understood to apply to all
+    standards in that group.'
+  ispartof:
+    - HSA-SSE.B
+  ccss_guid: 132D975B6090471A975C1780357F9D37
+  ccss_url: http://corestandards.org/Math/Content/HSA/SSE/B/4
+  asn_url: http://purl.org/ASN/resources/S114362D

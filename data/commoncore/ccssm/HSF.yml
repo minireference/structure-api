@@ -1,0 +1,882 @@
+-
+  path: HSF
+  __class__: Domain
+  description: >
+    High School — Functions
+  contents:
+    - HSF-BF
+    - HSF-IF
+    - HSF-LE
+    - HSF-TF
+  ispartof:
+    - CCSSM
+  asn_url: http://purl.org/ASN/resources/S114354F
+-
+  path: HSF-BF
+  __class__: Domain
+  description: >
+    Building Functions
+  contents:
+    - HSF-BF.A
+    - HSF-BF.B
+  ispartof:
+    - HSF
+  asn_url: http://purl.org/ASN/resources/S114355C
+-
+  path: HSF-BF.A
+  __class__: Cluster
+  description: >
+    Build a function that models a relationship between two quantities
+  contents:
+    - HSF-BF.A.1
+    - HSF-BF.A.2
+  ispartof:
+    - HSF-BF
+  ccss_guid: 9B65633847F14c7eBE6901214D7CCE72
+  ccss_url: http://corestandards.org/Math/Content/HSF/BF/A
+  asn_url: http://purl.org/ASN/resources/S1143584
+-
+  path: HSF-BF.A.1
+  __class__: Standard
+  aliases:
+    - F.BF.1
+  description: >
+    Write a function that describes a relationship between two quantities
+  comment: Modeling is best interpreted not as a collection of isolated topics but
+    in relation to other standards. Making mathematical models is a Standard for Mathematical
+    Practice, and specific modeling standards appear throughout the high school standards
+    indicated by a star symbol (★). The star symbol sometimes appears on the heading
+    for a group of standards; in that case, it should be understood to apply to all
+    standards in that group.
+  contents:
+    - HSF-BF.A.1a
+    - HSF-BF.A.1b
+    - HSF-BF.A.1c
+  ispartof:
+    - HSF-BF.A
+  ccss_guid: 148058CA1C12486fBED93EA48399BFB5
+  ccss_url: http://corestandards.org/Math/Content/HSF/BF/A/1
+  asn_url: http://purl.org/ASN/resources/S11435F2
+-
+  path: HSF-BF.A.1a
+  __class__: Component
+  aliases:
+    - F.BF.1.a
+  description: >
+    Determine an explicit expression, a recursive process, or steps for calculation
+    from a context.
+  ispartof:
+    - HSF-BF.A.1
+  ccss_guid: 70C634815522412aA1C2601B0B0990FF
+  ccss_url: http://corestandards.org/Math/Content/HSF/BF/A/1/a
+  asn_url: http://purl.org/ASN/resources/S11435F3
+-
+  path: HSF-BF.A.1b
+  __class__: Component
+  aliases:
+    - F.BF.1.b
+  description: >
+    Combine standard function types using arithmetic operations.
+  comment: For example, build a function that models the temperature of a cooling
+    body by adding a constant function to a decaying exponential, and relate these
+    functions to the model.
+  ispartof:
+    - HSF-BF.A.1
+  ccss_guid: 7C24A27D8C154d37A8F4C00AFA8EE4A1
+  ccss_url: http://corestandards.org/Math/Content/HSF/BF/A/1/b
+  asn_url: http://purl.org/ASN/resources/S11435F4
+-
+  path: HSF-BF.A.1c
+  __class__: Component
+  aliases:
+    - F.BF.1.c
+  description: >
+    (+) Compose functions.
+  comment: For example, if T(y) is the temperature in the atmosphere as a function
+    of height, and h(t) is the height of a weather balloon as a function of time,
+    then T(h(t)) is the temperature at the location of the weather balloon as a function
+    of time.
+  ispartof:
+    - HSF-BF.A.1
+  ccss_guid: EB54465D5EA44f868FCD2C73D4E782AC
+  ccss_url: http://corestandards.org/Math/Content/HSF/BF/A/1/c
+  asn_url: http://purl.org/ASN/resources/S11435F5
+-
+  path: HSF-BF.A.2
+  __class__: Standard
+  aliases:
+    - F.BF.2
+  description: >
+    Write arithmetic and geometric sequences both recursively and with an explicit
+    formula, use them to model situations, and translate between the two forms.
+  comment: Modeling is best interpreted not as a collection of isolated topics but
+    in relation to other standards. Making mathematical models is a Standard for Mathematical
+    Practice, and specific modeling standards appear throughout the high school standards
+    indicated by a star symbol (★). The star symbol sometimes appears on the heading
+    for a group of standards; in that case, it should be understood to apply to all
+    standards in that group.
+  ispartof:
+    - HSF-BF.A
+  ccss_guid: 5B5D5542BF6C4fcaAE1CF1B7AABFBA47
+  ccss_url: http://corestandards.org/Math/Content/HSF/BF/A/2
+  asn_url: http://purl.org/ASN/resources/S11435F6
+-
+  path: HSF-BF.B
+  __class__: Cluster
+  description: >
+    Build new functions from existing functions
+  contents:
+    - HSF-BF.B.3
+    - HSF-BF.B.4
+    - HSF-BF.B.5
+  ispartof:
+    - HSF-BF
+  ccss_guid: 0D80A8E0EDC34cfeA85B47771F813955
+  ccss_url: http://corestandards.org/Math/Content/HSF/BF/B
+  asn_url: http://purl.org/ASN/resources/S1143585
+-
+  path: HSF-BF.B.3
+  __class__: Standard
+  aliases:
+    - F.BF.3
+  description: >
+    Identify the effect on the graph of replacing f(x) by f(x) + k, k f(x), f(kx),
+    and f(x + k) for specific values of k (both positive and negative); find the value
+    of k given the graphs. Experiment with cases and illustrate an explanation of
+    the effects on the graph using technology. Include recognizing even and odd functions
+    from their graphs and algebraic expressions for them.
+  ispartof:
+    - HSF-BF.B
+  ccss_guid: 6FAED174A2944dfeAA00D24C2CFBE708
+  ccss_url: http://corestandards.org/Math/Content/HSF/BF/B/3
+  asn_url: http://purl.org/ASN/resources/S11435F7
+-
+  path: HSF-BF.B.4
+  __class__: Standard
+  aliases:
+    - F.BF.4
+  description: >
+    Find inverse functions.
+  contents:
+    - HSF-BF.B.4a
+    - HSF-BF.B.4b
+    - HSF-BF.B.4c
+    - HSF-BF.B.4d
+  ispartof:
+    - HSF-BF.B
+  ccss_guid: D600962249FF4b1aADC5857575D228AE
+  ccss_url: http://corestandards.org/Math/Content/HSF/BF/B/4
+  asn_url: http://purl.org/ASN/resources/S11435F8
+-
+  path: HSF-BF.B.4a
+  __class__: Component
+  aliases:
+    - F.BF.4.a
+  description: >
+    Solve an equation of the form f(x) = c for a simple function f that has an inverse
+    and write an expression for the inverse.
+  comment: For example, f(x) =2 x3 or f(x) = (x+1)/(x—1) for x ? 1.
+  ispartof:
+    - HSF-BF.B.4
+  ccss_guid: 392F16871F5443c9BE065FD1A9DE39C2
+  ccss_url: http://corestandards.org/Math/Content/HSF/BF/B/4/a
+  asn_url: http://purl.org/ASN/resources/S11435F9
+-
+  path: HSF-BF.B.4b
+  __class__: Component
+  aliases:
+    - F.BF.4.b
+  description: >
+    (+) Verify by composition that one function is the inverse of another.
+  ispartof:
+    - HSF-BF.B.4
+  ccss_guid: F4B7CBBED04C4960A3F16E86069BE376
+  ccss_url: http://corestandards.org/Math/Content/HSF/BF/B/4/b
+  asn_url: http://purl.org/ASN/resources/S11435FA
+-
+  path: HSF-BF.B.4c
+  __class__: Component
+  aliases:
+    - F.BF.4.c
+  description: >
+    (+) Read values of an inverse function from a graph or a table, given that the
+    function has an inverse.
+  ispartof:
+    - HSF-BF.B.4
+  ccss_guid: 5A331E7758B240c389EA982FA8605DAE
+  ccss_url: http://corestandards.org/Math/Content/HSF/BF/B/4/c
+  asn_url: http://purl.org/ASN/resources/S11435FB
+-
+  path: HSF-BF.B.4d
+  __class__: Component
+  aliases:
+    - F.BF.4.d
+  description: >
+    (+) Produce an invertible function from a non-invertible function by restricting
+    the domain.
+  ispartof:
+    - HSF-BF.B.4
+  ccss_guid: 2CE8D7B11DF246bbA2D5DC96DE5BE282
+  ccss_url: http://corestandards.org/Math/Content/HSF/BF/B/4/d
+  asn_url: http://purl.org/ASN/resources/S11435FC
+-
+  path: HSF-BF.B.5
+  __class__: Standard
+  aliases:
+    - F.BF.5
+  description: >
+    (+) Understand the inverse relationship between exponents and logarithms and use
+    this relationship to solve problems involving logarithms and exponents.
+  ispartof:
+    - HSF-BF.B
+  ccss_guid: 87E1B0E0B7164d1dA8AA9F6A63000A7D
+  ccss_url: http://corestandards.org/Math/Content/HSF/BF/B/5
+  asn_url: http://purl.org/ASN/resources/S11435FD
+-
+  path: HSF-IF
+  __class__: Domain
+  description: >
+    Interpreting Functions
+  contents:
+    - HSF-IF.A
+    - HSF-IF.B
+    - HSF-IF.C
+  ispartof:
+    - HSF
+  asn_url: http://purl.org/ASN/resources/S114355B
+-
+  path: HSF-IF.A
+  __class__: Cluster
+  description: >
+    Understand the concept of a function and use function notation
+  contents:
+    - HSF-IF.A.1
+    - HSF-IF.A.2
+    - HSF-IF.A.3
+  ispartof:
+    - HSF-IF
+  ccss_guid: 59E4F5F26EF044869249ED3E7CC0AD95
+  ccss_url: http://corestandards.org/Math/Content/HSF/IF/A
+  asn_url: http://purl.org/ASN/resources/S1143581
+-
+  path: HSF-IF.A.1
+  __class__: Standard
+  aliases:
+    - F.IF.1
+  description: >
+    Understand that a function from one set (called the domain) to another set (called
+    the range) assigns to each element of the domain exactly one element of the range.
+    If f is a function and x is an element of its domain, then f(x) denotes the output
+    of f corresponding to the input x. The graph of f is the graph of the equation
+    y = f(x).
+  ispartof:
+    - HSF-IF.A
+  ccss_guid: 024460620E624fb2BADC665C38AC3981
+  ccss_url: http://corestandards.org/Math/Content/HSF/IF/A/1
+  asn_url: http://purl.org/ASN/resources/S11435E9
+-
+  path: HSF-IF.A.2
+  __class__: Standard
+  aliases:
+    - F.IF.2
+  description: >
+    Use function notation, evaluate functions for inputs in their domains, and interpret
+    statements that use function notation in terms of a context.
+  ispartof:
+    - HSF-IF.A
+  ccss_guid: D30BED7D477F4d458D8721A8418CE6E2
+  ccss_url: http://corestandards.org/Math/Content/HSF/IF/A/2
+  asn_url: http://purl.org/ASN/resources/S11435EA
+-
+  path: HSF-IF.A.3
+  __class__: Standard
+  aliases:
+    - F.IF.3
+  description: >
+    Recognize that sequences are functions, sometimes defined recursively, whose domain
+    is a subset of the integers.
+  comment: For example, the Fibonacci sequence is defined recursively by f(0) = f(1)
+    = 1, f(n+1) = f(n) + f(n-1) for n ≥ 1.
+  ispartof:
+    - HSF-IF.A
+  ccss_guid: D236C711DD0E407d92FCE4762054A867
+  ccss_url: http://corestandards.org/Math/Content/HSF/IF/A/3
+  asn_url: http://purl.org/ASN/resources/S11435EB
+-
+  path: HSF-IF.B
+  __class__: Cluster
+  description: >
+    Interpret functions that arise in applications in terms of the context
+  contents:
+    - HSF-IF.B.4
+    - HSF-IF.B.5
+    - HSF-IF.B.6
+  ispartof:
+    - HSF-IF
+  ccss_guid: E9DDBF450BFB48a79C8EF29E1EB211CD
+  ccss_url: http://corestandards.org/Math/Content/HSF/IF/B
+  asn_url: http://purl.org/ASN/resources/S1143582
+-
+  path: HSF-IF.B.4
+  __class__: Standard
+  aliases:
+    - F.IF.4
+  description: >
+    For a function that models a relationship between two quantities, interpret key
+    features of graphs and tables in terms of the quantities, and sketch graphs showing
+    key features given a verbal description of the relationship.
+  comment: 'Key features include: intercepts; intervals where the function is increasing,
+    decreasing, positive, or negative; relative maximums and minimums; symmetries;
+    end behavior; and periodicity.
+
+    Modeling is best interpreted not as a collection of isolated topics but in relation
+    to other standards. Making mathematical models is a Standard for Mathematical
+    Practice, and specific modeling standards appear throughout the high school standards
+    indicated by a star symbol (★). The star symbol sometimes appears on the heading
+    for a group of standards; in that case, it should be understood to apply to all
+    standards in that group.'
+  ispartof:
+    - HSF-IF.B
+  ccss_guid: 096FA681EFFB40bc876F231D9A6BA80A
+  ccss_url: http://corestandards.org/Math/Content/HSF/IF/B/4
+  asn_url: http://purl.org/ASN/resources/S11435EC
+-
+  path: HSF-IF.B.5
+  __class__: Standard
+  aliases:
+    - F.IF.5
+  description: >
+    Relate the domain of a function to its graph and, where applicable, to the quantitative
+    relationship it describes.
+  comment: 'For example, if the function h(n) gives the number of person-hours it
+    takes to assemble n engines in a factory, then the positive integers would be
+    an appropriate domain for the function.
+
+    Modeling is best interpreted not as a collection of isolated topics but in relation
+    to other standards. Making mathematical models is a Standard for Mathematical
+    Practice, and specific modeling standards appear throughout the high school standards
+    indicated by a star symbol (★). The star symbol sometimes appears on the heading
+    for a group of standards; in that case, it should be understood to apply to all
+    standards in that group.'
+  ispartof:
+    - HSF-IF.B
+  ccss_guid: 03B3127447154c298592EB77CC7BD717
+  ccss_url: http://corestandards.org/Math/Content/HSF/IF/B/5
+  asn_url: http://purl.org/ASN/resources/S11435ED
+-
+  path: HSF-IF.B.6
+  __class__: Standard
+  aliases:
+    - F.IF.6
+  description: >
+    Calculate and interpret the average rate of change of a function (presented symbolically
+    or as a table) over a specified interval. Estimate the rate of change from a graph.
+  comment: Modeling is best interpreted not as a collection of isolated topics but
+    in relation to other standards. Making mathematical models is a Standard for Mathematical
+    Practice, and specific modeling standards appear throughout the high school standards
+    indicated by a star symbol (★). The star symbol sometimes appears on the heading
+    for a group of standards; in that case, it should be understood to apply to all
+    standards in that group.
+  ispartof:
+    - HSF-IF.B
+  ccss_guid: 621B40F3E1DC40a3A199A62DBEFF22AA
+  ccss_url: http://corestandards.org/Math/Content/HSF/IF/B/6
+  asn_url: http://purl.org/ASN/resources/S11435EE
+-
+  path: HSF-IF.C
+  __class__: Cluster
+  description: >
+    Analyze functions using different representations
+  contents:
+    - HSF-IF.C.7
+    - HSF-IF.C.8
+    - HSF-IF.C.9
+  ispartof:
+    - HSF-IF
+  ccss_guid: F99D9C6750C84f45A30719B919C80A8B
+  ccss_url: http://corestandards.org/Math/Content/HSF/IF/C
+  asn_url: http://purl.org/ASN/resources/S1143583
+-
+  path: HSF-IF.C.7
+  __class__: Standard
+  aliases:
+    - F.IF.7
+  description: >
+    Graph functions expressed symbolically and show key features of the graph, by
+    hand in simple cases and using technology for more complicated cases.
+  comment: Modeling is best interpreted not as a collection of isolated topics but
+    in relation to other standards. Making mathematical models is a Standard for Mathematical
+    Practice, and specific modeling standards appear throughout the high school standards
+    indicated by a star symbol (★). The star symbol sometimes appears on the heading
+    for a group of standards; in that case, it should be understood to apply to all
+    standards in that group.
+  contents:
+    - HSF-IF.C.7a
+    - HSF-IF.C.7b
+    - HSF-IF.C.7c
+    - HSF-IF.C.7d
+    - HSF-IF.C.7e
+  ispartof:
+    - HSF-IF.C
+  ccss_guid: 5E15A791B8614350AC4E7E11AACFC5B2
+  ccss_url: http://corestandards.org/Math/Content/HSF/IF/C/7
+  asn_url: http://purl.org/ASN/resources/S11435EF
+-
+  path: HSF-IF.C.7a
+  __class__: Component
+  aliases:
+    - F.IF.7.a
+  description: >
+    Graph linear and quadratic functions and show intercepts, maxima, and minima.
+  ispartof:
+    - HSF-IF.C.7
+  ccss_guid: BDAA9678DF8E48a7B07B6546CA928796
+  ccss_url: http://corestandards.org/Math/Content/HSF/IF/C/7/a
+  asn_url: http://purl.org/ASN/resources/S114364A
+-
+  path: HSF-IF.C.7b
+  __class__: Component
+  aliases:
+    - F.IF.7.b
+  description: >
+    Graph square root, cube root, and piecewise-defined functions, including step
+    functions and absolute value functions.
+  ispartof:
+    - HSF-IF.C.7
+  ccss_guid: E7A923E2D1DA493e8B2B5146B298B677
+  ccss_url: http://corestandards.org/Math/Content/HSF/IF/C/7/b
+  asn_url: http://purl.org/ASN/resources/S114364B
+-
+  path: HSF-IF.C.7c
+  __class__: Component
+  aliases:
+    - F.IF.7.c
+  description: >
+    Graph polynomial functions, identifying zeros when suitable factorizations are
+    available, and showing end behavior.
+  ispartof:
+    - HSF-IF.C.7
+  ccss_guid: 45B93BCB8B1B4b388574F0CA327C48BD
+  ccss_url: http://corestandards.org/Math/Content/HSF/IF/C/7/c
+  asn_url: http://purl.org/ASN/resources/S114364C
+-
+  path: HSF-IF.C.7d
+  __class__: Component
+  aliases:
+    - F.IF.7.d
+  description: >
+    (+) Graph rational functions, identifying zeros and asymptotes when suitable factorizations
+    are available, and showing end behavior.
+  ispartof:
+    - HSF-IF.C.7
+  ccss_guid: 890632566D8440189B4D825B5EE6BFD3
+  ccss_url: http://corestandards.org/Math/Content/HSF/IF/C/7/d
+  asn_url: http://purl.org/ASN/resources/S114364D
+-
+  path: HSF-IF.C.7e
+  __class__: Component
+  aliases:
+    - F.IF.7.e
+  description: >
+    Graph exponential and logarithmic functions, showing intercepts and end behavior,
+    and trigonometric functions, showing period, midline, and amplitude.
+  ispartof:
+    - HSF-IF.C.7
+  ccss_guid: 282642278ABD4b32911BDCD1EA2C6468
+  ccss_url: http://corestandards.org/Math/Content/HSF/IF/C/7/e
+  asn_url: http://purl.org/ASN/resources/S114364E
+-
+  path: HSF-IF.C.8
+  __class__: Standard
+  aliases:
+    - F.IF.8
+  description: >
+    Write a function defined by an expression in different but equivalent forms to
+    reveal and explain different properties of the function.
+  contents:
+    - HSF-IF.C.8a
+    - HSF-IF.C.8b
+  ispartof:
+    - HSF-IF.C
+  ccss_guid: B6B625DA12C4423d955A66BFD1193175
+  ccss_url: http://corestandards.org/Math/Content/HSF/IF/C/8
+  asn_url: http://purl.org/ASN/resources/S11435F0
+-
+  path: HSF-IF.C.8a
+  __class__: Component
+  aliases:
+    - F.IF.8.a
+  description: >
+    Use the process of factoring and completing the square in a quadratic function
+    to show zeros, extreme values, and symmetry of the graph, and interpret these
+    in terms of a context.
+  ispartof:
+    - HSF-IF.C.8
+  ccss_guid: E8C42265F5F341ea9C0284AA7BDC65AE
+  ccss_url: http://corestandards.org/Math/Content/HSF/IF/C/8/a
+  asn_url: http://purl.org/ASN/resources/S114364F
+-
+  path: HSF-IF.C.8b
+  __class__: Component
+  aliases:
+    - F.IF.8.b
+  description: >
+    Use the properties of exponents to interpret expressions for exponential functions.
+  comment: For example, identify percent rate of change in functions such as y = (1.02)<sup>t</sup>,
+    y = (0.97)<sup>t</sup>, y = (1.01 <sup>12t</sup>, y = (1.2)<sup>t/10</sup>, and
+    classify them as representing exponential growth or decay.
+  ispartof:
+    - HSF-IF.C.8
+  ccss_guid: E8C42265F5F341ea9C0284AA7BDC65AF
+  ccss_url: http://corestandards.org/Math/Content/HSF/IF/C/8/b
+  asn_url: http://purl.org/ASN/resources/S1143650
+-
+  path: HSF-IF.C.9
+  __class__: Standard
+  aliases:
+    - F.IF.9
+  description: >
+    Compare properties of two functions each represented in a different way (algebraically,
+    graphically, numerically in tables, or by verbal descriptions).
+  comment: For example, given a graph of one quadratic function and an algebraic expression
+    for another, say which has the larger maximum.
+  ispartof:
+    - HSF-IF.C
+  ccss_guid: 10A5A8046F1D494dA1FCC3A958437AF2
+  ccss_url: http://corestandards.org/Math/Content/HSF/IF/C/9
+  asn_url: http://purl.org/ASN/resources/S11435F1
+-
+  path: HSF-LE
+  __class__: Domain
+  description: >
+    Linear, Quadratic, and Exponential Models
+  comment: Modeling is best interpreted not as a collection of isolated topics but
+    in relation to other standards. Making mathematical models is a Standard for Mathematical
+    Practice, and specific modeling standards appear throughout the high school standards
+    indicated by a star symbol (★). The star symbol sometimes appears on the heading
+    for a group of standards; in that case, it should be understood to apply to all
+    standards in that group.
+  contents:
+    - HSF-LE.A
+    - HSF-LE.B
+  ispartof:
+    - HSF
+  asn_url: http://purl.org/ASN/resources/S114355D
+-
+  path: HSF-LE.A
+  __class__: Cluster
+  description: >
+    Construct and compare linear, quadratic, and exponential models and solve problems
+  contents:
+    - HSF-LE.A.1
+    - HSF-LE.A.2
+    - HSF-LE.A.3
+    - HSF-LE.A.4
+  ispartof:
+    - HSF-LE
+  ccss_guid: EA31B803149948c1AB6FCB71C7EE6E23
+  ccss_url: http://corestandards.org/Math/Content/HSF/LE/A
+  asn_url: http://purl.org/ASN/resources/S1143586
+-
+  path: HSF-LE.A.1
+  __class__: Standard
+  aliases:
+    - F.LE.1
+  description: >
+    Distinguish between situations that can be modeled with linear functions and with
+    exponential functions.
+  contents:
+    - HSF-LE.A.1a
+    - HSF-LE.A.1b
+    - HSF-LE.A.1c
+  ispartof:
+    - HSF-LE.A
+  ccss_guid: 13898F5B9227486aBB749E5A8D5F0BA2
+  ccss_url: http://corestandards.org/Math/Content/HSF/LE/A/1
+  asn_url: http://purl.org/ASN/resources/S11435FE
+-
+  path: HSF-LE.A.1a
+  __class__: Component
+  aliases:
+    - F.LE.1.a
+  description: >
+    Prove that linear functions grow by equal differences over equal intervals, and
+    that exponential functions grow by equal factors over equal intervals.
+  ispartof:
+    - HSF-LE.A.1
+  ccss_guid: 39F3AF9140744f049D8A7F16C1E1C11B
+  ccss_url: http://corestandards.org/Math/Content/HSF/LE/A/1/a
+  asn_url: http://purl.org/ASN/resources/S11435FF
+-
+  path: HSF-LE.A.1b
+  __class__: Component
+  aliases:
+    - F.LE.1.b
+  description: >
+    Recognize situations in which one quantity changes at a constant rate per unit
+    interval relative to another.
+  ispartof:
+    - HSF-LE.A.1
+  ccss_guid: 40FD278805FB4f0091985412D2591720
+  ccss_url: http://corestandards.org/Math/Content/HSF/LE/A/1/b
+  asn_url: http://purl.org/ASN/resources/S1143600
+-
+  path: HSF-LE.A.1c
+  __class__: Component
+  aliases:
+    - F.LE.1.c
+  description: >
+    Recognize situations in which a quantity grows or decays by a constant percent
+    rate per unit interval relative to another.
+  ispartof:
+    - HSF-LE.A.1
+  ccss_guid: 5E2567D4DEEA4e71971D8405AD83282D
+  ccss_url: http://corestandards.org/Math/Content/HSF/LE/A/1/c
+  asn_url: http://purl.org/ASN/resources/S1143601
+-
+  path: HSF-LE.A.2
+  __class__: Standard
+  aliases:
+    - F.LE.2
+  description: >
+    Construct linear and exponential functions, including arithmetic and geometric
+    sequences, given a graph, a description of a relationship, or two input-output
+    pairs (include reading these from a table).
+  ispartof:
+    - HSF-LE.A
+  ccss_guid: 43C90B2EE7834c20AC59B88CBE3222E8
+  ccss_url: http://corestandards.org/Math/Content/HSF/LE/A/2
+  asn_url: http://purl.org/ASN/resources/S1143602
+-
+  path: HSF-LE.A.3
+  __class__: Standard
+  aliases:
+    - F.LE.3
+  description: >
+    Observe using graphs and tables that a quantity increasing exponentially eventually
+    exceeds a quantity increasing linearly, quadratically, or (more generally) as
+    a polynomial function.
+  ispartof:
+    - HSF-LE.A
+  ccss_guid: 69E7CE927BB04137A41E2065D3F27FFC
+  ccss_url: http://corestandards.org/Math/Content/HSF/LE/A/3
+  asn_url: http://purl.org/ASN/resources/S1143603
+-
+  path: HSF-LE.A.4
+  __class__: Standard
+  aliases:
+    - F.LE.4
+  description: >
+    For exponential models, express as a logarithm the solution to ab<sup>ct</sup>
+    = d where a, c, and d are numbers and the base b is 2, 10, or e; evaluate the
+    logarithm using technology.
+  ispartof:
+    - HSF-LE.A
+  ccss_guid: 69E7CE927BB04137A41E2065D3F27FFD
+  ccss_url: http://corestandards.org/Math/Content/HSF/LE/A/4
+  asn_url: http://purl.org/ASN/resources/S1143604
+-
+  path: HSF-LE.B
+  __class__: Cluster
+  description: >
+    Interpret expressions for functions in terms of the situation they model
+  contents:
+    - HSF-LE.B.5
+  ispartof:
+    - HSF-LE
+  ccss_guid: 06327BD558CD4f66B40934E0E0CAD555
+  ccss_url: http://corestandards.org/Math/Content/HSF/LE/B
+  asn_url: http://purl.org/ASN/resources/S1143587
+-
+  path: HSF-LE.B.5
+  __class__: Standard
+  aliases:
+    - F.LE.5
+  description: >
+    Interpret the parameters in a linear or exponential function in terms of a context.
+  ispartof:
+    - HSF-LE.B
+  ccss_guid: ED9707572259431d80D24767C55B4E64
+  ccss_url: http://corestandards.org/Math/Content/HSF/LE/B/5
+  asn_url: http://purl.org/ASN/resources/S1143605
+-
+  path: HSF-TF
+  __class__: Domain
+  description: >
+    Trigonometric Functions
+  contents:
+    - HSF-TF.A
+    - HSF-TF.B
+    - HSF-TF.C
+  ispartof:
+    - HSF
+  asn_url: http://purl.org/ASN/resources/S114355E
+-
+  path: HSF-TF.A
+  __class__: Cluster
+  description: >
+    Extend the domain of trigonometric functions using the unit circle
+  contents:
+    - HSF-TF.A.1
+    - HSF-TF.A.2
+    - HSF-TF.A.3
+    - HSF-TF.A.4
+  ispartof:
+    - HSF-TF
+  ccss_guid: 0B13FE26FA344dca998C7DEDEBC7E0BF
+  ccss_url: http://corestandards.org/Math/Content/HSF/TF/A
+  asn_url: http://purl.org/ASN/resources/S1143588
+-
+  path: HSF-TF.A.1
+  __class__: Standard
+  aliases:
+    - F.TF.1
+  description: >
+    Understand radian measure of an angle as the length of the arc on the unit circle
+    subtended by the angle.
+  ispartof:
+    - HSF-TF.A
+  ccss_guid: AD929225303444039816AB290ECA8E44
+  ccss_url: http://corestandards.org/Math/Content/HSF/TF/A/1
+  asn_url: http://purl.org/ASN/resources/S1143606
+-
+  path: HSF-TF.A.2
+  __class__: Standard
+  aliases:
+    - F.TF.2
+  description: >
+    Explain how the unit circle in the coordinate plane enables the extension of trigonometric
+    functions to all real numbers, interpreted as radian measures of angles traversed
+    counterclockwise around the unit circle.
+  ispartof:
+    - HSF-TF.A
+  ccss_guid: 0A8CB87ECFF541b69DCD30731F122EA6
+  ccss_url: http://corestandards.org/Math/Content/HSF/TF/A/2
+  asn_url: http://purl.org/ASN/resources/S1143607
+-
+  path: HSF-TF.A.3
+  __class__: Standard
+  aliases:
+    - F.TF.3
+  description: >
+    (+) Use special triangles to determine geometrically the values of sine, cosine,
+    tangent for π/3, π/4 and π/6, and use the unit circle to express the values of
+    sine, cosine, and tangent for π-x, π+x, and 2π-x in terms of their values for
+    x, where x is any real number.
+  ispartof:
+    - HSF-TF.A
+  ccss_guid: 3079DC14566A4ed09B88885B9D66A59B
+  ccss_url: http://corestandards.org/Math/Content/HSF/TF/A/3
+  asn_url: http://purl.org/ASN/resources/S1143608
+-
+  path: HSF-TF.A.4
+  __class__: Standard
+  aliases:
+    - F.TF.4
+  description: >
+    (+) Use the unit circle to explain symmetry (odd and even) and periodicity of
+    trigonometric functions.
+  ispartof:
+    - HSF-TF.A
+  ccss_guid: E1FA68F31C204dd0B94D58A32D9C6E42
+  ccss_url: http://corestandards.org/Math/Content/HSF/TF/A/4
+  asn_url: http://purl.org/ASN/resources/S1143609
+-
+  path: HSF-TF.B
+  __class__: Cluster
+  description: >
+    Model periodic phenomena with trigonometric functions
+  contents:
+    - HSF-TF.B.5
+    - HSF-TF.B.6
+    - HSF-TF.B.7
+  ispartof:
+    - HSF-TF
+  ccss_guid: CEBB90EF52E44ac196F126C321E1E446
+  ccss_url: http://corestandards.org/Math/Content/HSF/TF/B
+  asn_url: http://purl.org/ASN/resources/S1143589
+-
+  path: HSF-TF.B.5
+  __class__: Standard
+  aliases:
+    - F.TF.5
+  description: >
+    Choose trigonometric functions to model periodic phenomena with specified amplitude,
+    frequency, and midline.
+  comment: Modeling is best interpreted not as a collection of isolated topics but
+    in relation to other standards. Making mathematical models is a Standard for Mathematical
+    Practice, and specific modeling standards appear throughout the high school standards
+    indicated by a star symbol (★). The star symbol sometimes appears on the heading
+    for a group of standards; in that case, it should be understood to apply to all
+    standards in that group.
+  ispartof:
+    - HSF-TF.B
+  ccss_guid: F9D8D0D240954f189B3BDFEEAB6D6ECB
+  ccss_url: http://corestandards.org/Math/Content/HSF/TF/B/5
+  asn_url: http://purl.org/ASN/resources/S114360A
+-
+  path: HSF-TF.B.6
+  __class__: Standard
+  aliases:
+    - F.TF.6
+  description: >
+    (+) Understand that restricting a trigonometric function to a domain on which
+    it is always increasing or always decreasing allows its inverse to be constructed.
+  ispartof:
+    - HSF-TF.B
+  ccss_guid: 99F20438610449598284578176010342
+  ccss_url: http://corestandards.org/Math/Content/HSF/TF/B/6
+  asn_url: http://purl.org/ASN/resources/S114360B
+-
+  path: HSF-TF.B.7
+  __class__: Standard
+  aliases:
+    - F.TF.7
+  description: >
+    (+) Use inverse functions to solve trigonometric equations that arise in modeling
+    contexts; evaluate the solutions using technology, and interpret them in terms
+    of the context.
+  ispartof:
+    - HSF-TF.B
+  ccss_guid: A3292D1E73A24918BFD72AF26ABA23EC
+  ccss_url: http://corestandards.org/Math/Content/HSF/TF/B/7
+  asn_url: http://purl.org/ASN/resources/S114360C
+-
+  path: HSF-TF.C
+  __class__: Cluster
+  description: >
+    Prove and apply trigonometric identities
+  contents:
+    - HSF-TF.C.8
+    - HSF-TF.C.9
+  ispartof:
+    - HSF-TF
+  ccss_guid: 601ED08534CF40a5977CEBAD49863725
+  ccss_url: http://corestandards.org/Math/Content/HSF/TF/C
+  asn_url: http://purl.org/ASN/resources/S114358A
+-
+  path: HSF-TF.C.8
+  __class__: Standard
+  aliases:
+    - F.TF.8
+  description: >
+    Prove the Pythagorean identity sin²(θ) + cos²(θ) = 1 and use it to find sin(θ),
+    cos(θ), or tan(θ) given sin(θ), cos(θ), or tan(θ) and the quadrant of the angle.
+  ispartof:
+    - HSF-TF.C
+  ccss_guid: 62363EDC2EC343c4BE5484B1FAC81B19
+  ccss_url: http://corestandards.org/Math/Content/HSF/TF/C/8
+  asn_url: http://purl.org/ASN/resources/S114360D
+-
+  path: HSF-TF.C.9
+  __class__: Standard
+  aliases:
+    - F.TF.9
+  description: >
+    (+) Prove the addition and subtraction formulas for sine, cosine, and tangent
+    and use them to solve problems.
+  ispartof:
+    - HSF-TF.C
+  ccss_guid: EB0D9BB16CAB4b2cB2A05FCD969BF8EF
+  ccss_url: http://corestandards.org/Math/Content/HSF/TF/C/9
+  asn_url: http://purl.org/ASN/resources/S114360E

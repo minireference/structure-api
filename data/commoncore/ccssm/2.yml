@@ -1,0 +1,649 @@
+-
+  path: 2.G.A
+  __class__: Cluster
+  description: >
+    Reason with shapes and their attributes.
+  contents:
+    - 2.G.A.1
+    - 2.G.A.2
+    - 2.G.A.3
+  ispartof:
+    - G
+  ccss_guid: E82ECFD919D748a7AD0F9AFDDF8EA50F
+  ccss_url: http://corestandards.org/Math/Content/2/G/A
+-
+  path: 2.G.A.1
+  __class__: Standard
+  aliases:
+    - 2.G.1
+  description: >
+    Recognize and draw shapes having specified attributes, such as a given number
+    of angles or a given number of equal faces. Identify triangles, quadrilaterals,
+    pentagons, hexagons, and cubes.
+  comment: Sizes are compared directly or visually, not compared by measuring.
+  ispartof:
+    - 2.G.A
+  prerequisites:
+    - 1.G.A.1
+  usedfors:
+    - 3.G.A.1
+  ccss_guid: 61864044228F4141AF5A894EC059DFB7
+  ccss_url: http://corestandards.org/Math/Content/2/G/A/1
+  asn_url: http://purl.org/ASN/resources/S114346A
+-
+  path: 2.G.A.2
+  __class__: Standard
+  aliases:
+    - 2.G.2
+  description: >
+    Partition a rectangle into rows and columns of same-size squares and count to
+    find the total number of them.
+  ispartof:
+    - 2.G.A
+  usedfors:
+    - 2.G.A.3
+    - 3.MD.C.6
+  ccss_guid: 72351776259D416CB0A38EEBF8590435
+  ccss_url: http://corestandards.org/Math/Content/2/G/A/2
+  asn_url: http://purl.org/ASN/resources/S114346B
+-
+  path: 2.G.A.3
+  __class__: Standard
+  aliases:
+    - 2.G.3
+  description: >
+    Partition circles and rectangles into two, three, or four equal shares, describe
+    the shares using the words halves, thirds, half of, a third of, etc., and describe
+    the whole as two halves, three thirds, four fourths. Recognize that equal shares
+    of identical wholes need not have the same shape.
+  ispartof:
+    - 2.G.A
+  prerequisites:
+    - 2.G.A.2
+    - 1.G.A.3
+  usedfors:
+    - 3.NF.A.1
+  ccss_guid: FB8B502B82B44672A489DEDC94283ABD
+  ccss_url: http://corestandards.org/Math/Content/2/G/A/3
+  asn_url: http://purl.org/ASN/resources/S114346C
+-
+  path: 2.MD.A
+  __class__: Cluster
+  description: >
+    Measure and estimate lengths in standard units.
+  contents:
+    - 2.MD.A.1
+    - 2.MD.A.2
+    - 2.MD.A.3
+    - 2.MD.A.4
+  ispartof:
+    - MD
+  ccss_guid: CB91A45FEBF84FF2A442D51FF3660B82
+  ccss_url: http://corestandards.org/Math/Content/2/MD/A
+  asn_url: http://purl.org/ASN/resources/S1143450
+-
+  path: 2.MD.A.1
+  __class__: Standard
+  aliases:
+    - 2.MD.1
+  description: >
+    Measure the length of an object by selecting and using appropriate tools such
+    as rulers, yardsticks, meter sticks, and measuring tapes.
+  ispartof:
+    - 2.MD.A
+  prerequisites:
+    - 1.MD.A.2
+  usedfors:
+    - 2.MD.A.2
+    - 2.MD.A.3
+    - 3.MD.C.5
+  related:
+    - 3.MD.A.2
+  ccss_guid: 6B0AB3E999084B1B8FE700DD665EF86C
+  ccss_url: http://corestandards.org/Math/Content/2/MD/A/1
+  asn_url: http://purl.org/ASN/resources/S1143460
+-
+  path: 2.MD.A.2
+  __class__: Standard
+  aliases:
+    - 2.MD.2
+  description: >
+    Measure the length of an object twice, using length units of different lengths
+    for the two measurements; describe how the two measurements relate to the size
+    of the unit chosen.
+  ispartof:
+    - 2.MD.A
+  prerequisites:
+    - 2.MD.A.3
+    - 2.MD.A.1
+  usedfors:
+    - 3.NF.A.1
+  ccss_guid: F9BDB11760A249479A3D822244430646
+  ccss_url: http://corestandards.org/Math/Content/2/MD/A/2
+  asn_url: http://purl.org/ASN/resources/S1143461
+-
+  path: 2.MD.A.3
+  __class__: Standard
+  aliases:
+    - 2.MD.3
+  description: >
+    Estimate lengths using units of inches, feet, centimeters, and meters.
+  ispartof:
+    - 2.MD.A
+  prerequisites:
+    - 2.MD.A.1
+  usedfors:
+    - 2.MD.A.2
+    - 2.MD.A.4
+  ccss_guid: 17023F9F7D3D41F0A15250FB67260C2E
+  ccss_url: http://corestandards.org/Math/Content/2/MD/A/3
+  asn_url: http://purl.org/ASN/resources/S1143462
+-
+  path: 2.MD.A.4
+  __class__: Standard
+  aliases:
+    - 2.MD.4
+  description: >
+    Measure to determine how much longer one object is than another, expressing the
+    length difference in terms of a standard length unit.
+  ispartof:
+    - 2.MD.A
+  prerequisites:
+    - 2.MD.A.3
+  usedfors:
+    - 2.MD.B.5
+  ccss_guid: EA53FB50B5B142E7B8B10FF570FE82D4
+  ccss_url: http://corestandards.org/Math/Content/2/MD/A/4
+  asn_url: http://purl.org/ASN/resources/S1143463
+-
+  path: 2.MD.B
+  __class__: Cluster
+  description: >
+    Relate addition and subtraction to length.
+  contents:
+    - 2.MD.B.5
+    - 2.MD.B.6
+  ispartof:
+    - MD
+  ccss_guid: 8183F864EBEE4FA19252DF67462B3156
+  ccss_url: http://corestandards.org/Math/Content/2/MD/B
+  asn_url: http://purl.org/ASN/resources/S1143451
+-
+  path: 2.MD.B.5
+  __class__: Standard
+  aliases:
+    - 2.MD.5
+  description: >
+    Use addition and subtraction within 100 to solve word problems involving lengths
+    that are given in the same units, e.g., by using drawings (such as drawings of
+    rulers) and equations with a symbol for the unknown number to represent the problem.
+  ispartof:
+    - 2.MD.B
+  prerequisites:
+    - 2.MD.A.4
+  related:
+    - 2.MD.B.6
+    - 2.OA.A.1
+  ccss_guid: 901E1C6607174c059381D8564235C317
+  ccss_url: http://corestandards.org/Math/Content/2/MD/B/5
+  asn_url: http://purl.org/ASN/resources/S1143464
+-
+  path: 2.MD.B.6
+  __class__: Standard
+  aliases:
+    - 2.MD.6
+  description: >
+    Represent whole numbers as lengths from 0 on a number line diagram with equally
+    spaced points corresponding to the numbers 0, 1, 2, …, and represent whole-number
+    sums and differences within 100 on a number line diagram.
+  ispartof:
+    - 2.MD.B
+  usedfors:
+    - 3.NF.A.2
+  related:
+    - 2.MD.B.5
+    - 2.MD.D.9
+  ccss_guid: B68C997CD2904a8e9A00AF94A73ABB71
+  ccss_url: http://corestandards.org/Math/Content/2/MD/B/6
+  asn_url: http://purl.org/ASN/resources/S1143465
+-
+  path: 2.MD.C
+  __class__: Cluster
+  description: >
+    Work with time and money.
+  contents:
+    - 2.MD.C.7
+    - 2.MD.C.8
+  ispartof:
+    - MD
+  ccss_guid: 8EF9A4A45830489882546A7D3C10EF57
+  ccss_url: http://corestandards.org/Math/Content/2/MD/C
+  asn_url: http://purl.org/ASN/resources/S1143452
+-
+  path: 2.MD.C.7
+  __class__: Standard
+  aliases:
+    - 2.MD.7
+  description: >
+    Tell and write time from analog and digital clocks to the nearest five minutes,
+    using a.m. and p.m.
+  ispartof:
+    - 2.MD.C
+  prerequisites:
+    - 1.MD.B.3
+  ccss_guid: FA026A4DAAAB4B9D9D5DAF91FA5FAE87
+  ccss_url: http://corestandards.org/Math/Content/2/MD/C/7
+  asn_url: http://purl.org/ASN/resources/S1143466
+-
+  path: 2.MD.C.8
+  __class__: Standard
+  aliases:
+    - 2.MD.8
+  description: >
+    Solve word problems involving dollar bills, quarters, dimes, nickels, and pennies,
+    using $ and ¢ symbols appropriately.
+  comment: 'Example: If you have 2 dimes and 3 pennies, how many cents do you have?'
+  ispartof:
+    - 2.MD.C
+  related:
+    - 2.OA.A.1
+  ccss_guid: DE0BB0EBF6BD4A9FAB6B70032612B9B0
+  ccss_url: http://corestandards.org/Math/Content/2/MD/C/8
+  asn_url: http://purl.org/ASN/resources/S1143467
+-
+  path: 2.MD.D
+  __class__: Cluster
+  description: >
+    Represent and interpret data.
+  contents:
+    - 2.MD.D.10
+    - 2.MD.D.9
+  ispartof:
+    - MD
+  ccss_guid: 24A998ECFA5B4E7FAC36036671790ED7
+  ccss_url: http://corestandards.org/Math/Content/2/MD/D
+-
+  path: 2.MD.D.10
+  __class__: Standard
+  aliases:
+    - 2.MD.10
+  description: >
+    Draw a picture graph and a bar graph (with single-unit scale) to represent a data
+    set with up to four categories. Solve simple put-together, take-apart, and compare
+    problems using information presented in a bar graph.
+  ispartof:
+    - 2.MD.D
+  prerequisites:
+    - 1.MD.C.4
+  related:
+    - 2.OA.A.1
+  ccss_guid: 1E9847DB7B284F2C9E412F7EBF3A7A4D
+  ccss_url: http://corestandards.org/Math/Content/2/MD/D/10
+  asn_url: http://purl.org/ASN/resources/S1143469
+-
+  path: 2.MD.D.9
+  __class__: Standard
+  aliases:
+    - 2.MD.9
+  description: >
+    Generate measurement data by measuring lengths of several objects to the nearest
+    whole unit, or by making repeated measurements of the same object. Show the measurements
+    by making a line plot, where the horizontal scale is marked off in whole-number
+    units.
+  ispartof:
+    - 2.MD.D
+  related:
+    - 2.MD.B.6
+  ccss_guid: 5F66D83498E841958A1FB10B77664591
+  ccss_url: http://corestandards.org/Math/Content/2/MD/D/9
+  asn_url: http://purl.org/ASN/resources/S1143468
+-
+  path: 2.NBT.A
+  __class__: Cluster
+  description: >
+    Understand place value.
+  contents:
+    - 2.NBT.A.1
+    - 2.NBT.A.2
+    - 2.NBT.A.3
+    - 2.NBT.A.4
+  ispartof:
+    - NBT
+  ccss_guid: D15326F9F775410681FF079A08EAAC14
+  ccss_url: http://corestandards.org/Math/Content/2/NBT/A
+-
+  path: 2.NBT.A.1
+  __class__: Standard
+  aliases:
+    - 2.NBT.1
+  description: >
+    Understand that the three digits of a three-digit number represent amounts of
+    hundreds, tens, and ones; e.g., 706 equals 7 hundreds, 0 tens, and 6 ones. Understand
+    the following as special cases:
+  contents:
+    - 2.NBT.A.1a
+    - 2.NBT.A.1b
+  ispartof:
+    - 2.NBT.A
+  prerequisites:
+    - 1.NBT.B.2
+    - 2.NBT.A.2
+  usedfors:
+    - 2.NBT.A.3
+    - 2.NBT.A.4
+    - 2.NBT.B.6
+    - 2.NBT.B.7
+    - 2.NBT.B.8
+    - 3.NBT.A.1
+    - 3.NBT.A.3
+    - 4.NBT.A.1
+  ccss_guid: 3B25AF48C22D4668A6085998F847B56E
+  ccss_url: http://corestandards.org/Math/Content/2/NBT/A/1
+  asn_url: http://purl.org/ASN/resources/S1143457
+-
+  path: 2.NBT.A.1a
+  __class__: Component
+  aliases:
+    - 2.NBT.1.a
+  description: >
+    100 can be thought of as a bundle of ten tens — called a "hundred."
+  ispartof:
+    - 2.NBT.A.1
+  ccss_guid: C9623D25BEB947A38CA8A92AB009E699
+  ccss_url: http://corestandards.org/Math/Content/2/NBT/A/1/a
+-
+  path: 2.NBT.A.1b
+  __class__: Component
+  aliases:
+    - 2.NBT.1.b
+  description: >
+    The numbers 100, 200, 300, 400, 500, 600, 700, 800, 900 refer to one, two, three,
+    four, five, six, seven, eight, or nine hundreds (and 0 tens and 0 ones).
+  ispartof:
+    - 2.NBT.A.1
+  ccss_guid: 0544B12300304F739F00C96785DCE7D2
+  ccss_url: http://corestandards.org/Math/Content/2/NBT/A/1/b
+-
+  path: 2.NBT.A.2
+  __class__: Standard
+  aliases:
+    - 2.NBT.2
+  description: >
+    Count within 1000; skip-count by 5s, 10s, and 100s.
+  ispartof:
+    - 2.NBT.A
+  usedfors:
+    - 2.NBT.A.1
+  related:
+    - 2.OA.C.3
+  ccss_guid: EE88A59EFD4348C28C56A49E61A673A8
+  ccss_url: http://corestandards.org/Math/Content/2/NBT/A/2
+  asn_url: http://purl.org/ASN/resources/S1143458
+-
+  path: 2.NBT.A.3
+  __class__: Standard
+  aliases:
+    - 2.NBT.3
+  description: >
+    Read and write numbers to 1000 using base-ten numerals, number names, and expanded
+    form.
+  ispartof:
+    - 2.NBT.A
+  prerequisites:
+    - 2.NBT.A.1
+  ccss_guid: EE06B2E4211C4C8EB432A5448DA82C77
+  ccss_url: http://corestandards.org/Math/Content/2/NBT/A/3
+  asn_url: http://purl.org/ASN/resources/S1143459
+-
+  path: 2.NBT.A.4
+  __class__: Standard
+  aliases:
+    - 2.NBT.4
+  description: >
+    Compare two three-digit numbers based on meanings of the hundreds, tens, and ones
+    digits, using >, =, and < symbols to record the results of comparisons.
+  ispartof:
+    - 2.NBT.A
+  prerequisites:
+    - 2.NBT.A.1
+  ccss_guid: B9615D5AFE1A46C3B0AD4E517ECB0C9E
+  ccss_url: http://corestandards.org/Math/Content/2/NBT/A/4
+  asn_url: http://purl.org/ASN/resources/S114345A
+-
+  path: 2.NBT.B
+  __class__: Cluster
+  description: >
+    Use place value understanding and properties of operations to add and subtract.
+  contents:
+    - 2.NBT.B.5
+    - 2.NBT.B.6
+    - 2.NBT.B.7
+    - 2.NBT.B.8
+    - 2.NBT.B.9
+  ispartof:
+    - NBT
+  ccss_guid: E0C9E87B224A43E8A0EFB8503905B720
+  ccss_url: http://corestandards.org/Math/Content/2/NBT/B
+-
+  path: 2.NBT.B.5
+  __class__: Standard
+  aliases:
+    - 2.NBT.5
+  description: >
+    Fluently add and subtract within 100 using strategies based on place value, properties
+    of operations, and/or the relationship between addition and subtraction.
+  ispartof:
+    - 2.NBT.B
+  prerequisites:
+    - 1.NBT.C.4
+    - 1.NBT.C.6
+    - 2.OA.B.2
+    - 1.NBT.C.5
+  related:
+    - 2.OA.A.1
+  ccss_guid: 7C9ACFC70C934A229B447804D6A1C0FC
+  ccss_url: http://corestandards.org/Math/Content/2/NBT/B/5
+  asn_url: http://purl.org/ASN/resources/S114345B
+-
+  path: 2.NBT.B.6
+  __class__: Standard
+  aliases:
+    - 2.NBT.6
+  description: >
+    Add up to four two-digit numbers using strategies based on place value and properties
+    of operations.
+  ispartof:
+    - 2.NBT.B
+  prerequisites:
+    - 2.NBT.B.7
+    - 2.NBT.A.1
+  ccss_guid: 70CC6A0456AB4CD1A86BC8EA43B447BA
+  ccss_url: http://corestandards.org/Math/Content/2/NBT/B/6
+  asn_url: http://purl.org/ASN/resources/S114345C
+-
+  path: 2.NBT.B.7
+  __class__: Standard
+  aliases:
+    - 2.NBT.7
+  description: >
+    Add and subtract within 1000, using concrete models or drawings and strategies
+    based on place value, properties of operations, and/or the relationship between
+    addition and subtraction; relate the strategy to a written method. Understand
+    that in adding or subtracting three-digit numbers, one adds or subtracts hundreds
+    and hundreds, tens and tens, ones and ones; and sometimes it is necessary to compose
+    or decompose tens or hundreds.
+  ispartof:
+    - 2.NBT.B
+  prerequisites:
+    - 2.NBT.A.1
+  usedfors:
+    - 2.NBT.B.6
+    - 3.NBT.A.2
+  related:
+    - 2.NBT.B.8
+    - 2.NBT.B.9
+  ccss_guid: 29E245BF9A144F5B96C6DE0A626622A7
+  ccss_url: http://corestandards.org/Math/Content/2/NBT/B/7
+  asn_url: http://purl.org/ASN/resources/S114345D
+-
+  path: 2.NBT.B.8
+  __class__: Standard
+  aliases:
+    - 2.NBT.8
+  description: >
+    Mentally add 10 or 100 to a given number 100—900, and mentally subtract 10 or
+    100 from a given number 100—900.
+  ispartof:
+    - 2.NBT.B
+  prerequisites:
+    - 2.NBT.A.1
+  usedfors:
+    - 3.NBT.A.2
+  related:
+    - 2.NBT.B.7
+    - 2.NBT.B.9
+  ccss_guid: D7C98BF1710A476BAFD20AEC169E9DC3
+  ccss_url: http://corestandards.org/Math/Content/2/NBT/B/8
+  asn_url: http://purl.org/ASN/resources/S114345E
+-
+  path: 2.NBT.B.9
+  __class__: Standard
+  aliases:
+    - 2.NBT.9
+  description: >
+    Explain why addition and subtraction strategies work, using place value and the
+    properties of operations.
+  comment: Explanations may be supported by drawings or objects.
+  ispartof:
+    - 2.NBT.B
+  prerequisites:
+    - 1.OA.B.4
+    - 1.OA.B.3
+  related:
+    - 2.NBT.B.7
+    - 2.NBT.B.8
+  ccss_guid: 4AF9BD3141404800971E6C1F7AA3FC60
+  ccss_url: http://corestandards.org/Math/Content/2/NBT/B/9
+  asn_url: http://purl.org/ASN/resources/S114345F
+-
+  path: 2.OA.A
+  __class__: Cluster
+  description: >
+    Represent and solve problems involving addition and subtraction.
+  contents:
+    - 2.OA.A.1
+  ispartof:
+    - OA
+  ccss_guid: 25F1A2E4A27442D886723ADD7B62C09E
+  ccss_url: http://corestandards.org/Math/Content/2/OA/A
+-
+  path: 2.OA.A.1
+  __class__: Standard
+  aliases:
+    - 2.OA.1
+  description: >
+    Use addition and subtraction within 100 to solve one- and two-step word problems
+    involving situations of adding to, taking from, putting together, taking apart,
+    and comparing, with unknowns in all positions, e.g., by using drawings and equations
+    with a symbol for the unknown number to represent the problem.
+  ispartof:
+    - 2.OA.A
+  prerequisites:
+    - 1.NBT.C.4
+    - 1.OA.A.1
+    - 1.NBT.C.5
+    - 1.NBT.C.6
+  usedfors:
+    - 3.OA.D.8
+    - 4.NF.B.3a
+    - 4.NF.B.3b
+    - 4.NF.B.3c
+  related:
+    - 2.MD.B.5
+    - 2.MD.C.8
+    - 2.MD.D.10
+    - 2.NBT.B.5
+  ccss_guid: 800715566B824BB3A5A8C464E961C2B3
+  ccss_url: http://corestandards.org/Math/Content/2/OA/A/1
+  asn_url: http://purl.org/ASN/resources/S1143453
+-
+  path: 2.OA.B
+  __class__: Cluster
+  description: >
+    Add and subtract within 20.
+  contents:
+    - 2.OA.B.2
+  ispartof:
+    - OA
+  ccss_guid: 21FF72D85AF248E28B8AD028ABF94DDE
+  ccss_url: http://corestandards.org/Math/Content/2/OA/B
+-
+  path: 2.OA.B.2
+  __class__: Standard
+  aliases:
+    - 2.OA.2
+  description: >
+    Fluently add and subtract within 20 using mental strategies. By end of Grade 2,
+    know from memory all sums of two one-digit numbers.
+  comment: See standard 1.OA.6 for a list of mental strategies.
+  ispartof:
+    - 2.OA.B
+  prerequisites:
+    - 1.OA.C.6
+  usedfors:
+    - 2.NBT.B.5
+  ccss_guid: 800715566B824BB3A5A8C464E961C2B4
+  ccss_url: http://corestandards.org/Math/Content/2/OA/B/2
+  asn_url: http://purl.org/ASN/resources/S1143454
+-
+  path: 2.OA.C
+  __class__: Cluster
+  description: >
+    Work with equal groups of objects to gain foundations for multiplication.
+  contents:
+    - 2.OA.C.3
+    - 2.OA.C.4
+  ispartof:
+    - OA
+  ccss_guid: 1E2E6DE1CD454AF99E15FA153F58DF3E
+  ccss_url: http://corestandards.org/Math/Content/2/OA/C
+  asn_url: http://purl.org/ASN/resources/S114344F
+-
+  path: 2.OA.C.3
+  __class__: Standard
+  aliases:
+    - 2.OA.3
+  description: >
+    Determine whether a group of objects (up to 20) has an odd or even number of members,
+    e.g., by pairing objects or counting them by 2s; write an equation to express
+    an even number as a sum of two equal addends.
+  ispartof:
+    - 2.OA.C
+  prerequisites:
+    - 1.OA.D.7
+  usedfors:
+    - 3.OA.A.1
+    - 3.OA.D.9
+  related:
+    - 2.NBT.A.2
+  ccss_guid: C7ECD7455B7D46E89CF07EB8C0A2337A
+  ccss_url: http://corestandards.org/Math/Content/2/OA/C/3
+  asn_url: http://purl.org/ASN/resources/S1143455
+-
+  path: 2.OA.C.4
+  __class__: Standard
+  aliases:
+    - 2.OA.4
+  description: >
+    Use addition to find the total number of objects arranged in rectangular arrays
+    with up to 5 rows and up to 5 columns; write an equation to express the total
+    as a sum of equal addends.
+  ispartof:
+    - 2.OA.C
+  prerequisites:
+    - 1.OA.D.7
+  usedfors:
+    - 3.OA.A.1
+  ccss_guid: A4531EC480FA4835AF9E3F9348FC5EC1
+  ccss_url: http://corestandards.org/Math/Content/2/OA/C/4
+  asn_url: http://purl.org/ASN/resources/S1143456

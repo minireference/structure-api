@@ -1,0 +1,905 @@
+-
+  path: 3.G.A
+  __class__: Cluster
+  description: >
+    Reason with shapes and their attributes.
+  contents:
+    - 3.G.A.1
+    - 3.G.A.2
+  ispartof:
+    - G
+  ccss_guid: 834B17E279C64263AA83F7625F5D2994
+  ccss_url: http://corestandards.org/Math/Content/3/G/A
+-
+  path: 3.G.A.1
+  __class__: Standard
+  aliases:
+    - 3.G.1
+  description: >
+    Understand that shapes in different categories (e.g., rhombuses, rectangles, and
+    others) may share attributes (e.g., having four sides), and that the shared attributes
+    can define a larger category (e.g., quadrilaterals). Recognize rhombuses, rectangles,
+    and squares as examples of quadrilaterals, and draw examples of quadrilaterals
+    that do not belong to any of these subcategories.
+  ispartof:
+    - 3.G.A
+  prerequisites:
+    - 2.G.A.1
+  usedfors:
+    - 4.G.A.1
+    - 5.G.B.3
+  ccss_guid: 547195B83B9A4BDC9D8E61313975523B
+  ccss_url: http://corestandards.org/Math/Content/3/G/A/1
+  asn_url: http://purl.org/ASN/resources/S114348E
+-
+  path: 3.G.A.2
+  __class__: Standard
+  aliases:
+    - 3.G.2
+  description: >
+    Partition shapes into parts with equal areas. Express the area of each part as
+    a unit fraction of the whole.
+  comment: For example, partition a shape into 4 parts with equal area, and describe
+    the area of each part as 1/4 of the area of the shape.
+  ispartof:
+    - 3.G.A
+  prerequisites:
+    - 3.NF.A.1
+  ccss_guid: 368CBD5C10534702841D3C659B5DAC65
+  ccss_url: http://corestandards.org/Math/Content/3/G/A/2
+  asn_url: http://purl.org/ASN/resources/S114348F
+-
+  path: 3.MD.A
+  __class__: Cluster
+  description: >
+    Solve problems involving measurement and estimation of intervals of time, liquid
+    volumes, and masses of objects.
+  contents:
+    - 3.MD.A.1
+    - 3.MD.A.2
+  ispartof:
+    - MD
+  ccss_guid: CDF685BAD71C449594666CFF41F7171E
+  ccss_url: http://corestandards.org/Math/Content/3/MD/A
+  asn_url: http://purl.org/ASN/resources/S1143474
+-
+  path: 3.MD.A.1
+  __class__: Standard
+  aliases:
+    - 3.MD.1
+  description: >
+    Tell and write time to the nearest minute and measure time intervals in minutes.
+    Solve word problems involving addition and subtraction of time intervals in minutes,
+    e.g., by representing the problem on a number line diagram.
+  ispartof:
+    - 3.MD.A
+  ccss_guid: E257C49DFC7347BBA95E3DC0A278856D
+  ccss_url: http://corestandards.org/Math/Content/3/MD/A/1
+  asn_url: http://purl.org/ASN/resources/S1143486
+-
+  path: 3.MD.A.2
+  __class__: Standard
+  aliases:
+    - 3.MD.2
+  description: >
+    Measure and estimate liquid volumes and masses of objects using standard units
+    of grams (g), kilograms (kg), and liters (l). Add, subtract, multiply, or divide
+    to solve one-step word problems involving masses or volumes that are given in
+    the same units, e.g., by using drawings (such as a beaker with a measurement scale)
+    to represent the problem.
+  comment: 'Excludes multiplicative comparison problems (problems involving notions
+    of "times as much";
+
+    Excludes compound units such as cm³ and finding the geometric volume of a container.'
+  ispartof:
+    - 3.MD.A
+  usedfors:
+    - 4.MD.A.1
+  related:
+    - 2.MD.A.1
+    - 3.NF.A.1
+    - 3.OA.D.8
+  ccss_guid: 3311256F77B14AF1A5798771E036BFE6
+  ccss_url: http://corestandards.org/Math/Content/3/MD/A/2
+  asn_url: http://purl.org/ASN/resources/S1143487
+-
+  path: 3.MD.B
+  __class__: Cluster
+  description: >
+    Represent and interpret data.
+  contents:
+    - 3.MD.B.3
+    - 3.MD.B.4
+  ispartof:
+    - MD
+  ccss_guid: 8F925240A0754F1DAABA5E18D8D83BE5
+  ccss_url: http://corestandards.org/Math/Content/3/MD/B
+-
+  path: 3.MD.B.3
+  __class__: Standard
+  aliases:
+    - 3.MD.3
+  description: >
+    Draw a scaled picture graph and a scaled bar graph to represent a data set with
+    several categories. Solve one- and two-step "how many more" and "how many less"
+    problems using information presented in scaled bar graphs.
+  comment: For example, draw a bar graph in which each square in the bar graph might
+    represent 5 pets.
+  ispartof:
+    - 3.MD.B
+  related:
+    - 3.OA.D.8
+  ccss_guid: 4699F112972D45618FD01295192B875C
+  ccss_url: http://corestandards.org/Math/Content/3/MD/B/3
+  asn_url: http://purl.org/ASN/resources/S1143488
+-
+  path: 3.MD.B.4
+  __class__: Standard
+  aliases:
+    - 3.MD.4
+  description: >
+    Generate measurement data by measuring lengths using rulers marked with halves
+    and fourths of an inch. Show the data by making a line plot, where the horizontal
+    scale is marked off in appropriate units— whole numbers, halves, or quarters.
+  ispartof:
+    - 3.MD.B
+  usedfors:
+    - 4.MD.B.4
+  related:
+    - 3.NF.A.2
+  ccss_guid: C9726FFA3C464AD39E5131E01A09D0FB
+  ccss_url: http://corestandards.org/Math/Content/3/MD/B/4
+  asn_url: http://purl.org/ASN/resources/S1143489
+-
+  path: 3.MD.C
+  __class__: Cluster
+  description: >
+    Geometric measurement: understand concepts of area and relate area to multiplication
+    and to addition.
+  contents:
+    - 3.MD.C.5
+    - 3.MD.C.6
+    - 3.MD.C.7
+  ispartof:
+    - MD
+  ccss_guid: 834B17E279C64263AA83F7625F5D2993
+  ccss_url: http://corestandards.org/Math/Content/3/MD/C
+  asn_url: http://purl.org/ASN/resources/S1143475
+-
+  path: 3.MD.C.5
+  __class__: Standard
+  aliases:
+    - 3.MD.5
+  description: >
+    Recognize area as an attribute of plane figures and understand concepts of area
+    measurement.
+  contents:
+    - 3.MD.C.5a
+    - 3.MD.C.5b
+  ispartof:
+    - 3.MD.C
+  prerequisites:
+    - 2.MD.A.1
+    - 1.G.A.2
+  usedfors:
+    - 3.MD.C.6
+    - 3.MD.C.7d
+    - 3.MD.D.8
+    - 5.MD.C.3
+  ccss_guid: C3AE47EBADAC4FD3806961236A97793F
+  ccss_url: http://corestandards.org/Math/Content/3/MD/C/5
+  asn_url: http://purl.org/ASN/resources/S114348A
+-
+  path: 3.MD.C.5a
+  __class__: Component
+  aliases:
+    - 3.MD.5.a
+  description: >
+    A square with side length 1 unit, called "a unit square," is said to have "one
+    square unit" of area, and can be used to measure area.
+  ispartof:
+    - 3.MD.C.5
+  ccss_guid: F82EDE7D54704B7F97AB74D10A56D228
+  ccss_url: http://corestandards.org/Math/Content/3/MD/C/5/a
+  asn_url: http://purl.org/ASN/resources/S114369A
+-
+  path: 3.MD.C.5b
+  __class__: Component
+  aliases:
+    - 3.MD.5.b
+  description: >
+    A plane figure which can be covered without gaps or overlaps by n unit squares
+    is said to have an area of n square units.
+  ispartof:
+    - 3.MD.C.5
+  ccss_guid: F0B097C190F4482BA735FEC560DA0A7F
+  ccss_url: http://corestandards.org/Math/Content/3/MD/C/5/b
+  asn_url: http://purl.org/ASN/resources/S114369B
+-
+  path: 3.MD.C.6
+  __class__: Standard
+  aliases:
+    - 3.MD.6
+  description: >
+    Measure areas by counting unit squares (square cm, square m, square in, square
+    ft, and improvised units).
+  ispartof:
+    - 3.MD.C
+  prerequisites:
+    - 2.G.A.2
+    - 3.MD.C.5
+  usedfors:
+    - 3.MD.C.7a
+  ccss_guid: E0F954B85C7648AFBC3E993420559C1B
+  ccss_url: http://corestandards.org/Math/Content/3/MD/C/6
+  asn_url: http://purl.org/ASN/resources/S114348B
+-
+  path: 3.MD.C.7
+  __class__: Standard
+  aliases:
+    - 3.MD.7
+  description: >
+    Relate area to the operations of multiplication and addition.
+  contents:
+    - 3.MD.C.7a
+    - 3.MD.C.7b
+    - 3.MD.C.7c
+    - 3.MD.C.7d
+  ispartof:
+    - 3.MD.C
+  ccss_guid: DB1670D9BA2E4F6BA040EEA5EE826670
+  ccss_url: http://corestandards.org/Math/Content/3/MD/C/7
+  asn_url: http://purl.org/ASN/resources/S114348C
+-
+  path: 3.MD.C.7a
+  __class__: Component
+  aliases:
+    - 3.MD.7.a
+  description: >
+    Find the area of a rectangle with whole-number side lengths by tiling it, and
+    show that the area is the same as would be found by multiplying the side lengths.
+  ispartof:
+    - 3.MD.C.7
+  prerequisites:
+    - 3.MD.C.6
+  usedfors:
+    - 3.MD.C.7b
+    - 3.MD.C.7c
+  ccss_guid: 83167CA50D1442788B85C6140A20E39D
+  ccss_url: http://corestandards.org/Math/Content/3/MD/C/7/a
+  asn_url: http://purl.org/ASN/resources/S114369C
+-
+  path: 3.MD.C.7b
+  __class__: Component
+  aliases:
+    - 3.MD.7.b
+  description: >
+    Multiply side lengths to find areas of rectangles with whole-number side lengths
+    in the context of solving real world and mathematical problems, and represent
+    whole-number products as rectangular areas in mathematical reasoning.
+  ispartof:
+    - 3.MD.C.7
+  prerequisites:
+    - 3.MD.C.7a
+  usedfors:
+    - 3.MD.C.7c
+    - 4.MD.A.3
+    - 5.NF.B.4a
+  ccss_guid: C18643B92D4D47398EC8F283A2947631
+  ccss_url: http://corestandards.org/Math/Content/3/MD/C/7/b
+  asn_url: http://purl.org/ASN/resources/S114369D
+-
+  path: 3.MD.C.7c
+  __class__: Component
+  aliases:
+    - 3.MD.7.c
+  description: >
+    Use tiling to show in a concrete case that the area of a rectangle with whole-number
+    side lengths a and b + c is the sum of a × b and a × c. Use area models to represent
+    the distributive property in mathematical reasoning.
+  ispartof:
+    - 3.MD.C.7
+  prerequisites:
+    - 3.MD.C.7b
+    - 3.MD.C.7a
+  usedfors:
+    - 3.MD.C.7d
+  related:
+    - 3.OA.B.5
+  ccss_guid: 4E5415C8BEA348EEA13B1A1C825A5036
+  ccss_url: http://corestandards.org/Math/Content/3/MD/C/7/c
+  asn_url: http://purl.org/ASN/resources/S114369E
+-
+  path: 3.MD.C.7d
+  __class__: Component
+  aliases:
+    - 3.MD.7.d
+  description: >
+    Recognize area as additive. Find areas of rectilinear figures by decomposing them
+    into non-overlapping rectangles and adding the areas of the non-overlapping parts,
+    applying this technique to solve real world problems.
+  ispartof:
+    - 3.MD.C.7
+  prerequisites:
+    - 3.MD.C.7c
+    - 3.MD.C.5
+  related:
+    - 3.OA.D.8
+  ccss_guid: B0DFFB3792F84CDAACFF99CE6F0381C6
+  ccss_url: http://corestandards.org/Math/Content/3/MD/C/7/d
+  asn_url: http://purl.org/ASN/resources/S114369F
+-
+  path: 3.MD.D
+  __class__: Cluster
+  description: >
+    Geometric measurement: recognize perimeter as an attribute of plane figures and
+    distinguish between linear and area measures.
+  contents:
+    - 3.MD.D.8
+  ispartof:
+    - MD
+  ccss_guid: EE8FEE0FAA2F435496406A7EA6CCFC56
+  ccss_url: http://corestandards.org/Math/Content/3/MD/D
+  asn_url: http://purl.org/ASN/resources/S1143476
+-
+  path: 3.MD.D.8
+  __class__: Standard
+  aliases:
+    - 3.MD.8
+  description: >
+    Solve real world and mathematical problems involving perimeters of polygons, including
+    finding the perimeter given the side lengths, finding an unknown side length,
+    and exhibiting rectangles with the same perimeter and different areas or with
+    the same area and different perimeters.
+  ispartof:
+    - 3.MD.D
+  prerequisites:
+    - 3.MD.C.5
+  usedfors:
+    - 4.MD.A.3
+  related:
+    - 3.OA.D.8
+  ccss_guid: 5FA749A7CE0D48B48CA8D925DF4ABDFD
+  ccss_url: http://corestandards.org/Math/Content/3/MD/D/8
+  asn_url: http://purl.org/ASN/resources/S114348D
+-
+  path: 3.NBT.A
+  __class__: Cluster
+  description: >
+    Use place value understanding and properties of operations to perform multi-digit
+    arithmetic.
+  comment: A range of algorithms may be used.
+  contents:
+    - 3.NBT.A.1
+    - 3.NBT.A.2
+    - 3.NBT.A.3
+  ispartof:
+    - NBT
+  ccss_guid: 600ED56CB17B45BCA84F742EF6CE451C
+  ccss_url: http://corestandards.org/Math/Content/3/NBT/A
+  asn_url: http://purl.org/ASN/resources/S1143471
+-
+  path: 3.NBT.A.1
+  __class__: Standard
+  aliases:
+    - 3.NBT.1
+  description: >
+    Use place value understanding to round whole numbers to the nearest 10 or 100.
+  ispartof:
+    - 3.NBT.A
+  prerequisites:
+    - 2.NBT.A.1
+  usedfors:
+    - 4.NBT.A.3
+  ccss_guid: 8B79312AC5B747249C96D19427CE45E3
+  ccss_url: http://corestandards.org/Math/Content/3/NBT/A/1
+  asn_url: http://purl.org/ASN/resources/S1143480
+-
+  path: 3.NBT.A.2
+  __class__: Standard
+  aliases:
+    - 3.NBT.2
+  description: >
+    Fluently add and subtract within 1000 using strategies and algorithms based on
+    place value, properties of operations, and/or the relationship between addition
+    and subtraction.
+  ispartof:
+    - 3.NBT.A
+  prerequisites:
+    - 2.NBT.B.8
+    - 2.NBT.B.7
+  usedfors:
+    - 4.NBT.B.4
+    - 4.NBT.B.5
+    - 4.NBT.B.6
+  ccss_guid: 4B1FD82EBCDC48AEB42E2734BC15C03B
+  ccss_url: http://corestandards.org/Math/Content/3/NBT/A/2
+  asn_url: http://purl.org/ASN/resources/S1143481
+-
+  path: 3.NBT.A.3
+  __class__: Standard
+  aliases:
+    - 3.NBT.3
+  description: >
+    Multiply one-digit whole numbers by multiples of 10 in the range 10—90 (e.g.,
+    9 × 80, 5 × 60) using strategies based on place value and properties of operations.
+  ispartof:
+    - 3.NBT.A
+  prerequisites:
+    - 2.NBT.A.1
+    - 3.OA.B.5
+  usedfors:
+    - 4.NBT.B.5
+  ccss_guid: 4056EC7D109E419FB1499E54CE352507
+  ccss_url: http://corestandards.org/Math/Content/3/NBT/A/3
+  asn_url: http://purl.org/ASN/resources/S1143482
+-
+  path: 3.NF.A
+  __class__: Cluster
+  description: >
+    Develop understanding of fractions as numbers.
+  contents:
+    - 3.NF.A.1
+    - 3.NF.A.2
+    - 3.NF.A.3
+  ispartof:
+    - NF
+  ccss_guid: FB0C3EF6E0254112BE3E1A3B3BBE691C
+  ccss_url: http://corestandards.org/Math/Content/3/NF/A
+  asn_url: http://purl.org/ASN/resources/S1143473
+-
+  path: 3.NF.A.1
+  __class__: Standard
+  aliases:
+    - 3.NF.1
+  description: >
+    Understand a fraction 1/b as the quantity formed by 1 part when a whole is partitioned
+    into b equal parts; understand a fraction a/b as the quantity formed by a parts
+    of size 1/b.
+  ispartof:
+    - 3.NF.A
+  prerequisites:
+    - 2.MD.A.2
+    - 2.G.A.3
+  usedfors:
+    - 3.G.A.2
+    - 3.NF.A.3
+    - 4.NF.B.3a
+    - 4.NF.B.3b
+    - 4.NF.B.3c
+    - 4.NF.B.4a
+    - 5.NF.B.7
+  related:
+    - 3.MD.A.2
+    - 3.NF.A.2
+  ccss_guid: EFC133CD8D34442CA35311157F372C97
+  ccss_url: http://corestandards.org/Math/Content/3/NF/A/1
+  asn_url: http://purl.org/ASN/resources/S1143483
+-
+  path: 3.NF.A.2
+  __class__: Standard
+  aliases:
+    - 3.NF.2
+  description: >
+    Understand a fraction as a number on the number line; represent fractions on a
+    number line diagram.
+  contents:
+    - 3.NF.A.2a
+    - 3.NF.A.2b
+  ispartof:
+    - 3.NF.A
+  prerequisites:
+    - 2.MD.B.6
+  usedfors:
+    - 3.NF.A.3
+    - 4.NF.B.3a
+    - 4.NF.B.3b
+    - 4.NF.B.3c
+    - 5.G.A.1
+    - 5.G.A.2
+    - 6.NS.C.6a
+  related:
+    - 3.MD.B.4
+    - 3.NF.A.1
+  ccss_guid: 8C551F4EF2224A61AED96E27F7BB8852
+  ccss_url: http://corestandards.org/Math/Content/3/NF/A/2
+  asn_url: http://purl.org/ASN/resources/S1143484
+-
+  path: 3.NF.A.2a
+  __class__: Component
+  aliases:
+    - 3.NF.2.a
+  description: >
+    Represent a fraction 1/b on a number line diagram by defining the interval from
+    0 to 1 as the whole and partitioning it into b equal parts. Recognize that each
+    part has size 1/b and that the endpoint of the part based at 0 locates the number
+    1/b on the number line.
+  ispartof:
+    - 3.NF.A.2
+  ccss_guid: 74D0C6FACE7E4939BD8B01C5E729871C
+  ccss_url: http://corestandards.org/Math/Content/3/NF/A/2/a
+  asn_url: http://purl.org/ASN/resources/S114368F
+-
+  path: 3.NF.A.2b
+  __class__: Component
+  aliases:
+    - 3.NF.2.b
+  description: >
+    Represent a fraction a/b on a number line diagram by marking off a lengths 1/b
+    from 0. Recognize that the resulting interval has size a/b and that its endpoint
+    locates the number a/b on the number line.
+  ispartof:
+    - 3.NF.A.2
+  ccss_guid: D31E57DF888541EAA539B9C1954C76E1
+  ccss_url: http://corestandards.org/Math/Content/3/NF/A/2/b
+  asn_url: http://purl.org/ASN/resources/S1143690
+-
+  path: 3.NF.A.3
+  __class__: Standard
+  aliases:
+    - 3.NF.3
+  description: >
+    Explain equivalence of fractions in special cases, and compare fractions by reasoning
+    about their size.
+  contents:
+    - 3.NF.A.3a
+    - 3.NF.A.3b
+    - 3.NF.A.3c
+    - 3.NF.A.3d
+  ispartof:
+    - 3.NF.A
+  prerequisites:
+    - 3.NF.A.1
+    - 3.NF.A.2
+  usedfors:
+    - 4.NF.A.1
+  ccss_guid: 95A47E3EB7134F7FA65667B692D6F23E
+  ccss_url: http://corestandards.org/Math/Content/3/NF/A/3
+  asn_url: http://purl.org/ASN/resources/S1143485
+-
+  path: 3.NF.A.3a
+  __class__: Component
+  aliases:
+    - 3.NF.3.a
+  description: >
+    Understand two fractions as equivalent (equal) if they are the same size, or the
+    same point on a number line.
+  ispartof:
+    - 3.NF.A.3
+  ccss_guid: F80BD4BFFDB946DCB74AFA807DF07F0C
+  ccss_url: http://corestandards.org/Math/Content/3/NF/A/3/a
+  asn_url: http://purl.org/ASN/resources/S1143691
+-
+  path: 3.NF.A.3b
+  __class__: Component
+  aliases:
+    - 3.NF.3.b
+  description: >
+    Recognize and generate simple equivalent fractions, e.g., 1/2 = 2/4, 4/6 = 2/3).
+    Explain why the fractions are equivalent, e.g., by using a visual fraction model.
+  ispartof:
+    - 3.NF.A.3
+  ccss_guid: 8A6F987095B24FD8825585A2510C4356
+  ccss_url: http://corestandards.org/Math/Content/3/NF/A/3/b
+  asn_url: http://purl.org/ASN/resources/S1143692
+-
+  path: 3.NF.A.3c
+  __class__: Component
+  aliases:
+    - 3.NF.3.c
+  description: >
+    Express whole numbers as fractions, and recognize fractions that are equivalent
+    to whole numbers.
+  comment: 'Example: express 3 in the form 3 = 3/1; recognize that 6/1 = 6.
+
+    Example: locate 4/4 and 1 at the same point of a number line diagram.'
+  ispartof:
+    - 3.NF.A.3
+  ccss_guid: 70C12332BEED45098AA0A0BBCD977376
+  ccss_url: http://corestandards.org/Math/Content/3/NF/A/3/c
+  asn_url: http://purl.org/ASN/resources/S1143693
+-
+  path: 3.NF.A.3d
+  __class__: Component
+  aliases:
+    - 3.NF.3.d
+  description: >
+    Compare two fractions with the same numerator or the same denominator by reasoning
+    about their size. Recognize that comparisons are valid only when the two fractions
+    refer to the same whole. Record the results of comparisons with the symbols >,
+    =, or <, and justify the conclusions, e.g., by using a visual fraction model.
+  ispartof:
+    - 3.NF.A.3
+  ccss_guid: 43F9FB0B127B45738F173195B04CAF6B
+  ccss_url: http://corestandards.org/Math/Content/3/NF/A/3/d
+  asn_url: http://purl.org/ASN/resources/S1143694
+-
+  path: 3.OA.A
+  __class__: Cluster
+  description: >
+    Represent and solve problems involving multiplication and division.
+  contents:
+    - 3.OA.A.1
+    - 3.OA.A.2
+    - 3.OA.A.3
+    - 3.OA.A.4
+  ispartof:
+    - OA
+  ccss_guid: 13E091EB7A6C41949CFF99799A39D3C2
+  ccss_url: http://corestandards.org/Math/Content/3/OA/A
+  asn_url: http://purl.org/ASN/resources/S114346D
+-
+  path: 3.OA.A.1
+  __class__: Standard
+  aliases:
+    - 3.OA.1
+  description: >
+    Interpret products of whole numbers, e.g., interpret 5 × 7 as the total number
+    of objects in 5 groups of 7 objects each.
+  comment: For example, describe a context in which a total number of objects can
+    be expressed as 5 × 7.
+  ispartof:
+    - 3.OA.A
+  prerequisites:
+    - 2.OA.C.4
+    - 2.OA.C.3
+  usedfors:
+    - 3.OA.A.2
+    - 3.OA.A.3
+    - 3.OA.B.5
+    - 4.NF.B.4a
+    - 4.OA.A.1
+    - 5.NF.B.3
+    - 5.NF.B.5
+    - 5.NF.B.6
+    - 5.OA.A.2
+  related:
+    - 3.OA.B.6
+  ccss_guid: 1F72443D6AC449C7B959047522ED087B
+  ccss_url: http://corestandards.org/Math/Content/3/OA/A/1
+  asn_url: http://purl.org/ASN/resources/S1143477
+-
+  path: 3.OA.A.2
+  __class__: Standard
+  aliases:
+    - 3.OA.2
+  description: >
+    Interpret whole-number quotients of whole numbers, e.g., interpret 56 ÷ 8 as the
+    number of objects in each share when 56 objects are partitioned equally into 8
+    shares, or as a number of shares when 56 objects are partitioned into equal shares
+    of 8 objects each.
+  comment: For example, describe a context in which a number of shares or a number
+    of groups can be expressed as 56 ÷ 8.
+  ispartof:
+    - 3.OA.A
+  prerequisites:
+    - 3.OA.A.1
+  usedfors:
+    - 3.OA.A.3
+    - 3.OA.B.5
+    - 5.NF.B.3
+    - 5.NF.B.5
+    - 5.NF.B.6
+    - 5.OA.A.2
+  related:
+    - 3.OA.B.6
+  ccss_guid: D9008C43187E44DDA9B676FFEAA78311
+  ccss_url: http://corestandards.org/Math/Content/3/OA/A/2
+  asn_url: http://purl.org/ASN/resources/S1143478
+-
+  path: 3.OA.A.3
+  __class__: Standard
+  aliases:
+    - 3.OA.3
+  description: >
+    Use multiplication and division within 100 to solve word problems in situations
+    involving equal groups, arrays, and measurement quantities, e.g., by using drawings
+    and equations with a symbol for the unknown number to represent the problem.
+  ispartof:
+    - 3.OA.A
+  prerequisites:
+    - 3.OA.A.1
+    - 3.OA.A.2
+  usedfors:
+    - 3.OA.D.8
+    - 4.NF.B.4c
+    - 4.OA.A.1
+    - 4.OA.A.2
+  related:
+    - 3.OA.A.4
+    - 3.OA.B.6
+  ccss_guid: 1F2BFEA5A0204D71A7FD29883E22CB9D
+  ccss_url: http://corestandards.org/Math/Content/3/OA/A/3
+  asn_url: http://purl.org/ASN/resources/S1143479
+-
+  path: 3.OA.A.4
+  __class__: Standard
+  aliases:
+    - 3.OA.4
+  description: >
+    Determine the unknown whole number in a multiplication or division equation relating
+    three whole numbers.
+  comment: 'For example, determine the unknown number that makes the equation true
+    in each of the equations 8 × ? = 48, 5 = <img src="http://purl.org/ASN/resources/images/rectangle_vertical.gif"
+    style="vertical-align: middle;" /> ÷ 3, 6 × 6 = ?.'
+  ispartof:
+    - 3.OA.A
+  usedfors:
+    - 4.MD.A.3
+  related:
+    - 3.OA.A.3
+    - 3.OA.C.7
+  ccss_guid: ACB26A2ED7114E59911EE985D8D02B6D
+  ccss_url: http://corestandards.org/Math/Content/3/OA/A/4
+  asn_url: http://purl.org/ASN/resources/S114347A
+-
+  path: 3.OA.B
+  __class__: Cluster
+  description: >
+    Understand properties of multiplication and the relationship between multiplication
+    and division.
+  contents:
+    - 3.OA.B.5
+    - 3.OA.B.6
+  ispartof:
+    - OA
+  ccss_guid: 2553905A2EE948F2924E4E48ECDC1274
+  ccss_url: http://corestandards.org/Math/Content/3/OA/B
+  asn_url: http://purl.org/ASN/resources/S114346E
+-
+  path: 3.OA.B.5
+  __class__: Standard
+  aliases:
+    - 3.OA.5
+  description: >
+    Apply properties of operations as strategies to multiply and divide.
+  comment: 'Students need not use formal terms for these properties.
+
+    Example: Knowing that 8 × 5 = 40 and 8 × 2 = 16, one can find 8 × 7 as 8 × (5
+    + 2) = (8 × 5) + (8 × 2) = 40 + 16 = 56. (Distributive property.)
+
+    Example: If 6 × 4 = 24 is known, then 4 × 6 = 24 is also known (Commutative property
+    of multiplication.) 3 × 5 × 2 can be found by 3 × 5 = 15, then 15 × 2 = 30, or
+    by 5 × 2 = 10, then 3 × 10 = 30. (Associative property of multiplication.)'
+  ispartof:
+    - 3.OA.B
+  prerequisites:
+    - 3.OA.A.1
+    - 3.OA.A.2
+  usedfors:
+    - 3.NBT.A.3
+    - 3.OA.C.7
+    - 3.OA.D.9
+    - 4.NBT.B.5
+    - 4.NBT.B.6
+    - 5.MD.C.5a
+    - 6.EE.A.3
+    - 6.EE.A.4
+  related:
+    - 3.MD.C.7c
+  ccss_guid: 86C2F83D480C4300939245389E99711A
+  ccss_url: http://corestandards.org/Math/Content/3/OA/B/5
+  asn_url: http://purl.org/ASN/resources/S114347B
+-
+  path: 3.OA.B.6
+  __class__: Standard
+  aliases:
+    - 3.OA.6
+  description: >
+    Understand division as an unknown-factor problem.
+  comment: For example, find 32 ÷ 8 by finding the number that makes 32 when multiplied
+    by 8.
+  ispartof:
+    - 3.OA.B
+  usedfors:
+    - 3.OA.C.7
+    - 5.NF.B.3
+    - 5.NF.B.7
+    - 6.NS.A.1
+  related:
+    - 3.OA.A.1
+    - 3.OA.A.2
+    - 3.OA.A.3
+  ccss_guid: E7A132DB485E49D2905C50BA78C571F5
+  ccss_url: http://corestandards.org/Math/Content/3/OA/B/6
+  asn_url: http://purl.org/ASN/resources/S114347C
+-
+  path: 3.OA.C
+  __class__: Cluster
+  description: >
+    Multiply and divide within 100.
+  contents:
+    - 3.OA.C.7
+  ispartof:
+    - OA
+  ccss_guid: FD7A8A1461E048A1BB220ABA40139E3E
+  ccss_url: http://corestandards.org/Math/Content/3/OA/C
+  asn_url: http://purl.org/ASN/resources/S114346F
+-
+  path: 3.OA.C.7
+  __class__: Standard
+  aliases:
+    - 3.OA.7
+  description: >
+    Fluently multiply and divide within 100, using strategies such as the relationship
+    between multiplication and division (e.g., knowing that 8 × 5 = 40, one knows
+    40 ÷ 5 = 8) or properties of operations. By the end of Grade 3, know from memory
+    all products of two one-digit numbers.
+  ispartof:
+    - 3.OA.C
+  prerequisites:
+    - 3.OA.B.5
+    - 3.OA.B.6
+  usedfors:
+    - 4.MD.A.1
+    - 4.NBT.B.5
+    - 4.NBT.B.6
+    - 4.OA.B.4
+  related:
+    - 3.OA.A.4
+    - 3.OA.D.8
+  ccss_guid: 3D384CB2349B41299A3B5A133AB9E3F8
+  ccss_url: http://corestandards.org/Math/Content/3/OA/C/7
+  asn_url: http://purl.org/ASN/resources/S114347D
+-
+  path: 3.OA.D
+  __class__: Cluster
+  description: >
+    Solve problems involving the four operations, and identify and explain patterns
+    in arithmetic.
+  contents:
+    - 3.OA.D.8
+    - 3.OA.D.9
+  ispartof:
+    - OA
+  ccss_guid: D99E14C6EA514E36A82F63FC3EEA56A0
+  ccss_url: http://corestandards.org/Math/Content/3/OA/D
+  asn_url: http://purl.org/ASN/resources/S1143470
+-
+  path: 3.OA.D.8
+  __class__: Standard
+  aliases:
+    - 3.OA.8
+  description: >
+    Solve two-step word problems using the four operations. Represent these problems
+    using equations with a letter standing for the unknown quantity. Assess the reasonableness
+    of answers using mental computation and estimation strategies including rounding.
+  comment: This standard is limited to problems posed with whole numbers and having
+    whole-number answers; students should know how to perform operations in the conventional
+    order when there are no parentheses to specify a particular order (Order of Operations).
+  ispartof:
+    - 3.OA.D
+  prerequisites:
+    - 3.OA.A.3
+    - 2.OA.A.1
+  usedfors:
+    - 4.OA.A.3
+  related:
+    - 3.MD.A.2
+    - 3.MD.B.3
+    - 3.MD.C.7d
+    - 3.MD.D.8
+    - 3.OA.C.7
+  ccss_guid: 3D384CB2349B41299A3B5A133AB9E3F9
+  ccss_url: http://corestandards.org/Math/Content/3/OA/D/8
+  asn_url: http://purl.org/ASN/resources/S114347E
+-
+  path: 3.OA.D.9
+  __class__: Standard
+  aliases:
+    - 3.OA.9
+  description: >
+    Identify arithmetic patterns (including patterns in the addition table or multiplication
+    table), and explain them using properties of operations.
+  comment: For example, observe that 4 times a number is always even, and explain
+    why 4 times a number can be decomposed into two equal addends.
+  ispartof:
+    - 3.OA.D
+  prerequisites:
+    - 3.OA.B.5
+    - 2.OA.C.3
+  usedfors:
+    - 4.OA.C.5
+  ccss_guid: C220B1257A75437196AEBEC0B0C4B4BC
+  ccss_url: http://corestandards.org/Math/Content/3/OA/D/9
+  asn_url: http://purl.org/ASN/resources/S114347F

@@ -1,0 +1,217 @@
+-
+  path: CC
+  __class__: Domain
+  description: >
+    Counting and Cardinality
+  contents:
+    - K.CC.A
+    - K.CC.B
+    - K.CC.C
+  ispartof:
+    - CCSSM
+  asn_url: http://purl.org/ASN/resources/S1143409
+-
+  path: EE
+  __class__: Domain
+  description: >
+    Expressions and Equations
+  contents:
+    - 6.EE.A
+    - 6.EE.B
+    - 6.EE.C
+    - 7.EE.A
+    - 7.EE.B
+    - 8.EE.A
+    - 8.EE.B
+    - 8.EE.C
+  ispartof:
+    - CCSSM
+  asn_url: http://purl.org/ASN/resources/S11434C6
+-
+  path: F
+  __class__: Domain
+  description: >
+    Functions
+  contents:
+    - 8.F.A
+    - 8.F.B
+  ispartof:
+    - CCSSM
+  asn_url: http://purl.org/ASN/resources/S1143526
+-
+  path: G
+  __class__: Domain
+  description: >
+    Geometry
+  contents:
+    - K.G.A
+    - K.G.B
+    - 1.G.A
+    - 2.G.A
+    - 3.G.A
+    - 4.G.A
+    - 5.G.A
+    - 5.G.B
+    - 6.G.A
+    - 7.G.A
+    - 7.G.B
+    - 8.G.A
+    - 8.G.B
+    - 8.G.C
+  ispartof:
+    - CCSSM
+  asn_url: http://purl.org/ASN/resources/S114340D
+-
+  path: MD
+  __class__: Domain
+  description: >
+    Measurement and Data
+  contents:
+    - K.MD.A
+    - K.MD.B
+    - 1.MD.A
+    - 1.MD.B
+    - 1.MD.C
+    - 2.MD.A
+    - 2.MD.B
+    - 2.MD.C
+    - 2.MD.D
+    - 3.MD.A
+    - 3.MD.B
+    - 3.MD.C
+    - 3.MD.D
+    - 4.MD.A
+    - 4.MD.B
+    - 4.MD.C
+    - 5.MD.A
+    - 5.MD.B
+    - 5.MD.C
+  ispartof:
+    - CCSSM
+  asn_url: http://purl.org/ASN/resources/S114340C
+-
+  path: NBT
+  __class__: Domain
+  description: >
+    Number and Operations in Base Ten
+  comment: Grade 4 expectations in this domain are limited to whole numbers less than
+    or equal to 1,000,000.
+  contents:
+    - K.NBT.A
+    - 1.NBT.A
+    - 1.NBT.B
+    - 1.NBT.C
+    - 2.NBT.A
+    - 2.NBT.B
+    - 3.NBT.A
+    - 4.NBT.A
+    - 4.NBT.B
+    - 5.NBT.A
+    - 5.NBT.B
+  ispartof:
+    - CCSSM
+  asn_url: http://purl.org/ASN/resources/S114340B
+-
+  path: NF
+  __class__: Domain
+  description: >
+    Number and Operations—Fractions
+  comment: 'Grade 3 expectations in this domain are limited to fractions with denominators
+    2, 3, 4, 6, and 8.
+
+    Grade 4 expectations in this domain are limited to fractions with denominators
+    2, 3, 4, 5, 6, 8, 10, 12, and 100'
+  contents:
+    - 3.NF.A
+    - 4.NF.A
+    - 4.NF.B
+    - 4.NF.C
+    - 5.NF.A
+    - 5.NF.B
+  ispartof:
+    - CCSSM
+  asn_url: http://purl.org/ASN/resources/S1143472
+-
+  path: NS
+  __class__: Domain
+  description: >
+    The Number System
+  contents:
+    - 6.NS.A
+    - 6.NS.B
+    - 6.NS.C
+    - 7.NS.A
+    - 8.NS.A
+  ispartof:
+    - CCSSM
+  asn_url: http://purl.org/ASN/resources/S11434C2
+-
+  path: OA
+  __class__: Domain
+  description: >
+    Operations and Algebraic Thinking
+  contents:
+    - K.OA.A
+    - 1.OA.A
+    - 1.OA.B
+    - 1.OA.C
+    - 1.OA.D
+    - 2.OA.A
+    - 2.OA.B
+    - 2.OA.C
+    - 3.OA.A
+    - 3.OA.B
+    - 3.OA.C
+    - 3.OA.D
+    - 4.OA.A
+    - 4.OA.B
+    - 4.OA.C
+    - 5.OA.A
+    - 5.OA.B
+  ispartof:
+    - CCSSM
+  usedfors:
+    - 5.OA.A.2
+  asn_url: http://purl.org/ASN/resources/S114340A
+-
+  path: RP
+  __class__: Domain
+  description: >
+    Ratios and Proportional Relationships
+  contents:
+    - 6.RP.A
+    - 7.RP.A
+  ispartof:
+    - CCSSM
+  asn_url: http://purl.org/ASN/resources/S11434C0
+-
+  path: SMP
+  __class__: Domain
+  description: >
+    Standards for Mathematical Practice
+  contents:
+    - MP1
+    - MP2
+    - MP3
+    - MP4
+    - MP5
+    - MP6
+    - MP7
+    - MP8
+  ispartof:
+    - CCSSM
+-
+  path: SP
+  __class__: Domain
+  description: >
+    Statistics and Probability
+  contents:
+    - 6.SP.A
+    - 6.SP.B
+    - 7.SP.A
+    - 7.SP.B
+    - 7.SP.C
+    - 8.SP.A
+  ispartof:
+    - CCSSM
+  asn_url: http://purl.org/ASN/resources/S11434CB

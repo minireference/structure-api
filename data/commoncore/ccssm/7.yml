@@ -1,0 +1,949 @@
+-
+  path: 7.EE.A
+  __class__: Cluster
+  description: >
+    Use properties of operations to generate equivalent expressions.
+  contents:
+    - 7.EE.A.1
+    - 7.EE.A.2
+  ispartof:
+    - EE
+  ccss_guid: B8B28A72AADF4D5C9D819A0AD29E830F
+  ccss_url: http://corestandards.org/Math/Content/7/EE/A
+  asn_url: http://purl.org/ASN/resources/S1143507
+-
+  path: 7.EE.A.1
+  __class__: Standard
+  aliases:
+    - 7.EE.1
+  description: >
+    Apply properties of operations as strategies to add, subtract, factor, and expand
+    linear expressions with rational coefficients.
+  ispartof:
+    - 7.EE.A
+  prerequisites:
+    - 6.EE.A.4
+    - 6.EE.A.3
+  usedfors:
+    - 8.EE.C.7b
+  related:
+    - 7.EE.A.2
+  ccss_guid: DDA127661AED435481B8FCD67A9CBB2B
+  ccss_url: http://corestandards.org/Math/Content/7/EE/A/1
+  asn_url: http://purl.org/ASN/resources/S1143514
+-
+  path: 7.EE.A.2
+  __class__: Standard
+  aliases:
+    - 7.EE.2
+  description: >
+    Understand that rewriting an expression in different forms in a problem context
+    can shed light on the problem and how the quantities in it are related.
+  comment: For example, a + 0.05a = 1.05a means that "increase by 5%" is the same
+    as "multiply by 1.05."
+  ispartof:
+    - 7.EE.A
+  related:
+    - 7.EE.A.1
+  ccss_guid: 714C5DE265264B2694B0E864F32FE2AE
+  ccss_url: http://corestandards.org/Math/Content/7/EE/A/2
+  asn_url: http://purl.org/ASN/resources/S1143515
+-
+  path: 7.EE.B
+  __class__: Cluster
+  description: >
+    Solve real-life and mathematical problems using numerical and algebraic expressions
+    and equations.
+  contents:
+    - 7.EE.B.3
+    - 7.EE.B.4
+  ispartof:
+    - EE
+  ccss_guid: 28C6157CE6114983AE2E7334B88BB477
+  ccss_url: http://corestandards.org/Math/Content/7/EE/B
+  asn_url: http://purl.org/ASN/resources/S1143508
+-
+  path: 7.EE.B.3
+  __class__: Standard
+  aliases:
+    - 7.EE.3
+  description: >
+    Solve multi-step real-life and mathematical problems posed with positive and negative
+    rational numbers in any form (whole numbers, fractions, and decimals), using tools
+    strategically. Apply properties of operations to calculate with numbers in any
+    form; convert between forms as appropriate; and assess the reasonableness of answers
+    using mental computation and estimation strategies.
+  comment: 'For example: If a woman making $25 an hour gets a 10% raise, she will
+    make an additional 1/10 of her salary an hour, or $2.50, for a new salary of $27.50.
+    If you want to place a towel bar 9 3/4 inches long in the center of a door that
+    is 27 1/2 inches wide, you will need to place the bar about 9 inches from each
+    edge; this estimate can be used as a check on the exact computation.'
+  ispartof:
+    - 7.EE.B
+  prerequisites:
+    - 7.NS.A.3
+  usedfors:
+    - 8.EE.A.4
+  ccss_guid: BD7C2039AF6A41409D5B23B1D5A753F3
+  ccss_url: http://corestandards.org/Math/Content/7/EE/B/3
+  asn_url: http://purl.org/ASN/resources/S1143516
+-
+  path: 7.EE.B.4
+  __class__: Standard
+  aliases:
+    - 7.EE.4
+  description: >
+    Use variables to represent quantities in a real-world or mathematical problem,
+    and construct simple equations and inequalities to solve problems by reasoning
+    about the quantities.
+  contents:
+    - 7.EE.B.4a
+    - 7.EE.B.4b
+  ispartof:
+    - 7.EE.B
+  ccss_guid: 5C4A177A795D42178DD81C960C176EAC
+  ccss_url: http://corestandards.org/Math/Content/7/EE/B/4
+  asn_url: http://purl.org/ASN/resources/S1143517
+-
+  path: 7.EE.B.4a
+  __class__: Component
+  aliases:
+    - 7.EE.4.a
+  description: >
+    Solve word problems leading to equations of the form px + q = r and p(x + q) =
+    r, where p, q, and r are specific rational numbers. Solve equations of these forms
+    fluently. Compare an algebraic solution to an arithmetic solution, identifying
+    the sequence of the operations used in each approach.
+  comment: For example, the perimeter of a rectangle is 54 cm. Its length is 6 cm.
+    What is its width?
+  ispartof:
+    - 7.EE.B.4
+  prerequisites:
+    - 6.EE.B.7
+    - 7.NS.A.3
+    - 6.EE.B.6
+  usedfors:
+    - 7.EE.B.4b
+    - 8.EE.C.7b
+    - 8.EE.C.8
+  related:
+    - 7.RP.A.2
+  ccss_guid: 2F1135F18E434B77BB694AC9D3EEE575
+  ccss_url: http://corestandards.org/Math/Content/7/EE/B/4/a
+  asn_url: http://purl.org/ASN/resources/S1143667
+-
+  path: 7.EE.B.4b
+  __class__: Component
+  aliases:
+    - 7.EE.4.b
+  description: >
+    Solve word problems leading to inequalities of the form px + q > r or px + q <
+    r, where p, q, and r are specific rational numbers. Graph the solution set of
+    the inequality and interpret it in the context of the problem.
+  comment: 'For example: As a salesperson, you are paid $50 per week plus $3 per sale.
+    This week you want your pay to be at least $100. Write an inequality for the number
+    of sales you need to make, and describe the solutions.'
+  ispartof:
+    - 7.EE.B.4
+  prerequisites:
+    - 7.EE.B.4a
+    - 6.EE.B.8
+    - 6.EE.B.6
+  ccss_guid: 38D1A0732B9A4055BA1E28B6D44D2493
+  ccss_url: http://corestandards.org/Math/Content/7/EE/B/4/b
+  asn_url: http://purl.org/ASN/resources/S1143668
+-
+  path: 7.G.A
+  __class__: Cluster
+  description: >
+    Draw, construct, and describe geometrical figures and describe the relationships
+    between them.
+  contents:
+    - 7.G.A.1
+    - 7.G.A.2
+    - 7.G.A.3
+  ispartof:
+    - G
+  ccss_guid: 5995C336BE744A67B7D2D5FD8DC54086
+  ccss_url: http://corestandards.org/Math/Content/7/G/A
+  asn_url: http://purl.org/ASN/resources/S1143509
+-
+  path: 7.G.A.1
+  __class__: Standard
+  aliases:
+    - 7.G.1
+  description: >
+    Solve problems involving scale drawings of geometric figures, including computing
+    actual lengths and areas from a scale drawing and reproducing a scale drawing
+    at a different scale.
+  ispartof:
+    - 7.G.A
+  prerequisites:
+    - 7.RP.A.2
+    - 6.G.A.1
+  usedfors:
+    - 8.EE.B.6
+  ccss_guid: 58588B92180F4668974CB3703D7A2BCF
+  ccss_url: http://corestandards.org/Math/Content/7/G/A/1
+  asn_url: http://purl.org/ASN/resources/S1143518
+-
+  path: 7.G.A.2
+  __class__: Standard
+  aliases:
+    - 7.G.2
+  description: >
+    Draw (freehand, with ruler and protractor, and with technology) geometric shapes
+    with given conditions. Focus on constructing triangles from three measures of
+    angles or sides, noticing when the conditions determine a unique triangle, more
+    than one triangle, or no triangle.
+  ispartof:
+    - 7.G.A
+  usedfors:
+    - 8.G.A.1
+  ccss_guid: BF9BA82A90C4445F90F97C8FADCC8943
+  ccss_url: http://corestandards.org/Math/Content/7/G/A/2
+  asn_url: http://purl.org/ASN/resources/S1143519
+-
+  path: 7.G.A.3
+  __class__: Standard
+  aliases:
+    - 7.G.3
+  description: >
+    Describe the two-dimensional figures that result from slicing three-dimensional
+    figures, as in plane sections of right rectangular prisms and right rectangular
+    pyramids.
+  ispartof:
+    - 7.G.A
+  ccss_guid: 34805B0C060B46A699F8DD41034E82DF
+  ccss_url: http://corestandards.org/Math/Content/7/G/A/3
+  asn_url: http://purl.org/ASN/resources/S114351A
+-
+  path: 7.G.B
+  __class__: Cluster
+  description: >
+    Solve real-life and mathematical problems involving angle measure, area, surface
+    area, and volume.
+  contents:
+    - 7.G.B.4
+    - 7.G.B.5
+    - 7.G.B.6
+  ispartof:
+    - G
+  ccss_guid: D8C53E0B5E7445D1B3493BEB30AAD017
+  ccss_url: http://corestandards.org/Math/Content/7/G/B
+  asn_url: http://purl.org/ASN/resources/S114350A
+-
+  path: 7.G.B.4
+  __class__: Standard
+  aliases:
+    - 7.G.4
+  description: >
+    Know the formulas for the area and circumference of a circle and use them to solve
+    problems; give an informal derivation of the relationship between the circumference
+    and area of a circle.
+  ispartof:
+    - 7.G.B
+  prerequisites:
+    - 6.G.A.1
+  ccss_guid: 8111E58EA0054B8C8DE2CF7AA27F2FD8
+  ccss_url: http://corestandards.org/Math/Content/7/G/B/4
+  asn_url: http://purl.org/ASN/resources/S114351B
+-
+  path: 7.G.B.5
+  __class__: Standard
+  aliases:
+    - 7.G.5
+  description: >
+    Use facts about supplementary, complementary, vertical, and adjacent angles in
+    a multi-step problem to write and solve simple equations for an unknown angle
+    in a figure.
+  ispartof:
+    - 7.G.B
+  prerequisites:
+    - 4.MD.C.7
+  usedfors:
+    - 8.G.A.1
+  ccss_guid: 1EEBD749CD1949C6B06AC489ACA8DA9E
+  ccss_url: http://corestandards.org/Math/Content/7/G/B/5
+  asn_url: http://purl.org/ASN/resources/S114351C
+-
+  path: 7.G.B.6
+  __class__: Standard
+  aliases:
+    - 7.G.6
+  description: >
+    Solve real-world and mathematical problems involving area, volume and surface
+    area of two- and three-dimensional objects composed of triangles, quadrilaterals,
+    polygons, cubes, and right prisms.
+  ispartof:
+    - 7.G.B
+  prerequisites:
+    - 6.G.A.4
+    - 6.G.A.1
+    - 6.G.A.2
+  usedfors:
+    - 8.G.B.6
+  ccss_guid: 0D6F6749CCC8449DA70EA198411C2998
+  ccss_url: http://corestandards.org/Math/Content/7/G/B/6
+  asn_url: http://purl.org/ASN/resources/S114351D
+-
+  path: 7.NS.A
+  __class__: Cluster
+  description: >
+    Apply and extend previous understandings of operations with fractions to add,
+    subtract, multiply, and divide rational numbers.
+  contents:
+    - 7.NS.A.1
+    - 7.NS.A.2
+    - 7.NS.A.3
+  ispartof:
+    - NS
+  ccss_guid: 3DDCF0B192B04D66AEE3E2C9EC8B7CAC
+  ccss_url: http://corestandards.org/Math/Content/7/NS/A
+  asn_url: http://purl.org/ASN/resources/S1143506
+-
+  path: 7.NS.A.1
+  __class__: Standard
+  aliases:
+    - 7.NS.1
+  description: >
+    Apply and extend previous understandings of addition and subtraction to add and
+    subtract rational numbers; represent addition and subtraction on a horizontal
+    or vertical number line diagram.
+  contents:
+    - 7.NS.A.1a
+    - 7.NS.A.1b
+    - 7.NS.A.1c
+    - 7.NS.A.1d
+  ispartof:
+    - 7.NS.A
+  ccss_guid: 3C0139D0DA344DBCAC06DBC4CBC41F9C
+  ccss_url: http://corestandards.org/Math/Content/7/NS/A/1
+  asn_url: http://purl.org/ASN/resources/S1143511
+-
+  path: 7.NS.A.1a
+  __class__: Component
+  aliases:
+    - 7.NS.1.a
+  description: >
+    Describe situations in which opposite quantities combine to make 0.
+  comment: For example, a hydrogen atom has 0 charge because its two constituents
+    are oppositely charged.
+  ispartof:
+    - 7.NS.A.1
+  prerequisites:
+    - 6.NS.C.5
+    - 6.NS.C.6a
+  related:
+    - 7.NS.A.1b
+  ccss_guid: AEFCAD7F6D18406aA4769EF34D8AEAC6
+  ccss_url: http://corestandards.org/Math/Content/7/NS/A/1/a
+  asn_url: http://purl.org/ASN/resources/S1143670
+-
+  path: 7.NS.A.1b
+  __class__: Component
+  aliases:
+    - 7.NS.1.b
+  description: >
+    Understand p + q as the number located a distance |q| from p, in the positive
+    or negative direction depending on whether q is positive or negative. Show that
+    a number and its opposite have a sum of 0 (are additive inverses). Interpret sums
+    of rational numbers by describing real-world contexts.
+  ispartof:
+    - 7.NS.A.1
+  prerequisites:
+    - 6.NS.C.7c
+    - 6.NS.C.6a
+  usedfors:
+    - 7.NS.A.1c
+    - 7.NS.A.1d
+  related:
+    - 7.NS.A.1a
+  ccss_guid: F020570FB095480193A4F969241B8029
+  ccss_url: http://corestandards.org/Math/Content/7/NS/A/1/b
+  asn_url: http://purl.org/ASN/resources/S1143671
+-
+  path: 7.NS.A.1c
+  __class__: Component
+  aliases:
+    - 7.NS.1.c
+  description: >
+    Understand subtraction of rational numbers as adding the additive inverse, p -
+    q = p + (-q). Show that the distance between two rational numbers on the number
+    line is the absolute value of their difference, and apply this principle in real-world
+    contexts.
+  ispartof:
+    - 7.NS.A.1
+  prerequisites:
+    - 7.NS.A.1b
+    - 6.NS.C.7c
+  usedfors:
+    - 7.NS.A.1d
+  ccss_guid: 9C1435F358A84468956E149747DF8D85
+  ccss_url: http://corestandards.org/Math/Content/7/NS/A/1/c
+  asn_url: http://purl.org/ASN/resources/S1143672
+-
+  path: 7.NS.A.1d
+  __class__: Component
+  aliases:
+    - 7.NS.1.d
+  description: >
+    Apply properties of operations as strategies to add and subtract rational numbers.
+  ispartof:
+    - 7.NS.A.1
+  prerequisites:
+    - 5.NF.A.1
+    - 7.NS.A.1c
+    - 7.NS.A.1b
+  usedfors:
+    - 7.NS.A.2a
+    - 7.NS.A.3
+  ccss_guid: CECCADE8384141139CA663AEC03D37B5
+  ccss_url: http://corestandards.org/Math/Content/7/NS/A/1/d
+  asn_url: http://purl.org/ASN/resources/S1143673
+-
+  path: 7.NS.A.2
+  __class__: Standard
+  aliases:
+    - 7.NS.2
+  description: >
+    Apply and extend previous understandings of multiplication and division and of
+    fractions to multiply and divide rational numbers.
+  contents:
+    - 7.NS.A.2a
+    - 7.NS.A.2b
+    - 7.NS.A.2c
+    - 7.NS.A.2d
+  ispartof:
+    - 7.NS.A
+  ccss_guid: 416206BA82F74726987E836991FB89F8
+  ccss_url: http://corestandards.org/Math/Content/7/NS/A/2
+  asn_url: http://purl.org/ASN/resources/S1143512
+-
+  path: 7.NS.A.2a
+  __class__: Component
+  aliases:
+    - 7.NS.2.a
+  description: >
+    Understand that multiplication is extended from fractions to rational numbers
+    by requiring that operations continue to satisfy the properties of operations,
+    particularly the distributive property, leading to products such as (-1)(-1) =
+    1 and the rules for multiplying signed numbers. Interpret products of rational
+    numbers by describing real-world contexts.
+  ispartof:
+    - 7.NS.A.2
+  prerequisites:
+    - 7.NS.A.1d
+  related:
+    - 7.NS.A.2b
+    - 7.NS.A.2c
+  ccss_guid: 90A64AED5CA141F2844E11A8A381F0F9
+  ccss_url: http://corestandards.org/Math/Content/7/NS/A/2/a
+  asn_url: http://purl.org/ASN/resources/S114366C
+-
+  path: 7.NS.A.2b
+  __class__: Component
+  aliases:
+    - 7.NS.2.b
+  description: >
+    Understand that integers can be divided, provided that the divisor is not zero,
+    and every quotient of integers (with non-zero divisor) is a rational number. If
+    p and q are integers, then -(p/q) = (-p)/q = p/(-q). Interpret quotients of rational
+    numbers by describing real-world contexts.
+  ispartof:
+    - 7.NS.A.2
+  related:
+    - 7.NS.A.2a
+    - 7.NS.A.2c
+  ccss_guid: 8E31252383F148FEA1E748BEB841036E
+  ccss_url: http://corestandards.org/Math/Content/7/NS/A/2/b
+  asn_url: http://purl.org/ASN/resources/S114366D
+-
+  path: 7.NS.A.2c
+  __class__: Component
+  aliases:
+    - 7.NS.2.c
+  description: >
+    Apply properties of operations as strategies to multiply and divide rational numbers.
+  ispartof:
+    - 7.NS.A.2
+  prerequisites:
+    - 6.NS.A.1
+    - 5.NF.B.4
+  usedfors:
+    - 7.NS.A.3
+  related:
+    - 7.NS.A.2a
+    - 7.NS.A.2b
+  ccss_guid: 23541ADA26D346F09FCC989C5E04848E
+  ccss_url: http://corestandards.org/Math/Content/7/NS/A/2/c
+  asn_url: http://purl.org/ASN/resources/S114366E
+-
+  path: 7.NS.A.2d
+  __class__: Component
+  aliases:
+    - 7.NS.2.d
+  description: >
+    Convert a rational number to a decimal using long division; know that the decimal
+    form of a rational number terminates in 0s or eventually repeats.
+  ispartof:
+    - 7.NS.A.2
+  prerequisites:
+    - 5.NF.B.3
+  usedfors:
+    - 7.NS.A.3
+    - 8.NS.A.1
+  ccss_guid: 23541ADA26D346F09FCC989C5E04848F
+  ccss_url: http://corestandards.org/Math/Content/7/NS/A/2/d
+  asn_url: http://purl.org/ASN/resources/S114366F
+-
+  path: 7.NS.A.3
+  __class__: Standard
+  aliases:
+    - 7.NS.3
+  description: >
+    Solve real-world and mathematical problems involving the four operations with
+    rational numbers.
+  comment: Computations with rational numbers extend the rules for manipulating fractions
+    to complex fractions.
+  ispartof:
+    - 7.NS.A
+  prerequisites:
+    - 4.OA.A.3
+    - 7.NS.A.2c
+    - 7.NS.A.1d
+    - 6.NS.B.3
+    - 7.NS.A.2d
+  usedfors:
+    - 7.EE.B.3
+    - 7.EE.B.4a
+    - 8.EE.A.2
+  ccss_guid: 7DCF884FEE914f5998EF84E2810BB4D1
+  ccss_url: http://corestandards.org/Math/Content/7/NS/A/3
+  asn_url: http://purl.org/ASN/resources/S1143513
+-
+  path: 7.RP.A
+  __class__: Cluster
+  description: >
+    Analyze proportional relationships and use them to solve real-world and mathematical
+    problems.
+  contents:
+    - 7.RP.A.1
+    - 7.RP.A.2
+    - 7.RP.A.3
+  ispartof:
+    - RP
+  ccss_guid: 71C7D669B568463CB1189D089CF4C723
+  ccss_url: http://corestandards.org/Math/Content/7/RP/A
+  asn_url: http://purl.org/ASN/resources/S1143505
+-
+  path: 7.RP.A.1
+  __class__: Standard
+  aliases:
+    - 7.RP.1
+  description: >
+    Compute unit rates associated with ratios of fractions, including ratios of lengths,
+    areas and other quantities measured in like or different units.
+  comment: For example, if a person walks 1/2 mile in each 1/4 hour, compute the unit
+    rate as the complex fraction <sup>1/2</sup>/<sub>1/4</sub> miles per hour, equivalently
+    2 miles per hour.
+  ispartof:
+    - 7.RP.A
+  prerequisites:
+    - 6.RP.A.2
+  usedfors:
+    - 7.RP.A.2
+  ccss_guid: 6FC2501BA58B4695979EA68AC7E2C988
+  ccss_url: http://corestandards.org/Math/Content/7/RP/A/1
+  asn_url: http://purl.org/ASN/resources/S114350E
+-
+  path: 7.RP.A.2
+  __class__: Standard
+  aliases:
+    - 7.RP.2
+  description: >
+    Recognize and represent proportional relationships between quantities.
+  contents:
+    - 7.RP.A.2a
+    - 7.RP.A.2b
+    - 7.RP.A.2c
+    - 7.RP.A.2d
+  ispartof:
+    - 7.RP.A
+  prerequisites:
+    - 7.RP.A.1
+    - 6.RP.A.2
+    - 6.RP.A.3
+  usedfors:
+    - 7.G.A.1
+    - 7.RP.A.3
+    - 8.EE.B.5
+    - 8.EE.B.6
+    - 8.F.A.1
+    - 8.F.A.2
+    - 8.F.B.4
+  related:
+    - 7.EE.B.4a
+  ccss_guid: A57D2EDF9830409CB97D9F8DBD6763DD
+  ccss_url: http://corestandards.org/Math/Content/7/RP/A/2
+  asn_url: http://purl.org/ASN/resources/S114350F
+-
+  path: 7.RP.A.2a
+  __class__: Component
+  aliases:
+    - 7.RP.2.a
+  description: >
+    Decide whether two quantities are in a proportional relationship, e.g., by testing
+    for equivalent ratios in a table or graphing on a coordinate plane and observing
+    whether the graph is a straight line through the origin.
+  ispartof:
+    - 7.RP.A.2
+  ccss_guid: 46FC84C961254E79BFBEE8399477632D
+  ccss_url: http://corestandards.org/Math/Content/7/RP/A/2/a
+  asn_url: http://purl.org/ASN/resources/S114367B
+-
+  path: 7.RP.A.2b
+  __class__: Component
+  aliases:
+    - 7.RP.2.b
+  description: >
+    Identify the constant of proportionality (unit rate) in tables, graphs, equations,
+    diagrams, and verbal descriptions of proportional relationships.
+  ispartof:
+    - 7.RP.A.2
+  ccss_guid: 3ADAFFEF079D4FC3809513B650D91D9F
+  ccss_url: http://corestandards.org/Math/Content/7/RP/A/2/b
+  asn_url: http://purl.org/ASN/resources/S114367C
+-
+  path: 7.RP.A.2c
+  __class__: Component
+  aliases:
+    - 7.RP.2.c
+  description: >
+    Represent proportional relationships by equations.
+  comment: For example, if total cost t is proportional to the number n of items purchased
+    at a constant price p, the relationship between the total cost and the number
+    of items can be expressed as t = pn.
+  ispartof:
+    - 7.RP.A.2
+  ccss_guid: A0D3F72097A44707B921C2A4AD288AAE
+  ccss_url: http://corestandards.org/Math/Content/7/RP/A/2/c
+  asn_url: http://purl.org/ASN/resources/S114367D
+-
+  path: 7.RP.A.2d
+  __class__: Component
+  aliases:
+    - 7.RP.2.d
+  description: >
+    Explain what a point (x, y) on the graph of a proportional relationship means
+    in terms of the situation, with special attention to the points (0, 0) and (1,
+    r) where r is the unit rate.
+  ispartof:
+    - 7.RP.A.2
+  ccss_guid: C2918ADA67414c57AC6A37C2F3BB7815
+  ccss_url: http://corestandards.org/Math/Content/7/RP/A/2/d
+  asn_url: http://purl.org/ASN/resources/S114367E
+-
+  path: 7.RP.A.3
+  __class__: Standard
+  aliases:
+    - 7.RP.3
+  description: >
+    Use proportional relationships to solve multistep ratio and percent problems.
+  comment: 'Examples: simple interest, tax, markups and markdowns, gratuities and
+    commissions, fees, percent increase and decrease, percent error.'
+  ispartof:
+    - 7.RP.A
+  prerequisites:
+    - 6.RP.A.3
+    - 7.RP.A.2
+  usedfors:
+    - 7.SP.C.6
+    - 7.SP.C.7
+    - 7.SP.C.8
+  ccss_guid: A8D0BB2A92C64B4F92D99D7C899703D0
+  ccss_url: http://corestandards.org/Math/Content/7/RP/A/3
+  asn_url: http://purl.org/ASN/resources/S1143510
+-
+  path: 7.SP.A
+  __class__: Cluster
+  description: >
+    Use random sampling to draw inferences about a population.
+  contents:
+    - 7.SP.A.1
+    - 7.SP.A.2
+  ispartof:
+    - SP
+  ccss_guid: 30690CE0AA584E25B4C8AA897DC93E34
+  ccss_url: http://corestandards.org/Math/Content/7/SP/A
+  asn_url: http://purl.org/ASN/resources/S114350B
+-
+  path: 7.SP.A.1
+  __class__: Standard
+  aliases:
+    - 7.SP.1
+  description: >
+    Understand that statistics can be used to gain information about a population
+    by examining a sample of the population; generalizations about a population from
+    a sample are valid only if the sample is representative of that population. Understand
+    that random sampling tends to produce representative samples and support valid
+    inferences.
+  ispartof:
+    - 7.SP.A
+  prerequisites:
+    - 6.SP.A.2
+    - 7.SP.C.5
+    - 6.SP.A.1
+  usedfors:
+    - 7.SP.A.2
+  ccss_guid: 3DCB5D6E72154F9FAD1A4EEADB8AC125
+  ccss_url: http://corestandards.org/Math/Content/7/SP/A/1
+  asn_url: http://purl.org/ASN/resources/S114351E
+-
+  path: 7.SP.A.2
+  __class__: Standard
+  aliases:
+    - 7.SP.2
+  description: >
+    Use data from a random sample to draw inferences about a population with an unknown
+    characteristic of interest. Generate multiple samples (or simulated samples) of
+    the same size to gauge the variation in estimates or predictions.
+  comment: For example, estimate the mean word length in a book by randomly sampling
+    words from the book; predict the winner of a school election based on randomly
+    sampled survey data. Gauge how far off the estimate or prediction might be.
+  ispartof:
+    - 7.SP.A
+  prerequisites:
+    - 7.SP.A.1
+  usedfors:
+    - 7.SP.B.4
+  ccss_guid: 1E9C8DCF5D8B444AB189EFE40E899EAB
+  ccss_url: http://corestandards.org/Math/Content/7/SP/A/2
+  asn_url: http://purl.org/ASN/resources/S114351F
+-
+  path: 7.SP.B
+  __class__: Cluster
+  description: >
+    Draw informal comparative inferences about two populations.
+  contents:
+    - 7.SP.B.3
+    - 7.SP.B.4
+  ispartof:
+    - SP
+  ccss_guid: 929EBEA1A93948A3B0B8B31E3CA106FC
+  ccss_url: http://corestandards.org/Math/Content/7/SP/B
+  asn_url: http://purl.org/ASN/resources/S114350C
+-
+  path: 7.SP.B.3
+  __class__: Standard
+  aliases:
+    - 7.SP.3
+  description: >
+    Informally assess the degree of visual overlap of two numerical data distributions
+    with similar variabilities, measuring the difference between the centers by expressing
+    it as a multiple of a measure of variability.
+  comment: For example, the mean height of players on the basketball team is 10 cm
+    greater than the mean height of players on the soccer team, about twice the variability
+    (mean absolute deviation) on either team; on a dot plot, the separation between
+    the two distributions of heights is noticeable.
+  ispartof:
+    - 7.SP.B
+  prerequisites:
+    - 5.NF.B.4
+    - 6.NS.A.1
+    - 6.SP.A.2
+  usedfors:
+    - 7.SP.B.4
+  ccss_guid: EC52E8776E5F4A498AE2DEE64FFB60DD
+  ccss_url: http://corestandards.org/Math/Content/7/SP/B/3
+  asn_url: http://purl.org/ASN/resources/S1143520
+-
+  path: 7.SP.B.4
+  __class__: Standard
+  aliases:
+    - 7.SP.4
+  description: >
+    Use measures of center and measures of variability for numerical data from random
+    samples to draw informal comparative inferences about two populations.
+  comment: For example, decide whether the words in a chapter of a seventh-grade science
+    book are generally longer than the words in a chapter of a fourth-grade science
+    book.
+  ispartof:
+    - 7.SP.B
+  prerequisites:
+    - 7.SP.B.3
+    - 7.SP.A.2
+  ccss_guid: 067475BBB3A04DC88E24731D6D606C1F
+  ccss_url: http://corestandards.org/Math/Content/7/SP/B/4
+  asn_url: http://purl.org/ASN/resources/S1143521
+-
+  path: 7.SP.C
+  __class__: Cluster
+  description: >
+    Investigate chance processes and develop, use, and evaluate probability models.
+  contents:
+    - 7.SP.C.5
+    - 7.SP.C.6
+    - 7.SP.C.7
+    - 7.SP.C.8
+  ispartof:
+    - SP
+  ccss_guid: C62D7937C1DD4C009128AE62E48A92C3
+  ccss_url: http://corestandards.org/Math/Content/7/SP/C
+  asn_url: http://purl.org/ASN/resources/S114350D
+-
+  path: 7.SP.C.5
+  __class__: Standard
+  aliases:
+    - 7.SP.5
+  description: >
+    Understand that the probability of a chance event is a number between 0 and 1
+    that expresses the likelihood of the event occurring. Larger numbers indicate
+    greater likelihood. A probability near 0 indicates an unlikely event, a probability
+    around 1/2 indicates an event that is neither unlikely nor likely, and a probability
+    near 1 indicates a likely event.
+  ispartof:
+    - 7.SP.C
+  usedfors:
+    - 7.SP.A.1
+    - 7.SP.C.6
+  ccss_guid: 094D610A5BA44E7DAB9D19B61690628B
+  ccss_url: http://corestandards.org/Math/Content/7/SP/C/5
+  asn_url: http://purl.org/ASN/resources/S1143522
+-
+  path: 7.SP.C.6
+  __class__: Standard
+  aliases:
+    - 7.SP.6
+  description: >
+    Approximate the probability of a chance event by collecting data on the chance
+    process that produces it and observing its long-run relative frequency, and predict
+    the approximate relative frequency given the probability.
+  comment: For example, when rolling a number cube 600 times, predict that a 3 or
+    6 would be rolled roughly 200 times, but probably not exactly 200 times.
+  ispartof:
+    - 7.SP.C
+  prerequisites:
+    - 7.RP.A.3
+    - 7.SP.C.5
+  usedfors:
+    - 7.SP.C.7
+  ccss_guid: F32180F51D5D445EAD4B6F394F3A67EB
+  ccss_url: http://corestandards.org/Math/Content/7/SP/C/6
+  asn_url: http://purl.org/ASN/resources/S1143523
+-
+  path: 7.SP.C.7
+  __class__: Standard
+  aliases:
+    - 7.SP.7
+  description: >
+    Develop a probability model and use it to find probabilities of events. Compare
+    probabilities from a model to observed frequencies; if the agreement is not good,
+    explain possible sources of the discrepancy.
+  contents:
+    - 7.SP.C.7a
+    - 7.SP.C.7b
+  ispartof:
+    - 7.SP.C
+  prerequisites:
+    - 7.SP.C.6
+    - 7.RP.A.3
+  usedfors:
+    - 7.SP.C.8
+  ccss_guid: 472222394A204D26844BA834703EAC55
+  ccss_url: http://corestandards.org/Math/Content/7/SP/C/7
+  asn_url: http://purl.org/ASN/resources/S1143524
+-
+  path: 7.SP.C.7a
+  __class__: Component
+  aliases:
+    - 7.SP.7.a
+  description: >
+    Develop a uniform probability model by assigning equal probability to all outcomes,
+    and use the model to determine probabilities of events.
+  comment: For example, if a student is selected at random from a class, find the
+    probability that Jane will be selected and the probability that a girl will be
+    selected.
+  ispartof:
+    - 7.SP.C.7
+  ccss_guid: 716CB223FD464557990DA2C256BDC030
+  ccss_url: http://corestandards.org/Math/Content/7/SP/C/7/a
+  asn_url: http://purl.org/ASN/resources/S114365D
+-
+  path: 7.SP.C.7b
+  __class__: Component
+  aliases:
+    - 7.SP.7.b
+  description: >
+    Develop a probability model (which may not be uniform) by observing frequencies
+    in data generated from a chance process.
+  comment: For example, find the approximate probability that a spinning penny will
+    land heads up or that a tossed paper cup will land open-end down. Do the outcomes
+    for the spinning penny appear to be equally likely based on the observed frequencies?
+  ispartof:
+    - 7.SP.C.7
+  ccss_guid: 09E56ADF76064716A2076F71820F95F3
+  ccss_url: http://corestandards.org/Math/Content/7/SP/C/7/b
+  asn_url: http://purl.org/ASN/resources/S114365E
+-
+  path: 7.SP.C.8
+  __class__: Standard
+  aliases:
+    - 7.SP.8
+  description: >
+    Find probabilities of compound events using organized lists, tables, tree diagrams,
+    and simulation.
+  contents:
+    - 7.SP.C.8a
+    - 7.SP.C.8b
+    - 7.SP.C.8c
+  ispartof:
+    - 7.SP.C
+  prerequisites:
+    - 7.SP.C.7
+    - 7.RP.A.3
+  ccss_guid: 1001223E3087486CBB73C6BAA21516DF
+  ccss_url: http://corestandards.org/Math/Content/7/SP/C/8
+  asn_url: http://purl.org/ASN/resources/S1143525
+-
+  path: 7.SP.C.8a
+  __class__: Component
+  aliases:
+    - 7.SP.8.a
+  description: >
+    Understand that, just as with simple events, the probability of a compound event
+    is the fraction of outcomes in the sample space for which the compound event occurs.
+  ispartof:
+    - 7.SP.C.8
+  ccss_guid: F9897607C3E8445E8391D0F7284D37E0
+  ccss_url: http://corestandards.org/Math/Content/7/SP/C/8/a
+  asn_url: http://purl.org/ASN/resources/S114365F
+-
+  path: 7.SP.C.8b
+  __class__: Component
+  aliases:
+    - 7.SP.8.b
+  description: >
+    Represent sample spaces for compound events using methods such as organized lists,
+    tables and tree diagrams. For an event described in everyday language (e.g., "rolling
+    double sixes"), identify the outcomes in the sample space which compose the event.
+  ispartof:
+    - 7.SP.C.8
+  ccss_guid: 0ED4E865656449238229475118C793D4
+  ccss_url: http://corestandards.org/Math/Content/7/SP/C/8/b
+  asn_url: http://purl.org/ASN/resources/S1143660
+-
+  path: 7.SP.C.8c
+  __class__: Component
+  aliases:
+    - 7.SP.8.c
+  description: >
+    Design and use a simulation to generate frequencies for compound events.
+  comment: 'For example, use random digits as a simulation tool to approximate the
+    answer to the question: If 40% of donors have type A blood, what is the probability
+    that it will take at least 4 donors to find one with type A blood?'
+  ispartof:
+    - 7.SP.C.8
+  ccss_guid: 1159DE3EB8BF4B24AE2DB38F66D346CF
+  ccss_url: http://corestandards.org/Math/Content/7/SP/C/8/c
+  asn_url: http://purl.org/ASN/resources/S1143661

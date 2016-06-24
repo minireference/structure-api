@@ -1,0 +1,931 @@
+-
+  path: HSG
+  __class__: Domain
+  description: >
+    High School — Geometry
+  contents:
+    - HSG-C
+    - HSG-CO
+    - HSG-GMD
+    - HSG-GPE
+    - HSG-MG
+    - HSG-SRT
+  ispartof:
+    - CCSSM
+  asn_url: http://purl.org/ASN/resources/S1143551
+-
+  path: HSG-C
+  __class__: Domain
+  description: >
+    Circles
+  contents:
+    - HSG-C.A
+    - HSG-C.B
+  ispartof:
+    - HSG
+  asn_url: http://purl.org/ASN/resources/S1143561
+-
+  path: HSG-C.A
+  __class__: Cluster
+  description: >
+    Understand and apply theorems about circles
+  contents:
+    - HSG-C.A.1
+    - HSG-C.A.2
+    - HSG-C.A.3
+    - HSG-C.A.4
+  ispartof:
+    - HSG-C
+  ccss_guid: 6FCFE0FCB1D94D9DB0CBE4E55A4C4689
+  ccss_url: http://corestandards.org/Math/Content/HSG/C/A
+  asn_url: http://purl.org/ASN/resources/S114357A
+-
+  path: HSG-C.A.1
+  __class__: Standard
+  aliases:
+    - G.C.1
+  description: >
+    Prove that all circles are similar.
+  ispartof:
+    - HSG-C.A
+  ccss_guid: 519064F0E97A489AA657BE1C4D81E64C
+  ccss_url: http://corestandards.org/Math/Content/HSG/C/A/1
+  asn_url: http://purl.org/ASN/resources/S11435D6
+-
+  path: HSG-C.A.2
+  __class__: Standard
+  aliases:
+    - G.C.2
+  description: >
+    Identify and describe relationships among inscribed angles, radii, and chords.
+  comment: Include the relationship between central, inscribed, and circumscribed
+    angles; inscribed angles on a diameter are right angles; the radius of a circle
+    is perpendicular to the tangent where the radius intersects the circle.
+  ispartof:
+    - HSG-C.A
+  ccss_guid: 0B8104A4EC0441BBA569C75FDCD346A2
+  ccss_url: http://corestandards.org/Math/Content/HSG/C/A/2
+  asn_url: http://purl.org/ASN/resources/S11435D7
+-
+  path: HSG-C.A.3
+  __class__: Standard
+  aliases:
+    - G.C.3
+  description: >
+    Construct the inscribed and circumscribed circles of a triangle, and prove properties
+    of angles for a quadrilateral inscribed in a circle.
+  ispartof:
+    - HSG-C.A
+  ccss_guid: 22CA4C028EDD4325ABF6007ADB252DA9
+  ccss_url: http://corestandards.org/Math/Content/HSG/C/A/3
+  asn_url: http://purl.org/ASN/resources/S11435D8
+-
+  path: HSG-C.A.4
+  __class__: Standard
+  aliases:
+    - G.C.4
+  description: >
+    (+) Construct a tangent line from a point outside a given circle to the circle.
+  ispartof:
+    - HSG-C.A
+  ccss_guid: 48AD7305975E4C38A38484926C2AC2B6
+  ccss_url: http://corestandards.org/Math/Content/HSG/C/A/4
+  asn_url: http://purl.org/ASN/resources/S11435D9
+-
+  path: HSG-C.B
+  __class__: Cluster
+  description: >
+    Find arc lengths and areas of sectors of circles
+  contents:
+    - HSG-C.B.5
+  ispartof:
+    - HSG-C
+  ccss_guid: E85D80D849884C7E87DF3B6F703E08BF
+  ccss_url: http://corestandards.org/Math/Content/HSG/C/B
+  asn_url: http://purl.org/ASN/resources/S114357B
+-
+  path: HSG-C.B.5
+  __class__: Standard
+  aliases:
+    - G.C.5
+  description: >
+    Derive using similarity the fact that the length of the arc intercepted by an
+    angle is proportional to the radius, and define the radian measure of the angle
+    as the constant of proportionality; derive the formula for the area of a sector.
+  ispartof:
+    - HSG-C.B
+  ccss_guid: 48AD7305975E4C38A38484926C2AC2B7
+  ccss_url: http://corestandards.org/Math/Content/HSG/C/B/5
+  asn_url: http://purl.org/ASN/resources/S11435DA
+-
+  path: HSG-CO
+  __class__: Domain
+  description: >
+    Congruence
+  contents:
+    - HSG-CO.A
+    - HSG-CO.B
+    - HSG-CO.C
+    - HSG-CO.D
+  ispartof:
+    - HSG
+  asn_url: http://purl.org/ASN/resources/S114355F
+-
+  path: HSG-CO.A
+  __class__: Cluster
+  description: >
+    Experiment with transformations in the plane
+  contents:
+    - HSG-CO.A.1
+    - HSG-CO.A.2
+    - HSG-CO.A.3
+    - HSG-CO.A.4
+    - HSG-CO.A.5
+  ispartof:
+    - HSG-CO
+  ccss_guid: 0A4FB274306F48B8849D365982EEE811
+  ccss_url: http://corestandards.org/Math/Content/HSG/CO/A
+  asn_url: http://purl.org/ASN/resources/S1143572
+-
+  path: HSG-CO.A.1
+  __class__: Standard
+  aliases:
+    - G.CO.1
+  description: >
+    Know precise definitions of angle, circle, perpendicular line, parallel line,
+    and line segment, based on the undefined notions of point, line, distance along
+    a line, and distance around a circular arc.
+  ispartof:
+    - HSG-CO.A
+  ccss_guid: C705AD3CCF9641C9A3101BDB10737B12
+  ccss_url: http://corestandards.org/Math/Content/HSG/CO/A/1
+  asn_url: http://purl.org/ASN/resources/S11435BE
+-
+  path: HSG-CO.A.2
+  __class__: Standard
+  aliases:
+    - G.CO.2
+  description: >
+    Represent transformations in the plane using, e.g., transparencies and geometry
+    software; describe transformations as functions that take points in the plane
+    as inputs and give other points as outputs. Compare transformations that preserve
+    distance and angle to those that do not (e.g., translation versus horizontal stretch).
+  ispartof:
+    - HSG-CO.A
+  ccss_guid: DD05C3FD51B54767BE49C8566053DD30
+  ccss_url: http://corestandards.org/Math/Content/HSG/CO/A/2
+  asn_url: http://purl.org/ASN/resources/S11435BF
+-
+  path: HSG-CO.A.3
+  __class__: Standard
+  aliases:
+    - G.CO.3
+  description: >
+    Given a rectangle, parallelogram, trapezoid, or regular polygon, describe the
+    rotations and reflections that carry it onto itself.
+  ispartof:
+    - HSG-CO.A
+  ccss_guid: C9B1E6F9029B46BF91FA3D7AD3424D81
+  ccss_url: http://corestandards.org/Math/Content/HSG/CO/A/3
+  asn_url: http://purl.org/ASN/resources/S11435C0
+-
+  path: HSG-CO.A.4
+  __class__: Standard
+  aliases:
+    - G.CO.4
+  description: >
+    Develop definitions of rotations, reflections, and translations in terms of angles,
+    circles, perpendicular lines, parallel lines, and line segments.
+  ispartof:
+    - HSG-CO.A
+  ccss_guid: 4B2516603AEB4A3AB9B3C4A26890387F
+  ccss_url: http://corestandards.org/Math/Content/HSG/CO/A/4
+  asn_url: http://purl.org/ASN/resources/S11435C1
+-
+  path: HSG-CO.A.5
+  __class__: Standard
+  aliases:
+    - G.CO.5
+  description: >
+    Given a geometric figure and a rotation, reflection, or translation, draw the
+    transformed figure using, e.g., graph paper, tracing paper, or geometry software.
+    Specify a sequence of transformations that will carry a given figure onto another.
+  ispartof:
+    - HSG-CO.A
+  ccss_guid: 22DE82C883F440EAA24DC63CD5D983A2
+  ccss_url: http://corestandards.org/Math/Content/HSG/CO/A/5
+  asn_url: http://purl.org/ASN/resources/S11435C2
+-
+  path: HSG-CO.B
+  __class__: Cluster
+  description: >
+    Understand congruence in terms of rigid motions
+  contents:
+    - HSG-CO.B.6
+    - HSG-CO.B.7
+    - HSG-CO.B.8
+  ispartof:
+    - HSG-CO
+  ccss_guid: 2C230AEDFC714C45A4DE2FE3C0D07FC0
+  ccss_url: http://corestandards.org/Math/Content/HSG/CO/B
+  asn_url: http://purl.org/ASN/resources/S1143573
+-
+  path: HSG-CO.B.6
+  __class__: Standard
+  aliases:
+    - G.CO.6
+  description: >
+    Use geometric descriptions of rigid motions to transform figures and to predict
+    the effect of a given rigid motion on a given figure; given two figures, use the
+    definition of congruence in terms of rigid motions to decide if they are congruent.
+  ispartof:
+    - HSG-CO.B
+  ccss_guid: DC959D73068C4C618DFEA8F2513D6F94
+  ccss_url: http://corestandards.org/Math/Content/HSG/CO/B/6
+  asn_url: http://purl.org/ASN/resources/S11435C3
+-
+  path: HSG-CO.B.7
+  __class__: Standard
+  aliases:
+    - G.CO.7
+  description: >
+    Use the definition of congruence in terms of rigid motions to show that two triangles
+    are congruent if and only if corresponding pairs of sides and corresponding pairs
+    of angles are congruent.
+  ispartof:
+    - HSG-CO.B
+  ccss_guid: 38DDC3FC8AEF4616BD05A2D0864A05E9
+  ccss_url: http://corestandards.org/Math/Content/HSG/CO/B/7
+  asn_url: http://purl.org/ASN/resources/S11435C4
+-
+  path: HSG-CO.B.8
+  __class__: Standard
+  aliases:
+    - G.CO.8
+  description: >
+    Explain how the criteria for triangle congruence (ASA, SAS, and SSS) follow from
+    the definition of congruence in terms of rigid motions.
+  ispartof:
+    - HSG-CO.B
+  ccss_guid: 5FFBD080786949929FD37F35D817DC01
+  ccss_url: http://corestandards.org/Math/Content/HSG/CO/B/8
+  asn_url: http://purl.org/ASN/resources/S11435C5
+-
+  path: HSG-CO.C
+  __class__: Cluster
+  description: >
+    Prove geometric theorems
+  contents:
+    - HSG-CO.C.10
+    - HSG-CO.C.11
+    - HSG-CO.C.9
+  ispartof:
+    - HSG-CO
+  ccss_guid: 3950A96EBD5349E4ADFFA1F417DFAE3E
+  ccss_url: http://corestandards.org/Math/Content/HSG/CO/C
+  asn_url: http://purl.org/ASN/resources/S1143574
+-
+  path: HSG-CO.C.10
+  __class__: Standard
+  aliases:
+    - G.CO.10
+  description: >
+    Prove theorems about triangles.
+  comment: 'Theorems include: measures of interior angles of a triangle sum to 180°;
+    base angles of isosceles triangles are congruent; the segment joining midpoints
+    of two sides of a triangle is parallel to the third side and half the length;
+    the medians of a triangle meet at a point.'
+  ispartof:
+    - HSG-CO.C
+  ccss_guid: 79BBF26E6D0945F6B3E4004434BC6682
+  ccss_url: http://corestandards.org/Math/Content/HSG/CO/C/10
+  asn_url: http://purl.org/ASN/resources/S11435C7
+-
+  path: HSG-CO.C.11
+  __class__: Standard
+  aliases:
+    - G.CO.11
+  description: >
+    Prove theorems about parallelograms.
+  comment: 'Theorems include: opposite sides are congruent, opposite angles are congruent,
+    the diagonals of a parallelogram bisect each other, and conversely, rectangles
+    are parallelograms with congruent diagonals.'
+  ispartof:
+    - HSG-CO.C
+  ccss_guid: 7CB09509B566460F90CC39B61FE75B2F
+  ccss_url: http://corestandards.org/Math/Content/HSG/CO/C/11
+  asn_url: http://purl.org/ASN/resources/S11435C8
+-
+  path: HSG-CO.C.9
+  __class__: Standard
+  aliases:
+    - G.CO.9
+  description: >
+    Prove theorems about lines and angles.
+  comment: 'Theorems include: vertical angles are congruent; when a transversal crosses
+    parallel lines, alternate interior angles are congruent and corresponding angles
+    are congruent; points on a perpendicular bisector of a line segment are exactly
+    those equidistant from the segment''s endpoints.'
+  ispartof:
+    - HSG-CO.C
+  ccss_guid: DEE025B4DBB849BD993681529D099B21
+  ccss_url: http://corestandards.org/Math/Content/HSG/CO/C/9
+  asn_url: http://purl.org/ASN/resources/S11435C6
+-
+  path: HSG-CO.D
+  __class__: Cluster
+  description: >
+    Make geometric constructions
+  contents:
+    - HSG-CO.D.12
+    - HSG-CO.D.13
+  ispartof:
+    - HSG-CO
+  ccss_guid: 53D370CCC2F2442DA6B3B2FB0957F6B7
+  ccss_url: http://corestandards.org/Math/Content/HSG/CO/D
+  asn_url: http://purl.org/ASN/resources/S1143575
+-
+  path: HSG-CO.D.12
+  __class__: Standard
+  aliases:
+    - G.CO.12
+  description: >
+    Make formal geometric constructions with a variety of tools and methods (compass
+    and straightedge, string, reflective devices, paper folding, dynamic geometric
+    software, etc.). Copying a segment; copying an angle; bisecting a segment; bisecting
+    an angle; constructing perpendicular lines, including the perpendicular bisector
+    of a line segment; and constructing a line parallel to a given line through a
+    point not on the line.
+  ispartof:
+    - HSG-CO.D
+  ccss_guid: CAB563B9D88D4C1C9C828F683F4B7FC6
+  ccss_url: http://corestandards.org/Math/Content/HSG/CO/D/12
+  asn_url: http://purl.org/ASN/resources/S11435C9
+-
+  path: HSG-CO.D.13
+  __class__: Standard
+  aliases:
+    - G.CO.13
+  description: >
+    Construct an equilateral triangle, a square, and a regular hexagon inscribed in
+    a circle.
+  ispartof:
+    - HSG-CO.D
+  ccss_guid: B70F834015914D6E9148C6EBAAB750D4
+  ccss_url: http://corestandards.org/Math/Content/HSG/CO/D/13
+  asn_url: http://purl.org/ASN/resources/S11435CA
+-
+  path: HSG-GMD
+  __class__: Domain
+  description: >
+    Geometric Measurement and Dimension
+  contents:
+    - HSG-GMD.A
+    - HSG-GMD.B
+  ispartof:
+    - HSG
+  asn_url: http://purl.org/ASN/resources/S1143563
+-
+  path: HSG-GMD.A
+  __class__: Cluster
+  description: >
+    Explain volume formulas and use them to solve problems
+  contents:
+    - HSG-GMD.A.1
+    - HSG-GMD.A.2
+    - HSG-GMD.A.3
+  ispartof:
+    - HSG-GMD
+  ccss_guid: 5B85430986994BB498573FE89639B3A7
+  ccss_url: http://corestandards.org/Math/Content/HSG/GMD/A
+  asn_url: http://purl.org/ASN/resources/S114357E
+-
+  path: HSG-GMD.A.1
+  __class__: Standard
+  aliases:
+    - G.GMD.1
+  description: >
+    Give an informal argument for the formulas for the circumference of a circle,
+    area of a circle, volume of a cylinder, pyramid, and cone.
+  comment: Use dissection arguments, Cavalieri's principle, and informal limit arguments.
+  ispartof:
+    - HSG-GMD.A
+  ccss_guid: DDCDF135C57C4760A802A4B06F5ABCC7
+  ccss_url: http://corestandards.org/Math/Content/HSG/GMD/A/1
+  asn_url: http://purl.org/ASN/resources/S11435E2
+-
+  path: HSG-GMD.A.2
+  __class__: Standard
+  aliases:
+    - G.GMD.2
+  description: >
+    (+) Give an informal argument using Cavalieri's principle for the formulas for
+    the volume of a sphere and other solid figures.
+  ispartof:
+    - HSG-GMD.A
+  ccss_guid: 8F2F5D86FFE14C39BD201EB5A373E483
+  ccss_url: http://corestandards.org/Math/Content/HSG/GMD/A/2
+  asn_url: http://purl.org/ASN/resources/S11435E3
+-
+  path: HSG-GMD.A.3
+  __class__: Standard
+  aliases:
+    - G.GMD.3
+  description: >
+    Use volume formulas for cylinders, pyramids, cones, and spheres to solve problems.
+  ispartof:
+    - HSG-GMD.A
+  ccss_guid: 3617ACE47B5140698E9624A9E60800C1
+  ccss_url: http://corestandards.org/Math/Content/HSG/GMD/A/3
+  asn_url: http://purl.org/ASN/resources/S11435E4
+-
+  path: HSG-GMD.B
+  __class__: Cluster
+  description: >
+    Visualize relationships between two-dimensional and three-dimensional objects
+  contents:
+    - HSG-GMD.B.4
+  ispartof:
+    - HSG-GMD
+  ccss_guid: 68FC0B7F46D44814802F51352CE0A108
+  ccss_url: http://corestandards.org/Math/Content/HSG/GMD/B
+  asn_url: http://purl.org/ASN/resources/S114357F
+-
+  path: HSG-GMD.B.4
+  __class__: Standard
+  aliases:
+    - G.GMD.4
+  description: >
+    Identify the shapes of two-dimensional cross-sections of three-dimensional objects,
+    and identify three-dimensional objects generated by rotations of two-dimensional
+    objects.
+  ispartof:
+    - HSG-GMD.B
+  ccss_guid: 323DAFD77286404CB40102B995CF8DD2
+  ccss_url: http://corestandards.org/Math/Content/HSG/GMD/B/4
+  asn_url: http://purl.org/ASN/resources/S11435E5
+-
+  path: HSG-GPE
+  __class__: Domain
+  description: >
+    Expressing Geometric Properties with Equations
+  contents:
+    - HSG-GPE.A
+    - HSG-GPE.B
+  ispartof:
+    - HSG
+  asn_url: http://purl.org/ASN/resources/S1143562
+-
+  path: HSG-GPE.A
+  __class__: Cluster
+  description: >
+    Translate between the geometric description and the equation for a conic section
+  contents:
+    - HSG-GPE.A.1
+    - HSG-GPE.A.2
+    - HSG-GPE.A.3
+  ispartof:
+    - HSG-GPE
+  ccss_guid: 20163EF6BD26432AA11A2E0E37083DE9
+  ccss_url: http://corestandards.org/Math/Content/HSG/GPE/A
+  asn_url: http://purl.org/ASN/resources/S114357C
+-
+  path: HSG-GPE.A.1
+  __class__: Standard
+  aliases:
+    - G.GPE.1
+  description: >
+    Derive the equation of a circle of given center and radius using the Pythagorean
+    Theorem; complete the square to find the center and radius of a circle given by
+    an equation.
+  ispartof:
+    - HSG-GPE.A
+  ccss_guid: 3364A2D8B7654D3696223F2F3E2CD406
+  ccss_url: http://corestandards.org/Math/Content/HSG/GPE/A/1
+  asn_url: http://purl.org/ASN/resources/S11435DB
+-
+  path: HSG-GPE.A.2
+  __class__: Standard
+  aliases:
+    - G.GPE.2
+  description: >
+    Derive the equation of a parabola given a focus and directrix.
+  ispartof:
+    - HSG-GPE.A
+  ccss_guid: BC0C617036994A22A455B6EF17F7E39E
+  ccss_url: http://corestandards.org/Math/Content/HSG/GPE/A/2
+  asn_url: http://purl.org/ASN/resources/S11435DC
+-
+  path: HSG-GPE.A.3
+  __class__: Standard
+  aliases:
+    - G.GPE.3
+  description: >
+    (+) Derive the equations of ellipses and hyperbolas given the foci, using the
+    fact that the sum or difference of distances from the foci is constant.
+  ispartof:
+    - HSG-GPE.A
+  ccss_guid: 009DBC1A63D34C568FE5570301538DB8
+  ccss_url: http://corestandards.org/Math/Content/HSG/GPE/A/3
+  asn_url: http://purl.org/ASN/resources/S11435DD
+-
+  path: HSG-GPE.B
+  __class__: Cluster
+  description: >
+    Use coordinates to prove simple geometric theorems algebraically
+  contents:
+    - HSG-GPE.B.4
+    - HSG-GPE.B.5
+    - HSG-GPE.B.6
+    - HSG-GPE.B.7
+  ispartof:
+    - HSG-GPE
+  ccss_guid: 10D0867BA9B248F79713088456252172
+  ccss_url: http://corestandards.org/Math/Content/HSG/GPE/B
+  asn_url: http://purl.org/ASN/resources/S114357D
+-
+  path: HSG-GPE.B.4
+  __class__: Standard
+  aliases:
+    - G.GPE.4
+  description: >
+    Use coordinates to prove simple geometric theorems algebraically.
+  comment: For example, prove or disprove that a figure defined by four given points
+    in the coordinate plane is a rectangle; prove or disprove that the point (1, √3)
+    lies on the circle centered at the origin and containing the point (0, 2).
+  ispartof:
+    - HSG-GPE.B
+  ccss_guid: FB53CF0658AD45E1A309248D40E4B897
+  ccss_url: http://corestandards.org/Math/Content/HSG/GPE/B/4
+  asn_url: http://purl.org/ASN/resources/S11435DE
+-
+  path: HSG-GPE.B.5
+  __class__: Standard
+  aliases:
+    - G.GPE.5
+  description: >
+    Prove the slope criteria for parallel and perpendicular lines and use them to
+    solve geometric problems (e.g., find the equation of a line parallel or perpendicular
+    to a given line that passes through a given point).
+  ispartof:
+    - HSG-GPE.B
+  ccss_guid: 9C6D77288A6B481280A20C772F3C91F4
+  ccss_url: http://corestandards.org/Math/Content/HSG/GPE/B/5
+  asn_url: http://purl.org/ASN/resources/S11435DF
+-
+  path: HSG-GPE.B.6
+  __class__: Standard
+  aliases:
+    - G.GPE.6
+  description: >
+    Find the point on a directed line segment between two given points that partitions
+    the segment in a given ratio.
+  ispartof:
+    - HSG-GPE.B
+  ccss_guid: 8002D25287444F44994FB68A487EDD06
+  ccss_url: http://corestandards.org/Math/Content/HSG/GPE/B/6
+  asn_url: http://purl.org/ASN/resources/S11435E0
+-
+  path: HSG-GPE.B.7
+  __class__: Standard
+  aliases:
+    - G.GPE.7
+  description: >
+    Use coordinates to compute perimeters of polygons and areas of triangles and rectangles,
+    e.g., using the distance formula.
+  comment: Modeling is best interpreted not as a collection of isolated topics but
+    in relation to other standards. Making mathematical models is a Standard for Mathematical
+    Practice, and specific modeling standards appear throughout the high school standards
+    indicated by a star symbol (★). The star symbol sometimes appears on the heading
+    for a group of standards; in that case, it should be understood to apply to all
+    standards in that group.
+  ispartof:
+    - HSG-GPE.B
+  ccss_guid: DE7D63F8F1344BA3AB3E4882FFEA7D2B
+  ccss_url: http://corestandards.org/Math/Content/HSG/GPE/B/7
+  asn_url: http://purl.org/ASN/resources/S11435E1
+-
+  path: HSG-MG
+  __class__: Domain
+  description: >
+    Modeling with Geometry
+  contents:
+    - HSG-MG.A
+  ispartof:
+    - HSG
+  asn_url: http://purl.org/ASN/resources/S1143564
+-
+  path: HSG-MG.A
+  __class__: Cluster
+  description: >
+    Apply geometric concepts in modeling situations
+  contents:
+    - HSG-MG.A.1
+    - HSG-MG.A.2
+    - HSG-MG.A.3
+  ispartof:
+    - HSG-MG
+  ccss_guid: 0C8CD3F231AC4EA89C7247F43A7B5E0A
+  ccss_url: http://corestandards.org/Math/Content/HSG/MG/A
+  asn_url: http://purl.org/ASN/resources/S1143580
+-
+  path: HSG-MG.A.1
+  __class__: Standard
+  aliases:
+    - G.MG.1
+  description: >
+    Use geometric shapes, their measures, and their properties to describe objects
+    (e.g., modeling a tree trunk or a human torso as a cylinder).
+  comment: Modeling is best interpreted not as a collection of isolated topics but
+    in relation to other standards. Making mathematical models is a Standard for Mathematical
+    Practice, and specific modeling standards appear throughout the high school standards
+    indicated by a star symbol (★). The star symbol sometimes appears on the heading
+    for a group of standards; in that case, it should be understood to apply to all
+    standards in that group.
+  ispartof:
+    - HSG-MG.A
+  ccss_guid: 9CC731D1BFF643D1B78754FFE96D4980
+  ccss_url: http://corestandards.org/Math/Content/HSG/MG/A/1
+  asn_url: http://purl.org/ASN/resources/S11435E6
+-
+  path: HSG-MG.A.2
+  __class__: Standard
+  aliases:
+    - G.MG.2
+  description: >
+    Apply concepts of density based on area and volume in modeling situations (e.g.,
+    persons per square mile, BTUs per cubic foot).
+  comment: Modeling is best interpreted not as a collection of isolated topics but
+    in relation to other standards. Making mathematical models is a Standard for Mathematical
+    Practice, and specific modeling standards appear throughout the high school standards
+    indicated by a star symbol (★). The star symbol sometimes appears on the heading
+    for a group of standards; in that case, it should be understood to apply to all
+    standards in that group.
+  ispartof:
+    - HSG-MG.A
+  ccss_guid: 84C0E5EB2B7A403F9FBEAD254BE4413E
+  ccss_url: http://corestandards.org/Math/Content/HSG/MG/A/2
+  asn_url: http://purl.org/ASN/resources/S11435E7
+-
+  path: HSG-MG.A.3
+  __class__: Standard
+  aliases:
+    - G.MG.3
+  description: >
+    Apply geometric methods to solve design problems (e.g., designing an object or
+    structure to satisfy physical constraints or minimize cost; working with typographic
+    grid systems based on ratios).
+  ispartof:
+    - HSG-MG.A
+  ccss_guid: 4D0DB97BC1BF456891CAE17FCEA693AE
+  ccss_url: http://corestandards.org/Math/Content/HSG/MG/A/3
+  asn_url: http://purl.org/ASN/resources/S11435E8
+-
+  path: HSG-SRT
+  __class__: Domain
+  description: >
+    Similarity, Right Triangles, and Trigonometry
+  contents:
+    - HSG-SRT.A
+    - HSG-SRT.B
+    - HSG-SRT.C
+    - HSG-SRT.D
+  ispartof:
+    - HSG
+  asn_url: http://purl.org/ASN/resources/S1143560
+-
+  path: HSG-SRT.A
+  __class__: Cluster
+  description: >
+    Understand similarity in terms of similarity transformations
+  contents:
+    - HSG-SRT.A.1
+    - HSG-SRT.A.2
+    - HSG-SRT.A.3
+  ispartof:
+    - HSG-SRT
+  ccss_guid: 1D96FE69A8D94CCFAA827DBD53424C3E
+  ccss_url: http://corestandards.org/Math/Content/HSG/SRT/A
+  asn_url: http://purl.org/ASN/resources/S1143576
+-
+  path: HSG-SRT.A.1
+  __class__: Standard
+  aliases:
+    - G.SRT.1
+  description: >
+    Verify experimentally the properties of dilations given by a center and a scale
+    factor:
+  contents:
+    - HSG-SRT.A.1a
+    - HSG-SRT.A.1b
+  ispartof:
+    - HSG-SRT.A
+  ccss_guid: 686678EDBF7A4F93A09BAAC0B4C2CBFC
+  ccss_url: http://corestandards.org/Math/Content/HSG/SRT/A/1
+  asn_url: http://purl.org/ASN/resources/S11435CB
+-
+  path: HSG-SRT.A.1a
+  __class__: Component
+  aliases:
+    - G.SRT.1.a
+  description: >
+    A dilation takes a line not passing through the center of the dilation to a parallel
+    line, and leaves a line passing through the center unchanged.
+  ispartof:
+    - HSG-SRT.A.1
+  ccss_guid: DDCD2BFAF9A041A4B8094EE33FD1F27C
+  ccss_url: http://corestandards.org/Math/Content/HSG/SRT/A/1/a
+-
+  path: HSG-SRT.A.1b
+  __class__: Component
+  aliases:
+    - G.SRT.1.b
+  description: >
+    The dilation of a line segment is longer or shorter in the ratio given by the
+    scale factor.
+  ispartof:
+    - HSG-SRT.A.1
+  ccss_guid: 01F21CA7909F4C52AC16B840DAF353A9
+  ccss_url: http://corestandards.org/Math/Content/HSG/SRT/A/1/b
+-
+  path: HSG-SRT.A.2
+  __class__: Standard
+  aliases:
+    - G.SRT.2
+  description: >
+    Given two figures, use the definition of similarity in terms of similarity transformations
+    to decide if they are similar; explain using similarity transformations the meaning
+    of similarity for triangles as the equality of all corresponding pairs of angles
+    and the proportionality of all corresponding pairs of sides.
+  ispartof:
+    - HSG-SRT.A
+  ccss_guid: 5EEC5B34D81048C481BF69158104FA25
+  ccss_url: http://corestandards.org/Math/Content/HSG/SRT/A/2
+  asn_url: http://purl.org/ASN/resources/S11435CC
+-
+  path: HSG-SRT.A.3
+  __class__: Standard
+  aliases:
+    - G.SRT.3
+  description: >
+    Use the properties of similarity transformations to establish the AA criterion
+    for two triangles to be similar.
+  ispartof:
+    - HSG-SRT.A
+  ccss_guid: 8C2612DBDCEE4D8F8E1F84D62457ED00
+  ccss_url: http://corestandards.org/Math/Content/HSG/SRT/A/3
+  asn_url: http://purl.org/ASN/resources/S11435CD
+-
+  path: HSG-SRT.B
+  __class__: Cluster
+  description: >
+    Prove theorems involving similarity
+  contents:
+    - HSG-SRT.B.4
+    - HSG-SRT.B.5
+  ispartof:
+    - HSG-SRT
+  ccss_guid: 4F170A4349664CC59D6A26D6CBC822E7
+  ccss_url: http://corestandards.org/Math/Content/HSG/SRT/B
+  asn_url: http://purl.org/ASN/resources/S1143577
+-
+  path: HSG-SRT.B.4
+  __class__: Standard
+  aliases:
+    - G.SRT.4
+  description: >
+    Prove theorems about triangles.
+  comment: 'Theorems include: a line parallel to one side of a triangle divides the
+    other two proportionally, and conversely; the Pythagorean Theorem proved using
+    triangle similarity.'
+  ispartof:
+    - HSG-SRT.B
+  ccss_guid: AF9F597CEE3047739BEEBCC2086BC0D1
+  ccss_url: http://corestandards.org/Math/Content/HSG/SRT/B/4
+  asn_url: http://purl.org/ASN/resources/S11435CE
+-
+  path: HSG-SRT.B.5
+  __class__: Standard
+  aliases:
+    - G.SRT.5
+  description: >
+    Use congruence and similarity criteria for triangles to solve problems and to
+    prove relationships in geometric figures.
+  ispartof:
+    - HSG-SRT.B
+  ccss_guid: D75111F1FCA84D8ABB0DA43ECE9BC178
+  ccss_url: http://corestandards.org/Math/Content/HSG/SRT/B/5
+  asn_url: http://purl.org/ASN/resources/S11435CF
+-
+  path: HSG-SRT.C
+  __class__: Cluster
+  description: >
+    Define trigonometric ratios and solve problems involving right triangles
+  contents:
+    - HSG-SRT.C.6
+    - HSG-SRT.C.7
+    - HSG-SRT.C.8
+  ispartof:
+    - HSG-SRT
+  ccss_guid: 3759148F143D4274B532EF24C7D28D76
+  ccss_url: http://corestandards.org/Math/Content/HSG/SRT/C
+  asn_url: http://purl.org/ASN/resources/S1143578
+-
+  path: HSG-SRT.C.6
+  __class__: Standard
+  aliases:
+    - G.SRT.6
+  description: >
+    Understand that by similarity, side ratios in right triangles are properties of
+    the angles in the triangle, leading to definitions of trigonometric ratios for
+    acute angles.
+  ispartof:
+    - HSG-SRT.C
+  ccss_guid: 67FB2AF6552C4CB0AF5ECD83287A91AA
+  ccss_url: http://corestandards.org/Math/Content/HSG/SRT/C/6
+  asn_url: http://purl.org/ASN/resources/S11435D0
+-
+  path: HSG-SRT.C.7
+  __class__: Standard
+  aliases:
+    - G.SRT.7
+  description: >
+    Explain and use the relationship between the sine and cosine of complementary
+    angles.
+  ispartof:
+    - HSG-SRT.C
+  ccss_guid: 772B39EFFD0E44459BB158CC15D2646C
+  ccss_url: http://corestandards.org/Math/Content/HSG/SRT/C/7
+  asn_url: http://purl.org/ASN/resources/S11435D1
+-
+  path: HSG-SRT.C.8
+  __class__: Standard
+  aliases:
+    - G.SRT.8
+  description: >
+    Use trigonometric ratios and the Pythagorean Theorem to solve right triangles
+    in applied problems.
+  comment: Modeling is best interpreted not as a collection of isolated topics but
+    in relation to other standards. Making mathematical models is a Standard for Mathematical
+    Practice, and specific modeling standards appear throughout the high school standards
+    indicated by a star symbol (★). The star symbol sometimes appears on the heading
+    for a group of standards; in that case, it should be understood to apply to all
+    standards in that group.
+  ispartof:
+    - HSG-SRT.C
+  ccss_guid: 6D58DD18897546F48981DEF131C2F802
+  ccss_url: http://corestandards.org/Math/Content/HSG/SRT/C/8
+  asn_url: http://purl.org/ASN/resources/S11435D2
+-
+  path: HSG-SRT.D
+  __class__: Cluster
+  description: >
+    Apply trigonometry to general triangles
+  contents:
+    - HSG-SRT.D.10
+    - HSG-SRT.D.11
+    - HSG-SRT.D.9
+  ispartof:
+    - HSG-SRT
+  ccss_guid: F892626502934381A5369630B6D847AA
+  ccss_url: http://corestandards.org/Math/Content/HSG/SRT/D
+  asn_url: http://purl.org/ASN/resources/S1143579
+-
+  path: HSG-SRT.D.10
+  __class__: Standard
+  aliases:
+    - G.SRT.10
+  description: >
+    (+) Prove the Laws of Sines and Cosines and use them to solve problems.
+  ispartof:
+    - HSG-SRT.D
+  ccss_guid: 2F6A2E88D566447E924D443ACA80C3A3
+  ccss_url: http://corestandards.org/Math/Content/HSG/SRT/D/10
+  asn_url: http://purl.org/ASN/resources/S11435D4
+-
+  path: HSG-SRT.D.11
+  __class__: Standard
+  aliases:
+    - G.SRT.11
+  description: >
+    (+) Understand and apply the Law of Sines and the Law of Cosines to find unknown
+    measurements in right and non-right triangles (e.g., surveying problems, resultant
+    forces).
+  ispartof:
+    - HSG-SRT.D
+  ccss_guid: FF65A28E0FFE4802B7849008EC4A6522
+  ccss_url: http://corestandards.org/Math/Content/HSG/SRT/D/11
+  asn_url: http://purl.org/ASN/resources/S11435D5
+-
+  path: HSG-SRT.D.9
+  __class__: Standard
+  aliases:
+    - G.SRT.9
+  description: >
+    (+) Derive the formula A = 1/2 ab sin(C) for the area of a triangle by drawing
+    an auxiliary line from a vertex perpendicular to the opposite side.
+  ispartof:
+    - HSG-SRT.D
+  ccss_guid: 01CDBE322105436687A53BB97574B14C
+  ccss_url: http://corestandards.org/Math/Content/HSG/SRT/D/9
+  asn_url: http://purl.org/ASN/resources/S11435D3
