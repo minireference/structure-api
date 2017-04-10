@@ -8,6 +8,7 @@ from django.db import models
 class DjangoBaseNode(models.Model):
     # id  auto-created by Django  (primary_key=True)
     uuid        = models.UUIDField(default=uuid.uuid4, editable=False)
+    # TODO: aliases...
     path        = models.CharField(blank=False, max_length=1000)
     scope       = models.CharField(default='miniref', max_length=1000)
     version     = models.CharField(default='0.1', max_length=1000, verbose_name='schema version')

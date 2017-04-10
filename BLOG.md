@@ -1,3 +1,10 @@
+## Mon 10 Apr 2017 16:58:23 EDT
+
+This might might be useful for dumping the DB as SQL for later comparison
+
+    pg_dump  --data-only --table ?? --table ??? struct
+
+
 
 ## Mon 10 Apr 2017 13:05:50 EDT
 

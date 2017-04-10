@@ -1,6 +1,13 @@
 # virtualenv
 pydev
 
+
+# data-related stuff that need not be commited
+data/commoncore/nice_dependviz 
+data/miniref/sources 
+data/miniref/drafts 
+
+
 # dev
 .ipynb_checkpoints
 

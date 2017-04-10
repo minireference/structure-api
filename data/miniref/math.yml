@@ -1,4 +1,19 @@
 -
+  path: math/calculus
+  level: UGRAD
+  description: >
+    The detailed analysis mathematical functions of a single variable.
+    Limits, derivatives, optimization are the central topics in this course.
+    Calculus is used sciences, engineering, and busines.
+    This subject consists of two parts: differential calculus and integral calculus.
+  books: Any calculus book will do.
+  prerequisites:
+    - math/numbers
+    - math/functions
+    - math/algebra
+  usedfors:
+  relations:
+-
   path: math/calculus/derivatives
   aliases:
     - math/differential_calculus

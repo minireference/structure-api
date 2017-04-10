@@ -10,11 +10,10 @@ from rest_framework.routers import DefaultRouter
 
 from users.views import UserViewSet
 from djstruct.views import DjangoBaseNodeDetailView, DjangoBaseNodeListView
-from neomodelstruct.views import NeoBaseNodeDetailView as OldNeoBaseNodeDetailView
-from neomodelstruct.views import NeoBaseNodeListView as OldNeoBaseNodeListView
+#from neomodelstruct.views import NeoBaseNodeDetailView as OldNeoBaseNodeDetailView
+#from neomodelstruct.views import NeoBaseNodeListView as OldNeoBaseNodeListView
 
-
-from neolixirstruct.views import NeolixirBaseNodeDetailView, NeolixirBaseNodeListView
+# from neolixirstruct.views import NeolixirBaseNodeDetailView, NeolixirBaseNodeListView
 
 router = DefaultRouter()
 router.register(r'users', UserViewSet)
@@ -32,16 +31,16 @@ urlpatterns = [
         DjangoBaseNodeListView.as_view(), name='djangobasenode-list'),
 
     # NeoBaseNode API
-    url(r'^api/v1/nodes3/(?P<uuid>[a-zA-Z0-9_-]*)/$', 
-       OldNeoBaseNodeDetailView.as_view(), name='neobasenode-detail'),
-    url(r'^api/v1/nodes3/$', 
-       OldNeoBaseNodeListView.as_view(), name='neobasenode-list'),
+    # url(r'^api/v1/nodes3/(?P<uuid>[a-zA-Z0-9_-]*)/$', 
+    #    OldNeoBaseNodeDetailView.as_view(), name='neobasenode-detail'),
+    # url(r'^api/v1/nodes3/$', 
+    #    OldNeoBaseNodeListView.as_view(), name='neobasenode-list'),
     #
     # Neolixir-backed API
-    url(r'^api/v1/nodes4/(?P<uuid>[a-zA-Z0-9_-]*)/$', 
-       NeolixirBaseNodeDetailView.as_view(), name='neolixirbasenode-detail'),
-    url(r'^api/v1/nodes4/$', 
-       NeolixirBaseNodeListView.as_view(), name='neolixirbasenode-list'),
+    # url(r'^api/v1/nodes4/(?P<uuid>[a-zA-Z0-9_-]*)/$', 
+    #    NeolixirBaseNodeDetailView.as_view(), name='neolixirbasenode-detail'),
+    # url(r'^api/v1/nodes4/$', 
+    #    NeolixirBaseNodeListView.as_view(), name='neolixirbasenode-list'),
       
     
     # the 'api-root' from django rest-frameworks default router
