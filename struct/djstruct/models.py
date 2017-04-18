@@ -62,8 +62,8 @@ class DjangoDependencyRelation(models.Model):
     # id  auto-created
     prerequisite   = models.ForeignKey(DjangoBaseNode, null=True, related_name='prerequisites_rels', on_delete=models.SET_NULL)
     usedfor        = models.ForeignKey(DjangoBaseNode, null=True, related_name='usedfors_rels', on_delete=models.SET_NULL)
-    explain_prerequisite  = models.CharField(max_length=1000, verbose_name='Explain why prerequsite is needed')
-    explain_usedfor       = models.CharField(max_length=1000, verbose_name='Explain the application')
+    explain_prerequisite  = models.CharField(max_length=1000, verbose_name='Explain why prerequsite is needed', null=True)
+    explain_usedfor       = models.CharField(max_length=1000, verbose_name='Explain the application', null=True)
     level    = models.CharField(default='HS', max_length=1000, verbose_name='Educational level')
 
     def __unicode__(self):
