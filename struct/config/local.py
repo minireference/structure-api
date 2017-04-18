@@ -5,8 +5,6 @@ from configurations import values
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 
-os.environ["NEO4J_REST_URL"] = "http://neo4j:neo4j@localhost:7474/db/data/"
-
 
 class Local(Common):
 
@@ -16,7 +14,11 @@ class Local(Common):
 
     # Testing
     INSTALLED_APPS = Common.INSTALLED_APPS
-    # INSTALLED_APPS += ('django_nose',)
+    INSTALLED_APPS += (
+        'django_extensions',
+        'django_nose',
+    )
+    # 
     # TEST_RUNNER = 'django_nose.NoseTestSuiteRunner'
     NOSE_ARGS = [
         BASE_DIR,

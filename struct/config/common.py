@@ -16,23 +16,17 @@ class Common(Configuration):
         'django.contrib.messages',
         'django.contrib.staticfiles',
 
-
         # Third party apps
         'rest_framework',            # utilities for rest apis
         'rest_framework.authtoken',  # token authentication
         'django_rq',                 # asynchronous queuing
         'versatileimagefield',       # image manipulation
 
-        # Dev only
-        'django_extensions',
-
         # Your apps
         'authentication',
         'users',
         'djstruct',
         'yamlstore',    # YAML load and save commands
-        #'neomodelstruct',
-        #'neolixirstruct'
     )
 
     # https://docs.djangoproject.com/en/1.8/topics/http/middleware/
