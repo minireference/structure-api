@@ -30,6 +30,7 @@ class Common(Configuration):
         'authentication',
         'users',
         'djstruct',
+        'yamlstore',    # YAML load and save commands
         #'neomodelstruct',
         #'neolixirstruct'
     )

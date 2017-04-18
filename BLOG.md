@@ -1,3 +1,22 @@
+
+## Tue 18 Apr 2017 18:04:32 EDT
+
+Okay so after a lot of work, we finally have a working version of YAML loading
+from a directory. First we start from a clean slate:
+
+    ./manage.py deletenodesandrelns
+    All Nodes and Relations deleted
+
+Next we load all data from `miniref/`:
+
+    ./manage.py loadfromyamldata ../data/miniref/
+    Loaded YAML data from dir ../data/miniref/
+
+Next we refactor (today) and add some more classes (tomorrow).
+
+
+
+
 ## Mon 10 Apr 2017 16:58:23 EDT
 
 This might might be useful for dumping the DB as SQL for later comparison
