@@ -8,15 +8,15 @@ from rest_framework import status
 from rest_framework.test import APIClient
 from rest_framework.test import APITestCase
 
-from .models import DjangoBaseNode, DjangoDependencyRelation
-from .serializers import DjangoBaseNodeSerializer
+from .models import BaseNode, DependencyRelation
+from .serializers import BaseNodeSerializer
 
 
 
-class TestDjangoBaseNodePersist(TestCase):
+class TestBaseNodePersist(TestCase):
 
     def test_base_node_create(self):
-        n = DjangoBaseNode(path='mechanics/kinematics')
+        n = BaseNode(path='mechanics/kinematics')
         n.save()
         ok_(n.id is not None)
         eq_(n.path, 'mechanics/kinematics')
@@ -28,7 +28,7 @@ class TestDjangoBaseNodePersist(TestCase):
     #     n.save()
 
 
-class TestCreateUpdateRetrieveDjangoBaseNode(APITestCase):
+class TestCreateUpdateRetrieveBaseNode(APITestCase):
 
     def setUp(self):
         # print 'in setUp ...'
@@ -41,7 +41,7 @@ class TestCreateUpdateRetrieveDjangoBaseNode(APITestCase):
             "version": "0.1",
             "comment": "Le comment",
         }
-        url = reverse('djangobasenode-list')
+        url = reverse('basenode-list')
         response = self.client.post(url, nodedata, format='json')
         # print response.status_code, response.data['id'], response
         self._nodeid = response.data['id']
@@ -53,7 +53,7 @@ class TestCreateUpdateRetrieveDjangoBaseNode(APITestCase):
     def test_update_node(self):
         self._create_test_node()
         # GET
-        url = reverse('djangobasenode-detail', kwargs={'uuid':self._nodeid})
+        url = reverse('basenode-detail', kwargs={'uuid':self._nodeid})
         response = self.client.get(url, format='json')
         # print response.status_code, response
         eq_(response.status_code, status.HTTP_200_OK)
@@ -71,7 +71,7 @@ class TestCreateUpdateRetrieveDjangoBaseNode(APITestCase):
 
     def test_retrieve_node(self):
         self._create_test_node()
-        url = reverse('djangobasenode-detail', kwargs={'uuid':self._nodeid})
+        url = reverse('basenode-detail', kwargs={'uuid':self._nodeid})
         response = self.client.get(url, format='json')
         eq_(response.status_code, status.HTTP_200_OK)
         ok_(response.data['id'])
@@ -80,7 +80,7 @@ class TestCreateUpdateRetrieveDjangoBaseNode(APITestCase):
 
 
 
-class TestCreateUpdateRetrieveDjangoBaseNode(APITestCase):
+class TestCreateUpdateRetrieveBaseNode(APITestCase):
 
     def setUp(self):
         # print 'in setUp ...'
@@ -93,7 +93,7 @@ class TestCreateUpdateRetrieveDjangoBaseNode(APITestCase):
             "version": "0.1",
             "comment": "Le comment",
         }
-        url = reverse('djangobasenode-list')
+        url = reverse('basenode-list')
         response = self.client.post(url, nodedata, format='json')
         # print response.status_code, response.data['id'], response
         self._nodeid = response.data['id']
@@ -105,7 +105,7 @@ class TestCreateUpdateRetrieveDjangoBaseNode(APITestCase):
     def test_update_node(self):
         self._create_test_node()
         # GET
-        url = reverse('djangobasenode-detail', kwargs={'uuid':self._nodeid})
+        url = reverse('basenode-detail', kwargs={'uuid':self._nodeid})
         response = self.client.get(url, format='json')
         # print response.status_code, response
         eq_(response.status_code, status.HTTP_200_OK)
@@ -123,7 +123,7 @@ class TestCreateUpdateRetrieveDjangoBaseNode(APITestCase):
 
     def test_retrieve_node(self):
         self._create_test_node()
-        url = reverse('djangobasenode-detail', kwargs={'uuid':self._nodeid})
+        url = reverse('basenode-detail', kwargs={'uuid':self._nodeid})
         response = self.client.get(url, format='json')
         eq_(response.status_code, status.HTTP_200_OK)
         ok_(response.data['id'])
@@ -136,18 +136,18 @@ class TestRetrieveRelationships(APITestCase):
         client = APIClient()
 
     def _create_basenodes(self):
-        n1 = DjangoBaseNode(path='testmath/quadratic_equation')
+        n1 = BaseNode(path='testmath/quadratic_equation')
         n1.save()
         self._n1 = n1
-        n2 = DjangoBaseNode(path='testmechanics/kinematics')
+        n2 = BaseNode(path='testmechanics/kinematics')
         n2.save()
         self._n2 = n2
-        n3 = DjangoBaseNode(path='testmechanics/projectile_motion')
+        n3 = BaseNode(path='testmechanics/projectile_motion')
         n3.save()
         self._n3 = n3
 
     def _create_relations(self):
-        r12 = DjangoDependencyRelation(
+        r12 = DependencyRelation(
                 prerequisite=self._n1,
                 usedfor=self._n2,
                 level='UGRAD',
@@ -155,7 +155,7 @@ class TestRetrieveRelationships(APITestCase):
                 explain_prerequisite='test You need to know how to solve quadratic equations to solve certain kinematics problems.'
         )
         r12.save()
-        r23 = DjangoDependencyRelation(
+        r23 = DependencyRelation(
                 prerequisite=self._n2,
                 usedfor=self._n3,
                 level='GRAD',
@@ -167,7 +167,7 @@ class TestRetrieveRelationships(APITestCase):
     def test_prerequisites_good(self):
         self._create_basenodes()
         self._create_relations()
-        url_n2 = reverse('djangobasenode-detail', kwargs={'uuid':self._n2.uuid})
+        url_n2 = reverse('basenode-detail', kwargs={'uuid':self._n2.uuid})
         response = self.client.get(url_n2, format='json')
         eq_(response.status_code, status.HTTP_200_OK)
         eq_(response.data['id'], str(self._n2.uuid))
@@ -186,18 +186,18 @@ class TestRetrieveRelationships(APITestCase):
 class TestRelationshipTransitivity(TestCase):
 
     def _create_basenodes(self):
-        n1 = DjangoBaseNode(path='math/quadratic_equation')
+        n1 = BaseNode(path='math/quadratic_equation')
         n1.save()
         self._n1 = n1
-        n2 = DjangoBaseNode(path='mechanics/kinematics')
+        n2 = BaseNode(path='mechanics/kinematics')
         n2.save()
         self._n2 = n2
-        n3 = DjangoBaseNode(path='mechanics/projectile_motion')
+        n3 = BaseNode(path='mechanics/projectile_motion')
         n3.save()
         self._n3 = n3
         
     def _create_relations(self):
-        r12 = DjangoDependencyRelation(
+        r12 = DependencyRelation(
                 prerequisite=self._n1,
                 usedfor=self._n2,
                 level='UGRAD',
@@ -205,7 +205,7 @@ class TestRelationshipTransitivity(TestCase):
                 explain_prerequisite='You need to know how to solve quadratic equations to solve certain kinematics problems.'
         )
         r12.save()
-        r23 = DjangoDependencyRelation(
+        r23 = DependencyRelation(
                 prerequisite=self._n2,
                 usedfor=self._n3,
                 level='UGRAD',
@@ -236,10 +236,10 @@ class TestRelationshipTransitivity(TestCase):
 class TestDjangoBaseRelationshipPersist(TestCase):
 
     def _create_basenodes(self):
-        n1 = DjangoBaseNode(path='math/quadratic_equation')
+        n1 = BaseNode(path='math/quadratic_equation')
         n1.save()
         self._n1 = n1
-        n2 = DjangoBaseNode(path='mechanics/kinematics')
+        n2 = BaseNode(path='mechanics/kinematics')
         n2.save()
         self._n2 = n2
         
@@ -247,7 +247,7 @@ class TestDjangoBaseRelationshipPersist(TestCase):
         self._create_basenodes()
         n1 = self._n1
         n2 = self._n2        
-        r = DjangoDependencyRelation(
+        r = DependencyRelation(
                 prerequisite=n1,
                 usedfor=n2,
                 level='UGRAD',

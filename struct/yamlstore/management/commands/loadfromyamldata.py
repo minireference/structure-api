@@ -1,5 +1,4 @@
 from django.core.management.base import BaseCommand, CommandError
-# from djstruct.models import DjangoBaseNode, DjangoDependencyRelation
 
 from yamlstore.loaders import read_data_dir
 from yamlstore.loaders import dicts_to_objects, extact_paths

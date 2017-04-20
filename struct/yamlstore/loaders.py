@@ -1,7 +1,7 @@
 import os
 import yaml
 
-from djstruct.models import DjangoBaseNode, DjangoDependencyRelation
+from djstruct.models import BaseNode, DependencyRelation
 
 # DATA DIRECTORY PARSER
 ################################################################################
@@ -197,7 +197,7 @@ def create_nodes_and_relations(data_objects):
 
     # PASS 1. create nodes
     for obj in data_objects:
-        node = DjangoBaseNode(
+        node = BaseNode(
             path=obj.path,
             scope='miniref'
         )
@@ -205,13 +205,13 @@ def create_nodes_and_relations(data_objects):
 
     # PASS 2. create relations
     for obj in data_objects:
-        node = DjangoBaseNode.objects.get(path=obj.path)
+        node = BaseNode.objects.get(path=obj.path)
         for prereq in obj.prerequisites:
             prereq_path = prereq.prerequisite
             if prereq.prerequisite in all_paths:
-                prereq_node = DjangoBaseNode.objects.get(path=prereq_path)
+                prereq_node = BaseNode.objects.get(path=prereq_path)
                 # both ends exist...
-                rel = DjangoDependencyRelation(
+                rel = DependencyRelation(
                         prerequisite=prereq_node,
                         usedfor=node,
                         explain_prerequisite=prereq.explain_prerequisite

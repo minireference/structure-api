@@ -1,13 +1,13 @@
 
-n1 = DjangoBaseNode(path='math/quadratic_equation')
+n1 = BaseNode(path='math/quadratic_equation')
 n1.save()
-n2 = DjangoBaseNode(path='mechanics/kinematics')
+n2 = BaseNode(path='mechanics/kinematics')
 n2.save()
-n3 = DjangoBaseNode(path='mechanics/projectile_motion')
+n3 = BaseNode(path='mechanics/projectile_motion')
 n3.save()
 
 
-r12 = DjangoDependencyRelation(
+r12 = DependencyRelation(
         prerequisite=n1,
         usedfor=n2,
         level='UGRAD',
@@ -15,7 +15,7 @@ r12 = DjangoDependencyRelation(
         explain_prerequisite='You need to know how to solve quadratic equations to solve certain kinematics problems.'
 )
 r12.save()
-r23 = DjangoDependencyRelation(
+r23 = DependencyRelation(
         prerequisite=n2,
         usedfor=n3,
         level='UGRAD',

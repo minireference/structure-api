@@ -1,9 +1,9 @@
 from rest_framework import serializers
 
-from .models import DjangoBaseNode, DjangoDependencyRelation
+from .models import BaseNode, DependencyRelation
 
 
-class DjangoBaseNodeSlugSerializer(serializers.Serializer):
+class BaseNodeSlugSerializer(serializers.Serializer):
     """
     Just reports the `uuid` of target node as well as (scope:path).
     """
@@ -13,19 +13,19 @@ class DjangoBaseNodeSlugSerializer(serializers.Serializer):
 
 
 # Different serializer depending on direction being used for relationship
-class DjangoUsedforsRelationSerializer(serializers.Serializer):
-    usedfor = DjangoBaseNodeSlugSerializer(required=True)
+class UsedforsRelationSerializer(serializers.Serializer):
+    usedfor = BaseNodeSlugSerializer(required=True)
     explain_usedfor = serializers.CharField(max_length=1000)
     level = serializers.CharField(max_length=1000)
 
 
-class DjangoPrerequisitesRelationSerializer(serializers.Serializer):
-    prerequisite = DjangoBaseNodeSlugSerializer(required=True)
+class PrerequisitesRelationSerializer(serializers.Serializer):
+    prerequisite = BaseNodeSlugSerializer(required=True)
     explain_prerequisite  = serializers.CharField(max_length=1000)
     level = serializers.CharField(max_length=1000)
 
 
-class DjangoBaseNodeSerializer(serializers.Serializer):
+class BaseNodeSerializer(serializers.Serializer):
     """
     Used to recusiverly serialize Nodes to JSON.
       - hops=0: only data of current node is returned (fk for others)
@@ -40,9 +40,9 @@ class DjangoBaseNodeSerializer(serializers.Serializer):
     comment     = serializers.CharField(allow_blank=True, allow_null=True)
 
     # relationships (useing reverse direction of ForeignKey from Relation model)
-    # needed since `prerequisites` resolves to `DjangoBaseNodeSerializer`s
-    prerequisites = DjangoPrerequisitesRelationSerializer(source='usedfors_rels', many=True, read_only=True)
-    usedfors = DjangoUsedforsRelationSerializer(source='prerequisites_rels', many=True, read_only=True)
+    # needed since `prerequisites` resolves to `BaseNodeSerializer`s
+    prerequisites = PrerequisitesRelationSerializer(source='usedfors_rels', many=True, read_only=True)
+    usedfors = UsedforsRelationSerializer(source='prerequisites_rels', many=True, read_only=True)
 
     class Meta:
         read_only_fields = ('id', 'created_at', 'modified_at',)
@@ -57,9 +57,9 @@ class DjangoBaseNodeSerializer(serializers.Serializer):
 
 
 
-class CreateDjangoBaseNodeSerializer(serializers.Serializer):
+class CreateBaseNodeSerializer(serializers.Serializer):
     """
-    Used to process POST requests that create new `DjangoBaseNode`s.
+    Used to process POST requests that create new `BaseNode`s.
     """
     path        = serializers.CharField(max_length=1000)
     scope       = serializers.CharField(max_length=1000)
@@ -71,7 +71,7 @@ class CreateDjangoBaseNodeSerializer(serializers.Serializer):
         read_only_fields = ('id')
 
     def create(self, validated_data):
-        node = DjangoBaseNode(**validated_data)
+        node = BaseNode(**validated_data)
         node.save()
         return node
 

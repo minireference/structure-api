@@ -5,7 +5,7 @@ from django.db import models
 
 
 # source https://github.com/django/django/blob/master/django/db/models/base.py
-class DjangoBaseNode(models.Model):
+class BaseNode(models.Model):
     # id  auto-created by Django  (primary_key=True)
     uuid        = models.UUIDField(default=uuid.uuid4, editable=False)
     # TODO: aliases...
@@ -29,7 +29,7 @@ class DjangoBaseNode(models.Model):
     # Dependency structure
     ############################################################################
     prerequsites = models.ManyToManyField("self", symmetrical=False,
-                                          through='DjangoDependencyRelation',
+                                          through='DependencyRelation',
                                           through_fields=('usedfor', 'prerequisite'),
                                           related_name='usedfors')
     # Generic relatedness
@@ -37,7 +37,7 @@ class DjangoBaseNode(models.Model):
     # TODO:   <--relatedto--> symmetric relationship
     
     def __unicode__(self):
-        return "<DjangoBaseNode " + self.scope + ':' + self.path + '>'
+        return "<BaseNode " + self.scope + ':' + self.path + '>'
     
     def __repr__(self):
         return self.__unicode__()
@@ -47,7 +47,7 @@ class DjangoBaseNode(models.Model):
         Custom save method.
         """
         # print "In custom save method >>>>>>>>>>>>>>>>>>>>"
-        super(DjangoBaseNode, self).save()
+        super(BaseNode, self).save()
 
 
 
@@ -55,13 +55,13 @@ class DjangoBaseNode(models.Model):
 # RELATIONSHIPS
 # using https://docs.djangoproject.com/en/1.9/topics/db/models/#intermediary-manytomany
 
-class DjangoDependencyRelation(models.Model):
+class DependencyRelation(models.Model):
     """
     Represents `(m)<--dependson--(n)` relations and implies `(m)--usedfor-->(n)`.
     """
     # id  auto-created
-    prerequisite   = models.ForeignKey(DjangoBaseNode, null=True, related_name='prerequisites_rels', on_delete=models.SET_NULL)
-    usedfor        = models.ForeignKey(DjangoBaseNode, null=True, related_name='usedfors_rels', on_delete=models.SET_NULL)
+    prerequisite   = models.ForeignKey(BaseNode, null=True, related_name='prerequisites_rels', on_delete=models.SET_NULL)
+    usedfor        = models.ForeignKey(BaseNode, null=True, related_name='usedfors_rels', on_delete=models.SET_NULL)
     explain_prerequisite  = models.CharField(max_length=1000, verbose_name='Explain why prerequsite is needed', null=True)
     explain_usedfor       = models.CharField(max_length=1000, verbose_name='Explain the application', null=True)
     level    = models.CharField(default='HS', max_length=1000, verbose_name='Educational level')
@@ -89,8 +89,8 @@ class DjangoDependencyRelation(models.Model):
 #     Represents `p--contains--> c` relations and implies a c--ispartof-->p rel'n.
 #     """
 #     # id auto-created
-#     parent   = models.ForeignKey(DjangoBaseNode, on_delete=models.SET_NULL)
-#     child    = models.ForeignKey(DjangoBaseNode, on_delete=models.SET_NULL)
+#     parent   = models.ForeignKey(BaseNode, on_delete=models.SET_NULL)
+#     child    = models.ForeignKey(BaseNode, on_delete=models.SET_NULL)
 #     explain  = models.CharField(max_length=1000, verbose_name='Explanation')
 #     level    = models.CharField(default='HS', max_length=1000, verbose_name='educational level')
 
