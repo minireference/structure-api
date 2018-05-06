@@ -1,0 +1,107 @@
+
+    EXAMPLE OF LINKED DEPENDENCY CURRICULUM
+
+	1) books are suggested.... online lecture notes could/should be linked
+	2) depends must be realistic and detailed (one level - if it doesn't depend directly don't list it)
+
+
+:::::::::: PHYSICS ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+            name : intermediate quantum mechanics
+     description : More advanced topics like perturbation theory, symmetries, two body systems
+                   and developing a more sophisticated language by using the diract notation.
+                   Links to classical as the limit of the Hamilton-Jakobi equation.
+           books : Sakurai, Landau
+      depends on : elementary quantum mechanics, hamiltonian mechanics, linear algebra, groups
+ reverse depends : quantum theory, paricle physics, solid state physics
+
+
+            name : elementary quantum mechanics
+     description : The srudy of the subatomic world. A completely different perspective on reality
+                   starting with a new set of axioms. The tools here are probabilities, expected values
+                   and solutions to hamiltonians.
+           books : Sakurai
+      depends on : calculus, hamiltonian mechanics, modern physics, linear algebra
+ reverse depends : intermediate quantum mechanics, quantum theory, paricle physics, solid state physics
+
+
+            name : classical mechanics
+     description : Mechanics starting from Lagrange's equation of motion. Using the techniques
+                   of Variational Calculus and virtual displacements arrives at an alternative
+                   form of mechanics. More advanced topics include 
+                   form of mechanics. More advanced topics include 
+           books : Goldstein, Hand, 
+      depends on : calculus, linear algebra, newtonian mechanics, variational calculus
+ reverse depends : quantum mechanics, quantum theory, paricle physics, solid state physics
+
+
+
+
+
+:::::::::: MATHEMATICS ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+
+            name : differential calculus
+     description : The study of continuous change in a single variable. Limits, derivatives, 
+                   maximization and problem solving. Extremely important to physics and many 
+                   other sciences. First part of the minimum calculus course.
+           books : any calculus book should do. Exercises with solutions recommended.
+      depends on : basic functions, basic algebra
+ reverse depends : everything depends on this stuff!
+
+
+
+            name : integral calculus 
+     description : The second part of the minimum calculus course. It covers the fundamental theorem 
+                   of calculus, sequences, series, anti derivatives, integrals and integration techniques.
+                   L'hopital's rule.
+           books : any calculus book should do. Exercises with solutions recommended.
+      depends on : differential calculus, 
+ reverse depends : everything depends on this material!
+
+
+
+
+            name : linear algebra
+     description : The solution of systems of linear equations, matrices, vectors and analytic geometry 
+                   are covered in a unifying manner. Key element to understanding many concepts and 
+                   expanding one's way of thinking.
+           books : any linear algebra book. Anton is decent.
+      depends on : basic algebra, basic geometry
+ reverse depends : core element, everything depends on it.
+
+
+            name : differential equations
+     description : Some real world problems provide us with differential relations. I want to find out f
+                   but I only have information about the df/dt (the change in f). With the techniques of
+                   differential equation solving one can find out solutions (find f). For simple problems
+                   integration is enough but for more advanced situations a structured approach is needed.
+                   The course is more of a cook-book then anything else. You look at the ingredients and 
+                   the recipes you know how to cook and you give it you best shot....
+           books : many good books. Avoid books with "for engineers" in title.
+      depends on : differential calculus, integral calculus, linear algebra
+ reverse depends : mechanics, partial differential equations, 
+
+
+            name : multivariable calculus
+     description : The study of calculus in several variables. The concepts of limit, derivative, integral
+                   are reexamined in the context of numerous (usually 2 or 3) variables. The complexity is
+                   trivial if the dependencies have been well mastered.
+           books : any calculus book. Material is standard. Trim, Stewart, Adams are good choices.
+      depends on : differential calculus, integral calculus
+
+
+            name : vector calculus
+     description : Application of the ideas of calculus to vectors in 2 or 3 dimensions. 
+                   Techniques like path integration, surface integration, volume integration 
+                   are taught permitting the student to learn Gauss' Divergence Theorem and Stokes Theorem.
+           books : any vector calculus book. Trim, Stewart, Adams are good choices.
+      depends on : differential calculus, integral calculus, linear algebra, multivariable calculus,
+ reverse depends : electromagnetism, thermodynamics
+
+
+
+
+
+
+// first draft as proof of concept... needs some sort of database structure so links are done automatically, perhaps a wiki will be suitable.... if anyone wants to join such a project or has suggestions contact: ivan.savov@mail.mcgill.ca

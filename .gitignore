@@ -1,15 +1,12 @@
 # virtualenv
 pydev
+venv
+postgres_data
 
 
-# data-related stuff that need not be commited
-data/commoncore/nice_dependviz 
-data/miniref/sources 
-data/miniref/drafts 
-
-# not read to commit yet
-data/miniref/topics 
-data/miniref/concepts 
+# drafts
+rawdata/drafts
+rawdata/sources/math.txt
 
 
 # dev

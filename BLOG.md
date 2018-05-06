@@ -19,7 +19,7 @@ Next we refactor (today) and add some more classes (tomorrow).
 
 ## Mon 10 Apr 2017 16:58:23 EDT
 
-This might might be useful for dumping the DB as SQL for later comparison
+This might be useful for dumping the DB as SQL for later comparison
 
     pg_dump  --data-only --table ?? --table ??? struct
 
@@ -30,11 +30,11 @@ This might might be useful for dumping the DB as SQL for later comparison
 I'm picking up the pieces I left behind this summer. The project is pretty much
 all over the place... but I'll now focus on the django implementation and get it
 to work.
-Also the whole django configurations is sooo complicated fro nothing. I should
+Also the whole django configurations is so complicated fro nothing. I should
 cleanup the project at some point, but not today.
 
 The main issue I'm finding a problem with today is the concept of "missing references"
-if the import operation is "complete" containing all endpints between Nodes, then
+if the import operation is "complete" containing all endpoints between Nodes, then
 the import can proceed as a two phase process:
   - create Nodes
   - create Links
