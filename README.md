@@ -2,9 +2,6 @@ STRUCTURE API
 =============
 An API for the structure and dependencies between subjects, topics, and concepts.
 
-<!-- [![Build Status](https://travis-ci.org/minireference/structure-api.svg?branch=master)](https://travis-ci.org/minireference/structure-api) -->
-<!-- Check out the project's [documentation](http://minireference.github.io/structure-api/). -->
-
 
 Design TL;DR
 ------------
@@ -14,27 +11,60 @@ Design TL;DR
 
 Project milestones
 ------------------
-  - Milestone 1: import state from `data/**.yaml` [2017]
-  - Milestone 2: export state (DRF YAML serializer or custom?)
-  - Milestone 3: ETL for internal representaion to feel and metacademy
-  - Milestone 4: basic graph display UI (stretch goals, seatch and faceted filtering)
-  - Milestone 5: graph editing frontend
-  - Milestone 6: example applications that make use of sturcture-api (concept map browser, learning pathway recommendations, 
+
+  - Milestone 1: proof of concept [Ivan]
+    - Tasks:
+      - Import state from `data/**.yaml` [2017]
+      - Refactor graph models into abstract `BaseNode` and `BaseEdge` and implement
+        education related models:
+          - `Node` with `kind in [subject, topic, concept, ...]`
+          - `DependencyEdge`
+          - `RelatedEdge`
+          - `ContainsEdge`
+      - Export state using
+        [DRF YAML serializer](http://jpadilla.github.io/django-rest-framework-yaml/)
+    - Technical challenges:
+      - Is round-trip possible (choose sort, control YAML formatting)
+      - How to deal with missing FKs during import (import queue?)
+
+  - Milestone 2: ETL for internal representation to other platforms
+    - Goal 1: Obtain a graph viz without too much custom work
+    - Goal 2: Learn about feel and metacademy data models to inform what will be needed
+    - Tasks:
+      - Export structure-api data to feel fixtues format, import in feel instance
+      - Export data to metacademy fixtures format
+      - Export parts of graph to [CmapTools format](http://cmap.ihmc.us/xml/CXL.html) ?
+
+  - Milestone 3: basic graph display UI
+    - React
+    - Technology research:
+      - GraphQL to talk to backend?
+    - Stretch goals:
+      - search and faceted
+
+  - Milestone 4: graph editing
+    - Goal: create a graph editing interface for non-technical teachers to create
+      educational graphs (concept maps) for students
+    - Technology research:
+      - GraphQL
+      - [jsPlumb](https://jsplumbtoolkit.com/demos/toolkit/database-visualizer/index.html)? 
+
+  - Milestone 6: example applications that make use of sturcture-api
+    - [subject/topic browser](https://github.com/minireference/structure-api/blob/master/docs/about.md#browsing)
+    - [learning pathway recommendations](https://github.com/minireference/structure-api/blob/master/docs/about.md#content-recommendation)
+
 
 
 
 TODOs
 -----
-  - Finalize BaseNode
-  - Implement Subject, Topic, and Concept Nodes in both backends
+  - Finalize BaseNode, and add BaseEdge
+  - Cleanup settings/requirements
   - Preprocess common core node data
   - Import common core edge data (from .csv)
-  - Think about Polymorphism for nesting in serilizers and in wire format
+  - Think about Polymorphism for nesting in serializers and in wire format
   - Implement session middleware no will not have to call .save manually (except when need auto-id field to be generated)
     http://stackoverflow.com/questions/6606725/best-way-to-integrate-sqlalchemy-into-a-django-project
-  - Export parts of graph to CmapTools format
-  - Export to feel format
-  - Export to metacademy format
   - Dockerize for prod (docker-compose and docker-host)
 
 
