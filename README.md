@@ -143,8 +143,11 @@ data/
 
 Load data using command:
 
+    ./struct/manage.py loadfromyamldata data/miniref/
+    ./struct/manage.py loadfromyamldata data/ccssm/
+
 
 Export data using command:
 
-
+    Not implemented yet
 

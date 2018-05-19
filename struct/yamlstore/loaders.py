@@ -50,7 +50,7 @@ class PrerequisteReference(object):
     A wrapper that accepts either a string or a dict prerequisite data.
     """
     def __init__(self, data):
-        if isinstance(data, basestring):
+        if isinstance(data, str):
             self.prerequisite = data
             self.explain_prerequisite = None
             self.level = None
@@ -67,7 +67,7 @@ class UsedforReference(object):
     A wrapper that accepts either a string or a dict usedfor data.
     """
     def __init__(self, data):
-        if isinstance(data, basestring):
+        if isinstance(data, str):
             self.usedfor = data
             self.explain_usedfor = None
             self.level = None
@@ -87,7 +87,7 @@ class RelatedReference(object):
         if source is None:
             raise ValueError('must give relation source path')
         self.source = source
-        if isinstance(data, basestring):
+        if isinstance(data, str):
             self.related = data
             self.explain = None
             self.level = None
@@ -199,7 +199,7 @@ def create_nodes_and_relations(data_objects):
     for obj in data_objects:
         node = BaseNode(
             path=obj.path,
-            scope='miniref'
+            scope=obj.scope,
         )
         node.save()
 
