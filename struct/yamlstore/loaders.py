@@ -1,7 +1,8 @@
 import os
 import yaml
 
-from djstruct.models import BaseNode, DependencyRelation
+from djstruct.models import BaseNode
+from djstruct.models import DependencyRelation, RelatedRelation, ContainmentRelation
 
 # DATA DIRECTORY PARSER
 ################################################################################
@@ -14,6 +15,9 @@ def read_data_dir(data_dir, recurse=False):
     all_data = []
     contexts = []   # list of dicts that contain context (rightmost has priority)
     for raw_path, subfolders, filenames in os.walk(data_dir):
+        # NOTE: This context handling doesn't work if more than one level of dirs
+        #       since contexts dicts do no get "popped" when leaving a dir...
+        #       TODO(ivan): fix this and make it general purpose
         # 1. LOAD CONTEXT
         if 'context.yml' in filenames:
             context_yaml_file = os.path.join(raw_path, 'context.yml')
@@ -45,58 +49,56 @@ def read_data_dir(data_dir, recurse=False):
 # YAML PARSING HELPER CLASSES
 ################################################################################
 
-class PrerequisteReference(object):
+class BaseExplainLevelReference(object):
     """
-    A wrapper that accepts either a string or a dict prerequisite data.
+    A wrapper that accepts either a string or a dict data for the proporty set
+    on `self.attribute_name` by the subclasses.
     """
+    attribute_name = None
+
     def __init__(self, data):
+        if self.attribute_name is None:
+            raise ValueError('Subclass must set self.attribute_name for this to work.')
         if isinstance(data, str):
-            self.prerequisite = data
-            self.explain_prerequisite = None
+            setattr(self, self.attribute_name, data)
+            setattr(self, 'explain_' + self.attribute_name, None) 
             self.level = None
         elif isinstance(data, dict):
-            self.prerequisite = data.get('prerequisite')
-            self.explain_prerequisite = data.get('explain', None)
+            setattr(self, self.attribute_name, data.get(self.attribute_name))
+            setattr(self, 'explain_' + self.attribute_name, data.get('explain', None))
             self.level = data.get('level', None)
         else:
             raise ValueError('data must be string or dict')
 
 
-class UsedforReference(object):
-    """
-    A wrapper that accepts either a string or a dict usedfor data.
-    """
+class PrerequisteReference(BaseExplainLevelReference):
     def __init__(self, data):
-        if isinstance(data, str):
-            self.usedfor = data
-            self.explain_usedfor = None
-            self.level = None
-        elif isinstance(data, dict):
-            self.usedfor = data.get('usedfor')
-            self.explain_usedfor = data.get('explain', None)
-            self.level = data.get('level', None)
-        else:
-            raise ValueError('data must be string or dict')
+        self.attribute_name = 'prerequisite'
+        super(PrerequisteReference, self).__init__(data)
+
+class UsedforReference(BaseExplainLevelReference):
+    def __init__(self, data):
+        self.attribute_name = 'usedfor'
+        super(UsedforReference, self).__init__(data)
 
 
-class RelatedReference(object):
-    """
-    A wrapper that accepts either a string or a dict relation data.
-    """
-    def __init__(self, source, data):
-        if source is None:
-            raise ValueError('must give relation source path')
-        self.source = source
-        if isinstance(data, str):
-            self.related = data
-            self.explain = None
-            self.level = None
-        elif isinstance(data, dict):
-            self.related = data.get('related')
-            self.explain = data.get('explain', None)
-            self.level = data.get('level', None)
-        else:
-            raise ValueError('data must be string or dict')
+class RelatedReference(BaseExplainLevelReference):
+    def __init__(self, data):
+        self.attribute_name = 'related'
+        super(RelatedReference, self).__init__(data)
+
+
+class ContainsReference(BaseExplainLevelReference):
+    def __init__(self, data):
+        self.attribute_name = 'contains'
+        super(ContainsReference, self).__init__(data)
+
+class IsPartOfReference(BaseExplainLevelReference):
+    def __init__(self, data):
+        self.attribute_name = 'ispartof'
+        super(IsPartOfReference, self).__init__(data)
+
+
 
 
 
@@ -134,24 +136,41 @@ class NodeFromYamlDict(object):
         #
         # process prereqs and usedfors
         self.prerequisites = []
-        self.usedfors = []
         if 'prerequisites' in datum and datum['prerequisites'] is not None:
             for prereq_str_or_dict in datum['prerequisites']:
                 prereq = PrerequisteReference(prereq_str_or_dict)
                 self.prerequisites.append(prereq)
+        #
+        self.usedfors = []
         if 'usedfors' in datum and datum['usedfors'] is not None:
             for usedfor_str_or_dict in datum['usedfors']:
                 usedfor = UsedforReference(usedfor_str_or_dict)
                 self.usedfors.append(usedfor)
         #
-        # relations
+        #
+        # process related
         self.relations = []
         if 'relations' in datum and datum['relations'] is not None:
-            for relation_str_or_dict in datum['usedfors']:
-                relation = RelatedReference(self.path, relation_str_or_dict)
+            for relation_str_or_dict in datum['relations']:
+                relation = RelatedReference(relation_str_or_dict)
                 self.relations.append(relation)
-        # TODO: ispartof/contents 
-        # also ccmms-specific ones: ccss_guid, ccss_url, asn_url
+        #
+        #
+        # process ispartof/contents
+        self.contents = []
+        if 'contents' in datum and datum['contents'] is not None:
+            for child_str_or_dict in datum['contents']:
+                child = ContainsReference(child_str_or_dict)
+                self.contents.append(child)
+        #
+        self.ispartofs = []
+        if 'ispartof' in datum and datum['ispartof'] is not None:
+            for parent_str_or_dict in datum['ispartof']:
+                parent = IsPartOfReference(parent_str_or_dict)
+                self.ispartofs.append(parent)
+        #
+        # TODO: handle __class__ --> kind
+        # TODO: handle ccmms-specific ones: ccss_guid, ccss_url, asn_url
 
 
 
@@ -180,12 +199,19 @@ def extact_paths(data_objects):
 
     for obj in data_objects:
         all_paths.add(obj.path)
-        for prereq in obj.prerequisites:
-            all_path_refs.add(prereq.prerequisite)
-        for ufor in obj.usedfors:
-            all_path_refs.add(ufor.usedfor)
-        for rel in obj.relations:
-            all_path_refs.add(rel.related)
+        #
+        for prereq_rel in obj.prerequisites:
+            all_path_refs.add(prereq_rel.prerequisite)
+        for usedfor_rel in obj.usedfors:
+            all_path_refs.add(usedfor_rel.usedfor)
+        #
+        for related_rel in obj.relations:
+            all_path_refs.add(related_rel.related)
+        #
+        for contains_rel in obj.contents:
+            all_path_refs.add(contains_rel.contains)
+        for ispartof_rel in obj.ispartofs:
+            all_path_refs.add(ispartof_rel.ispartof)
     return (all_paths, all_path_refs)
 
 
@@ -206,11 +232,14 @@ def create_nodes_and_relations(data_objects):
     # PASS 2. create relations
     for obj in data_objects:
         node = BaseNode.objects.get(path=obj.path)
+
+        # 2.1 prerequisites
         for prereq in obj.prerequisites:
             prereq_path = prereq.prerequisite
-            if prereq.prerequisite in all_paths:
+            if prereq_path in all_paths:
                 prereq_node = BaseNode.objects.get(path=prereq_path)
                 # both ends exist...
+                # TODO: first check for existing  ######################################################################
                 rel = DependencyRelation(
                         prerequisite=prereq_node,
                         usedfor=node,
@@ -219,4 +248,48 @@ def create_nodes_and_relations(data_objects):
                 if prereq.level is not None:
                     rel.level = prereq.level
                 rel.save()
+            else:
+                pass
+                # print('Skipping prerequisite relation {} --> {}'.format(obj.path, prereq_path))
+                # TODO(handle missing referants better)
+        # TODO: handle usdedfors  ######################################################################
+        
+        # 2.2 generic related links
+        for related_rel in obj.relations:
+            related_path = related_rel.related
+            if related_path in all_paths:
+                related_node = BaseNode.objects.get(path=related_path)
+                # both ends exist...
+                # TODO: first check for existing  ######################################################################
+                level = related_rel.level or 'All'
+                rel = RelatedRelation(
+                        left=node,
+                        right=related_node,
+                        explain_related=related_rel.explain_related,
+                        level=level,
+                )
+                rel.save()
+                rel_backward = RelatedRelation(
+                        left=related_node,
+                        right=node,
+                        explain_related=related_rel.explain_related,
+                        level=level,
+                )
+                rel_backward.save()
 
+        # 2.3 containment (a.k.a. topid-suptopic structure)
+        for contains_rel in obj.contents:
+            child_path = contains_rel.contains
+            if child_path in all_paths:
+                child_node = BaseNode.objects.get(path=child_path)
+                # both ends exist...
+                # TODO: first check for existing  ######################################################################
+                rel = ContainmentRelation(
+                        parent=node,
+                        child=child_node,
+                        explain_contains=contains_rel.explain_contains
+                )
+                if contains_rel.level is not None:
+                    rel.level = contains_rel.level
+                rel.save()
+        # TODO: handle is part of  ######################################################################
