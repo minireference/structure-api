@@ -1,4 +1,12 @@
 -
+  path: math/functions
+  level: HS
+  description: >
+    Understand math functions of a single variable.  
+  prerequisites:
+  usedfors:
+  relations:
+-
   path: math/calculus
   level: UGRAD
   description: >
@@ -13,6 +21,13 @@
     - math/algebra
   usedfors:
   relations:
+    - 
+      related: physics/mechanics
+      explain: Calculus and mechanics are closerly related and should be studied together.
+      level: UGRAD
+  contents:
+    - math/calculus/derivatives
+    - math/calculus/integrals
 -
   path: math/calculus/derivatives
   aliases:
@@ -48,6 +63,8 @@
       related: math/calculus/integrals
       explain: Derivatives and integrals are inverse operations. Learning about one will help you understand the other.
       level: UGRAD
+  ispartof:
+    - math/calculus
 -
   path: math/calculus/integrals
   aliases:
@@ -68,6 +85,8 @@
     - math/calculus/vector
   relations:
     - math/calculus/derivatives
+  ispartof:
+    - math/calculus
 -
   path: math/linear_algebra
   level: UGRAD
