@@ -5,7 +5,7 @@ Intro
 -----
 Every content-based website and mobile app needs a way to display, link to, and
 organize categories of content that are accessible. A first click on a category
-usually takes the user to a "list view" for the category, from where the user
+usually takes the user to the "list view" for the category, from where the user
 can click through to the "detail page" of the content item.
 The structure of the website is usually represented as a hierarchy of subfolders.
 This works well enough, but I think we can do better.
@@ -16,30 +16,34 @@ I have settled on the following three type of links:
 
   - `ispartof`/`contains`: denote folder-like containment structure (but the same
      node can appear in multiple folders, analogous to using hard links in UNIX.)
-  - `prerequsite`/`usedfor`: describe dependency relations that can be followed
+  - `prerequisite`/`usedfor`: describe dependency relations that can be followed
      in both direction: to find subjects/topics/concepts I should read before
      reading current node, and to see what I can use the current node for in the
      future.
   - `related`: generic relation between concepts
-  
+
 **Note--this project is in very early stage of development and the author would
 really appreciate feedback about the proposed design. If you have any ideas about
 other types of nodes or relationships that I should think about, please send me an email.
 I'm first dot last at gmail.**
 
 Example of different types of nodes and relations:
-  - `topic:math/quadratic_equation` which contains the definitions of `concept:math/quadratic_equation` and `concept:math/quadratic_formula`
+  - `topic:math/quadratic_equation` which contains the definitions of
+    `concept:math/quadratic_equation` and `concept:math/quadratic_formula`
   - `topic:physics/kinematics/UAM`, which is part of `topic:physics/mechanics/kinematics`,
     which is part of `subject:physics/mechanics`.
-  - We can usefully describe a dependency relation `topic:math/quadratic_equation --usedfor--> topic:physics/kinematics/UAM`
-    to indicate to the student some problems involving the position equation $x(t)=x_i + v_it + \frac{1}{2}at^2$ that describes
-    uniform accelerated motion (UAM) requires knowing how to solve equations of the form $ax^2+bx+c=0$.
-  - By specifying dependencies at the at the most specific level of description, all other levels of description can be inferred.
+  - We can usefully describe a dependency relation
+    `topic:math/quadratic_equation --usedfor--> topic:physics/kinematics/UAM`
+    to indicate to the student some problems involving the position equation
+    $x(t)=x_i + v_it + \frac{1}{2}at^2$ that describes uniform accelerated motion (UAM)
+    requires knowing how to solve equations of the form $ax^2+bx+c=0$.
+  - By specifying dependencies at the at the most specific level of description,
+    all other levels of description can be inferred.
     For example, aggregating all dependencies for a subject will show us,
-    `subject:physics/mechanics --prerequsites--> [ concept:math/quadratic_equation, topic:math/quadratic_equation, ... ]`,
+    `subject:physics/mechanics --prerequisite--> [ concept:math/quadratic_equation, topic:math/quadratic_equation, ... ]`,
     which represents a list of specific things you need to know before learning kinematics.
     If we want to see a dependency relation between subjects, we would return
-    `subject:physics/mechanics --prerequsite--> subject:high_school_math`.
+    `subject:physics/mechanics --prerequisite--> subject:high_school_math`.
  
 
 
@@ -48,6 +52,7 @@ Applications
 We want to use a "design in the context of use" approach for building the API,
 so it's important to imagine the use cases for the graph API. How will you query
 the thing, and what will you use it for?
+
 
 ### Browsing
 

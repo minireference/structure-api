@@ -1,3 +1,97 @@
+## Sun 19 May 2018 14:11:13 EDT
+
+Checked YAML loading works for miniref and ccssm data. Woo hoo... I thought I had
+left the project in a much worse state, but everything seems to work: two pass
+loading procedure that creates all nodes first before creating edges.
+
+TODO = implement some sort of "missing nodes" print statement to indicate which
+edges were not created because of missing referents.
+
+Here is a sample node json as of this commit:
+
+    {
+        "id": "433e468e-412c-4329-b89c-14224ed06831",
+        "path": "math/calculus",
+        "scope": "miniref",
+        "version": "0.1",
+        "created_at": "2018-05-20T07:38:22+0000",
+        "modified_at": "2018-05-20T07:38:22+0000",
+        "comment": null,
+        "prerequisites": [
+            {
+                "prerequisite": {
+                    "id": "867e14e3-979d-43ea-b307-cc2a5faee145",
+                    "path": "math/functions",
+                    "scope": "miniref"
+                },
+                "explain_prerequisite": null,
+                "level": "All"
+            }
+        ],
+        "usedfors": [
+            {
+                "usedfor": {
+                    "id": "9032aed4-20fb-48a4-8353-855d3d7f6386",
+                    "path": "math/differential_equations",
+                    "scope": "miniref"
+                },
+                "explain_usedfor": null,
+                "level": "All"
+            },
+            {
+                "usedfor": {
+                    "id": "148999ae-ca1d-4a43-827d-e7b670763f25",
+                    "path": "physics/classical_mechanics",
+                    "scope": "miniref"
+                },
+                "explain_usedfor": null,
+                "level": "All"
+            },
+            {
+                "usedfor": {
+                    "id": "d8d5f63d-00e3-49e4-aec6-1fd7b9c34d18",
+                    "path": "physics/quantum_mechanics",
+                    "scope": "miniref"
+                },
+                "explain_usedfor": null,
+                "level": "All"
+            }
+        ],
+        "related": [
+            {
+                "related": {
+                    "id": "c3291ac0-54ca-4a0f-937b-d29ec5563a76",
+                    "path": "math/calculus/integrals",
+                    "scope": "miniref"
+                },
+                "explain_related": "Derivatives and integrals are inverse operations. Learning about one will help you understand the other.",
+                "level": "UGRAD"
+            }
+        ],
+        "contents": [
+            {
+                "child": {
+                    "id": "8b61ca50-8eaa-4474-bb3f-d31980fbaa21",
+                    "path": "math/calculus/derivatives",
+                    "scope": "miniref"
+                },
+                "explain_contains": null,
+                "level": "All"
+            },
+            {
+                "child": {
+                    "id": "c3291ac0-54ca-4a0f-937b-d29ec5563a76",
+                    "path": "math/calculus/integrals",
+                    "scope": "miniref"
+                },
+                "explain_contains": null,
+                "level": "All"
+            }
+        ],
+        "ispartof": []
+    },
+
+
 
 ## Tue 18 Apr 2017 18:04:32 EDT
 
@@ -49,7 +143,7 @@ them in the future, again requiring an update operation.
 Let's think for a moment what the usage of the import commands would be like.
 
 
-## Command usage
+### Command usage
 
 For initial import of data:
 

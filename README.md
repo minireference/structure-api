@@ -3,10 +3,27 @@ STRUCTURE API
 An API for the structure and dependencies between subjects, topics, and concepts.
 
 
+
+  TODOs
+  -----
+    - Finalize BaseNode, and add BaseEdge
+    - Cleanup settings/requirements
+    - Think about Polymorphism for nesting in serializers and in wire format
+    - Implement session middleware no will not have to call .save manually (except when need auto-id field to be generated)
+      http://stackoverflow.com/questions/6606725/best-way-to-integrate-sqlalchemy-into-a-django-project
+    - Dockerize for prod (docker-compose and docker-host)
+    - figure out a way to speedup query for http://127.0.0.1:8000/api/v1/nodes/
+      takes too long and we have 700 nodes and 500 rel'ns.
+    - Handle `alias` properties
+    - Store `source_file`(str) and `file_order` (float) along with data items in
+      order to reproduce YAML identically after roundtrip
+
+
 Design TL;DR
 ------------
-  - Graph data structure with specialized tooling for repesenting educaitonal content domain
+  - Graph data structure with specialized tooling for representing educational content domain
   - Decision: stick to Django ORM (no neo4j for now)
+
 
 
 Project milestones
@@ -54,18 +71,6 @@ Project milestones
     - [learning pathway recommendations](https://github.com/minireference/structure-api/blob/master/docs/about.md#content-recommendation)
 
 
-
-
-TODOs
------
-  - Finalize BaseNode, and add BaseEdge
-  - Cleanup settings/requirements
-  - Preprocess common core node data
-  - Import common core edge data (from .csv)
-  - Think about Polymorphism for nesting in serializers and in wire format
-  - Implement session middleware no will not have to call .save manually (except when need auto-id field to be generated)
-    http://stackoverflow.com/questions/6606725/best-way-to-integrate-sqlalchemy-into-a-django-project
-  - Dockerize for prod (docker-compose and docker-host)
 
 
 
