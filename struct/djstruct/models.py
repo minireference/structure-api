@@ -8,23 +8,16 @@ from django.db import models
 class BaseNode(models.Model):
     # id  auto-created by Django  (primary_key=True)
     uuid        = models.UUIDField(default=uuid.uuid4, editable=False)
-    # TODO: aliases...
+    kind        = models.CharField(blank=False, max_length=1000)  # store __class__
+    # TODO: aliases
+
     path        = models.CharField(blank=False, max_length=1000)
     scope       = models.CharField(default='miniref', max_length=1000)
     version     = models.CharField(default='0.1', max_length=1000, verbose_name='schema version')
     created_at  = models.DateTimeField(auto_now_add=True, verbose_name='created at')
     modified_at = models.DateTimeField(auto_now=True, verbose_name='last modified')
     comment     = models.TextField(blank=True, null=True, verbose_name='comments')
-
-    class Meta:
-        unique_together = ('scope', 'path')
-
-    # Containment (folder-like) structure
-    ############################################################################
-    # contents = models.ManyToManyField("self", symmetrical=False,
-    #                                   through='DjangoContainmentRelation',
-    #                                   through_fields=('parent', 'child')
-    #                                   related_name='parents')
+    level       = models.CharField(default='All', max_length=1000, verbose_name='Educational level')
 
     # Dependency structure
     ############################################################################
@@ -32,10 +25,24 @@ class BaseNode(models.Model):
                                           through='DependencyRelation',
                                           through_fields=('usedfor', 'prerequisite'),
                                           related_name='usedfors')
+
     # Generic relatedness
     ############################################################################
-    # TODO:   <--relatedto--> symmetric relationship
-    
+    related = models.ManyToManyField("self", symmetrical=False,
+                                     through='RelatedRelation',
+                                     through_fields=('left', 'right'),
+                                     related_name='related_nodes+')
+
+    # Containment (folder-like) structure
+    ############################################################################
+    contents = models.ManyToManyField("self", symmetrical=False,
+                                      through='ContainmentRelation',
+                                      through_fields=('parent', 'child'),
+                                      related_name='parents')
+
+    class Meta:
+        unique_together = ('scope', 'path')
+
     def __unicode__(self):
         return "<BaseNode " + self.scope + ':' + self.path + '>'
     
@@ -64,7 +71,7 @@ class DependencyRelation(models.Model):
     usedfor        = models.ForeignKey(BaseNode, null=True, related_name='usedfors_rels', on_delete=models.SET_NULL)
     explain_prerequisite  = models.CharField(max_length=1000, verbose_name='Explain why prerequsite is needed', null=True)
     explain_usedfor       = models.CharField(max_length=1000, verbose_name='Explain the application', null=True)
-    level    = models.CharField(default='HS', max_length=1000, verbose_name='Educational level')
+    level    = models.CharField(default='All', max_length=1000, verbose_name='Educational level')
 
     def __unicode__(self):
         return '<Rel ' + self.prerequisite.path + '--usedfor-->' + self.usedfor.path + '>'
@@ -74,24 +81,36 @@ class DependencyRelation(models.Model):
 
 
 
-# class DjangoBaseRelation(models.Model):
-#     """
-#     Metadata fields common to all relations.
-#     """
-#     scope       = models.CharField(default='miniref', max_length=1000, verbose_name='scope')
-#     version     = models.CharField(default='0.1', max_length=1000, verbose_name='schema version')
-#     created_at  = models.DateTimeField(auto_now_add=True, verbose_name='created at')
-#     modified_at = models.DateTimeField(auto_now=True, verbose_name='last modified')
-#     comment     = models.TextField(blank=True, null=True, verbose_name='comment')
+class ContainmentRelation(models.Model):
+    """
+    Represents `p--contains--> c` relations and implies a c--ispartof-->p rel'n.
+    """
+    # id auto-created
+    parent   = models.ForeignKey(BaseNode, null=True, related_name='child_rels', on_delete=models.SET_NULL)
+    child    = models.ForeignKey(BaseNode, null=True, related_name='parent_rels', on_delete=models.SET_NULL)
+    explain_contains = models.CharField(max_length=1000, verbose_name='Explain contains', null=True)
+    explain_ispartof = models.CharField(max_length=1000, verbose_name='Explain is-part-of relation', null=True)
+    level    = models.CharField(default='All', max_length=1000, verbose_name='Educational level')
 
-# class DjangoContainmentRelation(models.Model):
-#     """
-#     Represents `p--contains--> c` relations and implies a c--ispartof-->p rel'n.
-#     """
-#     # id auto-created
-#     parent   = models.ForeignKey(BaseNode, on_delete=models.SET_NULL)
-#     child    = models.ForeignKey(BaseNode, on_delete=models.SET_NULL)
-#     explain  = models.CharField(max_length=1000, verbose_name='Explanation')
-#     level    = models.CharField(default='HS', max_length=1000, verbose_name='educational level')
-
+    def __unicode__(self):
+        return '<Rel ' + self.parent.path + '--contains-->' + self.child.path + '>'
     
+    def __repr__(self):
+        return self.__unicode__()
+
+
+
+class RelatedRelation(models.Model):
+    """
+    Generic relatedness. Need to manually create both directions of the relation if symmetric.
+    """
+    left   = models.ForeignKey(BaseNode, null=True, related_name='right_rels', on_delete=models.SET_NULL)
+    right  = models.ForeignKey(BaseNode, null=True, related_name='left_rels', on_delete=models.SET_NULL)
+    explain_related = models.CharField(max_length=1000, verbose_name='Explain related', null=True)
+    level    = models.CharField(default='All', max_length=1000, verbose_name='Educational level')
+
+    def __unicode__(self):
+        return '<Rel ' + self.left.path + '<--related-->' + self.right.path + '>'
+    
+    def __repr__(self):
+        return self.__unicode__()

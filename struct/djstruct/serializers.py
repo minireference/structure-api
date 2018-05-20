@@ -18,11 +18,32 @@ class UsedforsRelationSerializer(serializers.Serializer):
     explain_usedfor = serializers.CharField(max_length=1000)
     level = serializers.CharField(max_length=1000)
 
-
 class PrerequisitesRelationSerializer(serializers.Serializer):
     prerequisite = BaseNodeSlugSerializer(required=True)
     explain_prerequisite  = serializers.CharField(max_length=1000)
     level = serializers.CharField(max_length=1000)
+
+
+# Same serializer since symmetric relationship
+class RelatedRelationSerializer(serializers.Serializer):
+    related = BaseNodeSlugSerializer(source='right', required=True)
+    explain_related = serializers.CharField(max_length=1000)
+    level = serializers.CharField(max_length=1000)
+
+
+# Different serializer depending on direction being used for relationship
+class ContainsRelationSerializer(serializers.Serializer):
+    child = BaseNodeSlugSerializer(required=True)
+    explain_contains = serializers.CharField(max_length=1000)
+    level = serializers.CharField(max_length=1000)
+
+class IsPartOfRelationSerializer(serializers.Serializer):
+    parent = BaseNodeSlugSerializer(required=True)
+    explain_ispartof  = serializers.CharField(max_length=1000)
+    level = serializers.CharField(max_length=1000)
+
+
+
 
 
 class BaseNodeSerializer(serializers.Serializer):
@@ -43,6 +64,11 @@ class BaseNodeSerializer(serializers.Serializer):
     # needed since `prerequisites` resolves to `BaseNodeSerializer`s
     prerequisites = PrerequisitesRelationSerializer(source='usedfors_rels', many=True, read_only=True)
     usedfors = UsedforsRelationSerializer(source='prerequisites_rels', many=True, read_only=True)
+    
+    related = RelatedRelationSerializer(source='right_rels', many=True, read_only=True)
+
+    contents = ContainsRelationSerializer(source='child_rels', many=True, read_only=True)
+    ispartof = IsPartOfRelationSerializer(source='parent_rels', many=True, read_only=True)
 
     class Meta:
         read_only_fields = ('id', 'created_at', 'modified_at',)
