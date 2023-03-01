@@ -3,6 +3,7 @@ pydev
 venv
 postgres_data
 
+rawdata
 
 # drafts
 rawdata/drafts

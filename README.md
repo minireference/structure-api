@@ -25,6 +25,16 @@ Design TL;DR
   - Decision: stick to Django ORM (no neo4j for now)
 
 
+New roadmap:
+ - update backend models with a complete graph model (without miniref or CC specifics)
+ - make sure tree tructures fit nicely in graphs
+   Treebeard or MPTT nodes -- as an option 
+ - Graph viz: reproduce [concept-coaster](https://github.com/pixyj/feel) and metacademy frontends
+ - Alignment interface prototype:
+   - two pane based on search
+ - Search backend (depends on search R&D project for files)
+
+
 
 Project milestones
 ------------------
